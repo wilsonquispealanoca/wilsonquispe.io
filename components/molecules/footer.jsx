@@ -70,7 +70,7 @@ export default function Footer() {
         {
           dataFooter.map(({id, href, target, rel, text, icon}) => 
             <ItemFooter
-              id={id} 
+              key={id} 
               href={href}
               target={target}
               rel={rel}

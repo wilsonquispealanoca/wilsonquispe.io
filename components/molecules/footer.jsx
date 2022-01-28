@@ -74,7 +74,7 @@ export default function Footer() {
               href={href}
               target={target}
               rel={rel}
-              children={text}
+              text={text}
               icon={icon}
             />
           )

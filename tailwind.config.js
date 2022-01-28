@@ -11,9 +11,18 @@ module.exports = {
         "card": "#F2F3F2",
         "cta": "#1FAD71",
         "background": "#E3E8E6",
+        "card-top-color-1": "#D194AA",
+        "card-bottom-color-1": "#8766CC",
+        "card-top-color-2": "#F0D3A8",
+        "card-bottom-color-2": "#E05285",
+        "card-top-color-3": "#ADBFEB",
+        "card-bottom-color-3": "#33CC8B",
       },
       fontFamily: {
         means: ["Means-web", "sans-serif"]
+      },
+      spacing: {
+        "border": '4px',
       },
     },
   },

@@ -11,7 +11,6 @@ function Profile({alt, src}) {
         placeholder="blur"
         blurDataURL={src}
         sizes="50vw"
-        minWidth={176}
         priority
         className="rounded-full filter grayscale"
       />

@@ -65,7 +65,7 @@ const dataFooter = [
 
 export default function Footer() {
   return (
-    <footer className="bg-background">
+    <footer className="bg-background dark:bg-background-dark">
       <ul>
         {
           dataFooter.map(({id, href, target, rel, text, icon}) => 

@@ -5,7 +5,7 @@ export default function Layout({children}) {
   return (
     <>
       <Meta/>
-      <div className="min-h-screen bg-background">
+      <div className="min-h-screen bg-background dark:bg-background-dark">
         <main>{children}</main>
       </div>
       <Footer />

@@ -1,6 +1,7 @@
 module.exports = {
   content: ['./pages/**/*.{html,js,jsx}',
-  './components/**/*.{html,js,jsx}',],
+  './components/**/*.{html,js,jsx}'],
+  darkMode: "class",
   theme: {
     extend: {
       colors: {
@@ -17,6 +18,13 @@ module.exports = {
         "card-bottom-color-2": "#E05285",
         "card-top-color-3": "#ADBFEB",
         "card-bottom-color-3": "#33CC8B",
+        "cta-dark": "#75F0BC",
+        "background-dark": "#161D1A",
+        "card-dark": "#222A27",
+        "shadow-dark": "#606C67",
+        "tertiary-dark": "#939F9A",
+        "secondary-dark": "#CACECC",
+        "primary-dark": "#F2F3F2",
       },
       fontFamily: {
         means: ["Means-web", "sans-serif"]

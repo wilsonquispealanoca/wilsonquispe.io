@@ -5,8 +5,8 @@ function Hero() {
   return (
     <section>
       <Profile 
-        alt="Image wilson quispe"
-        src="/profileWilson.jpg"
+        name="Image wilson quispe"
+        picture="/assets/blog/authors/profileWilson.jpg"
       />
       <ContentHero />
     </section>

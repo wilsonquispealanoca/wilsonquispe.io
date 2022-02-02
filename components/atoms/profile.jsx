@@ -1,15 +1,15 @@
 import Image from 'next/image';
 
-function Profile({alt, src}) {
+function Profile({name, picture}) {
   return (
     <figure className="w-[80px] sm:w-[176px] relative mb-8 sm:mb-0">
       <Image 
-        alt={alt}
+        alt={name}
+        src={picture}
         height={176}
         width={176}
-        src={src}
         placeholder="blur"
-        blurDataURL={src}
+        blurDataURL={picture}
         sizes="50vw"
         priority
         className="rounded-full filter grayscale"

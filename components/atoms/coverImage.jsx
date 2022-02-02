@@ -9,6 +9,8 @@ export default function CoverImage({ title, src, slug, height, width }) {
       layout="responsive"
       width={width}
       height={height}
+      placeholder="blur"
+      blurDataURL={src}
     />
   )
   return (

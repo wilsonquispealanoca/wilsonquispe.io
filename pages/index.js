@@ -4,14 +4,44 @@ import Hero from "../components/molecules/hero";
 import ArticlesHome from "../components/molecules/articlesHome";
 import Navbar from "../components/molecules/navbar";
 
-export default function Home() {
+import { getAllPosts } from '../lib/api'
+
+export default function Home({allPosts}) {
+  const heroPost = allPosts.slice(0, 3)
   return (
     <Layout>
       <Container>
         <Navbar />
         <Hero />
-        <ArticlesHome />
+        {heroPost.length > 0 &&
+            <ArticlesHome posts={heroPost} />
+        }
       </Container>
     </Layout>
   )
+  
+}
+
+export async function getStaticProps() {
+  const allPosts = getAllPosts([
+    "title",
+    "slug",
+  ])
+  const colors = [
+    {
+      color1: "from-card-top-color-1",
+      color2: "to-card-bottom-color-1",
+    },
+    {
+      color1: "from-card-top-color-2",
+      color2: "to-card-bottom-color-2",
+    },
+    {
+      color1: "from-card-top-color-3",
+      color2: "to-card-bottom-color-3",
+    }
+  ]
+  return {
+    props: { allPosts, colors },
+  }
 }

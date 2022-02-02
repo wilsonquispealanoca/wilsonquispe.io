@@ -2,7 +2,7 @@ import { useRouter } from 'next/router'
 import ErrorPage from 'next/error'
 import Container from '../../components/templates/container'
 import PostBody from '../../components/molecules/postBody'
-import Header from '../../components/atoms/header'
+import Navbar from '../../components/molecules/navbar'
 import PostHeader from '../../components/molecules/post-header'
 import Layout from '../../components/templates/layout'
 import { getPostBySlug, getAllPosts } from '../../lib/api'
@@ -15,7 +15,7 @@ export default function Post({post}) {
   return (
     <Layout>
       <Container>
-        <Header />
+        <Navbar />
         {router.isFallback ? (
           <PostTitle>Loading…</PostTitle>
         ) : (

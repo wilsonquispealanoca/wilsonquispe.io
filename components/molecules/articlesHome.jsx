@@ -1,40 +1,31 @@
 import ArticleItemHome from "../atoms/articleItemHome";
 
-const dataArticle = [
+const colors = [
   {
-    id: 0,
-    title: "🌱 Mi Blog Es Un Jardín Digital, No Un Blog",
-    date: "02 de febrero 2022",
     color1: "from-card-top-color-1",
     color2: "to-card-bottom-color-1",
   },
   {
-    id: 1,
-    title: "How To Start an E‑Commerce Business—a Complete Guide",
-    date: "17 de enero 2022",
     color1: "from-card-top-color-2",
     color2: "to-card-bottom-color-2",
   },
   {
-    id: 2,
-    title: "How to Start a Business",
-    date: "07 de enero 2022",
     color1: "from-card-top-color-3",
     color2: "to-card-bottom-color-3",
   }
 ]
 
-function ArticlesHome() {
+
+function ArticlesHome({posts}) {
   return (
     <section>
       <h2 className="font-means text-4xl leading-tight pb-8">Últimos artículos</h2>
       {
-        dataArticle.map((item) =>
+        posts.map((post) =>
           <ArticleItemHome 
-            key={item.id}
-            title={item.title}
-            color1={item.color1}
-            color2={item.color2}
+            key={post.slug}
+            title={post.title}
+            slug={post.slug}
           />
         )
       }

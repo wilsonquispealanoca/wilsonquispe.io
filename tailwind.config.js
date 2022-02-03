@@ -11,6 +11,7 @@ module.exports = {
         "shadow": "#AEB7B3",
         "card": "#F2F3F2",
         "cta": "#1FAD71",
+        "accent": "#004e56",
         "background": "#E3E8E6",
         "card-top-color-1": "#D194AA",
         "card-bottom-color-1": "#8766CC",
@@ -31,6 +32,9 @@ module.exports = {
       },
       spacing: {
         "border": '4px',
+      },
+      fontSize: {
+        "45xl": '2.5rem',
       },
     },
   },

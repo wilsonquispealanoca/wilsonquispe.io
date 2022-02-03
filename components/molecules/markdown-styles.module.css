@@ -1,18 +1,42 @@
 .markdown {
-  @apply text-lg leading-relaxed;
+  @apply text-base;
+}
+
+.markdown a {
+  @apply text-[#004e56] font-medium hover:underline
 }
 
 .markdown p,
 .markdown ul,
 .markdown ol,
 .markdown blockquote {
-  @apply my-6;
+  @apply text-primary-text mt-7
+}
+
+.markdown p:first-child {
+  @apply first-letter:text-7xl first-letter:font-means first-letter:mr-3 first-letter:float-left
 }
 
 .markdown h2 {
-  @apply text-3xl mt-12 mb-4 leading-snug;
+  @apply font-means text-3xl mt-12 mb-4 leading-snug text-primary-text;
 }
 
 .markdown h3 {
-  @apply text-2xl mt-8 mb-4 leading-snug;
+  @apply font-means text-2xl mt-8 mb-4 leading-snug;
+}
+
+:global(.dark) .markdown p {
+  @apply text-secondary-dark
+}
+
+:global(.dark) .markdown h2 {
+  @apply text-primary-dark
+}
+
+:global(.dark) .markdown h3 {
+  @apply text-secondary-dark
+}
+
+:global(.dark) .markdown a {
+  @apply text-cta-dark
 }

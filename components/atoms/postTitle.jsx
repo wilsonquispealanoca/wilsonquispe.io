@@ -1,6 +1,6 @@
 export default function PostTitle({ children }) {
   return (
-    <h1 className="font-means text-6xl md:text-7xl lg:text-8xl font-bold leading-tight md:leading-none mb-12 text-center md:text-left">
+    <h1 className="font-means text-45xl leading-none md:text-7xl lg:text-8xl md:leading-none mb-6">
       {children}
     </h1>
   )

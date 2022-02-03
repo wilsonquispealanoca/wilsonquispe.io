@@ -1,17 +1,20 @@
 import Image from "next/image";
+import Link from "next/link";
 
-function Logo() {
+function Logo({color}) {
   return (
-    <figure className="w-16">
-      <Image 
-        alt="logo"
-        layout="responsive"
-        height="40"
-        width="100"
-        quality={100}
-        src="/logo/wilsonquispeLogoBlack.png"
-      />
-    </figure>
+    <Link href="/">
+      <a className="w-20">
+        <Image 
+          alt="logo"
+          layout="responsive"
+          height="60"
+          width="160"
+          quality={100}
+          src={`/logo/wilsonquispeLogo${color}.png`}
+        />
+      </a>
+    </Link>
   );
 }
 

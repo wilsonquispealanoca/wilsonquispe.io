@@ -1,5 +1,5 @@
 import Container from '../components/templates/container'
-import MoreStories from '../components/molecules/moreHistories'
+import MoreStories from '../components/molecules/moreStories'
 import Layout from '../components/templates/layout'
 import { getAllPosts } from '../lib/api'
 import Head from 'next/head'

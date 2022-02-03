@@ -20,7 +20,7 @@ export default function Post({post}) {
           <PostTitle>Loading…</PostTitle>
         ) : (
           <>
-            <article className="mb-32">
+            <article>
               <Head>
                 <title>
                   {post.title} | Next.js Blog Example with Markdown
@@ -32,6 +32,7 @@ export default function Post({post}) {
                 coverImage={post.coverImage}
                 date={post.date}
                 author={post.author}
+                excerpt={post.excerpt}
               />
               <PostBody content={post.content} />
             </article>
@@ -51,6 +52,7 @@ export async function getStaticProps({ params }) {
     'content',
     'ogImage',
     'coverImage',
+    "excerpt",
   ])
   const content = await markdownToHtml(post.content || '')
 

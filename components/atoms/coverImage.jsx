@@ -11,6 +11,7 @@ export default function CoverImage({ title, src, slug, height, width }) {
       height={height}
       placeholder="blur"
       blurDataURL={src}
+      className="object-contain"
     />
   )
   return (

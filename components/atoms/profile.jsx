@@ -1,8 +1,8 @@
 import Image from 'next/image';
 
-function Profile({name, picture}) {
+function Profile({name, picture, hidden}) {
   return (
-    <figure className="w-[80px] sm:w-[176px] relative mb-8 sm:mb-0">
+    <figure className={`w-[80px] md:w-[146px] lg:w-[186px] relative mb-8 sm:mb-8`}>
       <Image 
         alt={name}
         src={picture}

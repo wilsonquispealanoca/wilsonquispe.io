@@ -3,16 +3,27 @@ import ArticleItemHome from "../atoms/articleItemHome";
 function ArticlesHome({posts}) {
   return (
     <section>
-      <h2 className="font-means text-4xl leading-tight pb-8">Últimos artículos</h2>
-      {
-        posts.map((post) =>
-          <ArticleItemHome 
-            key={post.slug}
-            title={post.title}
-            slug={post.slug}
-          />
-        )
-      }
+      <h2 className="font-means text-4xl leading-tight pb-14">Últimos artículos</h2>
+      <div className="md:grid md:grid-flow-dense md:grid-cols-2 lg:grid-cols-3 md:gap-4 lg:gap-x-6">
+        <ArticleItemHome 
+          key={posts[0].slug}
+          title={posts[0].title}
+          slug={posts[0].slug}
+          gradient="from-[#D8B4FE] to-[#818CF8]"
+        />
+        <ArticleItemHome 
+          key={posts[1].slug}
+          title={posts[1].title}
+          slug={posts[1].slug}
+          gradient="from-[#F0D3A8] to-[#E05285]"
+        />
+        <ArticleItemHome 
+          key={posts[2].slug}
+          title={posts[2].title}
+          slug={posts[2].slug}
+          gradient="from-[#ADBFEB] to-[#33CC8B]"
+        />
+      </div>
     </section>
   );
 }

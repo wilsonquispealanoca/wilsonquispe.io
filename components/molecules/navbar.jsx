@@ -1,5 +1,7 @@
 import { useTheme } from 'next-themes';
+import Link from 'next/link';
 import { useState, useEffect } from 'react';
+import Activelink from '../atoms/activeLink';
 import Logo from "../atoms/logo"
 import NavMobile from './navMobile';
 
@@ -8,10 +10,6 @@ function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   const [show, setShow] = useState(false);
-
-  useEffect(() => {
-    setShow(true)
-  }, [theme])
 
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
@@ -24,8 +22,8 @@ function Navbar() {
 
   return (
     <>
-    <nav className={`${show ? "bg-card dark:bg-card-dark" : "bg-none"} flex items-center w-full justify-between h-16 fixed left-0 right-0 top-0 z-40 px-4`}>
-        <figure menuOpen={menuOpen} onClick={() => setMenuOpen(!menuOpen)} className="flex items-center justify-center w-10 h-10 cursor-pointer">
+    <nav className={`${show ? "bg-white dark:bg-card-dark" : "bg-none"} flex items-center w-full justify-between h-[4.5rem] fixed left-0 right-0 top-0 z-40 px-4 md:px-32 lg:px-56 xl:px-80 text-lg`}>
+        <figure menuOpen={menuOpen} onClick={() => setMenuOpen(!menuOpen)} className="flex items-center justify-center w-10 h-10 cursor-pointer lg:hidden">
           <svg className="fill-primary-text dark:fill-primary-dark" width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path fillRule="evenodd" clipRule="evenodd" d="M19.75 12C19.75 11.5858 19.4142 11.25 19 11.25H5C4.58579 11.25 4.25 11.5858 4.25 12C4.25 12.4142 4.58579 12.75 5 12.75H19C19.4142 12.75 19.75 12.4142 19.75 12Z"/>
             <path fillRule="evenodd" clipRule="evenodd" d="M19.75 7C19.75 6.58579 19.4142 6.25 19 6.25H5C4.58579 6.25 4.25 6.58579 4.25 7C4.25 7.41421 4.58579 7.75 5 7.75H19C19.4142 7.75 19.75 7.41421 19.75 7Z"/>
@@ -33,11 +31,14 @@ function Navbar() {
           </svg>
         </figure>
       {theme === "light" ? <Logo color="Black"/> : <Logo color="White"/>}
-      <button 
-        className="flex items-center justify-center w-10 h-10"
-        onClick={() => {
-          setTheme(theme === 'light' ? 'dark' : 'light')
-        }}
+      <div className="flex items-center">
+        <Activelink href="/">Inicio</Activelink>
+        <Activelink href="/blog">Blog</Activelink>
+        <button 
+          className="flex items-center justify-center w-10 h-10"
+          onClick={() => {
+            setTheme(theme === 'light' ? 'dark' : 'light')
+          }}
         >
         {theme === "dark" ?   
           <svg className="dark:fill-primary-dark" width="26" height="26" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -56,6 +57,7 @@ function Navbar() {
           </svg>
         }
       </button>
+      </div>
     </nav>
     { menuOpen && <NavMobile /> }
     </>

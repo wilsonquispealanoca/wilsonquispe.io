@@ -17,9 +17,11 @@ export default function Home({allPosts}) {
         {heroPost.length > 0 &&
             <ArticlesHome posts={heroPost} />
         }
-        <Link href="/blog">
-          <a className="hover:underline">Leer todas las entradas --&gt;</a>
-        </Link>
+        <div className="mt-10 md:mt-10">
+          <Link href="/blog">
+            <a className="hover:underline text-secondary-text dark:text-primary-dark">Leer todas las entradas --&gt;</a>
+          </Link>
+        </div>
       </Container>
     </Layout>
   )

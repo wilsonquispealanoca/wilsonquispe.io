@@ -10,7 +10,7 @@
 .markdown ul,
 .markdown ol,
 .markdown blockquote {
-  @apply text-primary-text mt-7
+  @apply text-secondary-text mt-7
 }
 
 .markdown p:first-child {

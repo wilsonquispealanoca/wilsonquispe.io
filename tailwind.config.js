@@ -9,7 +9,7 @@ module.exports = {
         "secondary-text": "#45544E",
         "tertiary-text": "#788781",
         "shadow": "#AEB7B3",
-        "card": "#F2F3F2",
+        "card": "#F1F1F1",
         "cta": "#1FAD71",
         "accent": "#004e56",
         "background": "#E3E8E6",

@@ -1,5 +1,5 @@
 .markdown {
-  @apply text-base;
+  @apply text-lg;
 }
 
 .markdown a {

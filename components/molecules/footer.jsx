@@ -15,9 +15,9 @@ const dataFooter = [
   },
   {
     id: 2,
-    href: "/sobre-mi",
+    href: "/",
     text: "Sobre mí",
-    icon: false,
+    icon: true,
   },
   {
     id: 3,
@@ -45,27 +45,27 @@ const dataFooter = [
   },
   {
     id: 6,
-    href: "/pasatiempos",
+    href: "/",
     text: "Pasatiempos",
     icon: true,
   },
   {
     id: 7,
-    href: "/historias",
+    href: "/",
     text: "Mis Historias",
     icon: true,
   },
   {
     id: 8,
-    href: "/tweets",
+    href: "/",
     text: "Tweets",
-    icon: false,
+    icon: true,
   },
 ]
 
 export default function Footer() {
   return (
-    <footer className="bg-background dark:bg-background-dark">
+    <footer className="bg-card dark:bg-background-dark w-full">
       <ul>
         {
           dataFooter.map(({id, href, target, rel, text, icon}) => 

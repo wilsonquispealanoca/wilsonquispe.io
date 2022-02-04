@@ -5,6 +5,7 @@ import ArticlesHome from "../components/molecules/articlesHome";
 import Navbar from "../components/molecules/navbar";
 
 import { getAllPosts } from '../lib/api'
+import Link from "next/link";
 
 export default function Home({allPosts}) {
   const heroPost = allPosts.slice(0, 3)
@@ -16,6 +17,9 @@ export default function Home({allPosts}) {
         {heroPost.length > 0 &&
             <ArticlesHome posts={heroPost} />
         }
+        <Link href="/blog">
+          <a className="hover:underline">Leer todas las entradas --&gt;</a>
+        </Link>
       </Container>
     </Layout>
   )

@@ -14,7 +14,7 @@ export default function Post({post}) {
   const router = useRouter();
   return (
     <Layout>
-      <Container>
+      <div className="relative left-0 right-0">
         <Navbar />
         {router.isFallback ? (
           <PostTitle>Loading…</PostTitle>
@@ -38,7 +38,7 @@ export default function Post({post}) {
             </article>
           </>
         )}
-      </Container>
+      </div>
     </Layout>
   )
 }

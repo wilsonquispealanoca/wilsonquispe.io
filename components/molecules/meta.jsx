@@ -56,7 +56,7 @@ export default function Meta({ url, title, description, ogImage, fbAppID, twitte
 			{/* SEO */}
 			<link rel="canonical" href={url}></link>
 			{/* Og tags Google+ */}
-			<meta itemprop="description" content={description}></meta>
+			<meta itemProp="description" content={description}></meta>
 
 			<link rel='icon' href='/favicon.ico' />
     </Head>

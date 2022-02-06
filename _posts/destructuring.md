@@ -37,7 +37,7 @@ Es una tarea común, obtener alguna propiedad de un objeto para ser utilizada de
 Lo que **destructuring** permite, es hacer este proceso de una manera más directa
 
 ```jsx
-const { firstName, lastName } = usuario
+  const { firstName, lastName } = usuario
 ```
 
 Esta es la sintaxis de destructuración de un objeto, usamos `{}` al lado izquierdo de una asignación para indicar questamos des-tructurando el valor que está al lado derecho.
@@ -54,8 +54,9 @@ const usuario = {
         social: {
             twitter: '@soywil'
         }
-     }
+    }
 }
+
 const  { twitter } = usuario.links.social 
 // o tambien se puede
 const { links: { social: { twitter } } } = usuario

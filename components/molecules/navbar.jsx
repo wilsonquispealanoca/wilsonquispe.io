@@ -1,5 +1,4 @@
 import { useTheme } from 'next-themes';
-import Link from 'next/link';
 import { useState, useEffect } from 'react';
 import Activelink from '../atoms/activeLink';
 import Logo from "../atoms/logo"

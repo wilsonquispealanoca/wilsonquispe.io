@@ -6,6 +6,14 @@
   @apply text-[#004e56] font-medium hover:underline
 }
 
+.markdown code {
+  @apply text-gray-800 border-gray-100 rounded-lg bg-gray-100;
+}
+
+.markdown pre {
+  @apply mt-6 overflow-x-auto border border-gray-200 bg-gray-50;
+}
+
 .markdown p,
 .markdown ul,
 .markdown ol,
@@ -39,4 +47,12 @@
 
 :global(.dark) .markdown a {
   @apply text-cta-dark
+}
+
+:global(.dark) .markdown pre {
+  @apply text-card-dark
+}
+
+:global(.dark) .markdown code {
+  @apply text-card-dark
 }

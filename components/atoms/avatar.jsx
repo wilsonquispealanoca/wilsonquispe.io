@@ -2,7 +2,7 @@ import Image from "next/image";
 
 function Avatar({name, picture}) {
   return (
-    <figure className="w-[24px] sm:w-[46px] relative mb-4 sm:mb-0">
+    <figure className="w-[24px] sm:w-[46px]">
       <Image 
         alt={name}
         src={picture}

@@ -3,6 +3,7 @@ import Container from "../components/templates/container";
 import Hero from "../components/molecules/hero";
 import ArticlesHome from "../components/molecules/articlesHome";
 import Navbar from "../components/molecules/navbar";
+import Meta from "../components/molecules/meta";
 
 import { getAllPosts } from '../lib/api'
 import Link from "next/link";
@@ -11,6 +12,14 @@ export default function Home({allPosts}) {
   const heroPost = allPosts.slice(0, 3)
   return (
     <Layout>
+      <Meta 
+        title='Inicio | Wilson Quispe'
+				description='Notas, pensamientos y anecdotas, cultivados en el Jardin digital de Wilson Quispe.'
+				ogImage='https://i.ibb.co/s16J4Ts/Meta-image.png'
+				url='https://wilsonquispe-io.vercel.app/'
+				fbAppID='115713950293427'
+				twitter='@soywill_quispe'
+      />
       <Container>
         <Navbar />
         <Hero />

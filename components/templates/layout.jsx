@@ -1,14 +1,13 @@
 import Footer from "../molecules/footer";
-import Meta from "../molecules/meta";
 
 export default function Layout({children}) {
   return (
     <>
-      <Meta/>
       <div className="min-h-screen bg-white dark:bg-background-dark">
         <main>{children}</main>
       </div>
       <Footer />
+      <small className="text-[1rem] md:text-lg text-primary-text py-8 px-8 md:px-32 lg:px-56 xl:px-80 bg-background w-screen block">Hecho con 💙 durante la cuarentena</small>
     </>
   );
 }

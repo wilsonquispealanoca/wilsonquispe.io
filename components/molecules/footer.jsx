@@ -65,7 +65,7 @@ const dataFooter = [
 
 export default function Footer() {
   return (
-    <footer className="bg-card dark:bg-background-dark w-full pt-16 md:px-32 lg:px-56 xl:px-80 ">
+    <footer className="bg-card dark:bg-background-dark w-full py-16 md:pb-0 md:px-32 lg:px-56 xl:px-80 ">
       <ul className="lg:grid lg:grid-cols-3 lg:pb-24">
         {
           dataFooter.map(({id, href, target, rel, text, icon}) => 

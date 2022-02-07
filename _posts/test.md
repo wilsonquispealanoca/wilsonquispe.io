@@ -10,7 +10,7 @@ ogImage:
   url: '/assets/blog/dynamic-routing/cover.jpg'
 ---
 
-I **love** using [Next.js](https://nextjs.org/)
+I **love** using [Next.js](https://nextjs.org/) 
 
 ```js
 const doc = getDocBySlug(params.slug);

@@ -21,22 +21,22 @@ Es una expresión que te permite extraer o "destructurar" datos desde estructura
 Te permite extraer propiedades de un objeto, items de un arreglo de una manera "sencilla" y de una sola vez.
 Pensemos en una estructura de datos común y una tarea repetitiva
 
-```jsx
-  const usuario = {
-    firstName: 'Wilson',
-    lastName: 'Quispe',
-    country: 'Bolivia',
-    twitter: '@soywill'
-  }
-  const firstName = usuario.firstName
-  const lastName = usuario.lastName
+``` jsx
+const usuario = {
+  firstName: 'Wilson',
+  lastName: 'Quispe',
+  country: 'Bolivia',
+  twitter: '@soywill'
+}
+const firstName = usuario.firstName
+const lastName = usuario.lastName
 ```
 
 Es una tarea común, obtener alguna propiedad de un objeto para ser utilizada dentro de otro bloque lógico, puedeasignarla a una variable como en este caso, o escribir `usuario.firstName` varias veces más adelante.
 
 Lo que **destructuring** permite, es hacer este proceso de una manera más directa
 
-```jsx
+``` jsx
   const { firstName, lastName } = usuario
 ```
 
@@ -46,15 +46,15 @@ Este código simplemente dice: Crea dos variables: `firstName` y `lastName` y to
 
 Genial no?. Ese es sólo un nivel, esto puede ser utilizando de forma anidada tantas veces como desees
 
-```jsx
+``` jsx
 const usuario = {
-    firstName: 'Wilson',
-    lastName: 'Quispe',
-    links: {
-        social: {
-            twitter: '@soywil'
-        }
+  firstName: 'Wilson',
+  lastName: 'Quispe',
+  links: {
+    social: {
+      twitter: '@soywil'
     }
+  }
 }
 
 const  { twitter } = usuario.links.social 
@@ -66,7 +66,7 @@ Puedes destructurar en tanto niveles como gustes, pero intenta siempre mantener 
 
 Pero esta sintaxis no está limitada solo a objetos, también podemos destructurar arreglos.
 
-```jsx
+``` jsx
 const arreglo = ['Hola','soy','Matias']
 ```
 
@@ -79,14 +79,14 @@ Digamos que este arreglo es igual en muchas ocasiones y que queremos extraer el 
 
 La forma sin destructuración sería
 
-```jsx
+``` jsx
 const saludo = arreglo[0]
 const nombre = arreglo[2]
 ```
 
 Pero si usamos destruturación podemos nombre las variables de forma directa
 
-```jsx
+``` jsx
 const [saludo, , nombre ] = arreglo
 ```
 
@@ -98,9 +98,9 @@ Al destructurar un arreglo hacemos uso de la posición del elemento en el arregl
 
 Veamos un ejemplo mas "interesante"
 
-```jsx
+``` jsx
 function doSomeCalc({x, y, z = 10}( {
-    return Math.floor((x + y + z ) / 3)
+  return Math.floor((x + y + z ) / 3)
 }
 // que es lo mismo que
 function doSomCalc(obj) {
@@ -111,7 +111,7 @@ function doSomCalc(obj) {
 
 Este artículo [en MDN](https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/OperadoreDestructuring_assignment) te puede entregar más información. Una vez lo revises, te propongo refactorices esiguiente código utilizando desctructuring.
 
-```jsx
+``` jsx
 function doSomeDestructuring(){
   const data = {
     title: 'Wanda Vision',

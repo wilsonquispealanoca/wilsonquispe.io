@@ -1,4 +1,6 @@
 module.exports = {
+  future: 'all',
+  experimental: 'all',
   content: ['./pages/**/*.{html,js,jsx}',
   './components/**/*.{html,js,jsx}'],
   darkMode: "class",

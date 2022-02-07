@@ -1,3 +1,4 @@
+import Head from "next/head";
 import Footer from "../molecules/footer";
 
 export default function Layout({children}) {

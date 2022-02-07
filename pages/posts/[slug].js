@@ -1,6 +1,4 @@
 import { useRouter } from 'next/router'
-import ErrorPage from 'next/error'
-import Container from '../../components/templates/container'
 import PostBody from '../../components/molecules/postBody'
 import Navbar from '../../components/molecules/navbar'
 import PostHeader from '../../components/molecules/post-header'
@@ -26,6 +24,15 @@ export default function Post({post}) {
                   {post.title} | Wilson Quispe blog
                 </title>
                 <meta property="og:image" content={post.ogImage.url} />
+                <link
+                  rel="preload"
+                  href="https://unpkg.com/prismjs@0.0.1/themes/prism-okaidia.css"
+                  as="script"
+                />
+                <link
+                  href="https://unpkg.com/prismjs@0.0.1/themes/prism-okaidia.css"
+                  rel="stylesheet"
+                />
               </Head>
               <PostHeader
                 title={post.title}

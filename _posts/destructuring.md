@@ -10,7 +10,7 @@ ogImage:
   url: '/assets/blog/dynamic-routing/cover.jpg'
 ---
 
- # Destructuring
+# Destructuring
 
 Destructuring es quizá una de las mas grandes características agregadas a ES6 (2015) y ampliamente utilizada hoy en día, por lo que comprender que es y poder leerlo fácilmente en el código se convierte en algo necesario en tu día a día.
 

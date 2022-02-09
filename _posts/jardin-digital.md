@@ -1,6 +1,6 @@
 ---
 title: '🌱 Mi blog es un jardín digital, no un blog'
-date: '2020-11-07'
+date: '2022-01-07'
 excerpt: 'Mi Jardín digital se centra menos en la pieza resultante y más en el proceso, cuidado y artesanía que se necesita para llegar allí.'
 coverImage: '/assets/blog/jardin-digital/jardin-digital.webp'
 author:

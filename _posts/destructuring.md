@@ -1,16 +1,14 @@
 ---
 title: 'Destructuring'
 excerpt: 'Destructuring es quizá una de las mas grandes características agregadas a ES6 (2015) y ampliamente utilizada hoy en día'
-coverImage: '/assets/blog/dynamic-routing/cover.jpg'
-date: '2020-03-16T05:35:07.322Z'
+coverImage: '/assets/blog/hello-world/helloworld.jpg'
+date: '2021-11-16T05:35:07.322Z'
 author:
   name: Wilson Quispe
   picture: '/assets/blog/authors/profileWilson.jpg'
 ogImage:
   url: '/assets/blog/dynamic-routing/cover.jpg'
 ---
-
-# Destructuring
 
 Destructuring es quizá una de las mas grandes características agregadas a ES6 (2015) y ampliamente utilizada hoy en día, por lo que comprender que es y poder leerlo fácilmente en el código se convierte en algo necesario en tu día a día.
 
@@ -44,7 +42,7 @@ Esta es la sintaxis de destructuración de un objeto, usamos `{}` al lado izquie
 
 Este código simplemente dice: Crea dos variables: `firstName` y `lastName` y toma desde el objeto usuario lapropiedades de igual nombre y asigna sus valores.
 
-Genial no?. Ese es sólo un nivel, esto puede ser utilizando de forma anidada tantas veces como desees
+¿Genial no?. Ese es sólo un nivel, esto puede ser utilizando de forma anidada tantas veces como desees
 
 ``` jsx
 const usuario = {
@@ -56,7 +54,6 @@ const usuario = {
     }
   }
 }
-
 const  { twitter } = usuario.links.social 
 // o tambien se puede
 const { links: { social: { twitter } } } = usuario
@@ -71,11 +68,6 @@ const arreglo = ['Hola','soy','Matias']
 ```
 
 Digamos que este arreglo es igual en muchas ocasiones y que queremos extraer el saludo y el nombre. ¿Cómo lo harías?
-...
-
-..
-
-..
 
 La forma sin destructuración sería
 
@@ -90,14 +82,12 @@ Pero si usamos destruturación podemos nombre las variables de forma directa
 const [saludo, , nombre ] = arreglo
 ```
 
-¿Viste lo que hice ahí?. Puedes ver este pequeño [demo aquí](https://jsitor.com/nCuVEFhut)
+¿Viste lo que hice ahí?.
 
-Al destructurar un arreglo hacemos uso de la posición del elemento en el arreglo para las asignaciones, así `saludoes equivalente a `arreglo[0]` . Esto también permite "saltarse" algún item del arreglo que no nos interesasimplemente escribimos un "fantasma". En vez de escribir el nombre de la variable que no nos interesa, en este casla posición central o `arreglo[1]`simplemente escribimos las `,`(coma) correspondiente.
+Al destructurar un arreglo hacemos uso de la posición del elemento en el arreglo para las asignaciones, así `saludo es equivalente a `arreglo[0]` . Esto también permite "saltarse" algún item del arreglo que no nos interesa simplemente escribimos un "fantasma". En vez de escribir el nombre de la variable que no nos interesa, en este caso la posición central o `arreglo[1]` simplemente escribimos la `,`(coma) correspondiente.
 
-¿De que forma puedes obtener sólo el nombre utilizando destructuración? Envíame el link de tu solución 😄
-
+¿De qué forma puedes obtener sólo el nombre utilizando destructuración? Envíame el link de tu solución 😄
 Veamos un ejemplo mas "interesante"
-
 ``` jsx
 function doSomeCalc({x, y, z = 10}( {
   return Math.floor((x + y + z ) / 3)

@@ -2,7 +2,7 @@ module.exports = {
   future: 'all',
   experimental: 'all',
   content: ['./pages/**/*.{html,js,jsx}',
-  './components/**/*.{html,js,jsx}'],
+  './components/**/*.{html,js,jsx}', "./node_modules/prismjs/**/*.js"],
   darkMode: "class",
   theme: {
     extend: {
@@ -40,5 +40,5 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [require('@tailwindcss/typography')]
 }

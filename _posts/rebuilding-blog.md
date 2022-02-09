@@ -21,14 +21,14 @@ Now that I have an MVP for my website, I'll be writing content on a regular cade
 
 ### 2. Inspiration
 
-I have been a long-time reader of [Lee Robinson's blog](https://leerob.io) and have always been impressed with his content. His [website code and aesthetic](https://github.com/leerob/leerob.io) was a great inspiration to mine as evidenced in my use of his search input on my blog index page 😅.
+I have been a long-time reader of [Timo Lins blog](https://timo.sh/) and have always been impressed with his content. His [website code and aesthetic](https://github.com/timolins) was a great inspiration to mine as evidenced in my use of his search input on my blog index page 😅.
 Though, I did alter my search filter to also search within the summary my posts instead of just the titles.
 
 If you are interested in Next.js development, I highly recommend following him, as he works for Vercel and has been a great resource to me.
 
 [Timothy Lin](https://www.timlrx.com) is a developer, data scientist, economist, and co-founder of [Cylynx](https://www.cylynx.io/).
 I stumbled upon him when scouring Github repositories for Next.js + MDX examples. 
-For his personal site and [Next.js Tailwind Starter Blog template](https://github.com/timlrx/tailwind-nextjs-starter-blog), he *also* got his inspiration from Lee Robinson, though his design differs, adding a flair of color and tags to organize his posts.
+For his personal site and [Next.js Tailwind Starter Blog template](https://github.com/timlrx/tailwind-nextjs-starter-blog), he *also* got his inspiration from Timo Lins, though his design differs, adding a flair of color and tags to organize his posts.
 
 ## 3. Features / Stack
 
@@ -99,5 +99,6 @@ While my blog is currently in a place I can work with, I plan to implement some 
 - Links to previous/next posts
 - Tags with individual pages for each tag
 - Adding a template for Next.js or UX/UI project write-ups
+- Convert my site in multilanguages.
 
 Who knows what else I'll end up implementing, learning, or building in the future, but I hope you'll come along for the journey!

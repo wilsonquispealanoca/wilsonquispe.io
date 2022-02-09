@@ -1,5 +1,5 @@
 ---
-title: 'Destructuring'
+title: 'Destructuring en Javascript moderno'
 excerpt: 'Destructuring es quizá una de las mas grandes características agregadas a ES6 (2015) y ampliamente utilizada hoy en día'
 coverImage: '/assets/blog/hello-world/helloworld.jpg'
 date: '2021-11-16T05:35:07.322Z'

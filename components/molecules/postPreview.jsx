@@ -11,16 +11,7 @@ export default function PostPreview({
 }) {
   return (
     <div>
-      <div className="mb-5">
-        <CoverImage
-          slug={slug}
-          title={title}
-          src={coverImage}
-          height={278}
-          width={556}
-        />
-      </div>
-      <h3 className="font-means text-2xl mb-3 text-accent dark:text-primary-dark">
+      <h3 className="font-means text-2xl mb-3 text-primary-text dark:text-primary-dark">
         <Link as={`/posts/${slug}`} href="/posts/[slug]">
           <a className="hover:underline">{title}</a>
         </Link>

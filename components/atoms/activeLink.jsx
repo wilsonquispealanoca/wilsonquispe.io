@@ -3,7 +3,7 @@ import { useRouter } from 'next/router'
 const Activelink = ({href, children}) => {
   const router = useRouter()
   const style = {
-    color: router.asPath === href && "#222A27",
+    textDecoration: router.asPath === href && "#222A27",
   }
 
   const handleClick = (e) => {

@@ -6,10 +6,10 @@ export default function MoreStories({ posts }) {
     <section>
       <Navbar />
         <h1 className="font-means text-primary-text dark:text-primary-dark mb-8 text-5xl md:text-7xl">
-          More Stories
+          Todos los artículos
         </h1>
-        <h2 className="text-xl font-light mb-14">Create a brand message and visual style that’s recognizable and dependable.</h2>
-      <div className="grid grid-cols-1 md:grid-cols-2 md:gap-x-16 lg:gap-x-32 gap-y-8 md:gap-y-32">
+        <h2 className="text-xl font-light mb-14">Siempre disfrute de todas las cosas digitales. Me gusta escribir sobre cosas que estoy haciendo, aprendiendo o creando. Este blog explora mi mente y te muestra mi lado más creativo. Te invito a que me leas...</h2>
+      <div className="grid grid-cols-1 md:grid-cols-3 md:gap-x-6 gap-y-8 md:gap-y-32">
         {posts.map((post) => (
           <PostPreview
             key={post.slug}

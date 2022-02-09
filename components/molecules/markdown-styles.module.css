@@ -25,6 +25,14 @@
   @apply font-means text-2xl mt-8 mb-4 leading-snug;
 }
 
+.markdown li {
+  @apply font-means leading-loose text-gray-900;
+}
+
+:global(.dark) .markdown li {
+  @apply text-background
+}
+
 :global(.dark) .markdown p {
   @apply text-secondary-dark
 }
@@ -34,7 +42,7 @@
 }
 
 :global(.dark) .markdown h3 {
-  @apply text-secondary-dark
+  @apply text-primary-dark
 }
 
 :global(.dark) .markdown a {

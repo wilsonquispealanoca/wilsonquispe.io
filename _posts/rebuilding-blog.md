@@ -17,7 +17,7 @@ After initially building my blog with Next.js and [Sanity.io](http://sanity.io),
 
 Since the last time I built my website, Next.js has implemented features I wasn’t using. I have also have come a *long* way in my self-taught developer journey. I've discovered new tools and techniques that I've been itching to try and I wanted to reflect that in my stack for this rebuild.
 
-Now that I have an MVP for my website, I'll be writing content on a regular cadence and adding more features/refactoring along the way. [View the code on Github](https://github.com/ekomenyong/ekomenyong.com) if you're interested.
+Now that I have an MVP for my website, I'll be writing content on a regular cadence and adding more features/refactoring along the way. [View the code on Github](https://github.com/wilsonquispealanoca/wilsonquispe.io) if you're interested.
 
 ### 2. Inspiration
 
@@ -70,7 +70,7 @@ export default function BlogTitle({ children }) {
 As a professional SEO of nearly a decade, having a website that was SEO friendly was extremely important to me. 
 One of the major reasons I decided to learn Jamstack development, specifically, is because of poor page performance including page load speed with WordPress sites. 
 
-With [Google introducing Core Web Vitals](/posts/core-web-vitals-understanding-lcp-fid-and-cls) this spring, it looks like I was ahead of the curve in finding a faster, better peformingm, web development solution.
+With [Google introducing Core Web Vitals](https://blog.chromium.org/2020/05/introducing-web-vitals-essential-metrics.html) this spring, it looks like I was ahead of the curve in finding a faster, better peformingm, web development solution.
 
 I needed to be able to quickly update Page Titles and Meta Dscriptions on my posts and be able to add Structured Data markup.
 The [`next-seo` plugin](https://github.com/garmeeh/next-seo) made that a much easier process for me, especially with implementing the Structured Data I wanted.

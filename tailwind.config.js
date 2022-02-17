@@ -30,7 +30,10 @@ module.exports = {
         "primary-dark": "#F2F3F2",
       },
       fontFamily: {
-        means: ["Means-web", "sans-serif"]
+        means: ["Means-web"],
+        satoshilight: ["Satoshi-Light", "sans-serif"],
+        satoshimedium: ["Satoshi-Medium", "Sans"],
+        satoshiregular: ["Satoshi-Regular", "Sans"],
       },
       spacing: {
         "border": '4px',

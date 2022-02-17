@@ -28,7 +28,7 @@ export default function Home({allPosts}) {
         }
         <div className="mt-10 md:mt-10">
           <Link href="/blog">
-            <a className="text-lg hover:underline text-secondary-text dark:text-primary-dark">Leer todas las entradas --&gt;</a>
+            <a className="text-lg transition-all duration-200 hover:pb-2 hover:border-b-2 hover:border-primary-text hover:dark:border-primary-dark text-primary-text dark:text-primary-dark">Leer todas las entradas --&gt;</a>
           </Link>
         </div>
       </Container>

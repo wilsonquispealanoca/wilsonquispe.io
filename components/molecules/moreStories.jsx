@@ -5,7 +5,7 @@ export default function MoreStories({ posts }) {
   return (
     <section>
       <Navbar />
-        <h1 className="font-means text-primary-text dark:text-primary-dark mb-8 text-5xl md:text-7xl">
+        <h1 className="font-means text-primary-text dark:text-primary-dark mb-8 text-5xl md:text-7xl lg:mt-16">
           Todos los artículos
         </h1>
         <h2 className="text-xl font-light mb-14">Siempre disfrute de todas las cosas digitales. Me gusta escribir sobre cosas que estoy haciendo, aprendiendo o creando. Este blog explora mi mente y te muestra mi lado más creativo. Te invito a que me leas...</h2>

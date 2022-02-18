@@ -20,21 +20,24 @@
   font-display: swap;
 }
 
+@font-face {
+  font-family: "Satoshi-Light";
+  src: url("../public/fonts/Satoshi-Light.otf");
+  font-display: swap;
+}
 
 pre:not(:first-child) {
-  padding: 1rem;
+  padding: .8rem 0 .8rem 1rem;
   overflow: scroll;
   background-color: rgba(1, 15, 29, 0.9);
+  border: 1px solid rgba(229, 235, 255, 0.2);
 }
 
 .code-line {
-  display: block;
   padding-left: 16px;
   padding-right: 16px;
   margin-left: -16px;
   margin-right: -16px;
-  border-left-width: 4px;
-  border-left-color: rgb(31, 41, 55);
 }
 
 .highlight-line {
@@ -106,8 +109,7 @@ code[class*="language-"] ::selection {
 }
  /* Code blocks */
 pre[class*="language-"] {
-  border-radius: .4rem;
-  padding: 1rem;
+  border-radius: .3rem;
   margin: 2rem 0;
   overflow: auto;
 }

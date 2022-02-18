@@ -1,5 +1,9 @@
 .markdown {
-  @apply text-lg;
+  @apply text-base;
+}
+
+.markdown strong {
+  @apply text-primary-text
 }
 
 .markdown a {
@@ -18,11 +22,11 @@
 }
 
 .markdown h2 {
-  @apply font-means text-3xl mt-12 mb-4 leading-snug text-primary-text;
+  @apply font-means text-2xl mt-12 mb-4 leading-snug text-primary-text;
 }
 
 .markdown h3 {
-  @apply font-means text-2xl mt-8 mb-4 leading-snug;
+  @apply font-means text-xl mt-8 mb-4 leading-snug;
 }
 
 .markdown li {
@@ -47,4 +51,8 @@
 
 :global(.dark) .markdown a {
   @apply text-cta-dark
+}
+
+:global(.dark) .markdown strong {
+  @apply text-primary-dark
 }

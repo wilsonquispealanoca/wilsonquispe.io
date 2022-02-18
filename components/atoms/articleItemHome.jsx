@@ -7,7 +7,7 @@ function ArticleItemHome({title, gradient, slug}) {
         <a>
           <div className={`hover:scale-105 hover:ease-in-out hover:transition hover:duration-300 hover:drop-shadow-xl w-full rounded-lg bg-gradient-to-br p-border ${gradient} mb-6 md:mb-0 h-full`}>
             <div className="flex flex-col justify-between p-4 dark:bg-card-dark bg-white rounded-md h-full">
-              <h3 className="font-means text-xl pb-3 text-primary-text dark:text-primary-dark">{title}</h3>
+              <h3 className="font-semibold leading-normal text-lg pb-3 text-primary-text dark:text-primary-dark">{title}</h3>
               <div className="flex items-center">
                 <svg className="fill-[#004e56] dark:fill-cta-dark" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M10.5 16C10.5 15.1716 11.1716 14.5 12 14.5C12.8284 14.5 13.5 15.1716 13.5 16C13.5 16.8284 12.8284 17.5 12 17.5C11.1716 17.5 10.5 16.8284 10.5 16Z"/>

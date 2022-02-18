@@ -19,7 +19,8 @@ export default function PostPreview({
       <div className="text-sm mb-4 text-tertiary-text dark:text-tertiary-dark">
         <DateFormatter dateString={date} />
       </div>
-      <p className="text-secondary-text dark:text-secondary-dark mb-4">{excerpt}</p>
+      <p className="text-secondary-text dark:text-secondary-dark mb-8">{excerpt}</p>
+      <div className='w-full h-[1px] bg-tertiary-text opacity-40'></div>
     </div>
   )
 }

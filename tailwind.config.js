@@ -1,3 +1,5 @@
+const defaultTheme = require("tailwindcss/defaultTheme")
+
 module.exports = {
   future: 'all',
   experimental: 'all',
@@ -31,9 +33,7 @@ module.exports = {
       },
       fontFamily: {
         means: ["Means-web"],
-        satoshilight: ["Satoshi-Light", "sans-serif"],
-        satoshimedium: ["Satoshi-Medium", "Sans"],
-        satoshiregular: ["Satoshi-Regular", "Sans"],
+        satoshilight: ["Satoshi-Light", ...defaultTheme.fontFamily.sans],
       },
       spacing: {
         "border": '4px',

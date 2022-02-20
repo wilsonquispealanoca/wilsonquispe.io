@@ -1,7 +1,7 @@
 import markdownStyles from './markdown-styles.module.css'
 export default function PostBody({ content }) {
   return (
-    <div className="max-w-2xl mx-8 md:mx-32 lg:mx-56 xl:mx-80 pb-1">
+    <div className="max-w-2xl mx-8 md:mx-32 lg:mx-56 xl:mx-80 pb-16">
         <div
           className={markdownStyles['markdown']}
           dangerouslySetInnerHTML={{ __html: content }}

@@ -20,12 +20,6 @@
   font-display: swap;
 }
 
-@font-face {
-  font-family: "Satoshi-Light";
-  src: url("../public/fonts/Satoshi-Light.otf");
-  font-display: swap;
-}
-
 pre:not(:first-child) {
   padding: .8rem 0 .8rem 1rem;
   overflow: scroll;

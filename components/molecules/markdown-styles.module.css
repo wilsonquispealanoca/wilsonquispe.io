@@ -1,5 +1,5 @@
 .markdown {
-  @apply text-base;
+  @apply text-lg;
 }
 
 .markdown strong {
@@ -7,7 +7,7 @@
 }
 
 .markdown a {
-  @apply text-[#004e56] font-medium hover:underline
+  @apply text-[#004e56] font-sans hover:underline
 }
 
 .markdown p,
@@ -22,11 +22,11 @@
 }
 
 .markdown h2 {
-  @apply font-means text-2xl mt-12 mb-4 leading-snug text-primary-text;
+  @apply font-means text-3xl mt-12 mb-4 leading-snug text-primary-text;
 }
 
 .markdown h3 {
-  @apply font-means text-xl mt-8 mb-4 leading-snug;
+  @apply font-means text-2xl mt-8 mb-4 leading-snug;
 }
 
 .markdown li {

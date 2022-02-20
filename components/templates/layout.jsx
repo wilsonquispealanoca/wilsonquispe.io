@@ -1,10 +1,9 @@
-import Head from "next/head";
 import Footer from "../molecules/footer";
 
 export default function Layout({children}) {
   return (
     <>
-      <div className="min-h-screen bg-white dark:bg-background-dark">
+      <div className="font-sans min-h-screen bg-white dark:bg-background-dark">
         <main>{children}</main>
       </div>
       <Footer />

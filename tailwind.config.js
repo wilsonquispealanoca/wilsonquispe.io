@@ -33,7 +33,8 @@ module.exports = {
       },
       fontFamily: {
         means: ["Means-web"],
-        satoshilight: ["Satoshi-Light", ...defaultTheme.fontFamily.sans],
+        sans: ['Nunito Sans', 'sans-serif'],
+        
       },
       spacing: {
         "border": '4px',

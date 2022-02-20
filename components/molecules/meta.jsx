@@ -59,6 +59,7 @@ export default function Meta({ url, title, description, ogImage, fbAppID, twitte
 			<meta itemProp="description" content={description}></meta>
 
 			<link rel='icon' href='/favicon.ico' />
+      <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&amp;display=swap" rel="stylesheet"></link>
     </Head>
   );
 }

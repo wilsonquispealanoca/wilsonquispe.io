@@ -60,7 +60,7 @@ pre:not(:first-child) {
 code[class*="language-"],
 pre[class*="language-"] {
   color: #c5c8c6;
-  font-family: Consolas, Monaco, "Andale Mono", "Ubuntu Mono", monospace;
+  font-family: "Nunito Sans", sans-serif;
   text-align: left;
   white-space: pre;
   word-spacing: normal;

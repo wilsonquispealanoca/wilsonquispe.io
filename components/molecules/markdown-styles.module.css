@@ -7,7 +7,7 @@
 }
 
 .markdown a {
-  @apply text-[#004e56] font-sans hover:underline
+  @apply text-violet-900 hover:underline font-semibold
 }
 
 .markdown p,
@@ -26,7 +26,7 @@
 }
 
 .markdown h3 {
-  @apply font-means text-2xl mt-8 mb-4 leading-snug;
+  @apply font-means text-2xl mt-8 mb-4 leading-snug text-primary-text;
 }
 
 .markdown li {

@@ -7,18 +7,17 @@
 }
 
 .markdown a {
-  @apply text-violet-900 hover:underline font-semibold
+  @apply text-purple-700 hover:underline font-semibold
 }
 
 .markdown p,
 .markdown ul,
-.markdown ol,
-.markdown blockquote {
+.markdown ol {
   @apply text-secondary-text mt-7
 }
 
-.markdown p:first-child {
-  @apply first-letter:text-7xl first-letter:font-means first-letter:mr-3 first-letter:float-left
+.markdown blockquote{
+  @apply pl-4 border-l-4 border-l-card-bottom-color-1 block
 }
 
 .markdown h2 {

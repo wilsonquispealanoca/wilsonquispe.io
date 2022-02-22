@@ -60,14 +60,14 @@ pre:not(:first-child) {
 code[class*="language-"],
 pre[class*="language-"] {
   color: #c5c8c6;
-  font-family: "Nunito Sans", sans-serif;
+  font-family: ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace;
   text-align: left;
   white-space: pre;
   word-spacing: normal;
   word-break: normal;
   word-wrap: normal;
   line-height: 1.5;
-  font-size: 1em;
+  font-size: .875em;
 
   -moz-tab-size: 4;
   -o-tab-size: 4;

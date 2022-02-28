@@ -41,6 +41,7 @@ export async function getStaticProps() {
   const allPosts = getAllPosts([
     "title",
     "slug",
+    "date"
   ])
   const colors = [
     {

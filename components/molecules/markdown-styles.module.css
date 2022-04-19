@@ -16,12 +16,12 @@
   @apply text-secondary-text mt-7
 }
 
-.markdown blockquote{
-  @apply pl-4 border-l-4 border-l-card-bottom-color-1 block
+.markdown blockquote > p {
+  @apply pl-4 border-l-4 border-cta-dark block font-means text-primary-dark
 }
 
 .markdown h2 {
-  @apply font-means text-3xl mt-12 mb-4 leading-snug text-primary-text;
+  @apply font-means text-3xl mt-12 mb-4 leading-snug text-primary-text font-semibold;
 }
 
 .markdown h3 {
@@ -29,7 +29,7 @@
 }
 
 .markdown li {
-  @apply font-means leading-loose text-gray-900;
+  @apply font-means leading-loose text-primary-text font-bold;
 }
 
 :global(.dark) .markdown li {

@@ -25,7 +25,7 @@ Asimismo, una variable es como una caja donde podemos almacenar lo que queramos,
 
 >Una definición más amigable sería la de imaginar las variables como tentáculos, mas que como cajas. No contienen valores, sino que los agarran: dos variables pueden referirse al mismo valor.
 
-![octopus-variables](/assets/blog/variables/variableOctupus.png)
+![visual-variables](/assets/blog/variables/variablesVisualmente.png)
 
 Seguramente ya viste las variables en otros lenguajes y si no, tranquilo/a que voy a ejemplificar la definición de estas en los lenguajes que mejor "se me dan": JavaScript y Kotlin.
 

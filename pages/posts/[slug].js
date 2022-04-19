@@ -7,13 +7,22 @@ import { getPostBySlug, getAllPosts } from '../../lib/api'
 import PostTitle from '../../components/atoms/postTitle'
 import Head from 'next/head'
 import markdownToHtml from '../../lib/markdownToHtml'
+import ProgressBar from '../../components/atoms/progressBar'
 
 export default function Post({post}) {
   const router = useRouter();
+  const completion = ProgressBar();
   return (
     <Layout>
       <div className="relative left-0 right-0">
         <Navbar />
+        <span
+          id="progress-bar"
+          style={{
+            transform: `translateX(${completion - 100}%)`,
+          }}
+          className={`z-50 fixed top-0 w-full transition-transform duration-150 h-1 md:h-2 bg-cta-dark`}
+        />
         {router.isFallback ? (
           <PostTitle>Loading…</PostTitle>
         ) : (

@@ -10,8 +10,8 @@ module.exports = {
     extend: {
       colors: {
         "primary-text": "#000000",
-        "secondary-text": "#000000",
-        "tertiary-text": "#808C99",
+        "secondary-text": "#232323",
+        "tertiary-text": "#1E263E",
         "shadow": "#AEB7B3",
         "card": "#FFFFFF",
         "cta": "#1FAD71",
@@ -28,13 +28,12 @@ module.exports = {
         "card-dark": "#2A324D",
         "shadow-dark": "#606C67",
         "tertiary-dark": "#6A76A1",
-        "secondary-dark": "#CACECC",
+        "secondary-dark": "#a0aec0",
         "primary-dark": "#FFFFFF",
       },
       fontFamily: {
         means: ["Means-web"],
-        sans: ['Nunito Sans', 'sans-serif'],
-        
+        sans: ['Nunito Sans', 'sans-serif'],  
       },
       spacing: {
         "border": '4px',

@@ -3,7 +3,7 @@ title: 'Nadie te explicará así las variables de programación'
 date: '2022-02-21T05:35:07.322Z'
 tags: ['javascript', 'programación']
 excerpt: "Una variable podríamos verla como una caja que tiene un nombre y a la cual se le puede introducir (asignar) un valor en un momento dado, y en cualquier otro momento, podemos utilizar (leer) dicho valor y el valor de la variable podrá cambiar."
-coverImage: '/assets/blog/variables/variableCaja.png'
+coverImage: '/assets/blog/variables/variablesVisualmente.png'
 author:
   name: Wilson Quispe
   picture: '/assets/blog/authors/profileWilson.jpg'

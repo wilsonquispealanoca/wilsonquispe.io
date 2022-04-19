@@ -8,6 +8,9 @@ import PostTitle from '../../components/atoms/postTitle'
 import Head from 'next/head'
 import markdownToHtml from '../../lib/markdownToHtml'
 import ProgressBar from '../../components/atoms/progressBar'
+import ShareFacebook from '../../components/atoms/shareFacebook'
+import ShareTwitter from '../../components/atoms/shareTwitter'
+import Meta from '../../components/molecules/meta'
 
 export default function Post({post}) {
   const router = useRouter();
@@ -28,12 +31,15 @@ export default function Post({post}) {
         ) : (
           <>
             <article>
-              <Head>
-                <title>
-                  {post.title} | Wilson Quispe blog
-                </title>
-                <meta property="og:image" content={post.ogImage.url} />
-              </Head>
+              <Meta 
+                url={post.slug}
+                title={post.title}
+                description={post.excerpt}
+                ogImage={post.coverImage}
+                fbAppID={100004106860511}
+                twitter={"@soywill_quispe"}
+                isBlogPost={true}
+              />
               <PostHeader
                 title={post.title}
                 coverImage={post.coverImage}
@@ -42,6 +48,17 @@ export default function Post({post}) {
                 excerpt={post.excerpt}
               />
               <PostBody content={post.content} />
+              <div className="max-w-2xl mx-8 md:mx-32 lg:mx-56 xl:mx-80 pb-16 flex justify-center">
+                <ShareFacebook 
+                  url={`https://wilsonquispe.vercel.app/posts/${post.slug}/`} 
+                  title={post.title}
+                />
+                <ShareTwitter 
+                  url={`https://wilsonquispe.vercel.app/posts/${post.slug}/`}
+                  title={post.title}
+                  twitterHandle='@soywill_quispe'
+                />
+              </div>
             </article>
           </>
         )}

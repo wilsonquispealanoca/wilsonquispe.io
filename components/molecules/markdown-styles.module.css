@@ -17,11 +17,11 @@
 }
 
 .markdown blockquote > p {
-  @apply pl-4 border-l-4 border-cta-dark block font-means text-primary-dark
+  @apply pl-4 border-l-4 border-cta-dark block font-means 
 }
 
 .markdown h2 {
-  @apply font-means text-3xl mt-12 mb-4 leading-snug text-primary-text font-semibold;
+  @apply font-means text-3xl mt-12 mb-4 leading-snug text-primary-text;
 }
 
 .markdown h3 {
@@ -53,5 +53,9 @@
 }
 
 :global(.dark) .markdown strong {
+  @apply text-primary-dark
+}
+
+:global(.dark) .markdown blockquote > p {
   @apply text-primary-dark
 }

@@ -1,4 +1,5 @@
 import Avatar from "../atoms/avatar";
+import DateFormatter from "../atoms/dateFormatter";
 import PostTitle from "../atoms/postTitle";
 
 export default function PostHeader({ title, date, author, excerpt }) {
@@ -20,7 +21,7 @@ export default function PostHeader({ title, date, author, excerpt }) {
                 </span>
               </span>
             </div>
-            <span>{date}</span>
+            <DateFormatter dateString={date} />
           </div>
         </div>
       </div>

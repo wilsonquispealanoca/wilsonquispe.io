@@ -1,15 +1,13 @@
 import Image from "next/image";
 
-function Avatar({name, picture}) {
+function Avatar({ name, picture }) {
   return (
     <figure className="w-[40px] sm:w-[46px]">
-      <Image 
+      <Image
         alt={name}
         src={picture}
         height={176}
         width={176}
-        placeholder="blur"
-        blurDataURL={picture}
         sizes="50vw"
         priority
         className="rounded-full"

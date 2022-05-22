@@ -1,22 +1,25 @@
-const defaultTheme = require("tailwindcss/defaultTheme")
+const defaultTheme = require("tailwindcss/defaultTheme");
 
 module.exports = {
-  future: 'all',
-  experimental: 'all',
-  content: ['./pages/**/*.{html,js,jsx}',
-  './components/**/*.{html,js,jsx}', "./node_modules/prismjs/**/*.js"],
+  future: "all",
+  experimental: "all",
+  content: [
+    "./pages/**/*.{html,js,jsx}",
+    "./components/**/*.{html,js,jsx}",
+    "./node_modules/prismjs/**/*.js",
+  ],
   darkMode: "class",
   theme: {
     extend: {
       colors: {
-        "primary-text": "#000000",
-        "secondary-text": "#232323",
-        "tertiary-text": "#1E263E",
-        "shadow": "#AEB7B3",
-        "card": "#FFFFFF",
-        "cta": "#1FAD71",
-        "accent": "#004e56",
-        "background": "#FFFFFF",
+        "primary-text": "#251D16",
+        "secondary-text": "#837F7B",
+        "tertiary-text": "#C5C4C2",
+        shadow: "#AEB7B3",
+        card: "#FFFFFF",
+        cta: "#1FAD71",
+        accent: "#004e56",
+        background: "#FFFFFF",
         "card-top-color-1": "#D194AA",
         "card-bottom-color-1": "#8766CC",
         "card-top-color-2": "#F0D3A8",
@@ -33,14 +36,14 @@ module.exports = {
       },
       fontFamily: {
         means: ["Means-web"],
-        sans: ['Nunito Sans', 'sans-serif'],  
+        sans: ["Nunito Sans", "sans-serif"],
       },
       spacing: {
-        "border": '4px',
+        border: "4px",
       },
       fontSize: {
-        "45xl": '2.5rem',
+        "45xl": "2.5rem",
       },
     },
   },
-}
+};

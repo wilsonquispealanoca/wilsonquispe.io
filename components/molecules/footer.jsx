@@ -61,25 +61,23 @@ const dataFooter = [
     text: "Tweets",
     icon: true,
   },
-]
+];
 
 export default function Footer() {
   return (
     <footer className="font-sans bg-card dark:bg-background-dark w-full py-16 md:pb-0 md:px-32 lg:px-56 xl:px-80 ">
       <ul className="lg:grid lg:grid-cols-3 lg:pb-24">
-        {
-          dataFooter.map(({id, href, target, rel, text, icon}) => 
-            <ItemFooter
-              key={id} 
-              href={href}
-              target={target}
-              rel={rel}
-              text={text}
-              icon={icon}
-            />
-          )
-        }
+        {dataFooter.map(({ id, href, target, rel, text, icon }) => (
+          <ItemFooter
+            key={id}
+            href={href}
+            target={target}
+            rel={rel}
+            text={text}
+            icon={icon}
+          />
+        ))}
       </ul>
     </footer>
   );
-};
+}

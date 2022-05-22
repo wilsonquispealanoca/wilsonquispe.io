@@ -1,13 +1,13 @@
 ---
-title: '🌱 Mi blog es un jardín digital, no un blog'
-date: '2022-01-07'
-excerpt: 'Mi Jardín digital se centra menos en la pieza resultante y más en el proceso, cuidado y artesanía que se necesita para llegar allí.'
-coverImage: '/assets/blog/jardin-digital/jardin-digital.webp'
+title: "🌱 Mi blog es un jardín digital, no un blog"
+date: "07 de enero 2022"
+excerpt: "Mi Jardín digital se centra menos en la pieza resultante y más en el proceso, cuidado y artesanía que se necesita para llegar allí."
+coverImage: "/assets/blog/jardin-digital/jardin-digital.webp"
 author:
   name: Wilson Quispe
-  picture: '/assets/blog/authors/profileWilson.jpg'
+  picture: "/assets/blog/authors/profileWilson.jpg"
 ogImage:
-  url: '/assets/blog/jardin-digital/jardin-digital.webp'
+  url: "/assets/blog/jardin-digital/jardin-digital.webp"
 ---
 
 La frase **«jardín digital»** es una metáfora para pensar en escribir y crear que se centra menos en la pieza resultante y más en el proceso, cuidado y artesanía que se necesita para llegar allí.
@@ -58,7 +58,6 @@ La curación viene antes que una lista cronológica. La lista cronológica sigue
 También tengo barra inferior en el sitio que es un buen toque para la navegación en mi sitio web. Esto Funciona muy bien para mí porque cuando estoy navegando en mi propio sitio, por lo general sé donde estoy inmediatamente.
 
 Sabes que, es relajante sentarse al teclado y hacer un poco de jardinería.
-
 
 Gracias por leer. Disfrute del resto de su día
 (Si te ha gustado el post, compartelo con tus amigos ❤️)

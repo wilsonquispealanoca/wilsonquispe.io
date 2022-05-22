@@ -1,5 +1,5 @@
-import Link from 'next/link'
-import Image from 'next/image'
+import Link from "next/link";
+import Image from "next/image";
 
 export default function CoverImage({ title, src, slug, height, width }) {
   const image = (
@@ -9,11 +9,9 @@ export default function CoverImage({ title, src, slug, height, width }) {
       layout="responsive"
       width={width}
       height={height}
-      placeholder="blur"
-      blurDataURL={src}
       className="object-cover"
     />
-  )
+  );
   return (
     <div className="sm:mx-0">
       {slug ? (
@@ -24,5 +22,5 @@ export default function CoverImage({ title, src, slug, height, width }) {
         image
       )}
     </div>
-  )
+  );
 }

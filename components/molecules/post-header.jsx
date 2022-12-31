@@ -7,7 +7,7 @@ export default function PostHeader({ title, date, author, excerpt }) {
     <>
       <div className="dark:bg-background-dark py-8 lg:pb-10">
         <PostTitle>{title}</PostTitle>
-        <h2 className="text-lg font-means px-8 md:px-32 lg:px-56 xl:px-80 pb-4 dark:text-secondary-dark text-primary-text">
+        <h2 className="text-lg px-8 md:px-32 lg:px-56 xl:px-80 pb-4 dark:text-secondary-dark text-primary-text">
           {excerpt}
         </h2>
         <div className="mx-8 md:mx-32 lg:mx-56 xl:mx-80">

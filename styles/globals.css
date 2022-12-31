@@ -20,8 +20,14 @@
   font-display: swap;
 }
 
+@font-face {
+  font-family: "Averia Serif Libre";
+  src: url("../public/fonts/AveriaSerifLibre-Bold.ttf");
+  font-display: swap;
+}
+
 pre:not(:first-child) {
-  padding: .8rem 0 .8rem 1rem;
+  padding: 0.8rem 0 0.8rem 1rem;
   overflow: scroll;
   background-color: rgba(1, 15, 29, 0.9);
   border: 1px solid rgba(229, 235, 255, 0.2);
@@ -60,14 +66,15 @@ pre:not(:first-child) {
 code[class*="language-"],
 pre[class*="language-"] {
   color: #c5c8c6;
-  font-family: ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+    Liberation Mono, Courier New, monospace;
   text-align: left;
   white-space: pre;
   word-spacing: normal;
   word-break: normal;
   word-wrap: normal;
   line-height: 1.5;
-  font-size: .875em;
+  font-size: 0.875em;
 
   -moz-tab-size: 4;
   -o-tab-size: 4;
@@ -101,9 +108,9 @@ code[class*="language-"] ::selection {
     text-shadow: none;
   }
 }
- /* Code blocks */
+/* Code blocks */
 pre[class*="language-"] {
-  border-radius: .3rem;
+  border-radius: 0.3rem;
   margin: 2rem 0;
   overflow: auto;
 }
@@ -115,7 +122,7 @@ pre[class*="language-"] {
 }
 
 :not(pre) > code[class*="language-"] {
-  padding: .8571429em 1.1428571em;  
+  padding: 0.8571429em 1.1428571em;
   border-radius: 0.3em;
   white-space: normal;
 }
@@ -142,13 +149,13 @@ pre[class*="language-"] {
 
 .token.symbol,
 .token.property {
-  color: #C6C5FE;
+  color: #c6c5fe;
 }
 
 .token.tag,
 .token.operator,
 .token.keyword {
-  color: #96CBFE;
+  color: #96cbfe;
 }
 
 .token.boolean {
@@ -156,7 +163,7 @@ pre[class*="language-"] {
 }
 
 .token.number {
-  color: #FF73FD;
+  color: #ff73fd;
 }
 
 .token.constant,
@@ -183,7 +190,7 @@ pre[class*="language-"] {
 .token.entity,
 .language-css .token.string,
 .style .token.string {
-  color: #A8FF60;
+  color: #a8ff60;
 }
 
 .token.class-name,

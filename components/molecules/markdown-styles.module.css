@@ -1,61 +1,61 @@
 .markdown {
-  @apply text-lg;
+  @apply text-[1.1rem] leading-[1.6];
 }
 
 .markdown strong {
-  @apply text-primary-text
+  @apply text-primary-text;
 }
 
 .markdown a {
-  @apply text-purple-700 hover:underline font-semibold
+  @apply text-[#121212] hover:underline font-semibold;
 }
 
 .markdown p,
 .markdown ul,
 .markdown ol {
-  @apply text-secondary-text mt-7
+  @apply text-[#121212] mt-7;
 }
 
 .markdown blockquote > p {
-  @apply pl-4 border-l-4 border-cta-dark block font-means 
+  @apply pl-4 border-l-2 border-[#121212] block;
 }
 
 .markdown h2 {
-  @apply font-means text-3xl mt-12 mb-4 leading-snug text-primary-text;
+  @apply font-averia text-2xl mt-12 mb-4 leading-snug text-primary-text;
 }
 
 .markdown h3 {
-  @apply font-means text-2xl mt-8 mb-4 leading-snug text-primary-text;
+  @apply font-averia text-2xl mt-8 mb-4 leading-snug text-primary-text;
 }
 
 .markdown li {
-  @apply font-means leading-loose text-primary-text font-bold;
+  @apply leading-[1.6] text-primary-text font-bold;
 }
 
 :global(.dark) .markdown li {
-  @apply text-background
+  @apply text-background;
 }
 
 :global(.dark) .markdown p {
-  @apply text-secondary-dark
+  @apply text-secondary-dark;
 }
 
 :global(.dark) .markdown h2 {
-  @apply text-primary-dark
+  @apply text-primary-dark;
 }
 
 :global(.dark) .markdown h3 {
-  @apply text-primary-dark
+  @apply text-primary-dark;
 }
 
 :global(.dark) .markdown a {
-  @apply text-cta-dark
+  @apply text-cta-dark;
 }
 
 :global(.dark) .markdown strong {
-  @apply text-primary-dark
+  @apply text-primary-dark;
 }
 
 :global(.dark) .markdown blockquote > p {
-  @apply text-primary-dark
+  @apply text-primary-dark border-white;
 }

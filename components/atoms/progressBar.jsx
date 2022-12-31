@@ -1,7 +1,8 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useState } from "react";
 
 export default function ProgressBar() {
   const [completion, setCompletion] = useState(0);
+
   useEffect(() => {
     function updateScrollCompletion() {
       // see how much we have scrolled

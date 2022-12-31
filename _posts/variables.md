@@ -1,19 +1,19 @@
 ---
-title: 'Nadie te explicará así las variables de programación'
-date: '2022-02-21T05:35:07.322Z'
-tags: ['javascript', 'programación']
+title: "Nadie te explicará así las variables de programación"
+date: "2022-02-21T05:35:07.322Z"
+tags: ["javascript", "programación"]
 excerpt: "Una variable podríamos verla como una caja que tiene un nombre y a la cual se le puede introducir (asignar) un valor en un momento dado, y en cualquier otro momento, podemos utilizar (leer) dicho valor y el valor de la variable podrá cambiar."
-coverImage: '/assets/blog/variables/variablesVisualmente.png'
+coverImage: "/assets/blog/variables/variablesVisualmente.png"
 author:
   name: Wilson Quispe
-  picture: '/assets/blog/authors/profileWilson.jpg'
+  picture: "/assets/blog/authors/profileWilson.jpg"
 ogImage:
-  url: '/assets/blog/variables/variableCaja.png'
+  url: "/assets/blog/variables/variableCaja.png"
 ---
 
 Una variable es uno de los conceptos más importantes para aprender cualquier lenguaje de programación.
 En este artículo aprenderás el concepto de una variable de programación de una forma distinta y quizás nunca vista.
-***¿Estás listo?*** 🤩
+**¿Estás listo?**
 
 ## 1. ¿Qué es una variable en programación?
 
@@ -23,7 +23,7 @@ Asimismo, una variable es como una caja donde podemos almacenar lo que queramos,
 
 ![caja-variables](/assets/blog/variables/variableCaja.png)
 
->Una definición más amigable sería la de imaginar las variables como tentáculos, mas que como cajas. No contienen valores, sino que los agarran: dos variables pueden referirse al mismo valor.
+> Una definición más amigable sería la de imaginar las variables como tentáculos, mas que como cajas. No contienen valores, sino que los agarran: dos variables pueden referirse al mismo valor.
 
 ![visual-variables](/assets/blog/variables/variablesVisualmente.png)
 
@@ -56,55 +56,57 @@ Por último, empleamos el operador de asignación (=) para asignar lo que está 
 
 En Kotlin y en otros lenguajes de programación para definir una variable se necesitan tres cosas.
 
-- 1.- El nombre de la variable 
-- 2.- El tipo de variable 
-- 3.- Si la variable puede reutilizarse o no. ***(Aquí es donde el concepto de los TENTÁCULOS nos sirve como ejemplo)***.
+- 1.- El nombre de la variable
+- 2.- El tipo de variable
+- 3.- Si la variable puede reutilizarse o no. **(Aquí es donde el concepto de los TENTÁCULOS nos sirve como ejemplo)**.
 
 Ahora te preguntarás
 **¿Qué quiere decir con Reutilizar?**
-Kotlin hace uso de dos palabras claves que no puedes usar como *"nombre de variable"*
+Kotlin hace uso de dos palabras claves que no puedes usar como _"nombre de variable"_
 
-- 1.- ***var***
-- 2.- ***val***
+- 1.- **var**
+- 2.- **val**
 
-Cuando declaras una variable con la palabra **var** estás diciendo que esta puede ser reutilizable, es decir, puedes guardar un dato para que en un futuro puedas cambiarlo por otro valor. 
+Cuando declaras una variable con la palabra **var** estás diciendo que esta puede ser reutilizable, es decir, puedes guardar un dato para que en un futuro puedas cambiarlo por otro valor.
 En el caso de **val** nunca sucede así, si tú defines una variable con **val** está nunca cambia.
 
-En JavaScript funciona casi de la misma manera, solo que las palabras clave cambian y no se usa el tipo de variable. 
+En JavaScript funciona casi de la misma manera, solo que las palabras clave cambian y no se usa el tipo de variable.
 Sin embargo, en Kotlin también se puede obviar el tipo de variable. Ya hablaré de eso más adelante.
 
 Utilicemos el mismo ejemplo de Kotlin, pero está vez empleando JavaScript.
 
 ```js
-let vidaProtagonista = 100
-const saludo = "Hola, bienvenido a tu aventura"
-let tieneVida = true
+let vidaProtagonista = 100;
+const saludo = "Hola, bienvenido a tu aventura";
+let tieneVida = true;
 ```
 
-***“let”*** es el equivalente a, var.
-***“const”*** usa el mismo concepto que, val.
+**“let”** es el equivalente a, var.
+**“const”** usa el mismo concepto que, val.
 
 La parte más importante en cualquier lenguaje de programación es declarar la variable antes de poder usarla.
 
 ## 3. Tipos de variables
 
-En nuestro ejemplo declaramos tres variables, una de tipo ***Int*** otra de tipo ***String***, y has usado el tipo ***Boolean*** para saber el estado de la vida del jugador.
+En nuestro ejemplo declaramos tres variables, una de tipo **Int** otra de tipo **String**, y has usado el tipo **Boolean** para saber el estado de la vida del jugador.
 
 Para enriquecer tu conocimiento te describiré los tipos de variables de uso común disponibles en "Kotlin" y en otros lenguajes de programación.
 
 Para los números enteros, existen cuatro tipos con diferentes tamaños y, por tanto, rangos de valores.
 
 ## Números enteros (int y long)
+
 ### Int
 
 Int puede almacenar números enteros y puede llegar hasta 2 mil millones.
 
 ```kotlin
-val numeroUno: Int = 1 
-var vidaProtagonista: Int = 100 
+val numeroUno: Int = 1
+var vidaProtagonista: Int = 100
 ```
 
 ### Long
+
 El tipo de variable “Long” puede almacenar hasta 9,223,372,036,854,775,807.
 
 ```kotlin
@@ -112,11 +114,13 @@ val dosMilMillones: Long = 2000000000
 ```
 
 ### Short
+
 Short puede almacenar menos que **“Int”** aproximadamente 32767 caracteres.
 
 ## Números decimales (double y float)
 
 ### Double
+
 Para números reales, Kotlin proporciona los tipos de punto flotante Float y Double, es decir aquellos números con decimales.
 
 ```kotlin
@@ -124,6 +128,7 @@ val numeroPi: Double = 3.1416
 ```
 
 ### Float
+
 Para el tipo Float, añada el sufijo f o F. y si dicho valor contiene más de 6-7 dígitos decimales, se redondeará.
 
 ```kotlin
@@ -131,13 +136,14 @@ val miNumeroFloat: Float = 4.3182616284f // Float, el valor actual es: 4.3182615
 ```
 
 ### Boolean
+
 El tipo Boolean representa objetos booleanos que pueden tener dos valores: **verdadero** o **falso**.
 
 ```kotlin
 val tieneVida: Boolean = true
 ```
 
-Imagina que quieres abrir una puerta en tu juego, inicialmente la puerta casi siempre estará CERRADA. Y para llevar este concepto en variables de programación podrías utilizar el tipo Boolean ***¿Interesante, no?***
+Imagina que quieres abrir una puerta en tu juego, inicialmente la puerta casi siempre estará CERRADA. Y para llevar este concepto en variables de programación podrías utilizar el tipo Boolean **¿Interesante, no?**
 
 ```kotlin
 val puertaAbierta: Boolean = false
@@ -151,7 +157,7 @@ Los Strings o cadenas en Kotlin están representadas por el tipo **String**. Gen
 val saludo: String = "Hola, bienvenido a tu aventura"
 ```
 
-Los elementos de un String son caracteres a los que se puede acceder mediante la operación de indexación: 
+Los elementos de un String son caracteres a los que se puede acceder mediante la operación de indexación:
 Puedes definir una operación de indexación de la siguiente manera 👇
 
 ```kotlin
@@ -174,9 +180,9 @@ Ahora sí hemos conseguido averiguar cuál es el primer carácter de la variable
 
 ## 4. Inferencia de datos en las variables
 
-***¿Recuerdas la parte donde dije que kotlin no necesita estrictamente el uso del tipo de variable?***
+**¿Recuerdas la parte donde dije que kotlin no necesita estrictamente el uso del tipo de variable?**
 
-Esto es porqué, el compilador de kotlin separa toda la declaración de la variable en dos partes, cada una separada por el operador de asignación ***(=)***. 
+Esto es porqué, el compilador de kotlin separa toda la declaración de la variable en dos partes, cada una separada por el operador de asignación **(=)**.
 
 Para ejemplificar mejor seguiremos usando nuestro primer ejemplo pero, esta vez no usaremos del tipo de variable.
 
@@ -189,18 +195,17 @@ Este concepto te ayudará a ser un mejor programador y notarás la diferencia en
 
 ### Recapitulando…
 
-***¿Qué necesita saber el compilador para declarar una variable?***
+**¿Qué necesita saber el compilador para declarar una variable?**
 
-- 1.- El nombre de la variable 
-- 2.- El tipo de variable 
+- 1.- El nombre de la variable
+- 2.- El tipo de variable
 - 3.- Si la variable puede reutilizarse o no.
 
-¡Espero que el artículo de hoy te haya sido útil! 
-Sé que, a simple vista, todos estos conceptos te pueden hacer sentir un poco abrumado. Pero, ahora que conoces a profundidad qué es una variable en programación, diste el primer paso para volverte un buen programador.  
+¡Espero que el artículo de hoy te haya sido útil!
+Sé que, a simple vista, todos estos conceptos te pueden hacer sentir un poco abrumado. Pero, ahora que conoces a profundidad qué es una variable en programación, diste el primer paso para volverte un buen programador.
 
-Recuerda que cada lenguaje de programación tiene sus propias reglas, pero, una vez que domines los fundamentos, estudia tus favoritos e identifica cuál se adapta mejor a lo que estás buscando. 
+Recuerda que cada lenguaje de programación tiene sus propias reglas, pero, una vez que domines los fundamentos, estudia tus favoritos e identifica cuál se adapta mejor a lo que estás buscando.
 
 Muchas gracias por leerme ¡Nos vemos en el siguiente artículo! 🙌
 
 ¿Te gustó este artículo? Me ayudas mucho compartiéndolo.
-

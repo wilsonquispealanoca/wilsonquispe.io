@@ -1,18 +1,18 @@
-import { useRouter } from 'next/router'
-import PostBody from '../../components/molecules/postBody'
-import Navbar from '../../components/molecules/navbar'
-import PostHeader from '../../components/molecules/post-header'
-import Layout from '../../components/templates/layout'
-import { getPostBySlug, getAllPosts } from '../../lib/api'
-import PostTitle from '../../components/atoms/postTitle'
-import Head from 'next/head'
-import markdownToHtml from '../../lib/markdownToHtml'
-import ProgressBar from '../../components/atoms/progressBar'
-import ShareFacebook from '../../components/atoms/shareFacebook'
-import ShareTwitter from '../../components/atoms/shareTwitter'
-import Meta from '../../components/molecules/meta'
+import { useRouter } from "next/router";
+import PostBody from "../../components/molecules/postBody";
+import Navbar from "../../components/molecules/navbar";
+import PostHeader from "../../components/molecules/post-header";
+import Layout from "../../components/templates/layout";
+import { getPostBySlug, getAllPosts } from "../../lib/api";
+import PostTitle from "../../components/atoms/postTitle";
+import Head from "next/head";
+import markdownToHtml from "../../lib/markdownToHtml";
+import ProgressBar from "../../components/atoms/progressBar";
+import ShareFacebook from "../../components/atoms/shareFacebook";
+import ShareTwitter from "../../components/atoms/shareTwitter";
+import Meta from "../../components/molecules/meta";
 
-export default function Post({post}) {
+export default function Post({ post }) {
   const router = useRouter();
   const completion = ProgressBar();
   return (
@@ -24,14 +24,14 @@ export default function Post({post}) {
           style={{
             transform: `translateX(${completion - 100}%)`,
           }}
-          className={`z-50 fixed top-0 w-full transition-transform duration-150 h-1 md:h-2 bg-cta-dark`}
+          className={`z-50 fixed top-0 w-full transition-transform duration-150 h-2 bg-cta-dark`}
         />
         {router.isFallback ? (
           <PostTitle>Loading…</PostTitle>
         ) : (
           <>
             <article>
-              <Meta 
+              <Meta
                 url={post.slug}
                 title={post.title}
                 description={post.excerpt}
@@ -49,14 +49,14 @@ export default function Post({post}) {
               />
               <PostBody content={post.content} />
               <div className="max-w-2xl mx-8 md:mx-32 lg:mx-56 xl:mx-80 pb-16 flex justify-center">
-                <ShareFacebook 
-                  url={`https://wilsonquispe.vercel.app/posts/${post.slug}/`} 
-                  title={post.title}
-                />
-                <ShareTwitter 
+                <ShareFacebook
                   url={`https://wilsonquispe.vercel.app/posts/${post.slug}/`}
                   title={post.title}
-                  twitterHandle='@soywill_quispe'
+                />
+                <ShareTwitter
+                  url={`https://wilsonquispe.vercel.app/posts/${post.slug}/`}
+                  title={post.title}
+                  twitterHandle="@soywill_quispe"
                 />
               </div>
             </article>
@@ -64,21 +64,21 @@ export default function Post({post}) {
         )}
       </div>
     </Layout>
-  )
+  );
 }
 
 export async function getStaticProps({ params }) {
   const post = getPostBySlug(params.slug, [
-    'title',
-    'date',
-    'slug',
-    'author',
-    'content',
-    'ogImage',
-    'coverImage',
+    "title",
+    "date",
+    "slug",
+    "author",
+    "content",
+    "ogImage",
+    "coverImage",
     "excerpt",
-  ])
-  const content = await markdownToHtml(post.content || '')
+  ]);
+  const content = await markdownToHtml(post.content || "");
 
   return {
     props: {
@@ -87,11 +87,11 @@ export async function getStaticProps({ params }) {
         content,
       },
     },
-  }
+  };
 }
 
 export async function getStaticPaths() {
-  const posts = getAllPosts(['slug'])
+  const posts = getAllPosts(["slug"]);
 
   return {
     paths: posts.map((post) => {
@@ -99,8 +99,8 @@ export async function getStaticPaths() {
         params: {
           slug: post.slug,
         },
-      }
+      };
     }),
     fallback: false,
-  }
+  };
 }

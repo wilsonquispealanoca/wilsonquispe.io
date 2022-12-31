@@ -1,14 +1,10 @@
-const defaultTheme = require("tailwindcss/defaultTheme");
-
 module.exports = {
-  future: "all",
-  experimental: "all",
+  darkMode: "class",
   content: [
     "./pages/**/*.{html,js,jsx}",
     "./components/**/*.{html,js,jsx}",
     "./node_modules/prismjs/**/*.js",
   ],
-  darkMode: "class",
   theme: {
     extend: {
       colors: {
@@ -37,6 +33,7 @@ module.exports = {
       fontFamily: {
         means: ["Means-web"],
         sans: ["Nunito Sans", "sans-serif"],
+        averia: ["Averia Serif Libre"],
       },
       spacing: {
         border: "4px",

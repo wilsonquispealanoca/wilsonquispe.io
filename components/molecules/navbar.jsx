@@ -65,7 +65,7 @@ function Navbar() {
     <>
       <nav
         className={`${
-          show ? "bg-white dark:bg-card-dark" : "bg-none"
+          show ? "bg-white dark:bg-[#111111]" : "bg-none"
         } flex items-center w-full justify-between h-[4rem] lg:h-28 fixed left-0 right-0 top-0 mx-auto z-40 px-6 md:px-32 lg:px-56 xl:px-80 text-xl font-semibold`}
       >
         <figure

@@ -56,16 +56,16 @@ Por último, empleamos el operador de asignación (=) para asignar lo que está 
 
 En Kotlin y en otros lenguajes de programación para definir una variable se necesitan tres cosas.
 
-- 1.- El nombre de la variable
-- 2.- El tipo de variable
-- 3.- Si la variable puede reutilizarse o no. **(Aquí es donde el concepto de los TENTÁCULOS nos sirve como ejemplo)**.
+- **1.** El nombre de la variable
+- **2.** El tipo de variable
+- **3.** Si la variable puede reutilizarse o no. (Aquí es donde el concepto de los TENTÁCULOS nos sirve como ejemplo).
 
 Ahora te preguntarás
 **¿Qué quiere decir con Reutilizar?**
 Kotlin hace uso de dos palabras claves que no puedes usar como _"nombre de variable"_
 
-- 1.- **var**
-- 2.- **val**
+- **1.** var
+- **2.** val
 
 Cuando declaras una variable con la palabra **var** estás diciendo que esta puede ser reutilizable, es decir, puedes guardar un dato para que en un futuro puedas cambiarlo por otro valor.
 En el caso de **val** nunca sucede así, si tú defines una variable con **val** está nunca cambia.

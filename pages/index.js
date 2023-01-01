@@ -27,7 +27,7 @@ export default function Home({ allPosts }) {
         <div className="mt-8 md:mt-10 text-center">
           <Link
             href="/blog"
-            className="text-lg transition-all duration-200 hover:pb-1 hover:border-b-2 hover:border-primary-text hover:dark:border-primary-dark text-primary-text dark:text-primary-dark"
+            className="text-lg transition-all duration-200 hover:pb-1 hover:border-b-2 hover:border-primary-text hover:dark:border-primary-dark text-primary-text dark:text-[#858585]"
           >
             Leer todas las entradas --&gt;
           </Link>

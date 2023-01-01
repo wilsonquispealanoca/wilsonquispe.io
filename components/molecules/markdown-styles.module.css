@@ -11,13 +11,16 @@
 }
 
 .markdown p,
-.markdown ul,
 .markdown ol {
   @apply text-[#121212] mt-7;
 }
 
+.markdown ul {
+  @apply pl-7 my-8 list-disc text-[1rem];
+}
+
 .markdown blockquote > p {
-  @apply pl-4 border-l-2 border-[#121212] block;
+  @apply pl-4 border-l-4 border-[#e5e7eb] italic;
 }
 
 .markdown h2 {
@@ -29,7 +32,11 @@
 }
 
 .markdown li {
-  @apply leading-[1.6] text-primary-text font-bold;
+  @apply leading-[1.6] text-primary-text;
+}
+
+.markdown li::marker {
+  @apply text-[#e5e7eb];
 }
 
 :global(.dark) .markdown li {
@@ -37,7 +44,7 @@
 }
 
 :global(.dark) .markdown p {
-  @apply text-secondary-dark;
+  @apply text-[#858585];
 }
 
 :global(.dark) .markdown h2 {

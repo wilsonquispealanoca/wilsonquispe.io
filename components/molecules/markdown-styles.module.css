@@ -3,7 +3,7 @@
 }
 
 .markdown strong {
-  @apply text-primary-text;
+  @apply text-[#000000];
 }
 
 .markdown a {
@@ -16,23 +16,23 @@
 }
 
 .markdown ul {
-  @apply pl-7 my-8 list-disc text-[1rem];
+  @apply pl-10 my-8 list-disc text-[1rem];
 }
 
 .markdown blockquote > p {
-  @apply pl-4 border-l-4 border-[#e5e7eb] italic;
+  @apply pl-4 border-l-4 border-[#e5e7eb] italic text-[#111827] font-semibold;
 }
 
 .markdown h2 {
-  @apply font-averia text-2xl mt-12 mb-4 leading-snug text-primary-text;
+  @apply font-averia text-2xl mt-12 mb-4 leading-snug text-[#3d4449];
 }
 
 .markdown h3 {
-  @apply font-averia text-2xl mt-8 mb-4 leading-snug text-primary-text;
+  @apply font-averia text-2xl mt-8 mb-4 leading-snug text-[#3d4449];
 }
 
 .markdown li {
-  @apply leading-[1.6] text-primary-text;
+  @apply leading-[1.6] text-primary-text pl-3;
 }
 
 .markdown li::marker {
@@ -43,8 +43,16 @@
   @apply text-background;
 }
 
+:global(.dark) .markdown h3 {
+  @apply text-primary-dark;
+}
+
+:global(.dark) .markdown ul {
+  @apply text-primary-dark;
+}
+
 :global(.dark) .markdown p {
-  @apply text-[#858585];
+  @apply text-[#e7e7e7];
 }
 
 :global(.dark) .markdown h2 {
@@ -64,5 +72,5 @@
 }
 
 :global(.dark) .markdown blockquote > p {
-  @apply text-primary-dark border-white;
+  @apply text-[#999] border-[#333];
 }

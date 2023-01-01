@@ -32,7 +32,7 @@ circle {
 pre:not(:first-child) {
   padding: 0.8rem 0 0.8rem 1rem;
   overflow: scroll;
-  background-color: rgba(1, 15, 29, 0.9);
+  background-color: rgba(249, 250, 251, 0.9);
   border: 1px solid rgba(229, 235, 255, 0.2);
 }
 
@@ -94,7 +94,7 @@ pre[class*="language-"] ::-moz-selection,
 code[class*="language-"]::-moz-selection,
 code[class*="language-"] ::-moz-selection {
   text-shadow: none;
-  background: rgba(29, 59, 83, 0.99);
+  background: rgba(249, 250, 251, 0.99);
 }
 
 pre[class*="language-"]::selection,
@@ -102,7 +102,7 @@ pre[class*="language-"] ::selection,
 code[class*="language-"]::selection,
 code[class*="language-"] ::selection {
   text-shadow: none;
-  background: rgba(29, 59, 83, 0.99);
+  background: rgba(249, 250, 251, 0.99);
 }
 
 @media print {

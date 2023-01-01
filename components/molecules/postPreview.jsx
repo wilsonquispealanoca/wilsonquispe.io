@@ -11,8 +11,8 @@ export default function PostPreview({
 }) {
   return (
     <>
-      <div>
-        <h3 className="font-averia text-xl mt-4 text-[#3d4449] dark:text-primary-dark">
+      <div className="my-6">
+        <h3 className="font-averia text-xl text-[#3d4449] dark:text-primary-dark">
           <Link
             as={`/posts/${slug}`}
             href="/posts/[slug]"
@@ -21,7 +21,7 @@ export default function PostPreview({
             {title}
           </Link>
         </h3>
-        <div className="text-base my-2 text-[#00000466] dark:text-secondary-dark">
+        <div className="text-base mt-2 text-[#00000466] dark:text-[#999] first-letter:capitalize">
           <DateFormatter dateString={date} />
         </div>
       </div>

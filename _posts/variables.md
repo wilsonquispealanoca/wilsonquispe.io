@@ -23,7 +23,7 @@ Asimismo, una variable es como una caja donde podemos almacenar lo que queramos,
 
 ![caja-variables](/assets/blog/variables/variableCaja.png)
 
-> Una definición más amigable sería la de imaginar las variables como tentáculos, mas que como cajas. No contienen valores, sino que los agarran: dos variables pueden referirse al mismo valor.
+> Una definición más amigable sería la de **imaginar las variables como tentáculos, mas que como cajas. No contienen valores, sino que los agarran**: dos variables pueden referirse al mismo valor.
 
 ![visual-variables](/assets/blog/variables/variablesVisualmente.png)
 
@@ -64,8 +64,8 @@ Ahora te preguntarás
 **¿Qué quiere decir con Reutilizar?**
 Kotlin hace uso de dos palabras claves que no puedes usar como _"nombre de variable"_
 
-- **1.** var
-- **2.** val
+- **var**
+- **val**
 
 Cuando declaras una variable con la palabra **var** estás diciendo que esta puede ser reutilizable, es decir, puedes guardar un dato para que en un futuro puedas cambiarlo por otro valor.
 En el caso de **val** nunca sucede así, si tú defines una variable con **val** está nunca cambia.

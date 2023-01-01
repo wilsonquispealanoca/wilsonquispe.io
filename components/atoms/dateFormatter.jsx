@@ -3,5 +3,9 @@ import { es } from "date-fns/locale";
 
 export default function DateFormatter({ dateString }) {
   const date = parseISO(dateString);
-  return <time dateTime={dateString}>{format(date, "LLLL	d, yyyy")}</time>;
+  return (
+    <time dateTime={dateString} className="first-letter:capitalize">
+      {format(date, "LLL	d, yyyy", { locale: es })}
+    </time>
+  );
 }

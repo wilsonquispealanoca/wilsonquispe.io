@@ -1,5 +1,9 @@
 .markdown {
-  @apply text-[1.1rem] leading-[1.6];
+  @apply text-[1.1rem] leading-[1.4];
+}
+
+.markdown em {
+  @apply text-[#836fef] text-[1.2rem];
 }
 
 .markdown strong {

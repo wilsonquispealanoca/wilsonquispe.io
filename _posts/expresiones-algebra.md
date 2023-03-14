@@ -30,33 +30,33 @@ Veamos de qué se trata cada uno de ellos.
 
 ## Variables o incógnitas
 
-Una variable o incógnita es una letra que se usa para representar un número. Por ejemplo, en la siguiente expresión, la variable **x** representa un número desconocido que al sumarle **10** dará **14**.
+Una variable o incógnita es una letra que se usa para representar un número. Por ejemplo, en la siguiente expresión, la variable **_x_** representa un número desconocido que al sumarle **_10_** dará **_14_**.
 
 ```python
 x + 10 = 14
 ```
 
-Expresado como una pregunta sería: ¿a qué número puedes agregarle _10_ para que dé _14_?
+Expresado como una pregunta sería: ¿a qué número puedes agregarle **_10_** para que dé **_14_**?
 
-Escribimos _x_ porque, inicialmente, no sabemos cuál es tal número, pero lo podemos averiguar. Como sabemos que _4 + 10 = 14_, nuestra variable debe ser 4 o, en otras palabras, _x = 4_.
+Escribimos **_x_** porque, inicialmente, no sabemos cuál es tal número, pero lo podemos averiguar. Como sabemos que **_4 + 10 = 14_**, nuestra variable debe ser 4 o, en otras palabras, **_x = 4_**.
 
 > Encontrar el valor de un número desconocido es uno de los objetivos del álgebra.
 
 Aunque **_x_** es la más usada, cualquier letra puede ser una variable. Un problema de álgebra puede tener una o muchas variables y, si una variable se usa más de una vez en el mismo problema, su valor será igual en todos los casos. Observa esta ecuación:
 
-```js
+```python
 x + x + x + y = 35
 ```
 
 Cada **_x_** en esta expresión representa la misma cantidad. La otra variable, **_y_**, puede tener un valor diferente.
 
-> El valor de una variable en un problema no es necesariamente igual en otro. Por ejemplo, _x_ era igual a 4 en nuestro primer problema, pero no necesariamente **_x_** será **_4_** en otros problemas.
+> El valor de una variable en un problema no es necesariamente igual en otro. Por ejemplo, **_x_** era igual a 4 en nuestro primer problema, pero no necesariamente **_x_** será **_4_** en otros problemas.
 
 ## Coeficientes
 
 Algunas veces verás una variable con un número frente a ella, así:
 
-```js
+```python
 4x
 ```
 
@@ -64,17 +64,17 @@ En este ejemplo, 4 es el coeficiente. Los coeficientes son una forma de agrupar 
 
 Veamos otro ejemplo, ¿cómo podrías usar coeficientes para reescribir la siguiente expresión?
 
-```js
-x + x + x + x + x + x + y + y + y;
+```python
+x + x + x + x + x + x + y + y + y
 ```
 
-Como hay seis **x** y tres **y**, podrías escribirla como **6x + 3y**. Así es mucho más fácil de leer:
+Como hay seis **_x_** y tres **_y_**, podrías escribirla como **_6x + 3y_**. Así es mucho más fácil de leer:
 
 ```js
 6x + 3y
 ```
 
-La expresión anterior no es igual a **9xy**. Puedes solamente sumar o restar variables que son la misma letra, como **x + x** o **y + y**, pero nunca **x + y**.
+La expresión anterior no es igual a **_9xy_**. Puedes solamente sumar o restar variables que son la misma letra, como **_x + x_** o **_y + y_**, pero nunca **_x + y_**.
 
 ## Operadores
 
@@ -84,7 +84,7 @@ Los operadores son los símbolos que nos indican la operación que debemos reali
 + - ∙ ÷
 ```
 
-Estos símbolos te permiten saber cómo calcular una expresión: cuando ves el símbolo de suma, sabes que debes sumar dos números; cuando vez el de resta, sabes que debes restarlos. En álgebra, los símbolos **+** y **-** no tienen cambios, pero los símbolos de multiplicación, **×**, y división, **÷** , se escriben de otra forma.
+Estos símbolos te permiten saber cómo calcular una expresión: cuando ves el símbolo de suma, sabes que debes sumar dos números; cuando vez el de resta, sabes que debes restarlos. En álgebra, los símbolos **_+_** y **_-_** no tienen cambios, pero los símbolos de multiplicación, **_×_**, y división, **_÷_** , se escriben de otra forma.
 
 ### Multiplicación
 
@@ -94,16 +94,16 @@ En aritmética, la multiplicación se escribe usualmente como:
 6 × 7
 ```
 
-En álgebra el símbolo de multiplicación se escribe diferente. Esto se debe a que **×** se ve muy parecido a la variable **x**. Por esta razón, se usa el símbolo punto **∙**. Así que en álgebra, un problema de multiplicación se escribe así:
+En álgebra el símbolo de multiplicación se escribe diferente. Esto se debe a que **_×_** se ve muy parecido a la variable **_x_**. Por esta razón, se usa el símbolo punto **_∙_**. Así que en álgebra, un problema de multiplicación se escribe así:
 
 ```python
 6 ∙ 7
 ```
 
-Hay otras formas de expresar la multiplicación en álgebra. Puedes simplemente escribir una variable junto a otra para multiplicarlas. Por ejemplo, para multiplicar **x** y **y**, podrías simplemente escribir lo siguiente:
+Hay otras formas de expresar la multiplicación en álgebra. Puedes simplemente escribir una variable junto a otra para multiplicarlas. Por ejemplo, para multiplicar **_x_** y **_y_**, podrías simplemente escribir lo siguiente:
 
-```js
-xy;
+```python
+xy
 ```
 
 ### División
@@ -124,7 +124,7 @@ Además, si estás dividiendo grupos de números, la división se indica con una
 
 ![divisionDeGrupos](/assets/blog/algebra/divisionGrupal.png)
 
-Todo lo que está sobre la línea está dividido por todo lo que esta debajo de ella, en este ejemplo se divide **6x - 4y + 2** sobre **2**.
+Todo lo que está sobre la línea está dividido por todo lo que esta debajo de ella, en este ejemplo se divide **_6x - 4y + 2_** sobre **_2_**.
 
 ### Paréntesis
 
@@ -156,16 +156,16 @@ Las potencias indican que un número ha sido multiplicado por sí mismo varias v
 
 ![potencia](/assets/blog/algebra/exponente.png)
 
-Significa que **6** ha sido multiplicado por sí mismo **3** veces. Es decir, es lo mismo que **6 ∙ 6 ∙ 6**.
+Significa que **_6_** ha sido multiplicado por sí mismo **_3_** veces. Es decir, es lo mismo que **_6 ∙ 6 ∙ 6_**.
 O usando variables,
 
 ![potenciaVariable](/assets/blog/algebra/variableExponente.png)
 
-Significa que el número desconocido **x** ha sido multiplicado por sí mismo **3** veces, lo que es igual a **x ∙ x ∙ x**.
+Significa que el número desconocido **_x_** ha sido multiplicado por sí mismo **_3_** veces, lo que es igual a **_x ∙ x ∙ x_**.
 
 ### Constante
 
-Una constante tiene múltiples significados en matemáticas dependiendo del contexto. En su definición más simple, una constante es un valor fijo, como el número **10** en nuestra primer ejemplo.
+Una constante tiene múltiples significados en matemáticas dependiendo del contexto. En su definición más simple, una constante es un valor fijo, como el número **_10_** en nuestro primer ejemplo.
 
 Para aclarar un poco la diferencia entre constante y coeficiente:
 
@@ -173,11 +173,11 @@ Para aclarar un poco la diferencia entre constante y coeficiente:
 
 > **Coeficiente:** un coeficiente es un factor que multiplica la variable. A menudo es un número, pero también puede ser una expresión.
 
-Hay muchas constantes matemáticas, pero, las que se utilizan con relativa frecuencia es la gravedad y el número pi.
+Hay muchas constantes matemáticas, pero, las que se utilizan con relativa frecuencia son la gravedad y el número pi.
 
 ```php
 π = 3.1415926536…
 g = 9.80665
 ```
 
-> Con estos conceptos claros, ya puedes abordar nuestro contenido **"Nadie te explicará así las variables de programación"**.
+> Con estos conceptos claros, ya puedes abordar nuestro contenido [**Nadie te explicará así las variables de programación**](https://wilsonquispe.vercel.app/posts/variables "Nadie te explicará así las variables de programación").

@@ -96,7 +96,7 @@ En aritmética, la multiplicación se escribe usualmente como:
 
 En álgebra el símbolo de multiplicación se escribe diferente. Esto se debe a que **×** se ve muy parecido a la variable **x**. Por esta razón, se usa el símbolo punto **∙**. Así que en álgebra, un problema de multiplicación se escribe así:
 
-```js
+```python
 6 ∙ 7
 ```
 
@@ -122,6 +122,62 @@ En álgebra, podrás verla también así:
 
 Además, si estás dividiendo grupos de números, la división se indica con una línea horizontal:
 
+![divisionDeGrupos](/assets/blog/algebra/divisionGrupal.png)
+
+Todo lo que está sobre la línea está dividido por todo lo que esta debajo de ella, en este ejemplo se divide **6x - 4y + 2** sobre **2**.
+
+### Paréntesis
+
+En álgebra, los paréntesis se usan para agrupar partes de una expresión algebraica. En un problema debes resolver primero las expresiones que están dentro de ellos. Observa:
+
 ```python
-9 / 3
+(60/x) + 8 = 10
 ```
+
+En este problema, debes comenzar por resolver todo lo que está entre paréntesis y, después, resolver lo demás.
+
+Veamos qué pasa cuando dos grupos de paréntesis están uno junto al otro, sin ningún operador entre ellos:
+
+```python
+(8)(5)
+```
+
+Recuerda que en álgebra, cuando hay dos variable juntas, pero no hay ningún signo entre ellas, estas se multiplican. De igual forma, debes multiplicar dos grupos de paréntesis que están están uno junto a otro.
+
+```js
+(8)(5)
+8 ∙ 5
+40
+```
+
+### Potencias
+
+Las potencias indican que un número ha sido multiplicado por sí mismo varias veces. Por ejemplo:
+
+![potencia](/assets/blog/algebra/exponente.png)
+
+Significa que **6** ha sido multiplicado por sí mismo **3** veces. Es decir, es lo mismo que **6 ∙ 6 ∙ 6**.
+O usando variables,
+
+![potenciaVariable](/assets/blog/algebra/variableExponente.png)
+
+Significa que el número desconocido **x** ha sido multiplicado por sí mismo **3** veces, lo que es igual a **x ∙ x ∙ x**.
+
+### Constante
+
+Una constante tiene múltiples significados en matemáticas dependiendo del contexto. En su definición más simple, una constante es un valor fijo, como el número **10** en nuestra primer ejemplo.
+
+Para aclarar un poco la diferencia entre constante y coeficiente:
+
+> **Constante:** término con un valor fijo en una ecuación que no se ve afectado por ningún cambio en la variable.
+
+> **Coeficiente:** un coeficiente es un factor que multiplica la variable. A menudo es un número, pero también puede ser una expresión.
+
+Hay muchas constantes matemáticas, pero, las que se utilizan con relativa frecuencia es la gravedad y el número pi.
+
+```php
+π = 3.1415926536…
+g = 9.80665
+```
+
+> Con estos conceptos claros, ya puedes abordar nuestro contenido **"Nadie te explicará así las variables de programación"**.

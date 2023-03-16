@@ -23,6 +23,10 @@ circle {
   font-display: swap;
 }
 
+a {
+  text-decoration: underline;
+}
+
 @font-face {
   font-family: "Averia Serif Libre";
   src: url("../public/fonts/AveriaSerifLibre-Bold.ttf");
@@ -56,6 +60,11 @@ pre:not(:first-child) {
   margin-left: -8px;
   color: rgb(156, 163, 175);
   content: attr(line);
+}
+
+.math {
+  display: flex;
+  justify-content: center;
 }
 
 /**

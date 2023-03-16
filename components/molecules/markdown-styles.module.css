@@ -68,7 +68,7 @@
 }
 
 :global(.dark) .markdown a {
-  @apply text-cta-dark;
+  @apply text-white;
 }
 
 :global(.dark) .markdown strong {

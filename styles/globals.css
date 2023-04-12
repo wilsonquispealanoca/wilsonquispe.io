@@ -23,10 +23,6 @@ circle {
   font-display: swap;
 }
 
-a {
-  text-decoration: underline;
-}
-
 @font-face {
   font-family: "Averia Serif Libre";
   src: url("../public/fonts/AveriaSerifLibre-Bold.ttf");

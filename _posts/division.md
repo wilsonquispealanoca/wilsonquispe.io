@@ -3,12 +3,12 @@ title: "La división solo es una resta repetida"
 date: "2023-04-01T06:53:01.322Z"
 tags: ["matemáticas", "programación"]
 excerpt: "La matemática puede ser un tema intimidante para muchas personas. Hay tantas operaciones y conceptos que puede ser difícil saber por dónde empezar. Pero si entiendes los fundamentos, todo lo demás se vuelve más fácil. En este artículo, vamos a explorar uno de los conceptos básicos de la matemática: la división.."
-coverImage: "/assets/blog/variables/variablesVisualmente.png"
+coverImage: "/assets/blog/division/divisionResta.png"
 author:
   name: Wilson Quispe
   picture: "/assets/blog/authors/profileWilson.jpg"
 ogImage:
-  url: "/assets/blog/variables/variableCaja.png"
+  url: "/assets/blog/division/divisionResta.png"
 ---
 
 La matemática puede ser un tema intimidante para muchas personas. Hay tantas operaciones y conceptos que puede ser difícil saber por dónde empezar. Pero si entiendes los fundamentos, todo lo demás se vuelve más fácil. En este artículo, vamos a explorar uno de los conceptos básicos de la matemática: la división.

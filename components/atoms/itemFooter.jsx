@@ -2,7 +2,7 @@ import Link from "next/link";
 
 function ItemFooter({ href, target, rel, text, icon }) {
   return (
-    <li className="h-12 dark:text-primary-dark text-[#333] flex items-center justify-between hover:bg-white hover:dark:bg-card-dark md:hover:bg-transparent md:hover:dark:bg-transparent md:hover:underline cursor-pointer px-8">
+    <li className="h-12 dark:text-primary-dark text-[#333] flex items-center justify-between md:hover:underline cursor-pointer px-8">
       <Link href={href} passHref target={target} rel={rel} className="w-full">
         {text}
       </Link>

@@ -1,9 +1,9 @@
 .markdown {
-  @apply text-[1.1rem] leading-[1.4];
+  @apply text-[1.25rem] leading-[1.68];
 }
 
 .markdown em {
-  @apply text-[#836fef] text-[1.2rem];
+  @apply text-[#f9f4da] rounded-sm tracking-[-.2px] bg-brand-charcoal py-[2px] px-[5px] not-italic;
 }
 
 .markdown strong {
@@ -24,11 +24,11 @@
 }
 
 .markdown blockquote > p {
-  @apply pl-4 border-l-4 border-[#e5e7eb] italic text-[#111827] font-semibold;
+  @apply border-l-4 border-[#e5e7eb] text-[#111827];
 }
 
 .markdown h2 {
-  @apply font-averia text-2xl mt-12 mb-4 leading-snug text-[#3d4449];
+  @apply font-averia text-4xl mt-12 mb-4 leading-snug text-[#3d4449];
 }
 
 .markdown h3 {
@@ -56,7 +56,7 @@
 }
 
 :global(.dark) .markdown p {
-  @apply text-[#e7e7e7];
+  @apply text-brand-beige;
 }
 
 :global(.dark) .markdown h2 {
@@ -68,7 +68,7 @@
 }
 
 :global(.dark) .markdown a {
-  @apply text-white;
+  @apply text-brand-yellow font-bold underline;
 }
 
 :global(.dark) .markdown strong {
@@ -76,5 +76,5 @@
 }
 
 :global(.dark) .markdown blockquote > p {
-  @apply text-[#999] border-[#333];
+  @apply border-accent bg-brand-charcoal-muted my-16 px-6 py-8 rounded-r-xl;
 }

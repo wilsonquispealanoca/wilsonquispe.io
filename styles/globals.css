@@ -18,14 +18,14 @@ circle {
 }
 
 @font-face {
-  font-family: "Means-Web";
-  src: url("../public/fonts/Means_Light_Web.otf");
+  font-family: "Averia Serif Libre";
+  src: url("../public/fonts/AveriaSerifLibre-Bold.ttf");
   font-display: swap;
 }
 
 @font-face {
-  font-family: "Averia Serif Libre";
-  src: url("../public/fonts/AveriaSerifLibre-Bold.ttf");
+  font-family: "Outfit";
+  src: url("../public/fonts/outfit-v4-latin-regular.woff2");
   font-display: swap;
 }
 

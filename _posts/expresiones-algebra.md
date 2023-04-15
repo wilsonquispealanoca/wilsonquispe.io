@@ -86,7 +86,7 @@ $$
 
 Estos símbolos te permiten saber cómo calcular una expresión: cuando ves el símbolo de suma, sabes que debes sumar dos números; cuando vez el de resta, sabes que debes restarlos. En álgebra, los símbolos **_+_** y **_-_** no tienen cambios, pero los símbolos de multiplicación, **_×_**, y división, **_÷_** , se escriben de otra forma.
 
-### Multiplicación
+## Multiplicación
 
 En aritmética, la multiplicación se escribe usualmente como:
 
@@ -109,7 +109,7 @@ $$
 xy
 $$
 
-### División
+## División
 
 Quizás estés más familiarizado con problemas de división que lucen así:
 
@@ -131,7 +131,7 @@ $$
 
 Todo lo que está sobre la línea está dividido por todo lo que esta debajo de ella, en este ejemplo se divide **_6x - 4y + 2_** sobre **_2_**.
 
-### Paréntesis
+## Paréntesis
 
 En álgebra, los paréntesis se usan para agrupar partes de una expresión algebraica. En un problema debes resolver primero las expresiones que están dentro de ellos. Observa:
 
@@ -152,14 +152,16 @@ Recuerda que en álgebra, cuando hay dos variable juntas, pero no hay ningún si
 $$
 (8)(5)
 $$
+
 $$
 8 \cdot 5
 $$
+
 $$
 40
 $$
 
-### Potencias
+## Potencias
 
 Las potencias indican que un número ha sido multiplicado por sí mismo varias veces. Por ejemplo:
 
@@ -176,7 +178,7 @@ $$
 
 Significa que el número desconocido **_x_** ha sido multiplicado por sí mismo **_3_** veces, lo que es igual a **_x ∙ x ∙ x_**.
 
-### Constante
+## Constante
 
 Una constante tiene múltiples significados en matemáticas dependiendo del contexto. En su definición más simple, una constante es un valor fijo, como el número **_10_** en nuestro primer ejemplo.
 
@@ -191,8 +193,9 @@ Hay muchas constantes matemáticas, pero, las que se utilizan con relativa frecu
 $$
 π = 3.1415926536…
 $$
+
 $$
 g = 9.80665
 $$
 
-> Con estos conceptos claros, ya puedes abordar nuestro contenido [**Nadie te explicará así las variables de programación**](https://wilsonquispe.vercel.app/posts/variables "Nadie te explicará así las variables de programación").
+> Con estos conceptos claros, ya puedes abordar nuestro contenido [Nadie te explicará así las variables de programación](https://wilsonquispe.vercel.app/posts/variables "Nadie te explicará así las variables de programación").

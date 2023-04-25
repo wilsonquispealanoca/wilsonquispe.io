@@ -3,11 +3,11 @@
 }
 
 .markdown em {
-  @apply text-[#f9f4da] rounded-sm tracking-[-.2px] bg-brand-charcoal py-[2px] px-[5px] not-italic;
+  @apply font-firacode text-brand-beige text-base rounded-sm tracking-[-.2px] bg-brand-charcoal py-[2px] px-[5px] not-italic;
 }
 
 .markdown strong {
-  @apply text-[#000000];
+  @apply text-brand-beige;
 }
 
 .markdown a {
@@ -23,10 +23,6 @@
   @apply pl-10 my-8 list-disc text-[1rem];
 }
 
-.markdown blockquote > p {
-  @apply border-l-4 border-[#e5e7eb] text-[#111827];
-}
-
 .markdown h2 {
   @apply font-averia text-4xl mt-12 mb-4 leading-snug text-[#3d4449];
 }
@@ -36,19 +32,15 @@
 }
 
 .markdown li {
-  @apply leading-[1.6] text-primary-text pl-3;
+  @apply leading-[1.6] text-brand-beige pl-3;
 }
 
 .markdown li::marker {
-  @apply text-[#e5e7eb];
-}
-
-:global(.dark) .markdown li {
-  @apply text-background;
+  @apply text-brand-pink;
 }
 
 :global(.dark) .markdown h3 {
-  @apply text-primary-dark;
+  @apply text-brand-beige;
 }
 
 :global(.dark) .markdown ul {
@@ -60,21 +52,17 @@
 }
 
 :global(.dark) .markdown h2 {
-  @apply text-primary-dark;
+  @apply text-brand-beige;
 }
 
 :global(.dark) .markdown h3 {
-  @apply text-primary-dark;
+  @apply text-brand-beige;
 }
 
 :global(.dark) .markdown a {
   @apply text-brand-yellow font-bold underline;
 }
 
-:global(.dark) .markdown strong {
-  @apply text-primary-dark;
-}
-
-:global(.dark) .markdown blockquote > p {
-  @apply border-accent bg-brand-charcoal-muted my-16 px-6 py-8 rounded-r-xl;
+.markdown blockquote > p {
+  @apply border-accent border-l-2 bg-brand-charcoal-muted my-16 px-6 py-8 rounded-r-xl;
 }

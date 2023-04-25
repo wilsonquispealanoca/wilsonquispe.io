@@ -1,6 +1,6 @@
 import Image from 'next/image';
 
-function Profile({name, picture, hidden}) {
+function Profile({name, picture}) {
   return (
     <figure className={`w-[80px] md:w-[146px] lg:w-[186px] relative mb-8 sm:mb-8`}>
       <Image 
@@ -12,7 +12,7 @@ function Profile({name, picture, hidden}) {
         blurDataURL={picture}
         sizes="50vw"
         priority
-        className="rounded-full filter grayscale"
+        className="rounded-full"
       />
     </figure>
   );

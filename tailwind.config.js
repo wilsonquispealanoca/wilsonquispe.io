@@ -16,6 +16,7 @@ module.exports = {
         "brand-charcoal": "#231f20",
         "brand-charcoal-muted": "#1b1918",
         "brand-yellow": "#fcba28",
+        "brand-pink": "#f38ba3",
         shadow: "#AEB7B3",
         card: "#FFFFFF",
         cta: "#1FAD71",
@@ -40,6 +41,7 @@ module.exports = {
         sans: ["Nunito Sans", "sans-serif"],
         averia: ["Averia Serif Libre"],
         outfit: ["Outfit", "sans-serif"],
+        firacode: ["FiraCode"],
       },
       spacing: {
         border: "4px",

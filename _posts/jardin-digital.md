@@ -7,7 +7,7 @@ author:
   name: Wilson Quispe
   picture: "/assets/blog/authors/profileWilson.jpg"
 ogImage:
-  url: "/assets/blog/jardin-digital/jardin-digital.webp"
+  url: "/assets/blog/jardin-digital/gardenDigital.png"
 ---
 
 ¡Hola! Estoy muy emocionado de hablar contigo sobre mi "jardín digital". Es una idea que se me ocurrió para describir mi proceso de escritura y creación en línea. Para mí, escribir no es solo sobre el resultado final, sino también sobre el proceso de cuidado y artesanía que se necesita para llegar allí. Al igual que un jardín real, mi jardín digital también está en constante cambio y puede ser difícil de organizar.
@@ -22,7 +22,7 @@ Aunque la mayoría de los sitios web de blogs tienen publicaciones ordenadas cro
 
 En mi sitio web, he intentado crear una experiencia de navegación única y efectiva para todo aquel que quiera visitarme. Me preocupa mucho el contenido que presento, por lo que he incluido una pequeña selección de temas interesantes en la página principal. Además hay algunas secciones que aún no he terminado, como la sección _"Mis Historias"_, donde compartiré algunas de mis experiencias personales. En realidad, tengo la intención de usar esta sección para mi futuro libro.
 
-Me emociona mucho poder compartir algunos títulos de mi libro contigo, ya que eres la primera persona que leerá mis borradores. Algunos de los títulos son: _"Sí, fui famoso por un tiempo, pero perdí muchos amigos"_, _"El día que me enamoré de una extranjera"_ y _"Los 1000 Bs mejor invertidos en mi vida"_.
+Me emociona mucho compartir algunos títulos de mi libro contigo, ya que serás la primera persona que leerá mis borradores. Algunos de los títulos son: _"La vez que me viralice por toda Bolivia"_, _"El día que me enamoré de una extranjera"_ y _"Los 1000 Bs mejor invertidos en mi vida"_.
 
 En resumen, mi jardín digital es mi espacio en línea personal donde puedo crear y organizar todo lo que me interesa.
 

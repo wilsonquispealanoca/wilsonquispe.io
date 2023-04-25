@@ -13,9 +13,7 @@
 /* Stop purging. */
 
 /* Your own custom utilities */
-circle {
-  fill: #00000040;
-}
+
 
 @font-face {
   font-family: "Averia Serif Libre";
@@ -26,6 +24,12 @@ circle {
 @font-face {
   font-family: "Outfit";
   src: url("../public/fonts/outfit-v4-latin-regular.woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "FiraCode";
+  src: url("../public/fonts/FiraCode-SemiBold.ttf");
   font-display: swap;
 }
 
@@ -126,7 +130,7 @@ pre[class*="language-"] {
 :not(pre) > code[class*="language-"],
 pre[class*="language-"] {
   color: white;
-  background: #000000;
+  background: #231f20;
 }
 
 :not(pre) > code[class*="language-"] {
@@ -143,7 +147,7 @@ pre[class*="language-"] {
 }
 
 .token.punctuation {
-  color: rgb(247, 140, 108);
+  color: #12b5e5;
 }
 
 .namespace {
@@ -163,15 +167,15 @@ pre[class*="language-"] {
 .token.tag,
 .token.operator,
 .token.keyword {
-  color: #96cbfe;
+  color: #f38ba3;
 }
 
 .token.boolean {
-  color: rgb(255, 88, 116);
+  color: #12b5e5;
 }
 
 .token.number {
-  color: #ff73fd;
+  color: #fcba28;
 }
 
 .token.constant,
@@ -198,7 +202,7 @@ pre[class*="language-"] {
 .token.entity,
 .language-css .token.string,
 .style .token.string {
-  color: #a8ff60;
+  color: rgb(130, 170, 255);
 }
 
 .token.class-name,

@@ -5,19 +5,16 @@ const dataFooter = [
     id: 0,
     href: "/",
     text: "Inicio",
-    icon: false,
   },
   {
     id: 1,
     href: "/blog",
     text: "Blog",
-    icon: false,
   },
   {
     id: 2,
     href: "/",
     text: "Sobre mí",
-    icon: true,
   },
   {
     id: 3,
@@ -25,7 +22,6 @@ const dataFooter = [
     target: "_blank",
     rel: "noopener noreferrer",
     text: "Github",
-    icon: false,
   },
   {
     id: 4,
@@ -33,7 +29,6 @@ const dataFooter = [
     target: "_blank",
     rel: "noopener noreferrer",
     text: "Twitter",
-    icon: false,
   },
   {
     id: 5,
@@ -41,40 +36,35 @@ const dataFooter = [
     target: "_blank",
     rel: "noopener noreferrer",
     text: "LinkedIn",
-    icon: false,
   },
   {
     id: 6,
     href: "/",
     text: "Pasatiempos",
-    icon: true,
   },
   {
     id: 7,
-    href: "/",
+    href: "/historias",
     text: "Mis Historias",
-    icon: true,
   },
   {
     id: 8,
     href: "/",
     text: "Tweets",
-    icon: true,
   },
 ];
 
 export default function Footer() {
   return (
-    <footer className="font-sans bg-card dark:bg-[#111111] w-full py-16 md:pb-0 md:px-32 lg:px-56 xl:px-80 ">
-      <ul className="lg:grid lg:grid-cols-3 lg:pb-24">
-        {dataFooter.map(({ id, href, target, rel, text, icon }) => (
+    <footer className="font-outfit bg-brand-coal w-full py-16 md:pb-0 md:px-32 lg:px-56 xl:px-80">
+      <ul className="grid grid-cols-2 py-16 bg-brand-charcoal lg:grid-cols-3 lg:pb-24 mx-4 rounded-xl">
+        {dataFooter.map(({ id, href, target, rel, text }) => (
           <ItemFooter
             key={id}
             href={href}
             target={target}
             rel={rel}
             text={text}
-            icon={icon}
           />
         ))}
       </ul>

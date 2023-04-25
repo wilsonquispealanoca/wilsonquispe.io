@@ -12,7 +12,7 @@ export default function PostPreview({
   return (
     <>
       <div className="my-6">
-        <h3 className="font-averia text-xl text-[#3d4449] dark:text-primary-dark">
+        <h3 className="font-averia text-xl text-brand-yellow">
           <Link
             as={`/posts/${slug}`}
             href="/posts/[slug]"
@@ -21,11 +21,11 @@ export default function PostPreview({
             {title}
           </Link>
         </h3>
-        <div className="text-base mt-2 text-[#00000466] dark:text-[#999] first-letter:capitalize">
+        <div className="text-base mt-2 text-brand-yellow first-letter:capitalize">
           <DateFormatter dateString={date} />
         </div>
       </div>
-      <div className="w-full h-[2px] bg-tertiary-text opacity-40"></div>
+      <div className="w-full h-[2px] bg-brand-beige opacity-40"></div>
     </>
   );
 }

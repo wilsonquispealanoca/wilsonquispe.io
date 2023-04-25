@@ -24,7 +24,7 @@ export default function Post({ post }) {
           style={{
             transform: `translateX(${completion - 100}%)`,
           }}
-          className={`z-50 fixed top-0 w-full transition-transform duration-150 h-1 bg-[#836fef]`}
+          className={`z-50 fixed top-0 w-full transition-transform duration-150 h-1 bg-accent`}
         />
         {router.isFallback ? (
           <PostTitle>Loading…</PostTitle>

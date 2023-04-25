@@ -1,3 +1,4 @@
+import Activelink from "../components/atoms/activeLink";
 import Container from "../components/templates/container";
 import Layout from "../components/templates/layout";
 
@@ -16,6 +17,9 @@ export default function Historias() {
                         <input className="w-full md:w-80  py-2 px-4 border text-gray-800 border-gray-200 bg-white" type="email" placeholder="Ingresa tu correo electrónico"/>
                         <button className="bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 border">Notifícame cuando este listo</button>
                     </form> */}
+                    <button className="bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 border">
+                        <Activelink href="/">Volver al Inicio</Activelink>
+                    </button>
                 </div>
             </div>
         </>

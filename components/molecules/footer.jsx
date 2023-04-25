@@ -57,7 +57,7 @@ const dataFooter = [
 export default function Footer() {
   return (
     <footer className="font-outfit bg-brand-coal w-full py-16 md:pb-0 md:px-32 lg:px-56 xl:px-80">
-      <ul className="grid grid-cols-2 py-16 bg-brand-charcoal lg:grid-cols-3 lg:pb-24 mx-4 rounded-xl">
+      <ul className="grid grid-cols-2 py-16 bg-brand-charcoal lg:grid-cols-3 mx-4 rounded-xl">
         {dataFooter.map(({ id, href, target, rel, text }) => (
           <ItemFooter
             key={id}

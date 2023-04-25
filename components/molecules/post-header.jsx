@@ -5,7 +5,7 @@ import PostTitle from "../atoms/postTitle";
 export default function PostHeader({ title, date, author, excerpt }) {
   return (
     <>
-      <div className="py-8 lg:pb-10">
+      <div className="lg:pb-10">
         <PostTitle>{title}</PostTitle>
         <div className="mx-8 md:mx-32 lg:mx-56 xl:mx-80 py-8">
           <div className="flex place-items-center justify-between text-md text-brand-beige">

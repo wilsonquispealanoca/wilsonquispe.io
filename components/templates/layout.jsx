@@ -7,7 +7,7 @@ export default function Layout({ children }) {
         <main>{children}</main>
       </div>
       <Footer />
-      <p className="bg-brand-coal font-outfit text-center text-[1rem] md:text-lg text-brand-yellow px-8 md:px-32 lg:px-56 xl:px-80">
+      <p className="bg-brand-coal font-outfit text-center text-[1rem] md:text-lg text-brand-yellow px-8 md:px-32 lg:px-56 lg:pt-8 xl:px-80">
         Hecho con 💙 durante la cuarentena
       </p>
       <p className="bg-brand-coal text-center py-6 font-outfit text-brand-yellow">

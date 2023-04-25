@@ -3,7 +3,7 @@
 }
 
 .markdown em {
-  @apply font-firacode text-brand-beige text-base rounded-sm tracking-[-.2px] bg-brand-charcoal py-[2px] px-[5px] not-italic;
+  @apply font-firacode text-brand-pink text-base rounded-sm tracking-[-.2px] bg-brand-charcoal py-[2px] px-[5px] not-italic;
 }
 
 .markdown strong {

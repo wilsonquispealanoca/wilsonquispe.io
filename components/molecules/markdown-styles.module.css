@@ -11,24 +11,24 @@
 }
 
 .markdown a {
-  @apply text-[#121212] hover:underline font-semibold;
+  @apply text-brand-yellow font-bold underline;
 }
 
 .markdown p,
 .markdown ol {
-  @apply text-[#121212] mt-7;
+  @apply text-brand-beige mt-7;
 }
 
 .markdown ul {
-  @apply pl-10 my-8 list-disc text-[1rem];
+  @apply pl-10 my-8 list-disc text-[1.2rem] text-primary-dark;
 }
 
 .markdown h2 {
-  @apply font-averia text-4xl mt-12 mb-4 leading-snug text-[#3d4449];
+  @apply font-averia text-4xl mt-12 mb-4 leading-snug text-brand-beige;
 }
 
 .markdown h3 {
-  @apply font-averia text-2xl mt-8 mb-4 leading-snug text-[#3d4449];
+  @apply font-averia text-2xl mt-8 mb-4 leading-snug text-brand-beige;
 }
 
 .markdown li {
@@ -39,30 +39,6 @@
   @apply text-brand-pink;
 }
 
-:global(.dark) .markdown h3 {
-  @apply text-brand-beige;
-}
-
-:global(.dark) .markdown ul {
-  @apply text-primary-dark;
-}
-
-:global(.dark) .markdown p {
-  @apply text-brand-beige;
-}
-
-:global(.dark) .markdown h2 {
-  @apply text-brand-beige;
-}
-
-:global(.dark) .markdown h3 {
-  @apply text-brand-beige;
-}
-
-:global(.dark) .markdown a {
-  @apply text-brand-yellow font-bold underline;
-}
-
 .markdown blockquote > p {
   @apply border-accent border-l-2 bg-brand-charcoal-muted my-16 px-6 py-8 rounded-r-xl;
-}
+};

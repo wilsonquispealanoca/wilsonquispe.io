@@ -9,7 +9,7 @@ function Navbar() {
   return (
     <>
       <nav
-        className="flex lg:flex-initial text-brand-beige text-xl font-semibold`}
+        className="mx-8 md:mx-32 lg:mx-56 xl:mx-80 pt-16 flex lg:flex-initial text-brand-beige text-xl font-semibold`}
       ">
         <div className="flex">
           <Activelink href="/">Inicio</Activelink>

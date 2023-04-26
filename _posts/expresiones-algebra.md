@@ -65,16 +65,16 @@ En este ejemplo, 4 es el coeficiente. Los coeficientes son una forma de agrupar 
 Veamos otro ejemplo, ¿cómo podrías usar coeficientes para reescribir la siguiente expresión?
 
 $$
-x + x + x + x + x + x + y + y + y
+x + x + x + x + y + y
 $$
 
-Como hay seis **_x_** y tres **_y_**, podrías escribirla como **_6x + 3y_**. Así es mucho más fácil de leer:
+Como hay seis **_x_** y tres **_y_**, podrías escribirla como **_4x + 2y_**. Así es mucho más fácil de leer:
 
 $$
-6x + 3y
+4x + 2y
 $$
 
-La expresión anterior no es igual a **_9xy_**. Puedes solamente sumar o restar variables que son la misma letra, como **_x + x_** o **_y + y_**, pero nunca **_x + y_**.
+La expresión anterior no es igual a **_6xy_**. Puedes solamente sumar o restar variables que son la misma letra, como **_x + x_** o **_y + y_**, pero nunca **_x + y_**.
 
 ## Operadores
 

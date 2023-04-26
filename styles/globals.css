@@ -65,6 +65,8 @@ pre:not(:first-child) {
 .math {
   display: flex;
   justify-content: center;
+  color: #f9f4da;
+  padding-top: 23px;
 }
 
 /**

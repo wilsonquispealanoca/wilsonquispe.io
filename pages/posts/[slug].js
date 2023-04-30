@@ -11,6 +11,7 @@ import ProgressBar from "../../components/atoms/progressBar";
 import ShareFacebook from "../../components/atoms/shareFacebook";
 import ShareTwitter from "../../components/atoms/shareTwitter";
 import Meta from "../../components/molecules/meta";
+import Container from "../../components/templates/container";
 
 export default function Post({ post }) {
   const router = useRouter();
@@ -18,7 +19,10 @@ export default function Post({ post }) {
   return (
     <Layout>
       <div className="relative left-0 right-0">
+        <Container>
+
         <Navbar />
+        </Container>
         <span
           id="progress-bar"
           style={{

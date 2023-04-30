@@ -20,7 +20,7 @@ No soy un experto en diseño de información ni nada por el estilo. Pero lo que 
 
 Aunque la mayoría de los sitios web de blogs tienen publicaciones ordenadas cronológicamente, la mayoría de las personas no usan Internet de esta manera. Usamos la búsqueda de Google para encontrar lo que necesitamos y también la curación de contenido para descubrir cosas nuevas y emocionantes.
 
-En mi sitio web, he intentado crear una experiencia de navegación única y efectiva para todo aquel que quiera visitarme. Me preocupa mucho el contenido que presento, por lo que he incluido una pequeña selección de temas interesantes en la página principal. Además hay algunas secciones que aún no he terminado, como la sección _"Mis Historias"_, donde compartiré algunas de mis experiencias personales. En realidad, tengo la intención de usar esta sección para mi futuro libro.
+En mi sitio web, he intentado crear una experiencia de navegación única y efectiva para todo aquel que quiera visitarme. Me preocupa mucho el contenido que presento, por lo que he incluido una pequeña selección de temas interesantes en la página principal. Además hay algunas secciones que aún no he terminado, como la sección  [Mis Historias](https://wilsonquispe.vercel.app/historias), donde compartiré algunas de mis experiencias personales. En realidad, tengo la intención de usar esta sección para mi futuro libro.
 
 Me emociona mucho compartir algunos títulos de mi libro contigo, ya que serás la primera persona que leerá mis borradores. Algunos de los títulos son: _"La vez que me viralice por toda Bolivia"_, _"El día que me enamoré de una extranjera"_ y _"Los 1000 Bs mejor invertidos en mi vida"_.
 

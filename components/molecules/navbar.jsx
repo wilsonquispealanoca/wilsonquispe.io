@@ -9,12 +9,10 @@ function Navbar() {
   return (
     <>
       <nav
-        className="mx-8 md:mx-32 lg:mx-56 xl:mx-80 pt-16 flex lg:flex-initial text-brand-beige text-xl font-semibold`}
+        className="w-full pt-16 flex justify-between text-brand-beige text-xl font-semibold`}
       ">
-        <div className="flex">
           <Activelink href="/">Inicio</Activelink>
           <Activelink href="/blog">Blog</Activelink>
-        </div>
       </nav>
     </>
   );

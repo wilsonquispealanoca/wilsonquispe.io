@@ -9,7 +9,7 @@ export default function Historias() {
     <Layout>
         <Container>
         <>
-            <div className="flex items-center justify-center">
+            <div className="flex items-center justify-center pt-16">
                 <div className="max-w-2xl w-full px-4">
                     <h1 className="text-4xl font-bold text-center mb-8 text-white">¡Muy pronto estará listo!</h1>
                     <p className="text-lg text-gray-600 text-center mb-12">Está sección aún la voy construyendo. ¡Volveré pronto!

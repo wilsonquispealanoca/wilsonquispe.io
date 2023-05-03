@@ -62,7 +62,7 @@ Para que sea más fácil de entender, quiero aclarar que aunque la información 
 
 ![ejemplo-de-variable-2](/assets/blog/variables/variableCaja.png)
 
-# Tipos de información o datos
+## Tipos de información o datos
 
 ¿Alguna vez has notado que la caja de una computadora es diferente a la caja de una consola de juegos? ¿Sabes qué es lo que diferencia la caja de una cosa de la caja de otra? La única diferencia es su contenido, es decir, el dispositivo que contiene. ¿Cómo se relaciona esto con el tema que estamos discutiendo? La respuesta es muy sencilla: la diferencia entre una variable y otra radica en su contenido, o más específicamente, en el tipo de contenido que almacenan.
 

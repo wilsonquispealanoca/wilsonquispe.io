@@ -11,201 +11,82 @@ ogImage:
   url: "/assets/blog/variables/variableCaja.png"
 ---
 
-Una variable es uno de los conceptos más importantes para aprender cualquier lenguaje de programación.
-En este artículo aprenderás el concepto de una variable de programación de una forma distinta y quizás nunca vista.
-**¿Estás listo?**
-
-## 1. ¿Qué es una variable en programación?
-
-En programación, una variable está formada por un espacio en el sistema de almacenamiento (memoria principal de un ordenador) y un nombre simbólico (un identificador) que está asociado a dicho espacio. Ese espacio contiene una cantidad de información conocida o desconocida, es decir, un valor.
-
-Asimismo, una variable es como una caja donde podemos almacenar lo que queramos, como, por ejemplo, nombres, números, funciones, etc.
-
-![caja-variables](/assets/blog/variables/variableCaja.png)
-
-> Una definición más amigable sería la de **imaginar las variables como tentáculos, mas que como cajas. No contienen valores, sino que los agarran**: dos variables pueden referirse al mismo valor.
-
-![visual-variables](/assets/blog/variables/variablesVisualmente.png)
-
-Seguramente ya viste las variables en otros lenguajes y si no, tranquilo/a que voy a ejemplificar la definición de estas en los lenguajes que mejor "se me dan": JavaScript y Kotlin.
-
-Para empezar con los ejemplos, imagina que estás escribiendo un juego de aventuras que asigna a los jugadores misiones para embarcarse.
-Estas misiones deben escalar en dificultad a medida que el jugador se hace más fuerte y progresa en el juego.
-Es probable que quieras una variable para saber el estado de la vida del jugador y si este sigue vivo.
-
-## 2. ¿Cómo lucen las variables en kotlin?
-
-Vamos a declarar tres variables, cada una tiene algo especial…
-
-```kotlin
-var vidaProtagonista: Int = 100
-val saludo: String = "Hola, bienvenido a tu aventura"
-var tieneVida: Boolean = true
-```
-
-En el primer ejemplo, has asignado una instancia del tipo "Int" a una variable llamada **vidaProtagonista**.
-Repasemos cada parte del código.
-
-![variables](/assets/blog/variables/variables.png)
-
-Primero, definimos una variable utilizando la palabra clave **var**, que indica que quieres declarar una nueva variable, seguida del nombre de la nueva variable.
-
-Luego, especificaste la definición del tipo de la variable, **:Int**, que indica que vidaProtagonista tendrá un valor entero (número entero).
-
-Por último, empleamos el operador de asignación (=) para asignar lo que está en el lado derecho, a la variable(vidaProtagonista) que está en el lado izquierdo.
-
-En Kotlin y en otros lenguajes de programación para definir una variable se necesitan tres cosas.
-
-- **1.** El nombre de la variable
-- **2.** El tipo de variable
-- **3.** Si la variable puede reutilizarse o no. (Aquí es donde el concepto de los TENTÁCULOS nos sirve como ejemplo).
-
-Ahora te preguntarás
-**¿Qué quiere decir con Reutilizar?**
-Kotlin hace uso de dos palabras claves que no puedes usar como _"nombre de variable"_
-
-- **var**
-- **val**
-
-Cuando declaras una variable con la palabra **var** estás diciendo que esta puede ser reutilizable, es decir, puedes guardar un dato para que en un futuro puedas cambiarlo por otro valor.
-En el caso de **val** nunca sucede así, si tú defines una variable con **val** está nunca cambia.
-
-En JavaScript funciona casi de la misma manera, solo que las palabras clave cambian y no se usa el tipo de variable.
-Sin embargo, en Kotlin también se puede obviar el tipo de variable. Ya hablaré de eso más adelante.
-
-Utilicemos el mismo ejemplo de Kotlin, pero está vez empleando JavaScript.
+El primer paso para comprender realmente la programación es mirar hacia atrás en el álgebra. Si lo recuerdas de la escuela, el álgebra comienza escribiendo términos como los siguientes.
 
 ```js
-let vidaProtagonista = 100;
-const saludo = "Hola, bienvenido a tu aventura";
-let tieneVida = true;
+12 + 7 = 19
 ```
 
-**“let”** es el equivalente a, var.
-**“const”** usa el mismo concepto que, val.
+A continuación introduciré una incógnita por ejemplo, _x_: 
 
-La parte más importante en cualquier lenguaje de programación es declarar la variable antes de poder usarla.
-
-## 3. Tipos de variables
-
-En nuestro ejemplo declaramos tres variables, una de tipo **Int** otra de tipo **String**, y has usado el tipo **Boolean** para saber el estado de la vida del jugador.
-
-Para enriquecer tu conocimiento te describiré los tipos de variables de uso común disponibles en "Kotlin" y en otros lenguajes de programación.
-
-Para los números enteros, existen cuatro tipos con diferentes tamaños y, por tanto, rangos de valores.
-
-## Números enteros (int y long)
-
-### Int
-
-Int puede almacenar números enteros y puede llegar hasta 2 mil millones.
-
-```kotlin
-val numeroUno: Int = 1
-var vidaProtagonista: Int = 100
+```js
+12 + x = 19
 ```
 
-### Long
+Para encontrar el valor de _x_, es necesario mover los términos que se encuentran alrededor de **x**.
 
-El tipo de variable “Long” puede almacenar hasta 9,223,372,036,854,775,807.
-
-```kotlin
-val dosMilMillones: Long = 2000000000
+```js
+x = 19 - 12 
+-> x = 5
 ```
 
-### Short
+Cuando se usa más de una variable en una ecuación, los términos de la ecuación se vuelven más flexibles, lo que significa que pueden tomar diferentes valores.
 
-Short puede almacenar menos que **“Int”** aproximadamente 32767 caracteres.
-
-## Números decimales (double y float)
-
-### Double
-
-Para números reales, Kotlin proporciona los tipos de punto flotante Float y Double, es decir aquellos números con decimales.
-
-```kotlin
-val numeroPi: Double = 3.1416
+```js
+x + y = 19
 ```
 
-### Float
+Si se cambian los valores de _x_ e _y_. La fórmula aún puede ser correcta:
 
-Para el tipo Float, añada el sufijo f o F. y si dicho valor contiene más de 6-7 dígitos decimales, se redondeará.
+```js
+x = 15
+y = 4
+``` 
 
-```kotlin
-val miNumeroFloat: Float = 4.3182616284f // Float, el valor actual es: 4.3182615
+o
+
+```js
+x = 12
+y = 7
 ```
 
-### Boolean
+Lo mismo ocurre con los lenguajes de programación, una variable es algo que puede cambiar de un momento a otro. Técnicamente una variable es un campo de memoria al que se le puede cambiar su contenido cuantas veces sea necesario. 
 
-El tipo Boolean representa objetos booleanos que pueden tener dos valores: **verdadero** o **falso**.
+![ejemplo-de-variable-1](/assets/blog/variables/variablesVisualmente.png)
 
-```kotlin
-val tieneVida: Boolean = true
-```
+> Un campo de memoria es un pedacito de la memoria principal del computador (RAM) en donde podemos guardar un dato. 
 
-Imagina que quieres abrir una puerta en tu juego, inicialmente la puerta casi siempre estará CERRADA. Y para llevar este concepto en variables de programación podrías utilizar el tipo Boolean **¿Interesante, no?**
+Para que sea más fácil de entender, quiero aclarar que aunque la información se guarda en la memoria del computador, en realidad se almacena en lo que llamamos _"variables"_. 
 
-```kotlin
-val puertaAbierta: Boolean = false
-```
+> Las variables son como cajitas que pueden ser grandes o pequeñas, donde se guarda la información que queremos utilizar. De esta manera, podemos acceder y manipular la información en la memoria a través de las variables.
 
-## Cadenas de caracteres (String)
+![ejemplo-de-variable-2](/assets/blog/variables/variableCaja.png)
 
-Los Strings o cadenas en Kotlin están representadas por el tipo **String**. Generalmente, un valor de cadena es una secuencia de caracteres o “letras” entre comillas dobles (").
+¿Alguna vez has notado que la caja de una computadora es diferente a la caja de una consola de juegos? ¿Sabes qué es lo que diferencia la caja de una cosa de la caja de otra? La única diferencia es su contenido, es decir, el dispositivo que contiene. ¿Cómo se relaciona esto con el tema que estamos discutiendo? La respuesta es muy sencilla: la diferencia entre una variable y otra radica en su contenido, o más específicamente, en el tipo de contenido que almacenan.
 
-```kotlin
-val saludo: String = "Hola, bienvenido a tu aventura"
-```
+Antes de usar variables en un programa de computadora, debemos decirle al programa qué tipo de información van a guardar. Según la cantidad de información que queramos guardar en ellas. Por eso, es importante declararlas de antemano para que el programa las ajuste correctamente. ¿Y qué tipo de información podemos guardar en una variable?
 
-Los elementos de un String son caracteres a los que se puede acceder mediante la operación de indexación:
-Puedes definir una operación de indexación de la siguiente manera 👇
+## Tipo entero
 
-```kotlin
-nombreDeVariable[indice_al_que_quieres_acceder]
-```
+Un dato de tipo entero es simplemente un número que no tiene punto decimal, como 12, -64 o 0. La ventaja de los datos enteros es que nunca generan decimales en las operaciones, lo que los hace muy útiles en ciertos casos. De hecho, los datos enteros se manejan con un conjunto de reglas llamado Aritmética Entera. Si declaras una variable como entera, podrás almacenar solamente datos enteros en ella. ¡Es así de fácil!
 
-Para ejemplificar mejor usaré la variable saludo que creamos y accederé al **índice 1**, donde como resultado obtendremos la letra “o”.
+## Tipo real
 
-```kotlin
-saludo[1]  //El resultado de esta operación será la letra “o”
-```
+Un dato de tipo real es simplemente un número que tiene punto decimal, como: _6.97_ el cual es usado para realizar conversiones de nuestra moneda boliviana (Bolivia) al dólar. Otros ejemplos pueden ser: _-12.65_ o _95.0_. Lo interesante de los datos reales es que en las operaciones pueden generar decimales. Los datos reales se manejan con un conjunto de reglas llamado Aritmética Real. Si declaras una variable como real, podrás almacenar solamente datos reales en ella.
+Ahora bien, si nos fijamos en el número **7.** _(así con punto al final)_ puede que pensemos que es un número entero, pero en realidad no lo es. La definición de dato entero es que no tiene punto decimal, mientras que la de dato real es que sí lo tiene. Entonces, como 7 tiene un punto decimal al final, se considera un dato real. ¡Increíble, ¿no?!
 
-Espera, algo falló 😱: ¡**saludo[1]** nos muestra la segunda letra, no la primera! Lo que sucede es que en los lenguajes de programación las posiciones se cuentan desde 0.
+## Tipo caracter
 
-```kotlin
-saludo[0] //El resultado de esta operación será la “H”
-```
+Un dato tipo caracter es simplemente una letra, número o símbolo que utilizamos en nuestro lenguaje cotidiano. Pero, en el mundo de la computación, estos caracteres se representan de manera interna utilizando un sistema numérico llamado sistema binario, que solo utiliza los números 0 y 1. Para esto, se utiliza el Código ASCII _(American Standard Code for Interchange Information)_, que es un código internacional que asigna un número único a cada uno de estos caracteres. Por ejemplo, la letra C se representa internamente como el número 67 en binario, que es 0100 0011  en su forma completa. La tabla completa de equivalencias ASCII incluye todos los caracteres que pueden ser representados mediante este sistema, y consta de un total de 256 equivalencias diferentes.
 
-Ahora sí hemos conseguido averiguar cuál es el primer carácter de la variable **“saludo”**.
+Ahora quiero que te memorices esta palabra: cadena. Pues, una cadena es un conjunto de caracteres que se agrupan en un solo elemento. Por ejemplo, si escribimos el nombre _WILSON_ (mi nombre), ese conjunto de caracteres es una cadena.
 
-## 4. Inferencia de datos en las variables
+Por otro lado tienes que saber que el contenido de una cadena no es evaluado por el computador, y se acostumbra encerrarlo entre comillas dobles. Por ejemplo, la cadena "9-2 es igual a 14" puede parecer incorrecta matemáticamente, pero para el computador es válida ya que él no evalúa el contenido de la cadena, sino que simplemente lo trata como un conjunto de caracteres.
 
-**¿Recuerdas la parte donde dije que kotlin no necesita estrictamente el uso del tipo de variable?**
+Creo que es todo por hoy, en el siguiente artículo profundizaré más en los tipos de datos que se suele usar en todos los lenguajes de programación.
 
-Esto es porqué, el compilador de kotlin separa toda la declaración de la variable en dos partes, cada una separada por el operador de asignación **(=)**.
+Si quieres saber más sobre este tema y explorar otros conceptos relacionados, te invito a visitar mi artículo que habla de expresiones algebraicas. Ahí encontrarás información detallada y ejemplos prácticos que te ayudarán a expandir tus conocimientos. [¡Haz clic aquí para acceder ahora mismo!](https://wilsonquispe.vercel.app/posts/expresiones-algebra).
 
-Para ejemplificar mejor seguiremos usando nuestro primer ejemplo pero, esta vez no usaremos del tipo de variable.
+Y como siempre, te invito a que compartas esta publicación con tus amigos.
 
-```kotlin
-var vidaProtagonista = 100
-```
 
-Lo primero que hace el compilador es leer lo que está en la parte derecha y dice: Ese dato es un número entero, un **Int**, o lo que lleva la variable como tipo de dato. Y en consecuencia está variable será de tipo numérica.
-Este concepto te ayudará a ser un mejor programador y notarás la diferencia en sistemas robustos. Es esencial que domines este concepto.
-
-### Recapitulando…
-
-**¿Qué necesita saber el compilador para declarar una variable?**
-
-- 1.- El nombre de la variable
-- 2.- El tipo de variable
-- 3.- Si la variable puede reutilizarse o no.
-
-¡Espero que el artículo de hoy te haya sido útil!
-Sé que, a simple vista, todos estos conceptos te pueden hacer sentir un poco abrumado. Pero, ahora que conoces a profundidad qué es una variable en programación, diste el primer paso para volverte un buen programador.
-
-Recuerda que cada lenguaje de programación tiene sus propias reglas, pero, una vez que domines los fundamentos, estudia tus favoritos e identifica cuál se adapta mejor a lo que estás buscando.
-
-Muchas gracias por leerme ¡Nos vemos en el siguiente artículo! 🙌
-
-¿Te gustó este artículo? Me ayudas mucho compartiéndolo.

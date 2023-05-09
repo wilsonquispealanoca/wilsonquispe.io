@@ -11,7 +11,7 @@ const Activelink = ({href, children}) => {
     router.push(href)
   }
   return (
-    <a href={href} onClick={handleClick} style={style} className="mr-8 hidden lg:block transition-all duration-200 hover:pb-2 hover:border-b-2 hover:border-brand-beige">
+    <a href={href} onClick={handleClick} className="mr-8 hidden lg:block transition-all duration-200 hover:pb-2 hover:border-b-2 hover:border-brand-beige">
       {children}
     </a>
   );

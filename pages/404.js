@@ -26,7 +26,7 @@ export default function Custom404() {
             src="/cat.png"
             width={1000}
             height={1000}
-            alt="Follow us on Twitter"
+            alt="cat-404"
           />
         </div>
       </div>

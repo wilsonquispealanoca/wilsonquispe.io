@@ -1,36 +1,45 @@
-import Link from "next/link";
 import Container from "../components/templates/container";
+import Stories from "../components/molecules/stories";
+import Meta from "../components/molecules/meta";
 import Layout from "../components/templates/layout";
+import { getAllPosts } from "../lib/api";
 
-export default function Historias() {
+export default function Historias({ allPosts }) {
+  const morePosts = allPosts.slice(0);
+  const filteredPosts = morePosts.filter((post) => {
+    return post.tags === "historia"; // Filtrar solo los posts con la categoría 'historia'
+  });
   return (
-    <Layout>
-      <Container>
-        <>
-          <div className="flex items-center justify-center pt-16">
-            <div className="max-w-2xl w-full px-4">
-              <h1 className="text-5xl lg:text-6xl font-bold font-averia text-center mb-8 text-brand-beige">
-                ¡Muy pronto estará listo!
-              </h1>
-              <p className="text-2xl md:text-3xl text-brand-beige font-outfit text-center mb-12">
-                Está sección aún la voy construyendo. ¡Volveré pronto!
-              </p>
-              {/* <form className="flex flex-col md:flex-row justify-center items-center gap-4">
-                        <input className="w-full md:w-80  py-2 px-4 border text-gray-800 border-gray-200 bg-white" type="email" placeholder="Ingresa tu correo electrónico"/>
-                        <button className="bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 border">Notifícame cuando este listo</button>
-                    </form> */}
-              <Link href="/">
-                <button
-                  className="px-6 py-4 bg-brand-yellow rounded-full uppercase font-black
-             border border-black cursor-pointer text-brand-charcoal font-outfit"
-                >
-                  Volver al inicio
-                </button>
-              </Link>
-            </div>
-          </div>
-        </>
-      </Container>
-    </Layout>
+    <>
+      <Layout>
+        <Meta
+          title="Mis historias | Wilson Quispe"
+          description="Notas, pensamientos y anecdotas, cultivados en el Jardin digital de Wilson Quispe."
+          ogImage="https://i.ibb.co/s16J4Ts/Meta-image.png"
+          url="https://wilsonquispe-io.vercel.app/"
+          fbAppID="115713950293427"
+          twitter="@soywill_quispe"
+        />
+        <Container>
+          <Stories posts={filteredPosts} />
+        </Container>
+      </Layout>
+    </>
   );
+}
+
+export async function getStaticProps() {
+  const allPosts = getAllPosts([
+    "title",
+    "date",
+    "slug",
+    "author",
+    "coverImage",
+    "excerpt",
+    "tags",
+  ]);
+
+  return {
+    props: { allPosts },
+  };
 }

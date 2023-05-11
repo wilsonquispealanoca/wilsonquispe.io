@@ -1,7 +1,7 @@
 ---
 title: "Nadie te explicará así las variables de programación"
 date: "2022-02-21T05:35:07.322Z"
-tags: ["javascript", "programación"]
+tags: "javascript"
 excerpt: "Una variable podríamos verla como una caja que tiene un nombre y a la cual se le puede introducir (asignar) un valor en un momento dado, y en cualquier otro momento, podemos utilizar (leer) dicho valor y el valor de la variable podrá cambiar."
 coverImage: "/assets/blog/variables/variablesSocialNetwork.jpeg"
 author:
@@ -17,7 +17,7 @@ El primer paso para comprender realmente la programación es mirar hacia atrás 
 12 + 7 = 19
 ```
 
-A continuación introduciré una incógnita por ejemplo, _x_: 
+A continuación introduciré una incógnita por ejemplo, _x_:
 
 ```js
 12 + x = 19
@@ -26,7 +26,7 @@ A continuación introduciré una incógnita por ejemplo, _x_:
 Para encontrar el valor de _x_, es necesario mover los términos que se encuentran alrededor de _x_.
 
 ```js
-x = 19 - 12 
+x = 19 - 12
 -> x = 5
 ```
 
@@ -39,24 +39,24 @@ x + y = 19
 Si se cambian los valores de _x_ e _y_. La fórmula aún puede ser correcta:
 
 ```js
-x = 15
-y = 4
-``` 
+x = 15;
+y = 4;
+```
 
 o
 
 ```js
-x = 12
-y = 7
+x = 12;
+y = 7;
 ```
 
-Lo mismo ocurre con los lenguajes de programación, una variable es algo que puede cambiar de un momento a otro. Técnicamente una variable es un campo de memoria al que se le puede cambiar su contenido cuantas veces sea necesario. 
+Lo mismo ocurre con los lenguajes de programación, una variable es algo que puede cambiar de un momento a otro. Técnicamente una variable es un campo de memoria al que se le puede cambiar su contenido cuantas veces sea necesario.
 
 ![ejemplo-de-variable-1](/assets/blog/variables/variablesVisualmente.png)
 
-> Un campo de memoria es un pedacito de la memoria principal del computador (RAM) en donde podemos guardar un dato. 
+> Un campo de memoria es un pedacito de la memoria principal del computador (RAM) en donde podemos guardar un dato.
 
-Para que sea más fácil de entender, quiero aclarar que aunque la información se guarda en la memoria del computador, en realidad se almacena en lo que llamamos _"variables"_. 
+Para que sea más fácil de entender, quiero aclarar que aunque la información se guarda en la memoria del computador, en realidad se almacena en lo que llamamos _"variables"_.
 
 > Las variables son como cajitas que pueden ser grandes o pequeñas, donde se guarda la información que queremos utilizar. De esta manera, podemos acceder y manipular la información en la memoria a través de las variables.
 
@@ -79,7 +79,7 @@ Ahora bien, si nos fijamos en el número _7._ **(así con punto al final)** pued
 
 ## Tipo caracter
 
-Un dato tipo caracter es simplemente una letra, número o símbolo que utilizamos en nuestro lenguaje cotidiano. Pero, en el mundo de la computación, estos caracteres se representan de manera interna utilizando un sistema numérico llamado sistema binario, que solo utiliza los números _0_ y _1_. Para esto, se utiliza el Código ASCII _(American Standard Code for Interchange Information)_, que es un código internacional que asigna un número único a cada uno de estos caracteres. Por ejemplo, la letra _C_ se representa internamente como el número _67_ en binario, que es _0100 0011_  en su forma completa.
+Un dato tipo caracter es simplemente una letra, número o símbolo que utilizamos en nuestro lenguaje cotidiano. Pero, en el mundo de la computación, estos caracteres se representan de manera interna utilizando un sistema numérico llamado sistema binario, que solo utiliza los números _0_ y _1_. Para esto, se utiliza el Código ASCII _(American Standard Code for Interchange Information)_, que es un código internacional que asigna un número único a cada uno de estos caracteres. Por ejemplo, la letra _C_ se representa internamente como el número _67_ en binario, que es _0100 0011_ en su forma completa.
 
 Ahora quiero que te memorices esta palabra: _cadena_. Pues, una **cadena** es un conjunto de caracteres que se agrupan en un solo elemento. Por ejemplo, si escribimos el nombre _WILSON_ (mi nombre), ese conjunto de caracteres es una cadena.
 
@@ -90,5 +90,3 @@ Creo que es todo por hoy, en el siguiente artículo profundizaré más en los ti
 Si quieres saber más sobre este tema y explorar otros conceptos relacionados, te invito a visitar mi artículo que habla de expresiones algebraicas. Ahí encontrarás información detallada y ejemplos prácticos que te ayudarán a expandir tus conocimientos. [¡Haz clic aquí para acceder ahora mismo!](https://wilsonquispe.vercel.app/posts/expresiones-algebra).
 
 Y como siempre, te invito a que compartas esta publicación con tus amigos.
-
-

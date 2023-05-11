@@ -14,6 +14,15 @@
 
 /* Your own custom utilities */
 
+/* button */
+.btn-pink {
+  @apply px-6 py-4 bg-brand-pink rounded-full uppercase border border-black cursor-pointer font-outfit text-brand-charcoal font-black;
+}
+
+.btn-yellow {
+  @apply px-6 py-4 bg-brand-yellow rounded-full uppercase font-black
+  border border-black cursor-pointer text-brand-charcoal font-outfit;
+}
 
 @font-face {
   font-family: "Averia Serif Libre";

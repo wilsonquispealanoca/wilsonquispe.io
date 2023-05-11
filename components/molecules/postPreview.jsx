@@ -11,21 +11,16 @@ export default function PostPreview({
 }) {
   return (
     <>
-      <div className="my-6">
-        <h3 className="font-averia text-xl text-brand-yellow">
-          <Link
-            as={`/posts/${slug}`}
-            href="/posts/[slug]"
-            className="hover:underline"
-          >
+      <li className="flex flex-col gap-1">
+        <div className="uppercase font-bold text-xs text-brand-pink">
+          <DateFormatter dateString={date} />
+        </div>
+        <h3 className="text-xl font-medium hover:underline text-brand-beige">
+          <Link as={`/posts/${slug}`} href="/posts/[slug]">
             {title}
           </Link>
         </h3>
-        <div className="text-base mt-2 text-brand-yellow first-letter:capitalize">
-          <DateFormatter dateString={date} />
-        </div>
-      </div>
-      <div className="w-full h-[2px] bg-brand-beige opacity-40"></div>
+      </li>
     </>
   );
 }

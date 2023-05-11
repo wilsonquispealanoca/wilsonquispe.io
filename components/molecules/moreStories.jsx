@@ -13,7 +13,7 @@ export default function MoreStories({ posts }) {
         cosas que estoy haciendo, aprendiendo o creando. Este blog explora mi
         mente y te muestra mi lado más creativo. Te invito a que me leas...
       </h2>
-      <div className="grid grid-cols-1">
+      <ul className="grid gap-8">
         {posts.map((post) => (
           <PostPreview
             key={post.slug}
@@ -23,9 +23,10 @@ export default function MoreStories({ posts }) {
             author={post.author}
             slug={post.slug}
             excerpt={post.excerpt}
+            tags={post.tags}
           />
         ))}
-      </div>
+      </ul>
     </section>
   );
 }

@@ -9,10 +9,10 @@ export default function Historias() {
         <>
           <div className="flex items-center justify-center pt-16">
             <div className="max-w-2xl w-full px-4">
-              <h1 className="text-4xl font-bold font-averia text-center mb-8 text-brand-beige">
+              <h1 className="text-5xl lg:text-6xl font-bold font-averia text-center mb-8 text-brand-beige">
                 ¡Muy pronto estará listo!
               </h1>
-              <p className="text-lg text-brand-beige font-outfit text-center mb-12">
+              <p className="text-2xl md:text-3xl text-brand-beige font-outfit text-center mb-12">
                 Está sección aún la voy construyendo. ¡Volveré pronto!
               </p>
               {/* <form className="flex flex-col md:flex-row justify-center items-center gap-4">
@@ -20,7 +20,10 @@ export default function Historias() {
                         <button className="bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 border">Notifícame cuando este listo</button>
                     </form> */}
               <Link href="/">
-                <button className="px-4 inline py-2 text-sm text-black font-outfit rounded-md w-full focus:outline-none focus:shadow-outline-blue bg-brand-yellow">
+                <button
+                  className="px-6 py-4 bg-brand-yellow rounded-full uppercase font-black
+             border border-black cursor-pointer text-brand-charcoal font-outfit"
+                >
                   Volver al inicio
                 </button>
               </Link>

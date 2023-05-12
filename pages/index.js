@@ -9,7 +9,10 @@ import { getAllPosts } from "../lib/api";
 import Link from "next/link";
 
 export default function Home({ allPosts }) {
-  const heroPost = allPosts.slice(0, 3);
+  const filteredPosts = allPosts
+    .filter((post) => post.tags !== "historia")
+    .slice(0, 3);
+
   return (
     <Layout>
       <Meta
@@ -23,12 +26,9 @@ export default function Home({ allPosts }) {
       <Container>
         <Navbar />
         <Hero />
-        {heroPost.length > 0 && <ArticlesHome posts={heroPost} />}
+        {filteredPosts.length > 0 && <ArticlesHome posts={filteredPosts} />}
         <div className="mt-8 md:mt-10 text-center">
-          <Link
-            href="/blog"
-            className="text-lg text-brand-beige"
-          >
+          <Link href="/blog" className="text-lg text-brand-beige">
             Leer todas las entradas --&gt;
           </Link>
         </div>
@@ -38,7 +38,7 @@ export default function Home({ allPosts }) {
 }
 
 export async function getStaticProps() {
-  const allPosts = getAllPosts(["title", "slug", "date"]);
+  const allPosts = getAllPosts(["title", "slug", "date", "tags"]);
   const colors = [
     {
       color1: "from-card-top-color-1",

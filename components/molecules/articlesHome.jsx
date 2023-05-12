@@ -11,18 +11,21 @@ function ArticlesHome({ posts }) {
           key={posts[0].slug}
           title={posts[0].title}
           slug={posts[0].slug}
+          tags={posts[0].tags}
           gradient="from-[#D8B4FE] to-[#818CF8]"
         />
         <ArticleItemHome
           key={posts[1].slug}
           title={posts[1].title}
           slug={posts[1].slug}
+          tags={posts[1].tags}
           gradient="from-[#F0D3A8] to-[#E05285]"
         />
         <ArticleItemHome
           key={posts[2].slug}
           title={posts[2].title}
           slug={posts[2].slug}
+          tags={posts[2].tags}
           gradient="from-[#ADBFEB] to-[#33CC8B]"
         />
       </div>

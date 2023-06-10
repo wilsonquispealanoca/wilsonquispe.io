@@ -11,7 +11,7 @@ function MyApp({ Component, pageProps }) {
                       c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
                       t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
                       y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-                  })(window, document, "clarity", "script", '${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}');
+                  })(window, document, "clarity", "script", 'gu3w4acz8x');
                 `}
       </Script>
 
@@ -19,14 +19,14 @@ function MyApp({ Component, pageProps }) {
       <Script
         id="google"
         strategy="lazyOnload"
-        src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`}
+        src={`https://www.googletagmanager.com/gtag/js?id=G-2K2TY0B4Y1`}
       />
       <Script id="google-analitycs" strategy="lazyOnload">
         {`
                     window.dataLayer = window.dataLayer || [];
                     function gtag(){dataLayer.push(arguments);}
                     gtag('js', new Date());
-                    gtag('config', '${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}', {
+                    gtag('config', 'G-2K2TY0B4Y1', {
                     page_path: window.location.pathname,
                     });
                 `}

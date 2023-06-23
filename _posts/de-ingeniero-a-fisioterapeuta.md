@@ -1,6 +1,6 @@
 ---
 title: "Mi otro pensamiento profesional"
-date: "2023-05-20T05:35:07.322Z"
+date: "2022-11-20T05:35:07.322Z"
 tags: "historia"
 excerpt: "Después de que mamá se fue y después de haberme enfermado y enamorado me aferre a la palabra de Dios. Ahora mismo se que debo cumplir una misión acá, y se que alla ya tengo mi habitación junto a mamá y los amigos que conoci. Seguramente por podré conocer a mis amigos de slowly y hablaremos de todo."
 coverImage: "/assets/blog/variables/variablesSocialNetwork.jpeg"
@@ -15,4 +15,4 @@ Mamá se fue el 27 de marzo de 2022, luego caí en una depresión enorme lo cual
 
 ¿Recuerdas cuándo te conté que queria ser doctor? Te comento que al fin pude hallar la respuesta...
 
-> > ¡Hola! esta es una parte que escribi para empezar esta historia seguramente tienes muchas preguntas similares a: ¿Qué te paso? ¿Cuál es la respuesta? Para saber las respuestas te invito a que leas las está historia, aunqué se que aún no está terminada. Perdon por eso.
+> > ¡Hola! esta es una parte que escribi para empezar esta historia seguramente tienes muchas preguntas similares a: ¿Qué te paso? ¿Cuál es la respuesta? Para saber las respuestas te invito a que leas las anteriores historias, aunqué se que aún no muchas de ellas aun no están terminadas. Perdon por eso.

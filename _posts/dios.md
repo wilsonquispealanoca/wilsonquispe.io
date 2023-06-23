@@ -1,6 +1,6 @@
 ---
 title: "Dios me ayudo"
-date: "2023-05-19T08:35:07.322Z"
+date: "2022-09-28T08:35:07.322Z"
 tags: "historia"
 excerpt: "Después de que mamá se fue y después de haberme enfermado y enamorado me aferre a la palabra de Dios. Ahora mismo se que debo cumplir una misión acá, y se que alla ya tengo mi habitación junto a mamá y los amigos que conoci. Seguramente por podré conocer a mis amigos de slowly y hablaremos de todo."
 coverImage: "/assets/blog/variables/variablesSocialNetwork.jpeg"

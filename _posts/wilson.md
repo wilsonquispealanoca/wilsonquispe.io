@@ -13,11 +13,10 @@ ogImage:
 
 Es dificil escribir una introducción que te identifique, jamás lo había hecho. Ni para presentarme en algún trabajo. ya que siempre intentaba "disfrazar" mi verdadero yo para obtener el trabajo.
 
-Asi que... Vamos de nuevo.
+Asi que... te presento a mi verdadero yo.
 Nací el 29 de noviembre de 1994 en la ciudad de Viacha de El Alto, Bolivia, Sudamérica.
 Mis padres son del área rural . Mi padre se llama Angel y mi madre Elvira, somos cinco hermanos y dos hermanas, de los cuales yo soy el segundo.
 Crecí en una pequeña ciudad. Los estudios primarios lo realicé en una escuela cerca del lugar donde vivo.
-Cuando estuve en la escuela
 
 ...
 

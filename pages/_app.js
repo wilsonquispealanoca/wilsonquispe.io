@@ -1,6 +1,34 @@
 import Script from "next/script";
 import "../styles/globals.css";
 
+import i18n from "i18next";
+import { I18nextProvider } from "react-i18next";
+import LanguageDetector from "i18next-browser-languagedetector";
+
+// Importa tus archivos de traducción
+import enTranslation from "../public/locales/en.json";
+import esTranslation from "../public/locales/es.json";
+import ayTranslation from "../public/locales/ay.json";
+
+i18n.use(LanguageDetector).init({
+  resources: {
+    en: {
+      translation: enTranslation,
+    },
+    es: {
+      translation: esTranslation,
+    },
+    ay: {
+      translation: ayTranslation, // aymar arunaka = idioma aymara
+    },
+  },
+  fallbackLng: "es",
+  debug: false, // Cambia a true si deseas ver información de depuración
+  interpolation: {
+    escapeValue: false, // No es necesario escapar los valores en React
+  },
+});
+
 function MyApp({ Component, pageProps }) {
   return (
     <>
@@ -30,8 +58,9 @@ function MyApp({ Component, pageProps }) {
                     });
                 `}
       </Script>
-
-      <Component {...pageProps} />
+      <I18nextProvider i18n={i18n}>
+        <Component {...pageProps} />
+      </I18nextProvider>
     </>
   );
 }

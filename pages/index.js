@@ -1,6 +1,7 @@
 import Layout from "../components/templates/layout";
 import Container from "../components/templates/container";
 import Hero from "../components/molecules/hero";
+import Card from "../components/molecules/card";
 import ArticlesHome from "../components/molecules/articlesHome";
 import Navbar from "../components/molecules/navbar";
 import Meta from "../components/molecules/meta";
@@ -26,6 +27,7 @@ export default function Home({ allPosts }) {
       <Container>
         <Navbar />
         <Hero />
+        <Card />
         {filteredPosts.length > 0 && <ArticlesHome posts={filteredPosts} />}
         <div className="mt-8 md:mt-10 text-center">
           <Link href="/blog" className="text-lg text-brand-beige">

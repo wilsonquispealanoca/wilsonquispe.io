@@ -63,7 +63,8 @@ Solo usa una palabrita para todo, mientras nosotros usamos miles dependiendiendo
 
 <p class="highlighter"><span class="bluoquot-title">Nota:</span> Si ya sabes inglés este tema te resultará demasiado similar. Según yo, el aymara tiene algo de parecido al idioma inglés. </p>
 
-En donde estes práctica lo aprendido escribiendo oraciones cortas, yo te ayudo con algunas palabras:
+En donde estes práctica lo aprendido escribiendo oraciones cortas, yo te ayudo con algunas palabras
+¿Cómo dirias, un pan?
 
 ```js
 Quqa = arbol // Sí, es la "qoqa" que mascan nuestros abuelos, ya hablaré de esto en otro tema.

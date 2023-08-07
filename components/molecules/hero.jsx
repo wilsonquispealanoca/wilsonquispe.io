@@ -5,7 +5,7 @@ function Hero() {
   return (
     <section className="flex flex-col-reverse md:flex-row md:mt-8 lg:mt-12">
       <ContentHero />
-      <Profile 
+      <Profile
         name="Image wilson quispe"
         picture="/assets/blog/authors/profileWilson.jpg"
       />

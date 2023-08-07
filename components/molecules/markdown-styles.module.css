@@ -40,5 +40,5 @@
 }
 
 .markdown blockquote > p {
-  @apply border-accent border-l-2 bg-brand-charcoal-muted my-16 px-6 py-8 rounded-r-xl;
+  @apply border-accent border-l-8 bg-brand-charcoal-muted my-16 px-6 py-8 rounded-r-xl text-[#ddd];
 }

@@ -13,7 +13,7 @@
 /* Stop purging. */
 
 /* Your own custom utilities */
-.highlighter {
+.blockquote-blue {
   background: #1b222f;
   border-left: 8px solid #6b8bd0;
   color: #ddd !important;
@@ -22,8 +22,37 @@
   box-shadow: 2px 2px 8px #0003;
 }
 
-.bluoquot-title {
+.blockquote-blue-title {
   color: #6b8bd0;
+  font-weight: bold;
+}
+
+.blockquote-red {
+  background: #301515;
+  border-left: 8px solid #fd7171;
+  color: #ddd !important;
+  margin: 0;
+  padding: 20px 40px 20px 15px;
+  box-shadow: 2px 2px 8px #0003;
+}
+
+.blockquote-red-title {
+  color: #fd7171;
+  font-weight: bold;
+}
+
+.blockquote-purple {
+  background: #302243;
+  border-left: 8px solid #b49cda;
+  color: #ddd !important;
+  margin: 0;
+  padding: 20px 40px 20px 15px;
+  box-shadow: 2px 2px 8px #0003;
+  font-weight: 400;
+}
+
+.blockquote-purple-title {
+  color: #b49cda;
   font-weight: bold;
 }
 /* button */

@@ -13,7 +13,19 @@
 /* Stop purging. */
 
 /* Your own custom utilities */
+.highlighter {
+  background: #1b222f;
+  border-left: 8px solid #6b8bd0;
+  color: #ddd !important;
+  margin: 0;
+  padding: 20px 40px 20px 15px;
+  box-shadow: 2px 2px 8px #0003;
+}
 
+.bluoquot-title {
+  color: #6b8bd0;
+  font-weight: bold;
+}
 /* button */
 .btn-pink {
   @apply px-6 py-4 bg-brand-pink rounded-full uppercase border border-black cursor-pointer font-outfit text-brand-charcoal font-black;

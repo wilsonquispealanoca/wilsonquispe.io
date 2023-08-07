@@ -8,10 +8,10 @@ export default function Layout({ children }) {
       </div>
       <Footer />
       <p className="bg-brand-coal font-outfit text-center text-[1rem] md:text-lg text-brand-beige/70 px-8 md:px-32 lg:px-56 lg:pt-8 xl:px-80">
-        Hecho con 💙 durante la cuarentena
+        Creado por Wilson con 💙
       </p>
       <p className="bg-brand-coal text-center py-6 font-outfit text-brand-beige/70">
-        © 2023 <a href="https://wilsonquispe.vercel.app">Wilson Quispe</a>
+        © 2023 Todos los derechos reservados. Lo izquierdos también.
       </p>
     </>
   );

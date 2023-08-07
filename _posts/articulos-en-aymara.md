@@ -17,7 +17,7 @@ Sigamos con otro ejemplo. Imagina que estás en el parque y ves un perro adorabl
 
 Existen dos tipos de artículos gramaticales: <span class="blockquote-blue-title">Artículos definidos</span> y los <span class="blockquote-purple-title">Artículos indefinidos</span>
 
-<em>Ejemplo:</em>
+<em>Ejemplo con el artículo definido:</em>
 
 ```js
 El perro // donde "El" seria el artículo

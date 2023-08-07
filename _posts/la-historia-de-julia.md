@@ -13,12 +13,7 @@ ogImage:
 
 <p class="blockquote-purple">Hace dos años conocí a una chica de Alemania; nos conocimos en una aplicación de cartas. charlábamos mucho, leiamos libros, hablabamos en muchos idiomas y cuando alguno de nosotros quería aprender algo siempre lo discutíamos. era muy inteligente y testaruda y si yo no entendía algo del "aleman" o de otra cosa, me decia: no Wil, no significa eso.
 Siempre preguntaba por Bolivia y por mi familia.
-
-Una vez ella se perdió, pero volvió y dijó: wil no era mi intención perderme, si vuelvo a hacerlo escríbeme aqui.
-Y ella me dió su cuenta de twitter...
-La vi por primera vez. Y me dije a mi mismo; por dios es preciosa, tal vez demasiado para mí.
-
-Y después, me despedí...</p>
+Una vez ella se perdió, pero volvió y dijó: wil no era mi intención perderme, si vuelvo a hacerlo escríbeme aqui. Y ella me dió su cuenta de twitter. La vi por primera vez. Y me dije a mi mismo; por dios es preciosa, tal vez demasiado para mí. Y después, me despedí...</p>
 
 Esta es una historia que no solo es mía, sino que también se trata de una gran amiga. Esta es la historia de Julia.
 

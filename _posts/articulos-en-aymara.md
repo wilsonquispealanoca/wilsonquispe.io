@@ -34,9 +34,9 @@ En el idioma aymara el artículo definido no existe, por lo general se mantiene 
 <em>Ejemplo:</em>
 
 ```js
-uta = La casa
-phisi = El gato
-anu = El perro
+uta = La casa | Casa
+phisi = El gato | Gato
+anu = El perro  | Perro
 ```
 
 Si queremos decir: Las casas, Los gatos o Los perros, sencillamente aumentamos el "sufijo" <span class="blockquote-purple-title">naka</span> al final de la palabra.
@@ -55,7 +55,7 @@ anunaka = perros | Los perros
 
 ## Artículo indefinido
 
-El artículo indeterminado se utiliza, como en el castellano, cuando hablamos de algo <em>NO</em> conocido ni mencionado anteriormente.
+El artículo indefinido se utiliza como en el castellano, cuando hablamos de algo <em>NO</em> conocido ni mencionado anteriormente.
 
 La forma correcta de escribirlo es <span class="blockquote-red-title">mä</span> que significa: <em>un / una / uno / unos / unas</em>
 
@@ -65,6 +65,7 @@ La forma correcta de escribirlo es <span class="blockquote-red-title">mä</span>
 mä uta = Una casa
 mä phisi = Un gato
 mä anunaka = Unos perros
+mä kimsa = Unos tres
 ```
 
 ¿Te das cuenta de lo simple que lo pone el aymara?
@@ -79,8 +80,7 @@ En donde estes práctica lo aprendido escribiendo oraciones cortas, yo te ayudo 
 <span class="blockquote-red-title">Un pan</span>
 
 ```python
-Quqa = arbol // Sí, es la "qoqa" que mascan nuestros abuelos, ya hablaré de esto
-en otro tema.
+Quqa = arbol
 Tant'a = pan
 Punku = puerta
 jukumari = oso

@@ -12,16 +12,19 @@ import ShareFacebook from "../../components/atoms/shareFacebook";
 import ShareTwitter from "../../components/atoms/shareTwitter";
 import Meta from "../../components/molecules/meta";
 import Container from "../../components/templates/container";
+import Link from "next/link";
 
 export default function Post({ post }) {
   const router = useRouter();
   const completion = ProgressBar();
+
+  console.log();
+
   return (
     <Layout>
       <div className="relative left-0 right-0">
         <Container>
-
-        <Navbar />
+          <Navbar />
         </Container>
         <span
           id="progress-bar"
@@ -52,6 +55,16 @@ export default function Post({ post }) {
                 excerpt={post.excerpt}
               />
               <PostBody content={post.content} />
+              {post.tags === "idiomas" && (
+                <Link
+                  href="/lesson"
+                  className="max-w-2xl mx-8 md:mx-32 lg:mx-56 xl:mx-80 pb-8"
+                >
+                  <button className="mt-6 rounded-2xl border-b-4 border-green-600 bg-green-500 py-4 px-8 font-bold uppercase text-white">
+                    Repasar lección
+                  </button>
+                </Link>
+              )}
               <div className="max-w-2xl mx-8 md:mx-32 lg:mx-56 xl:mx-80 pb-16 flex justify-center">
                 <ShareFacebook
                   url={`https://wilsonquispe.vercel.app/posts/${post.slug}/`}
@@ -81,6 +94,7 @@ export async function getStaticProps({ params }) {
     "ogImage",
     "coverImage",
     "excerpt",
+    "tags",
   ]);
   const content = await markdownToHtml(post.content || "");
 

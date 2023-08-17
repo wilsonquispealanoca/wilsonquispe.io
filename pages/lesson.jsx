@@ -137,8 +137,8 @@ export default function Lesson() {
               ¡Felicidades, lo lograste!
             </h1>
             <p className="text-gray-600 font-outfit text-center lg:text-lg">
-              Recuerda, <strong>"anu"</strong> es perro como también puede ser
-              "El perro".
+              Recuerda, <strong>&quot;anu&quot;</strong> es perro como también
+              puede ser &quot;El perro&quot;.
             </p>
             <Link href="/posts/articulos-en-aymara">
               <button class="mt-4 w-full rounded-2xl border-b-4 border-green-600 bg-green-500 p-2 lg:p-3 font-bold uppercase text-white transition hover:brightness-105 sm:min-w-[150px] sm:max-w-fit">

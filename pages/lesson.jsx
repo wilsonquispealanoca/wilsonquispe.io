@@ -135,7 +135,7 @@ export default function Lesson() {
             <h1 className="font-averia text-orange-500 mb-8 text-2xl md:text-5xl lg:mt-16">
               ¡Felicidades, lo lograste!
             </h1>
-            <p className=" text-gray-600 font-outfit text-center lg:text-lg">
+            <p className="text-gray-600 font-outfit text-center lg:text-lg">
               Recuerda, <strong>"anu"</strong> es perro como también puede ser
               "El perro".
             </p>

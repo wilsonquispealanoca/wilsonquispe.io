@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 
@@ -127,7 +128,7 @@ export default function Lesson() {
         // Pantalla de felicitaciones al terminar todas las preguntas
         <div className="flex items-center justify-center min-h-screen w-full">
           <div className="flex items-center justify-center flex-col px-4">
-            <img
+            <Image
               src="/assets/illustrations/dog.jpg"
               alt="iconWin"
               className="w-48"
@@ -164,7 +165,7 @@ export default function Lesson() {
                     key={index}
                     onClick={() => setSelectedAnswer(index)}
                   >
-                    <img src={item.icon} alt="" className="mb-2" />
+                    <Image src={item.icon} alt="" className="mb-2" />
                     <span className="text-gray-900 text-base lg:text-lg">
                       {item.name}
                     </span>

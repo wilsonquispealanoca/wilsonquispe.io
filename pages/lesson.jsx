@@ -12,7 +12,7 @@ export default function Lesson() {
 
   const questions = [
     {
-      question: `¿Cuál de estos es el "Perro"?`,
+      question: '¿Cuál de estos es el "Perro"?',
       answers: [
         { icon: "/assets/illustrations/house.png", name: "uta" },
         { icon: "/assets/illustrations/cat.svg", name: "phisi" },
@@ -22,7 +22,7 @@ export default function Lesson() {
       correctAnswer: 2,
     },
     {
-      question: `¿Cuál es el "Oso"?`,
+      question: '¿Cuál es el "Oso"?',
       answers: [
         { icon: "/assets/illustrations/cat.svg", name: "phisi" },
         { icon: "/assets/illustrations/bear.svg", name: "jukumari" },
@@ -32,7 +32,7 @@ export default function Lesson() {
       correctAnswer: 1,
     },
     {
-      question: `¿Cuál de estos es "El gato"?`,
+      question: '¿Cuál de estos es "El gato"?',
       answers: [
         { icon: "/assets/illustrations/bear.svg", name: "jukumari" },
         { icon: "/assets/illustrations/cat.svg", name: "phisi" },
@@ -42,7 +42,7 @@ export default function Lesson() {
       correctAnswer: 1,
     },
     {
-      question: `¿Cómo se dice "un gato"?`,
+      question: '¿Cómo se dice "un gato"?',
       answers: [
         { name: "mä anu" },
         { name: "mä phisi" },
@@ -52,7 +52,7 @@ export default function Lesson() {
       correctAnswer: 1,
     },
     {
-      question: `¿Cómo se dice "gatos"?`,
+      question: '¿Cómo se dice "gatos"?',
       answers: [
         { name: "utanaka" },
         { name: "uta" },
@@ -64,7 +64,7 @@ export default function Lesson() {
       correctAnswer: 1,
     },
     {
-      question: `¿Cómo se dice "unos gatos"?`,
+      question: '¿Cómo se dice "unos gatos"?',
       answers: [
         { name: "mä uta" },
         { name: "mä phisi" },
@@ -76,7 +76,7 @@ export default function Lesson() {
       correctAnswer: 2,
     },
     {
-      question: `¿Cómo dirias "Los perros"?`,
+      question: '¿Cómo dirias "Los perros"?',
       answers: [
         { name: "utanaka" },
         { name: "phisinaka" },
@@ -86,7 +86,7 @@ export default function Lesson() {
       correctAnswer: 2,
     },
     {
-      question: `¿Cómo dirias "Las casas"?`,
+      question: '¿Cómo dirias "Las casas"?',
       answers: [
         { name: "phisinaka" },
         { name: "anunaka" },
@@ -137,7 +137,7 @@ export default function Lesson() {
             </h1>
             <p className=" text-gray-600 font-outfit text-center lg:text-lg">
               Recuerda, <strong>"anu"</strong> es perro como también puede ser
-              "El perro"
+              "El perro".
             </p>
             <Link href="/posts/articulos-en-aymara">
               <button class="mt-4 w-full rounded-2xl border-b-4 border-green-600 bg-green-500 p-2 lg:p-3 font-bold uppercase text-white transition hover:brightness-105 sm:min-w-[150px] sm:max-w-fit">

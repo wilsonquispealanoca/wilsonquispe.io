@@ -136,7 +136,7 @@ export default function Lesson() {
             <h1 className="font-averia text-orange-500 mb-8 text-2xl md:text-5xl lg:mt-16">
               ¡Felicidades, lo lograste!
             </h1>
-            <p className="text-gray-600 font-outfit text-center lg:text-lg">
+            <p className="text-gray-600 font-outfit text-center text-lg lg:text-xl">
               Recuerda, <strong>&quot;anu&quot;</strong> es perro como también
               puede ser &quot;El perro&quot;.
             </p>
@@ -150,7 +150,7 @@ export default function Lesson() {
       ) : (
         <div className="my-8 font-outfit tex-lg flex h-[calc(100vh-4rem)] flex-col gap-5 px-4 sm:px-0 sm:py-0">
           <div className="w-full bg-white h-screen flex justify-center items-center flex-col">
-            <div className="flex max-w-2xl grow flex-col gap-5 self-center sm:items-center sm:justify-center sm:gap-24 sm:px-5">
+            <div className="flex max-w-2xl grow flex-col gap-5 self-center sm:items-center sm:justify-center sm:gap-24 sm:px-5 w-full">
               <h1 class="self-start text-xl font-bold sm:text-3xl">
                 {currentQuestion.question}
               </h1>
@@ -243,7 +243,7 @@ export default function Lesson() {
                         class="w-full rounded-2xl border-b-4 border-red-600 bg-red-500 p-2 lg:p-3 font-bold uppercase text-white transition hover:brightness-105 sm:min-w-[150px] sm:max-w-fit"
                         onClick={handleContinue}
                       >
-                        Continue
+                        Continuar
                       </button>
                     </div>
                   </div>

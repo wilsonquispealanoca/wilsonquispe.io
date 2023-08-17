@@ -62,7 +62,7 @@ export default function Lesson() {
         { name: "jukumari" },
         { name: "phisi" },
       ],
-      correctAnswer: 1,
+      correctAnswer: 2,
     },
     {
       question: '¿Cómo se dice "unos gatos"?',
@@ -141,14 +141,14 @@ export default function Lesson() {
               puede ser &quot;El perro&quot;.
             </p>
             <Link href="/posts/articulos-en-aymara">
-              <button class="mt-4 w-full rounded-2xl border-b-4 border-green-600 bg-green-500 p-2 lg:p-3 font-bold uppercase text-white transition hover:brightness-105 sm:min-w-[150px] sm:max-w-fit">
+              <button class="mt-4 w-full rounded-2xl border-b-4 border-green-600 bg-green-500 p-2 lg:p-3 font-bold uppercase text-white transition hover:brightness-105 sm:min-w-[150px] sm:max-w-fit py-4 px-8">
                 Continuar
               </button>
             </Link>
           </div>
         </div>
       ) : (
-        <div className="my-8 font-outfit flex h-[calc(100vh-4rem)] flex-col gap-5 px-4 sm:px-0 sm:py-0">
+        <div className="my-8 font-outfit tex-lg flex h-[calc(100vh-4rem)] flex-col gap-5 px-4 sm:px-0 sm:py-0">
           <div className="w-full bg-white h-screen flex justify-center items-center flex-col">
             <div className="flex max-w-2xl grow flex-col gap-5 self-center sm:items-center sm:justify-center sm:gap-24 sm:px-5">
               <h1 class="self-start text-xl font-bold sm:text-3xl">
@@ -166,9 +166,9 @@ export default function Lesson() {
                     onClick={() => setSelectedAnswer(index)}
                   >
                     <Image src={item.icon} alt="" className="mb-2" />
-                    <span className="text-gray-900 text-base lg:text-lg">
+                    <div className="text-gray-900 text-lg lg:text-lg w-full">
                       {item.name}
-                    </span>
+                    </div>
                   </button>
                 ))}
               </div>

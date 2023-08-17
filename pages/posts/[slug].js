@@ -60,7 +60,7 @@ export default function Post({ post }) {
                   href="/lesson"
                   className="max-w-2xl mx-8 md:mx-32 lg:mx-56 xl:mx-80 pb-8"
                 >
-                  <button className="mt-6 rounded-2xl border-b-4 border-green-600 bg-green-500 py-4 px-8 font-bold uppercase text-white">
+                  <button className="my-6 rounded-2xl border-b-4 border-green-600 bg-green-500 py-4 px-8 font-bold uppercase text-white">
                     Repasar lección
                   </button>
                 </Link>

@@ -89,7 +89,8 @@ K'awna = huevo
 
 <p class="blockquote-purple"><span class="blockquote-purple-title">Para los curiosos:</span> Recientemente aprendí que en el idioma aymara el "sufijo" <span class="blockquote-purple-title">xa</span> también cumple la función de artículo.<br><span class="blockquote-purple-title">Ejemplo:</span><br>Aka uta<span class="blockquote-purple-title">xa</span> punkuwa = Esa es <span class="blockquote-purple-title">la</span> puerta</p>
 
-Se que viste nuevas palabras, pero, en siguientes capítulos te explicaré su significado.
+¿Estás listo para practicar?
 
-Mientras repasa los conceptos que hoy aprendiste.
-Eso sería por hoy...
+A continuación encontrarás ejercicios que te ayudarán a memorizar y prácticar los artículos en aymara.
+
+Así que ¡Te reto! 👇

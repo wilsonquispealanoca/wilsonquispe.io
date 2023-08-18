@@ -126,49 +126,58 @@ export default function Lesson() {
     <>
       {currentQuestionIndex === -1 ? (
         // Pantalla de felicitaciones al terminar todas las preguntas
-        <div className="flex items-center justify-center min-h-screen w-full">
+        <div className="bg-brand-coal flex items-center justify-center min-h-screen w-full">
           <div className="flex items-center justify-center flex-col px-4">
             <Image
-              src="/assets/illustrations/dog.jpg"
+              src="/assets/illustrations/house.png"
               alt="iconWin"
-              className="w-48"
+              width={500}
+              height={500}
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
             />
-            <h1 className="font-averia text-orange-500 mb-8 text-2xl md:text-5xl lg:mt-16">
+            <h1 className="font-averia text-indigo-500 mb-8 text-2xl md:text-5xl lg:mt-16">
               ¡Felicidades, lo lograste!
             </h1>
-            <p className="text-gray-600 font-outfit text-center text-lg lg:text-xl">
-              Recuerda, <strong>&quot;anu&quot;</strong> es perro como también
-              puede ser &quot;El perro&quot;.
+            <p className="text-brand-beige font-outfit text-center text-lg lg:text-xl">
+              Recuerda, <strong>&quot;uta&quot;</strong> es casa como también
+              puede ser &quot;La casa&quot;.
             </p>
             <Link href="/posts/articulos-en-aymara">
-              <button class="mt-4 w-full rounded-2xl border-b-4 border-green-600 bg-green-500 p-2 lg:p-3 font-bold uppercase text-white transition hover:brightness-105 sm:min-w-[150px] sm:max-w-fit py-4 px-8">
+              <button class="my-4 grow px-6 py-4 bg-green-500 rounded-full uppercase border border-black border-2 cursor-pointer font-outfit text-white font-black sm:min-w-[150px] sm:max-w-fit sm:grow-0">
                 Continuar
               </button>
             </Link>
           </div>
         </div>
       ) : (
-        <div className="my-8 font-outfit tex-lg flex h-[calc(100vh-4rem)] flex-col gap-5 px-4 sm:px-0 sm:py-0">
-          <div className="w-full bg-white h-screen flex justify-center items-center flex-col">
+        <div className="bg-brand-coal text-brand-beige py-8 font-outfit tex-lg flex h-screen flex-col gap-5 px-4 sm:px-0 sm:py-0">
+          <div className="w-full h-screen flex justify-center items-center flex-col">
             <div className="flex max-w-2xl grow flex-col gap-5 self-center sm:items-center sm:justify-center sm:gap-24 sm:px-5 w-full">
               <h1 class="self-start text-xl font-bold sm:text-3xl">
                 {currentQuestion.question}
               </h1>
-              <div className="grid grid-cols-2 gap-2 lg:gap-3 sm:grid-cols-3 lg:grid-cols-4 lg:w-[40rem]">
+              <div className="grid grid-cols-2 gap-2 lg:gap-3 sm:grid-cols-3 lg:grid-cols-4 lg:w-[40rem] text-">
                 {currentQuestion.answers.map((item, index) => (
                   <button
                     className={`${
                       selectedAnswer === index
-                        ? "cursor-pointer rounded-xl border-2 border-b-4 border-blue-300 bg-blue-100 p-2 lg:p-4 text-blue-400"
-                        : "cursor-pointer rounded-xl border-2 border-b-4 border-gray-200 p-2 lg:p-4 hover:bg-gray-100"
+                        ? "cursor-pointer rounded-xl bg-gradient-to-br p-border from-[#D8B4FE] to-[#818CF8] bg-blue-100 p-2 lg:p-4 text-brand-coal font-bold"
+                        : "cursor-pointer rounded-xl border-2 border-b-4 border-brand-charcoal p-2 lg:p-4 hover:bg-brand-charcoal"
                     }`}
                     key={index}
                     onClick={() => setSelectedAnswer(index)}
                   >
-                    <Image src={item.icon} alt="" className="mb-2" />
-                    <div className="text-gray-900 text-lg lg:text-lg w-full">
-                      {item.name}
-                    </div>
+                    {item.icon && (
+                      <Image
+                        src={item.icon}
+                        width={800}
+                        height={800}
+                        alt="Picture of the lesson"
+                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                        className="mb-2"
+                      />
+                    )}
+                    <div className="text-lg lg:text-lg w-full">{item.name}</div>
                   </button>
                 ))}
               </div>
@@ -179,7 +188,7 @@ export default function Lesson() {
                   Saltar
                 </button>
                 <button
-                  className="mt-auto grow rounded-2xl border-b-4 border-green-600 bg-green-500 p-3 font-bold uppercase text-white sm:min-w-[150px] sm:max-w-fit sm:grow-0"
+                  className="w-full px-6 py-4 bg-green-500 rounded-full uppercase cursor-pointer font-outfit text-white font-black sm:min-w-[150px] sm:max-w-fit sm:grow-0"
                   onClick={handleAnswerSubmit}
                 >
                   Enviar Respuesta
@@ -205,7 +214,7 @@ export default function Lesson() {
                       <div class="lg:text-xl">¡Respuesta correcta!</div>
                     </div>
                     <button
-                      class="w-full rounded-2xl border-b-4 border-green-600 bg-green-500 p-2 lg:p-3 font-bold uppercase text-white transition hover:brightness-105 sm:min-w-[150px] sm:max-w-fit"
+                      class="w-full px-6 py-4 bg-green-500 rounded-full uppercase border border-black border-2 cursor-pointer font-outfit text-white font-black sm:min-w-[150px] sm:max-w-fit sm:grow-0"
                       onClick={handleContinue}
                     >
                       Continuar
@@ -240,7 +249,7 @@ export default function Lesson() {
                         </div>
                       </div>
                       <button
-                        class="w-full rounded-2xl border-b-4 border-red-600 bg-red-500 p-2 lg:p-3 font-bold uppercase text-white transition hover:brightness-105 sm:min-w-[150px] sm:max-w-fit"
+                        class="w-full px-6 py-4 bg-red-500 border-black border-2 rounded-full uppercase cursor-pointer font-outfit text-white font-black sm:min-w-[150px] sm:max-w-fit"
                         onClick={handleContinue}
                       >
                         Continuar

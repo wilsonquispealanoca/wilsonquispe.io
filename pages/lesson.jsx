@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 /* import DogSvg from "/assets/illustrations/dog.svg";
 import CatSvg from "/assets/illustrations/cat.svg";
@@ -10,6 +10,7 @@ export default function Lesson() {
   const [showModal, setShowModal] = useState(false);
   const [selectedAnswer, setSelectedAnswer] = useState(null);
   const [isCorrectAnswer, setIsCorrectAnswer] = useState(false);
+  const [userAnswer, setUserAnswer] = useState("");
 
   const questions = [
     {
@@ -96,20 +97,44 @@ export default function Lesson() {
       ],
       correctAnswer: 3,
     },
+    {
+      question: 'Escribe esto en aymara: "Las casas"',
+      correctAnswerWrite: "utanaka",
+    },
+    {
+      question: 'Escribe "perro" en aymara',
+      correctAnswerWrite: "anu",
+    },
+    {
+      question: 'Escribe "gatos" en aymara',
+      correctAnswerWrite: "phisinaka",
+    },
   ];
 
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
 
   const handleAnswerSubmit = () => {
-    const isAnswerCorrect =
-      selectedAnswer === questions[currentQuestionIndex].correctAnswer;
-    setIsCorrectAnswer(isAnswerCorrect);
+    const currentQuestion = questions[currentQuestionIndex];
+
+    if (currentQuestion.answers) {
+      const isAnswerCorrect =
+        selectedAnswer === questions[currentQuestionIndex].correctAnswer;
+      setIsCorrectAnswer(isAnswerCorrect);
+      setShowModal(true);
+    } else if (currentQuestion.correctAnswerWrite) {
+      const isAnswerCorrect =
+        userAnswer.trim().toLowerCase() ===
+        currentQuestion.correctAnswerWrite.trim().toLowerCase();
+      setIsCorrectAnswer(isAnswerCorrect);
+    }
+
     setShowModal(true);
   };
 
   const handleContinue = () => {
     setShowModal(false);
     setSelectedAnswer(null);
+    setUserAnswer("");
     setIsCorrectAnswer(false);
 
     if (currentQuestionIndex < questions.length - 1) {
@@ -121,21 +146,20 @@ export default function Lesson() {
   };
 
   const currentQuestion = questions[currentQuestionIndex];
-
   return (
     <>
       {currentQuestionIndex === -1 ? (
         // Pantalla de felicitaciones al terminar todas las preguntas
-        <div className="bg-brand-coal flex items-center justify-center min-h-screen w-full">
+        <div className="bg-brand-coal flex items-center justify-center h-screen w-full">
           <div className="flex items-center justify-center flex-col px-4">
             <Image
               src="/assets/illustrations/house.png"
               alt="iconWin"
-              width={500}
-              height={500}
+              width={400}
+              height={400}
               sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
             />
-            <h1 className="font-averia text-indigo-500 mb-8 text-2xl md:text-5xl lg:mt-16">
+            <h1 className="font-averia text-indigo-500 mb-8 text-2xl md:text-5xl">
               ¡Felicidades, lo lograste!
             </h1>
             <p className="text-brand-beige font-outfit text-center text-lg lg:text-xl">
@@ -143,7 +167,7 @@ export default function Lesson() {
               puede ser &quot;La casa&quot;.
             </p>
             <Link href="/posts/articulos-en-aymara">
-              <button class="my-4 grow px-6 py-4 bg-green-500 rounded-full uppercase border border-black border-2 cursor-pointer font-outfit text-white font-black sm:min-w-[150px] sm:max-w-fit sm:grow-0">
+              <button class="my-4 px-16 py-4 bg-green-500 rounded-full uppercase border-black border-2 cursor-pointer font-outfit text-white font-black sm:min-w-[150px] sm:max-w-fit sm:grow-0">
                 Continuar
               </button>
             </Link>
@@ -151,52 +175,85 @@ export default function Lesson() {
         </div>
       ) : (
         <div className="bg-brand-coal text-brand-beige py-8 font-outfit tex-lg flex h-screen flex-col gap-5 px-4 sm:px-0 sm:py-0">
-          <div className="w-full h-screen flex justify-center items-center flex-col">
+          <div className="w-full relative h-screen flex justify-center items-center flex-col">
             <div className="flex max-w-2xl grow flex-col gap-5 self-center sm:items-center sm:justify-center sm:gap-24 sm:px-5 w-full">
-              <h1 class="self-start text-xl font-bold sm:text-3xl">
+              <h1 className="self-start text-xl font-bold sm:text-3xl">
                 {currentQuestion.question}
               </h1>
-              <div className="grid grid-cols-2 gap-2 lg:gap-3 sm:grid-cols-3 lg:grid-cols-4 lg:w-[40rem] text-">
-                {currentQuestion.answers.map((item, index) => (
-                  <button
-                    className={`${
-                      selectedAnswer === index
-                        ? "cursor-pointer rounded-xl bg-gradient-to-br p-border from-[#D8B4FE] to-[#818CF8] bg-blue-100 p-2 lg:p-4 text-brand-coal font-bold"
-                        : "cursor-pointer rounded-xl border-2 border-b-4 border-brand-charcoal p-2 lg:p-4 hover:bg-brand-charcoal"
-                    }`}
-                    key={index}
-                    onClick={() => setSelectedAnswer(index)}
-                  >
-                    {item.icon && (
-                      <Image
-                        src={item.icon}
-                        width={800}
-                        height={800}
-                        alt="Picture of the lesson"
-                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                        className="mb-2"
-                      />
-                    )}
-                    <div className="text-lg lg:text-lg w-full">{item.name}</div>
-                  </button>
-                ))}
-              </div>
-            </div>
-            <section className="border-gray-200 sm:border-t-2 sm:p-10 w-full">
-              <div className="mx-auto flex max-w-5xl sm:justify-between text-sm">
-                <button className="hidden rounded-2xl border-2 border-b-4 border-gray-200 bg-white p-3 font-bold uppercase text-gray-400 transition hover:border-gray-300 hover:bg-gray-200 sm:block sm:min-w-[150px] sm:max-w-fit">
-                  Saltar
-                </button>
-                <button
-                  className="w-full px-6 py-4 bg-green-500 rounded-full uppercase cursor-pointer font-outfit text-white font-black sm:min-w-[150px] sm:max-w-fit sm:grow-0"
-                  onClick={handleAnswerSubmit}
+              {currentQuestion.answers && (
+                <div
+                  className={`grid ${
+                    currentQuestion.answers.every((answer) => !answer.icon)
+                      ? "grid-cols-1"
+                      : "grid-cols-2"
+                  }  gap-2 lg:gap-3 sm:grid-cols-3 lg:grid-cols-4 lg:w-[40rem]`}
                 >
-                  Enviar Respuesta
-                </button>
-              </div>
-            </section>
+                  {currentQuestion.answers.map((item, index) => (
+                    <button
+                      className={`${
+                        selectedAnswer === index
+                          ? "cursor-pointer rounded-xl bg-gradient-to-br p-border from-[#D8B4FE] to-[#818CF8] bg-blue-100 text-brand-coal font-bold py-3"
+                          : "cursor-pointer rounded-xl border-2 border-b-4 border-brand-charcoal p-2 lg:p-4 hover:bg-brand-charcoal"
+                      }`}
+                      key={index}
+                      onClick={() => setSelectedAnswer(index)}
+                    >
+                      {item.icon && (
+                        <Image
+                          src={item.icon}
+                          width={800}
+                          height={800}
+                          alt="Picture of the lesson"
+                          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                          className="mb-2"
+                        />
+                      )}
+                      <div className="text-lg lg:text-lg w-full">
+                        {item.name}
+                      </div>
+                    </button>
+                  ))}
+                  <section className="absolute bottom-0 left-0 border-gray-200 sm:border-t-2 sm:p-10 w-full">
+                    <div className="mx-auto flex max-w-5xl sm:justify-between text-sm">
+                      <button className="hidden rounded-2xl border-2 border-b-4 border-gray-200 bg-white p-3 font-bold uppercase text-gray-400 transition hover:border-gray-300 hover:bg-gray-200 sm:block sm:min-w-[150px] sm:max-w-fit">
+                        Saltar
+                      </button>
+                      <button
+                        className="w-full px-6 py-4 bg-green-500 rounded-full uppercase cursor-pointer font-outfit text-white font-black sm:min-w-[150px] sm:max-w-fit sm:grow-0"
+                        onClick={handleAnswerSubmit}
+                      >
+                        Enviar Respuesta
+                      </button>
+                    </div>
+                  </section>
+                </div>
+              )}
+              {!currentQuestion.answers && (
+                <div>
+                  <input
+                    type="text"
+                    placeholder="Escribe aquí"
+                    className="text-white bg-brand-charcoal py-4 px-3 w-full rounded-xl outline-none "
+                    value={userAnswer}
+                    onChange={(e) => setUserAnswer(e.target.value)}
+                  />
+                  <section className="absolute bottom-0 left-0 border-gray-200 sm:border-t-2 sm:p-10 w-full">
+                    <div className="mx-auto flex max-w-5xl sm:justify-between text-sm">
+                      <button className="hidden rounded-2xl border-2 border-b-4 border-gray-200 bg-white p-3 font-bold uppercase text-gray-400 transition hover:border-gray-300 hover:bg-gray-200 sm:block sm:min-w-[150px] sm:max-w-fit">
+                        Saltar
+                      </button>
+                      <button
+                        className="w-full px-6 py-4 bg-green-500 rounded-full uppercase cursor-pointer font-outfit text-white font-black sm:min-w-[150px] sm:max-w-fit sm:grow-0"
+                        onClick={handleAnswerSubmit}
+                      >
+                        Enviar Respuesta
+                      </button>
+                    </div>
+                  </section>
+                </div>
+              )}
+            </div>
           </div>
-
           {showModal && (
             <>
               {isCorrectAnswer ? (
@@ -214,7 +271,7 @@ export default function Lesson() {
                       <div class="lg:text-xl">¡Respuesta correcta!</div>
                     </div>
                     <button
-                      class="w-full px-6 py-4 bg-green-500 rounded-full uppercase border border-black border-2 cursor-pointer font-outfit text-white font-black sm:min-w-[150px] sm:max-w-fit sm:grow-0"
+                      class="w-full px-6 py-4 bg-green-500 rounded-full uppercase border-black border-2 cursor-pointer font-outfit text-white font-black sm:min-w-[150px] sm:max-w-fit sm:grow-0"
                       onClick={handleContinue}
                     >
                       Continuar
@@ -238,13 +295,20 @@ export default function Lesson() {
                           <div class="lg:text-xl">Respuesta Incorrecta:</div>
                           <div class="lg:text-sm font-normal">
                             La respuesta correcta es:
-                            <strong className="ml-1">
-                              {
-                                currentQuestion.answers[
-                                  currentQuestion.correctAnswer
-                                ].name
-                              }
-                            </strong>
+                            {currentQuestion.answers && (
+                              <strong className="ml-1">
+                                {
+                                  currentQuestion.answers[
+                                    currentQuestion.correctAnswer
+                                  ].name
+                                }
+                              </strong>
+                            )}
+                            {currentQuestion.correctAnswerWrite && (
+                              <strong className="ml-1">
+                                {currentQuestion.correctAnswerWrite}
+                              </strong>
+                            )}
                           </div>
                         </div>
                       </div>

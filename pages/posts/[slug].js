@@ -58,9 +58,9 @@ export default function Post({ post }) {
               {post.tags === "idiomas" && (
                 <Link
                   href="/lesson"
-                  className="max-w-2xl mx-8 md:mx-32 lg:mx-56 xl:mx-80 pb-8"
+                  className="max-w-2xl md:mx-32 lg:mx-56 xl:mx-80 pb-8"
                 >
-                  <button className="my-6 rounded-2xl bg-indigo-500 py-4 px-2 font-bold uppercase text-white">
+                  <button className="my-6 rounded-2xl mx-4 bg-indigo-500 py-4 px-2 font-bold uppercase text-white">
                     Practicar y memorizar lección
                   </button>
                 </Link>

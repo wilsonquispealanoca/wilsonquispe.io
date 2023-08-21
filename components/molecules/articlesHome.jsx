@@ -3,10 +3,10 @@ import ArticleItemHome from "../atoms/articleItemHome";
 function ArticlesHome({ posts }) {
   return (
     <section>
-      <h2 className="text-brand-beige font-averia text-3xl leading-tight pb-6 mt-6">
+      <h2 className="text-white drop-shadow-[-2px_0_0_#c21aa5] font-averia text-3xl leading-tight pb-6 mt-20">
         Últimos artículos
       </h2>
-      <div className="md:grid md:grid-flow-dense md:grid-cols-2 lg:grid-cols-3 md:gap-4 lg:gap-x-6">
+      <div className="mt-8 md:grid md:grid-flow-dense md:grid-cols-2 lg:grid-cols-3 md:gap-4 lg:gap-x-6">
         <ArticleItemHome
           key={posts[0].slug}
           title={posts[0].title}

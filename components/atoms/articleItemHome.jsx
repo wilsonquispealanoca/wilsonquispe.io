@@ -7,8 +7,8 @@ function ArticleItemHome({ title, gradient, slug }) {
         <div
           className={`hover:scale-105 hover:ease-in-out hover:transition hover:duration-300 hover:drop-shadow-xl w-full rounded-lg bg-gradient-to-br p-border ${gradient} mb-6 md:mb-0 h-full`}
         >
-          <div className="flex flex-col justify-between p-4 bg-brand-charcoal-muted rounded-md h-full">
-            <h3 className="font-semibold leading-normal text-lg pb-3 text-brand-beige">
+          <div className="flex flex-col justify-between p-4 bg-[#181824] rounded-md h-full card-detail">
+            <h3 className="font-semibold leading-normal text-lg pb-3 text-white">
               {title}
             </h3>
             <div className="flex items-center">

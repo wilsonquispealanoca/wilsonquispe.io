@@ -2,15 +2,15 @@ import Image from "next/image";
 
 function Avatar({ name, picture }) {
   return (
-    <figure className="w-[40px] sm:w-[46px]">
+    <figure className="bg-gradient-to-b from-[#ff31dc] to-[#1ed7de] rounded-full">
       <Image
         alt={name}
         src={picture}
-        height={176}
-        width={176}
+        height={40}
+        width={40}
         sizes="50vw"
         priority
-        className="rounded-full"
+        className="p-[2.5px] bg-transparent rounded-full"
       />
     </figure>
   );

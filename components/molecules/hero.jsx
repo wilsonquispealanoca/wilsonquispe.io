@@ -3,7 +3,7 @@ import Profile from "../atoms/profile";
 
 function Hero() {
   return (
-    <section className="flex flex-col-reverse md:flex-row md:mt-8 lg:mt-12">
+    <section className="flex flex-col-reverse md:flex-row md:mt-8 lg:mt-12 card-detail pt-8">
       <ContentHero />
       <Profile
         name="Image wilson quispe"

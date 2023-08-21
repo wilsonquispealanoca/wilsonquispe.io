@@ -21,7 +21,7 @@ const LanguageSwitcher = () => {
         className={
           selectedLanguage === "en"
             ? "bg-white text-black py-2 px-3 text-sm rounded-md"
-            : "border border-neutral-700 bg-neutral-800 rounded-md py-2 px-3 text-sm inline-flex items-center leading-4 text-neutral-100 no-underline"
+            : "border border-neutral-700 bg-[#171520] rounded-md py-2 px-3 text-sm inline-flex items-center leading-4 text-neutral-100 no-underline"
         }
       >
         English
@@ -31,7 +31,7 @@ const LanguageSwitcher = () => {
         className={
           selectedLanguage === "es"
             ? "bg-white text-black py-2 px-3 text-sm rounded-md"
-            : "border border-neutral-700 bg-neutral-800 rounded-md py-2 px-3 text-sm inline-flex items-center leading-4 text-neutral-100 no-underline"
+            : "border border-neutral-700 bg-[#171520] rounded-md py-2 px-3 text-sm inline-flex items-center leading-4 text-neutral-100 no-underline"
         }
       >
         Español
@@ -41,7 +41,7 @@ const LanguageSwitcher = () => {
         className={
           selectedLanguage === "ay"
             ? "bg-white text-black py-2 px-3 text-sm rounded-md"
-            : "border border-neutral-700 bg-neutral-800 rounded-md py-2 px-3 text-sm inline-flex items-center leading-4 text-neutral-100 no-underline"
+            : "border border-neutral-700 bg-[#171520] rounded-md py-2 px-3 text-sm inline-flex items-center leading-4 text-neutral-100 no-underline"
         }
       >
         Aymara

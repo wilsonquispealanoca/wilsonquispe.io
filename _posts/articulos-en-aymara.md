@@ -51,7 +51,7 @@ phisinaka = gatos | Los gatos
 anunaka = perros | Los perros
 ```
 
-## Volvamos al castellano
+<em>Volvamos al castellano</em>
 
 ## Artículo indefinido
 

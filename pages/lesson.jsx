@@ -150,7 +150,7 @@ export default function Lesson() {
     <>
       {currentQuestionIndex === -1 ? (
         // Pantalla de felicitaciones al terminar todas las preguntas
-        <div className="bg-brand-coal flex items-center justify-center h-screen w-full">
+        <div className="bg-[#181824] flex items-center justify-center h-screen w-full">
           <div className="flex items-center justify-center flex-col px-4">
             <Image
               src="/assets/illustrations/house.png"
@@ -174,10 +174,10 @@ export default function Lesson() {
           </div>
         </div>
       ) : (
-        <div className="bg-brand-coal text-brand-beige py-8 font-outfit tex-lg flex h-screen flex-col gap-5 px-4 sm:px-0 sm:py-0">
+        <div className="bg-[#181824] text-brand-beige py-8 font-outfit tex-lg flex h-screen flex-col gap-5 px-4 sm:px-0 sm:py-0">
           <div className="w-full relative h-screen flex justify-center items-center flex-col">
             <div className="flex max-w-2xl grow flex-col gap-5 self-center sm:items-center sm:justify-center sm:gap-24 sm:px-5 w-full">
-              <h1 className="self-start text-xl font-bold sm:text-3xl">
+              <h1 className="self-start text-xl font-bold text-white sm:text-3xl">
                 {currentQuestion.question}
               </h1>
               {currentQuestion.answers && (
@@ -193,7 +193,7 @@ export default function Lesson() {
                       className={`${
                         selectedAnswer === index
                           ? "cursor-pointer rounded-xl bg-gradient-to-br p-border from-[#D8B4FE] to-[#818CF8] bg-blue-100 text-brand-coal font-bold py-3"
-                          : "cursor-pointer rounded-xl border-2 border-b-4 border-brand-charcoal p-2 lg:p-4 hover:bg-brand-charcoal"
+                          : "cursor-pointer rounded-xl border-2 border-b-4 border-[#303044] p-2 lg:p-4 hover:bg-[#0f0f17]"
                       }`}
                       key={index}
                       onClick={() => setSelectedAnswer(index)}
@@ -233,7 +233,7 @@ export default function Lesson() {
                   <input
                     type="text"
                     placeholder="Escribe aquí"
-                    className="text-white bg-brand-charcoal py-4 px-3 w-full rounded-xl outline-none "
+                    className="text-white bg-[#0f0f17] py-4 px-3 w-full rounded-xl outline-none "
                     value={userAnswer}
                     onChange={(e) => setUserAnswer(e.target.value)}
                   />

@@ -11,7 +11,7 @@ module.exports = {
         "primary-text": "#251D16",
         "secondary-text": "#837F7B",
         "tertiary-text": "#C5C4C2",
-        "brand-beige": "#f9f4da",
+        "brand-beige": "#abaabf",
         "brand-coal": "#0f0d0e",
         "brand-charcoal": "#231f20",
         "brand-charcoal-muted": "#1b1918",

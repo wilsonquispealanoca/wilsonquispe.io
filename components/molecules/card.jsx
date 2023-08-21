@@ -4,10 +4,10 @@ import Link from "next/link";
 function Card() {
   return (
     <section className=" text-brand-beige mt-4">
-      <h2 className="text-4xl my-12 text-white drop-shadow-[-2px_0_0_#c21aa5]">
+      <h2 className="font-outfitsemibold text-4xl my-12 text-white drop-shadow-[-2px_0_0_#c21aa5]">
         Mis proyectos
       </h2>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
         <div>
           <Link href="https://duolingo-store.vercel.app/">
             <Image
@@ -19,7 +19,7 @@ function Card() {
               className="object-cover rounded-lg cursor-pointer"
             />
           </Link>
-          <h3 className="text-2xl my-4 font-averia text-white">
+          <h3 className="font-outfitsemibold text-2xl my-4 font-averia text-white">
             Duolingo Store
           </h3>
           <p>
@@ -67,7 +67,9 @@ function Card() {
               className="object-cover rounded-lg cursor-pointer"
             />
           </Link>
-          <h3 className="text-2xl my-4 font-averia text-white">Ayni Store</h3>
+          <h3 className="font-outfitsemibold text-2xl my-4 font-averia text-white">
+            Ayni Store
+          </h3>
           <p>
             Comercio electrónico de venta de items (monedas, gemas, diamantes y
             otros) de juegos populares.

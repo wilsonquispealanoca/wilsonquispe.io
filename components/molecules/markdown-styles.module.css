@@ -24,11 +24,11 @@
 }
 
 .markdown h2 {
-  @apply font-averia text-4xl mt-12 mb-4 leading-snug text-white;
+  @apply font-outfitsemibold text-3xl mt-12 mb-4 leading-snug text-white;
 }
 
 .markdown h3 {
-  @apply font-averia text-2xl mt-8 mb-4 leading-snug text-white;
+  @apply font-outfitsemibold text-2xl mt-8 mb-4 leading-snug text-white;
 }
 
 .markdown li {
@@ -40,5 +40,5 @@
 }
 
 .markdown blockquote > p {
-  @apply border-accent border-l-8 bg-[#171520] my-16 px-6 py-8 rounded-r-xl text-[#ddd];
+  @apply px-6 pt-2 pb-9 rounded-r-xl text-[#e8e6e3b3] z-10;
 }

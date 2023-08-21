@@ -1,9 +1,10 @@
 ---
-title: "Los articulos en el idioma aymara"
+title: "Clase 1: Los articulos en el idioma aymara"
 date: "2023-08-07T10:30:01.322Z"
 tags: "idiomas"
 excerpt: "Para comenzar, quiero asegurarte que el término 'artículo' no es nada complicado. Permíteme compartir contigo un consejo que te hará entenderlo con claridad: piensa en el artículo como un compañero de las palabras que se coloca justo antes de los nombres de personas, animales, lugares, cosas o ideas."
 coverImage: "/assets/blog/aymara/articulos/aymararu.png"
+unidad: "1"
 author:
   name: "Wilson Quispe"
   picture: "/assets/blog/authors/profileWilson.jpg"

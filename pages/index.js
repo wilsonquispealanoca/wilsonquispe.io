@@ -40,7 +40,7 @@ export default function Home({ allPosts }) {
 }
 
 export async function getStaticProps() {
-  const allPosts = getAllPosts(["title", "slug", "date", "tags"]);
+  const allPosts = getAllPosts(["title", "slug", "date", "tags", "clase"]);
   const colors = [
     {
       color1: "from-card-top-color-1",

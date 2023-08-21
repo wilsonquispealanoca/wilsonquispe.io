@@ -13,8 +13,8 @@ export default function Lesson() {
   const [userAnswer, setUserAnswer] = useState("");
 
   const questions = [
-    {
-      question: '¿Cuál de estos es el "Perro"?',
+    /* {
+      question: 'Aka phisi',
       answers: [
         { icon: "/assets/illustrations/house.png", name: "uta" },
         { icon: "/assets/illustrations/cat.svg", name: "phisi" },
@@ -42,72 +42,80 @@ export default function Lesson() {
         { icon: "/assets/illustrations/house.png", name: "uta" },
       ],
       correctAnswer: 1,
-    },
+    }, */
     {
-      question: '¿Cómo se dice "un gato"?',
+      question: '¿Cómo se dice "Éste gato"?',
       answers: [
-        { name: "mä anu" },
+        { name: "Aka phisinaka" },
         { name: "mä phisi" },
-        { name: "mä jukumari" },
-        { name: "mä uta" },
-      ],
-      correctAnswer: 1,
-    },
-    {
-      question: '¿Cómo se dice "gatos"?',
-      answers: [
-        { name: "utanaka" },
-        { name: "uta" },
-        { name: "phisinaka" },
-        { name: "jukumarinaka" },
-        { name: "jukumari" },
-        { name: "phisi" },
+        { name: "Aka phisi" },
+        { name: "Uka phisi" },
       ],
       correctAnswer: 2,
     },
     {
-      question: '¿Cómo se dice "unos gatos"?',
+      question: '¿Cómo se dice "Aquél perro"?',
       answers: [
-        { name: "mä uta" },
-        { name: "mä phisi" },
-        { name: "mä phisinaka" },
+        { name: "Aka utanaka" },
+        { name: "Uka uta" },
+        { name: "Khaya phisinaka" },
+        { name: "Aka jukumarinaka" },
+        { name: "Khaya anu" },
+        { name: "Uka jukumari" },
+      ],
+      correctAnswer: 4,
+    },
+    {
+      question: '¿Cómo se dice "Éstas casas"?',
+      answers: [
+        { name: "khaya phisi" },
+        { name: "Khuri phisinaka" },
         { name: "mä jukumarinaka" },
-        { name: "mä utanaka" },
-        { name: "mä jukumari" },
-      ],
-      correctAnswer: 2,
-    },
-    {
-      question: '¿Cómo dirias "Los perros"?',
-      answers: [
-        { name: "utanaka" },
-        { name: "phisinaka" },
-        { name: "anunaka" },
-        { name: "jukumarinaka" },
-      ],
-      correctAnswer: 2,
-    },
-    {
-      question: '¿Cómo dirias "Las casas"?',
-      answers: [
-        { name: "phisinaka" },
-        { name: "anunaka" },
-        { name: "jukumarinaka" },
-        { name: "utanaka" },
+        { name: "Aka utanaka" },
+        { name: "Aka jukumarinaka" },
+        { name: "Uka utanaka" },
       ],
       correctAnswer: 3,
     },
     {
-      question: 'Escribe esto en aymara: "Las casas"',
-      correctAnswerWrite: "utanaka",
+      question: '¿Cómo dirias "Aquéllos perros"?',
+      answers: [
+        { name: "Uka utanaka" },
+        { name: "Aka phisinaka" },
+        { name: "Khaya anunaka" },
+        { name: "Khuri jukumarinaka" },
+        { name: "Khaya phisinaka" },
+      ],
+      correctAnswer: 2,
     },
     {
-      question: 'Escribe "perro" en aymara',
-      correctAnswerWrite: "anu",
+      question: '¿Cómo dirias "Ésas casas"?',
+      answers: [
+        { name: "Aka phisinaka" },
+        { name: "Aka anunaka" },
+        { name: "Uka jukumarinaka" },
+        { name: "Uka utanaka" },
+        { name: "Aka utanaka" },
+        { name: "Khaya utanaka" },
+      ],
+      correctAnswer: 3,
     },
     {
-      question: 'Escribe "gatos" en aymara',
-      correctAnswerWrite: "phisinaka",
+      question: 'Escribe esto en aymara: "Aquél gato"',
+      correctAnswerWrite: "Khaya phisi",
+    },
+    {
+      question: 'Escribe "Ésa casa" en aymara',
+      correctAnswerWrite: "Uka uta",
+    },
+    {
+      question: 'Escribe "Éstos perros" en aymara',
+      correctAnswerWrite: "Aka anunaka",
+    },
+    {
+      question:
+        'Imagina una casa que esta muy lejos, ¿Cómo escribes "Aquéllas casas" en aymara',
+      correctAnswerWrite: "Khuri utanaka",
     },
   ];
 
@@ -166,8 +174,8 @@ export default function Lesson() {
               Recuerda, <strong>&quot;uta&quot;</strong> es casa como también
               puede ser &quot;La casa&quot;.
             </p>
-            <Link href="/posts/articulos-en-aymara">
-              <button class="my-4 px-16 py-4 bg-green-500 rounded-full uppercase border-black border-2 cursor-pointer font-outfit text-white font-black sm:min-w-[150px] sm:max-w-fit sm:grow-0">
+            <Link href="/blog/">
+              <button className="my-4 px-16 py-4 bg-green-500 rounded-full uppercase border-black border-2 cursor-pointer font-outfit text-white font-black sm:min-w-[150px] sm:max-w-fit sm:grow-0">
                 Continuar
               </button>
             </Link>
@@ -177,7 +185,7 @@ export default function Lesson() {
         <div className="bg-[#181824] text-brand-beige py-8 font-outfit tex-lg flex h-screen flex-col gap-5 px-4 sm:px-0 sm:py-0">
           <div className="w-full relative h-screen flex justify-center items-center flex-col">
             <div className="flex max-w-2xl grow flex-col gap-5 self-center sm:items-center sm:justify-center sm:gap-24 sm:px-5 w-full">
-              <h1 className="self-start text-xl font-bold text-white sm:text-3xl">
+              <h1 className="self-start text-xl text-white sm:text-3xl">
                 {currentQuestion.question}
               </h1>
               {currentQuestion.answers && (
@@ -213,13 +221,13 @@ export default function Lesson() {
                       </div>
                     </button>
                   ))}
-                  <section className="absolute bottom-0 left-0 border-gray-200 sm:border-t-2 sm:p-10 w-full">
+                  <section className="fixed bottom-0 left-0 right-0 pb-6 px-4 border-gray-200 sm:border-t-2 sm:p-10 w-full">
                     <div className="mx-auto flex max-w-5xl sm:justify-between text-sm">
                       <button className="hidden rounded-2xl border-2 border-b-4 border-gray-200 bg-white p-3 font-bold uppercase text-gray-400 transition hover:border-gray-300 hover:bg-gray-200 sm:block sm:min-w-[150px] sm:max-w-fit">
                         Saltar
                       </button>
                       <button
-                        className="w-full px-6 py-4 bg-green-500 rounded-full uppercase cursor-pointer font-outfit text-white font-black sm:min-w-[150px] sm:max-w-fit sm:grow-0"
+                        className="w-full px-6 py-4 bg-green-500 rounded-full uppercase cursor-pointer font-outfit text-white sm:min-w-[150px] sm:max-w-fit sm:grow-0"
                         onClick={handleAnswerSubmit}
                       >
                         Enviar Respuesta
@@ -237,13 +245,13 @@ export default function Lesson() {
                     value={userAnswer}
                     onChange={(e) => setUserAnswer(e.target.value)}
                   />
-                  <section className="absolute bottom-0 left-0 border-gray-200 sm:border-t-2 sm:p-10 w-full">
+                  <section className="fixed bottom-0 left-0 right-0 pb-6 px-4 border-gray-200 sm:border-t-2 sm:p-10 w-full">
                     <div className="mx-auto flex max-w-5xl sm:justify-between text-sm">
                       <button className="hidden rounded-2xl border-2 border-b-4 border-gray-200 bg-white p-3 font-bold uppercase text-gray-400 transition hover:border-gray-300 hover:bg-gray-200 sm:block sm:min-w-[150px] sm:max-w-fit">
                         Saltar
                       </button>
                       <button
-                        className="w-full px-6 py-4 bg-green-500 rounded-full uppercase cursor-pointer font-outfit text-white font-black sm:min-w-[150px] sm:max-w-fit sm:grow-0"
+                        className="w-full px-6 py-4 bg-green-500 rounded-full uppercase cursor-pointer font-outfit text-white sm:min-w-[150px] sm:max-w-fit sm:grow-0"
                         onClick={handleAnswerSubmit}
                       >
                         Enviar Respuesta
@@ -271,7 +279,7 @@ export default function Lesson() {
                       <div class="lg:text-xl">¡Respuesta correcta!</div>
                     </div>
                     <button
-                      class="w-full px-6 py-4 bg-green-500 rounded-full uppercase border-black border-2 cursor-pointer font-outfit text-white font-black sm:min-w-[150px] sm:max-w-fit sm:grow-0"
+                      class="w-full px-6 py-4 bg-green-500 rounded-full uppercase border-black border-2 cursor-pointer text-white font-black sm:min-w-[150px] sm:max-w-fit sm:grow-0"
                       onClick={handleContinue}
                     >
                       Continuar
@@ -293,7 +301,7 @@ export default function Lesson() {
                         </div>
                         <div class="flex flex-col gap-2">
                           <div class="lg:text-xl">Respuesta Incorrecta:</div>
-                          <div class="lg:text-sm font-normal">
+                          <div class="lg:text-sm font-outfit">
                             La respuesta correcta es:
                             {currentQuestion.answers && (
                               <strong className="ml-1">

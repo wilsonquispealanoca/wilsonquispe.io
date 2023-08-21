@@ -5,7 +5,7 @@ export default function MoreStories({ posts }) {
   return (
     <section>
       <Navbar />
-      <h1 className="text-white drop-shadow-[-2px_0_0_#c21aa5] mb-8 text-5xl md:text-7xl lg:mt-16">
+      <h1 className="font-outfitsemibold text-white drop-shadow-[-2px_0_0_#c21aa5] mb-8 text-5xl md:text-7xl lg:mt-16">
         Todos los artículos
       </h1>
       <h2 className="text-xl font-light mb-14 text-brand-beige">

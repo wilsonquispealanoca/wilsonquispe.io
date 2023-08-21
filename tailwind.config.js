@@ -37,11 +37,10 @@ module.exports = {
         "primary-dark": "#FFFFFF",
       },
       fontFamily: {
-        means: ["Means-web"],
-        sans: ["Nunito Sans", "sans-serif"],
-        averia: ["Averia Serif Libre"],
         outfit: ["Outfit", "sans-serif"],
         firacode: ["FiraCode"],
+        outfitsemibold: ["OutfitSemiBold", "sans-serif"],
+        outfitlight: ["OutfitLight", "sans-serif"],
       },
       spacing: {
         border: "4px",

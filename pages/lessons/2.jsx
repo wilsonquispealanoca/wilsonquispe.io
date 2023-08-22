@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 
 /* import DogSvg from "/assets/illustrations/dog.svg";
 import CatSvg from "/assets/illustrations/cat.svg";
@@ -12,37 +12,59 @@ export default function Lesson() {
   const [isCorrectAnswer, setIsCorrectAnswer] = useState(false);
   const [userAnswer, setUserAnswer] = useState("");
 
+  const [showButton, setShowButton] = useState(false);
+
   const questions = [
-    /* {
-      question: 'Aka phisi',
+    {
+      question: '¿Cuál de estos es el "arbol"?',
       answers: [
-        { icon: "/assets/illustrations/house.png", name: "uta" },
-        { icon: "/assets/illustrations/cat.svg", name: "phisi" },
-        { icon: "/assets/illustrations/dog.svg", name: "anu" },
-        { icon: "/assets/illustrations/bear.svg", name: "jukumari" },
+        { icon: "/assets/illustrations/door.png", name: "Punku" },
+        { icon: "/assets/illustrations/cat.svg", name: "Phisi" },
+        { icon: "/assets/illustrations/tree.png", name: "Quqa" },
+        { icon: "/assets/illustrations/egg.png", name: "k'awna" },
       ],
       correctAnswer: 2,
     },
     {
-      question: '¿Cuál es el "Oso"?',
+      question: '¿Cuál es el "Pan"?',
       answers: [
-        { icon: "/assets/illustrations/cat.svg", name: "phisi" },
-        { icon: "/assets/illustrations/bear.svg", name: "jukumari" },
-        { icon: "/assets/illustrations/house.png", name: "uta" },
-        { icon: "/assets/illustrations/dog.svg", name: "anu" },
+        { icon: "/assets/illustrations/tree.png", name: "Quqa" },
+        { icon: "/assets/illustrations/door.png", name: "Punku" },
+        { icon: "/assets/illustrations/egg.png", name: "k'awna" },
+        { icon: "/assets/illustrations/bread.png", name: "T'ant'a" },
+      ],
+      correctAnswer: 3,
+    },
+    {
+      question: '¿Cuál de estos es el "Libro"?',
+      answers: [
+        { icon: "/assets/illustrations/potato.png", name: "Ch'uqi" },
+        { icon: "/assets/illustrations/tree.png", name: "Quqa" },
+        { icon: "/assets/illustrations/bread.png", name: "T'ant'a" },
+        { icon: "/assets/illustrations/book.png", name: "Panka" },
+      ],
+      correctAnswer: 3,
+    },
+    {
+      question: '¿Cuál de estos es la "Papa"?',
+      answers: [
+        { icon: "/assets/illustrations/potato.png", name: "Ch'uqi" },
+        { icon: "/assets/illustrations/bread.png", name: "T'ant'a" },
+        { icon: "/assets/illustrations/egg.png", name: "k'awna" },
+        { icon: "/assets/illustrations/book.png", name: "Panka" },
+      ],
+      correctAnswer: 0,
+    },
+    {
+      question: '¿Cuál de estos es la "Puerta"?',
+      answers: [
+        { icon: "/assets/illustrations/potato.png", name: "Ch'uqi" },
+        { icon: "/assets/illustrations/door.png", name: "Punku" },
+        { icon: "/assets/illustrations/egg.png", name: "k'awna" },
+        { icon: "/assets/illustrations/book.png", name: "Panka" },
       ],
       correctAnswer: 1,
     },
-    {
-      question: '¿Cuál de estos es "El gato"?',
-      answers: [
-        { icon: "/assets/illustrations/bear.svg", name: "jukumari" },
-        { icon: "/assets/illustrations/cat.svg", name: "phisi" },
-        { icon: "/assets/illustrations/dog.svg", name: "anu" },
-        { icon: "/assets/illustrations/house.png", name: "uta" },
-      ],
-      correctAnswer: 1,
-    }, */
     {
       question: '¿Cómo se dice "Éste gato"?',
       answers: [
@@ -89,12 +111,12 @@ export default function Lesson() {
       correctAnswer: 2,
     },
     {
-      question: '¿Cómo dirias "Ésas casas"?',
+      question: '¿Cómo dirias "Ése libro"?',
       answers: [
         { name: "Aka phisinaka" },
         { name: "Aka anunaka" },
         { name: "Uka jukumarinaka" },
-        { name: "Uka utanaka" },
+        { name: "Uka panka" },
         { name: "Aka utanaka" },
         { name: "Khaya utanaka" },
       ],
@@ -109,12 +131,16 @@ export default function Lesson() {
       correctAnswerWrite: "Uka uta",
     },
     {
-      question: 'Escribe "Éstos perros" en aymara',
-      correctAnswerWrite: "Aka anunaka",
+      question: 'Escribe "Éstos huevos" en aymara',
+      correctAnswerWrite: "Aka k'awnanaka",
+    },
+    {
+      question: 'Escribe "Ése pan" en aymara',
+      correctAnswerWrite: "Aka T'ant'a",
     },
     {
       question:
-        'Imagina una casa que esta muy lejos, ¿Cómo escribes "Aquéllas casas" en aymara',
+        'Imagina una casa interferida por otro objeto que esta muy lejos, ¿Cómo escribes "Aquéllas casas" en aymara',
       correctAnswerWrite: "Khuri utanaka",
     },
   ];
@@ -167,7 +193,7 @@ export default function Lesson() {
               height={400}
               sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
             />
-            <h1 className="font-averia text-indigo-500 mb-8 text-2xl md:text-5xl">
+            <h1 className="font-outfitsemibold drop-shadow-[-2px_0_0_#c21aa5] text-white mb-8 text-4xl text-center md:text-6xl">
               ¡Felicidades, lo lograste!
             </h1>
             <p className="text-brand-beige font-outfit text-center text-lg lg:text-xl">
@@ -175,7 +201,7 @@ export default function Lesson() {
               puede ser &quot;La casa&quot;.
             </p>
             <Link href="/blog/">
-              <button className="my-4 px-16 py-4 bg-green-500 rounded-full uppercase border-black border-2 cursor-pointer font-outfit text-white font-black sm:min-w-[150px] sm:max-w-fit sm:grow-0">
+              <button className="my-4 px-16 py-4 bg-green-500 rounded-full uppercase cursor-pointer font-outfit text-white font-black sm:min-w-[150px] sm:max-w-fit sm:grow-0">
                 Continuar
               </button>
             </Link>
@@ -243,9 +269,14 @@ export default function Lesson() {
                     placeholder="Escribe aquí"
                     className="text-white bg-[#0f0f17] py-4 px-3 w-full rounded-xl outline-none "
                     value={userAnswer}
+                    onFocus={() => setShowButton(true)}
                     onChange={(e) => setUserAnswer(e.target.value)}
                   />
-                  <section className="fixed bottom-0 left-0 right-0 pb-6 px-4 border-gray-200 sm:border-t-2 sm:p-10 w-full">
+                  <section
+                    className={`fixed ${
+                      showButton && "bottom-16"
+                    } bottom-0 left-0 right-0 pb-6 px-4 border-gray-200 sm:border-t-2 sm:p-10 w-full`}
+                  >
                     <div className="mx-auto flex max-w-5xl sm:justify-between text-sm">
                       <button className="hidden rounded-2xl border-2 border-b-4 border-gray-200 bg-white p-3 font-bold uppercase text-gray-400 transition hover:border-gray-300 hover:bg-gray-200 sm:block sm:min-w-[150px] sm:max-w-fit">
                         Saltar

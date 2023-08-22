@@ -20,7 +20,7 @@ module.exports = {
         shadow: "#AEB7B3",
         card: "#FFFFFF",
         cta: "#1FAD71",
-        accent: "#12b5e5",
+        accent: "#26bdbd",
         background: "#FFFFFF",
         "card-top-color-1": "#D194AA",
         "card-bottom-color-1": "#8766CC",

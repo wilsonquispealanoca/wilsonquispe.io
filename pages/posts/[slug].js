@@ -58,7 +58,7 @@ export default function Post({ post }) {
                   href="/lessons/[post.unidad]"
                   className="max-w-2xl md:mx-32 lg:mx-56 xl:mx-80 pb-8"
                 >
-                  <button className="my-6 rounded-2xl mx-4 bg-[#c21aa5] py-4 px-2 text-white">
+                  <button className="my-6 rounded-2xl mx-4 border-accent border-2 bg-[#123837] py-4 px-6 text-white text-xl">
                     Practicar y memorizar lección
                   </button>
                 </Link>

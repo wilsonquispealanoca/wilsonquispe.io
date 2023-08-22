@@ -24,11 +24,11 @@
 }
 
 .markdown h2 {
-  @apply font-outfitsemibold text-3xl mt-12 mb-4 leading-snug text-white;
+  @apply font-outfitsemibold text-3xl mt-12 mb-4 leading-snug text-white break-words;
 }
 
 .markdown h3 {
-  @apply font-outfitsemibold text-2xl mt-8 mb-4 leading-snug text-white;
+  @apply font-outfitsemibold text-2xl mt-8 mb-4 leading-snug text-white break-words;
 }
 
 .markdown li {

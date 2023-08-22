@@ -14,6 +14,9 @@ module.exports = {
     localeSubpaths:
       typeof i18n.localeSubpaths === "object" ? i18n.localeSubpaths : {},
   },
+  images: {
+    formats: ["image/avif", "image/webp"],
+  },
 };
 
 /* module.exports = {

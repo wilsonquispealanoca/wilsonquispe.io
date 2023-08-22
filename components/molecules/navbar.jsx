@@ -15,7 +15,7 @@ function Navbar() {
           <Activelink href="/">{t("main")}</Activelink>
           <Activelink href="/blog">Blog</Activelink>
         </div>
-        <div>
+        <div className="overflow-x-auto">
           <LanguageSwitcher />
         </div>
       </nav>

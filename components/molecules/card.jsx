@@ -7,7 +7,7 @@ function Card() {
       <h2 className="font-outfitsemibold text-4xl my-12 text-white drop-shadow-[-2px_0_0_#c21aa5]">
         Mis proyectos
       </h2>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 lg:gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         <div>
           <Link href="https://duolingo-store.vercel.app/">
             <Image

@@ -1,5 +1,5 @@
 ---
-title: "Clase 2: Los pronombres en el idioma aymara"
+title: "Unidad 2: Los pronombres demostrativos en el idioma aymara"
 date: "2023-08-21T16:15:01.322Z"
 tags: "idiomas"
 excerpt: "Los pronombres demostrativos son palabras especiales que nos ayudan a señalar cosas y decir dónde están en relación a nosotros. "

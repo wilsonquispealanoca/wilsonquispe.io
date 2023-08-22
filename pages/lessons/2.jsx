@@ -261,8 +261,9 @@ export default function Lesson() {
                   <input
                     type="text"
                     placeholder="Escribe aquí"
-                    className="text-white bg-[#0f0f17] py-4 px-3 w-full rounded-xl outline-none my-6"
                     value={userAnswer}
+                    onChange={(e) => setUserAnswer(e.target.value)}
+                    className="text-white bg-[#0f0f17] py-4 px-3 w-full rounded-xl outline-none my-6"
                   />
                   <section
                     className={`fixed top lg:bottom-0 left-0 right-0 pb-6 px-4 sm:p-10 w-full`}

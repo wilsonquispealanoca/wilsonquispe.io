@@ -131,7 +131,7 @@ function Card() {
             Eleva tus proyectos con una herramienta que te permite expresarte a
             través de los detalles, resaltando tu creatividad en cada título que
             diseñes. Con la capacidad de subir tus propias fuentes, cambiar
-            colores de bordes "hasta 3 veces".
+            colores de bordes &quot;hasta 3 veces&quot;.
           </p>
           <ul className=" flex gap-3 mt-2">
             <li className="w-12 h-auto">

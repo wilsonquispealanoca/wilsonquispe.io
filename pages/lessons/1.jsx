@@ -1,10 +1,8 @@
 import Image from "next/image";
-import Link from "next/link";
-import { useState, useEffect } from "react";
-
-/* import DogSvg from "/assets/illustrations/dog.svg";
-import CatSvg from "/assets/illustrations/cat.svg";
-import BearSvg from "/assets/illustrations/bear.svg"; */
+import { useState } from "react";
+import { Congratulations } from "../../components/molecules/congratulations";
+import { SendResponse } from "../../components/molecules/sendResponse";
+import { CorrectAnswer } from "../../components/molecules/correctAnswer";
 
 export default function Lesson() {
   const [showModal, setShowModal] = useState(false);
@@ -24,9 +22,19 @@ export default function Lesson() {
       correctAnswer: 2,
     },
     {
-      question: '¿Cuál es el "Oso"?',
+      question: '¿Cuál de estos es el "Pan"?',
       answers: [
         { icon: "/assets/illustrations/cat.svg", name: "phisi" },
+        { icon: "/assets/illustrations/dog.svg", name: "anu" },
+        { icon: "/assets/illustrations/bear.svg", name: "jukumari" },
+        { icon: "/assets/illustrations/T'ant'a.svg", name: "T'ant'a" },
+      ],
+      correctAnswer: 3,
+    },
+    {
+      question: '¿Cuál es el "Oso"?',
+      answers: [
+        { icon: "/assets/illustrations/Phisi.svg", name: "phisi" },
         { icon: "/assets/illustrations/bear.svg", name: "jukumari" },
         { icon: "/assets/illustrations/house.png", name: "uta" },
         { icon: "/assets/illustrations/dog.svg", name: "anu" },
@@ -150,29 +158,7 @@ export default function Lesson() {
     <>
       {currentQuestionIndex === -1 ? (
         // Pantalla de felicitaciones al terminar todas las preguntas
-        <div className="bg-[#181824] flex items-center justify-center h-screen w-full">
-          <div className="flex items-center justify-center flex-col px-4">
-            <Image
-              src="/assets/illustrations/house.png"
-              alt="iconWin"
-              width={400}
-              height={400}
-              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-            />
-            <h1 className="font-averia text-indigo-500 mb-8 text-2xl md:text-5xl">
-              ¡Felicidades, lo lograste!
-            </h1>
-            <p className="text-brand-beige font-outfit text-center text-lg lg:text-xl">
-              Recuerda, <strong>&quot;uta&quot;</strong> es casa como también
-              puede ser &quot;La casa&quot;.
-            </p>
-            <Link href="/blog/">
-              <button class="my-4 px-16 py-4 bg-green-500 rounded-full uppercase border-black border-2 cursor-pointer font-outfit text-white font-black sm:min-w-[150px] sm:max-w-fit sm:grow-0">
-                Continuar
-              </button>
-            </Link>
-          </div>
-        </div>
+        <Congratulations />
       ) : (
         <div className="bg-[#181824] text-brand-beige py-8 font-outfit tex-lg flex h-screen flex-col gap-5 px-4 sm:px-0 sm:py-0">
           <div className="w-full relative h-screen flex justify-center items-center flex-col">
@@ -186,7 +172,7 @@ export default function Lesson() {
                     currentQuestion.answers.every((answer) => !answer.icon)
                       ? "grid-cols-1"
                       : "grid-cols-2"
-                  }  gap-2 lg:gap-3 sm:grid-cols-3 lg:grid-cols-4 lg:w-[40rem]`}
+                  }  gap-2 lg:gap-3 sm:grid-cols-3 lg:grid-cols-4`}
                 >
                   {currentQuestion.answers.map((item, index) => (
                     <button
@@ -204,7 +190,7 @@ export default function Lesson() {
                           width={800}
                           height={800}
                           alt="Picture of the lesson"
-                          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                          sizes="(max-width: 768px) 50vw, (max-width: 1200px) 100vw, 33vw"
                           className="mb-2"
                         />
                       )}
@@ -213,43 +199,19 @@ export default function Lesson() {
                       </div>
                     </button>
                   ))}
-                  <section className="fixed bottom-0 left-0 right-0 pb-6 px-4 border-gray-200 sm:border-t-2 sm:p-10 w-full">
-                    <div className="mx-auto flex max-w-5xl sm:justify-between text-sm">
-                      <button className="hidden rounded-2xl border-2 border-b-4 border-gray-200 bg-white p-3 font-bold uppercase text-gray-400 transition hover:border-gray-300 hover:bg-gray-200 sm:block sm:min-w-[150px] sm:max-w-fit">
-                        Saltar
-                      </button>
-                      <button
-                        className="w-full px-6 py-4 bg-green-500 rounded-full uppercase cursor-pointer font-outfit text-white sm:min-w-[150px] sm:max-w-fit sm:grow-0"
-                        onClick={handleAnswerSubmit}
-                      >
-                        Enviar Respuesta
-                      </button>
-                    </div>
-                  </section>
+                  <SendResponse isInput={false} handle={handleAnswerSubmit} />
                 </div>
               )}
               {!currentQuestion.answers && (
-                <div>
+                <div className="w-full">
                   <input
                     type="text"
                     placeholder="Escribe aquí"
-                    className="text-white bg-[#0f0f17] py-4 px-3 w-full rounded-xl outline-none "
                     value={userAnswer}
                     onChange={(e) => setUserAnswer(e.target.value)}
+                    className="text-white bg-[#0f0f17] py-4 px-3 w-full rounded-xl outline-none my-6"
                   />
-                  <section className="fixed bottom-0 left-0 right-0 pb-6 px-4 border-gray-200 sm:border-t-2 sm:p-10 w-full">
-                    <div className="mx-auto flex max-w-5xl sm:justify-between text-sm">
-                      <button className="hidden rounded-2xl border-2 border-b-4 border-gray-200 bg-white p-3 font-bold uppercase text-gray-400 transition hover:border-gray-300 hover:bg-gray-200 sm:block sm:min-w-[150px] sm:max-w-fit">
-                        Saltar
-                      </button>
-                      <button
-                        className="w-full px-6 py-4 bg-green-500 rounded-full uppercase cursor-pointer font-outfit text-white sm:min-w-[150px] sm:max-w-fit sm:grow-0"
-                        onClick={handleAnswerSubmit}
-                      >
-                        Enviar Respuesta
-                      </button>
-                    </div>
-                  </section>
+                  <SendResponse isInput={true} handle={handleAnswerSubmit} />
                 </div>
               )}
             </div>
@@ -257,30 +219,10 @@ export default function Lesson() {
           {showModal && (
             <>
               {isCorrectAnswer ? (
-                <div class="fixed bottom-0 left-0 right-0 bg-lime-100 font-bold text-green-600 transition-all">
-                  <div class="flex max-w-5xl flex-col gap-4 p-5 sm:mx-auto sm:flex-row sm:items-center sm:justify-between sm:p-5 sm:py-3">
-                    <div class="mb-2 flex flex-col gap-5 sm:flex-row sm:items-center">
-                      <div class="hidden rounded-full bg-white p-5 text-green-500 sm:block">
-                        <svg height="48" viewBox="0 96 960 960" width="48">
-                          <path
-                            fill="currentColor"
-                            d="M378 834 130 586l68-68 180 180 383-383 68 68-451 451Z"
-                          ></path>
-                        </svg>
-                      </div>
-                      <div class="lg:text-xl">¡Respuesta correcta!</div>
-                    </div>
-                    <button
-                      class="w-full px-6 py-4 bg-green-500 rounded-full uppercase border-black border-2 cursor-pointer text-white font-black sm:min-w-[150px] sm:max-w-fit sm:grow-0"
-                      onClick={handleContinue}
-                    >
-                      Continuar
-                    </button>
-                  </div>
-                </div>
+                <CorrectAnswer handle={handleContinue} />
               ) : (
                 <>
-                  <div class="fixed bottom-0 left-0 right-0 bg-red-100 font-bold text-red-500 transition-all">
+                  <div class="fixed bottom-0 left-0 right-0 bg-red-100 text-red-500 transition-all">
                     <div class="flex max-w-5xl flex-col gap-4 p-3 sm:mx-auto sm:flex-row sm:items-center sm:justify-between sm:p-5 sm:py-3">
                       <div class="mb-2 flex flex-col gap-5 sm:flex-row sm:items-center">
                         <div class="hidden rounded-full bg-white p-5 text-red-500 sm:block">
@@ -313,7 +255,7 @@ export default function Lesson() {
                         </div>
                       </div>
                       <button
-                        class="w-full px-6 py-4 bg-red-500 border-black border-2 rounded-full uppercase cursor-pointer font-outfit text-white font-black sm:min-w-[150px] sm:max-w-fit"
+                        class="w-full px-6 py-4 bg-red-500 rounded-full cursor-pointer font-outfit text-white font-black sm:min-w-[150px] sm:max-w-fit"
                         onClick={handleContinue}
                       >
                         Continuar

@@ -1,5 +1,5 @@
 ---
-title: "Unidad 6: Pronunciacion 1"
+title: "Unidad 6: Pronunciacion 1 del idioma Aymara"
 date: "2023-08-25T16:16:50.322Z"
 tags: ""
 excerpt: "Imagina que los sonidos son como piezas de rompecabezas. En el aymara, las piezas son muy especiales. Tenemos sonidos suaves y sonidos fuertes."
@@ -29,7 +29,7 @@ En el uso oral, la pronunciación es igual que el castellano.
 
 <em>Ejemplo:</em>
 
-<div className="overflow-x-auto">
+<div className="overflow-x-auto-table">
          <table>
          <thead>
             <tr>
@@ -59,8 +59,6 @@ En el uso oral, la pronunciación es igual que el castellano.
       </div>
 
 Es crucial destacar una regla importante en el idioma aymara que afecta la pronunciación de muchas palabras. Cuando nos encontramos con las vocales "i" y "u" en algunas ocasiones, especialmente al combinar palabras o conjugarlas, experimentan un cambio en su sonido. Es esencial entender que este cambio se da únicamente en el sonido y no afecta la forma en que se escriben.
-
-<em>Aka</em> = Ésto, Ésta. Éste
 
 ### Regla 1:
 

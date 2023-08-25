@@ -363,7 +363,7 @@ blockquote:before {
   opacity: 0.3;
 }
 
-.overflow-x-auto {
+.overflow-x-auto-table {
   margin: 2rem 0;
   overflow-x: auto;
   border: 2px solid #c21aa5;

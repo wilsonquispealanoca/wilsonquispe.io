@@ -42,3 +42,23 @@
 .markdown blockquote > p {
   @apply px-6 pt-2 pb-9 rounded-r-xl text-[#e8e6e3b3] z-10;
 }
+
+.markdown table {
+  @apply min-w-full text-left text-sm font-light text-white;
+}
+
+.markdown thead {
+  @apply font-medium bg-[#0f0f17];
+}
+
+.markdown th {
+  @apply px-6 py-4;
+}
+
+.markdown tr {
+  @apply border-b border-[#303044];
+}
+
+.markdown td {
+  @apply whitespace-nowrap px-6 py-4 font-medium;
+}

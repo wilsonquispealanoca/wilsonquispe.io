@@ -66,7 +66,7 @@ Esta regla tiene un componente intrigante. Cuando la vocal "i" aparece antes o d
 
 ¡Ahora veamos ejemplos para entender mejor!
 
-<div className="overflow-x-auto">
+<div className="overflow-x-auto-table">
          <table>
          <thead>
             <tr>
@@ -96,7 +96,7 @@ Igualmente, cuando la vocal "u" se encuentra antes o después de letras como q, 
 
 ¡Ahora, exploremos ejemplos para obtener una mejor comprensión!
 
-<div className="overflow-x-auto">
+<div className="overflow-x-auto-table">
          <table>
          <thead>
             <tr>
@@ -146,7 +146,7 @@ Igualmente, cuando la vocal "u" se encuentra antes o después de letras como q, 
 
 Para entenderlo mejor, aquí tienes algunos ejemplos:
 
-<div className="overflow-x-auto">
+<div className="overflow-x-auto-table">
          <table>
          <thead>
             <tr>

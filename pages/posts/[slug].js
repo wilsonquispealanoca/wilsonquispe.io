@@ -73,7 +73,7 @@ export default function Post({ post }) {
                 </p>
                 <div className="relative">
                   <Image
-                    src="/assets/illustrations/face.svg"
+                    src="/assets/illustrations/face3.svg"
                     width={800}
                     height={800}
                     alt="Picture of the lesson"

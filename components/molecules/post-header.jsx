@@ -9,7 +9,7 @@ export default function PostHeader({ title, date, author, excerpt }) {
         <PostTitle>{title}</PostTitle>
         <div className="mx-8 md:mx-32 lg:mx-56 xl:mx-80 py-8">
           <div className="flex place-items-center justify-between text-md text-brand-beige">
-            <div className="flex items-center text-[12px]">
+            <div className="flex items-center text-[14px]">
               <Avatar name={author.name} picture={author.picture} />
               <span className="ml-3 lg:ml-4 mr-1">
                 Escrito por:

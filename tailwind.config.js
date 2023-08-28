@@ -41,6 +41,7 @@ module.exports = {
         firacode: ["FiraCode"],
         outfitsemibold: ["OutfitSemiBold", "sans-serif"],
         outfitlight: ["OutfitLight", "sans-serif"],
+        letter: ["LetterForLearners"],
       },
       spacing: {
         border: "4px",

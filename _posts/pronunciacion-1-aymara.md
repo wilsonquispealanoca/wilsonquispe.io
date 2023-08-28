@@ -22,7 +22,9 @@ Primero, practiquemos las vocales, ¡Piensa en ellas como un color de pintura qu
 Antes de empezar quiero que aprendas que en el aymara solo existen 3 vocales en la escritura:
 
 <div className="example">
-  a, i, u
+<span className="letter">a<span className="dot">, </span></span>
+<span className="letter">i<span className="dot">, </span></span>
+<span className="letter">u</span>
 </div>
 
 En el uso oral, la pronunciación es igual que el castellano.
@@ -58,11 +60,11 @@ En el uso oral, la pronunciación es igual que el castellano.
          </table>
       </div>
 
-Es crucial destacar una regla importante en el idioma aymara que afecta la pronunciación de muchas palabras. Cuando nos encontramos con las vocales "i" y "u" en algunas ocasiones, especialmente al combinar palabras o conjugarlas, experimentan un cambio en su sonido. Es esencial entender que este cambio se da únicamente en el sonido y no afecta la forma en que se escriben.
+Es crucial destacar una regla importante en el idioma aymara que afecta la pronunciación de muchas palabras. Cuando nos encontramos con las vocales <em>i</em> y <em>u</em> en algunas ocasiones, especialmente al combinar palabras o conjugarlas, experimentan un cambio en su sonido. Es esencial entender que este cambio se da únicamente en el sonido y no afecta la forma en que se escriben.
 
 ### Regla 1:
 
-Esta regla tiene un componente intrigante. Cuando la vocal "i" aparece antes o después de ciertas letras como q, qh, q' y x, su sonido cambia, ¡casi como si se transformara en la vocal "e"! No te preocupes, no cambia la manera en que se escribe, solo el sonido.
+Esta regla tiene un componente intrigante. Cuando la vocal <em>i</em> aparece antes o después de ciertas letras como <em>q, qh, q' y x</em>, su sonido cambia, ¡casi como si se transformara en la vocal <em>e</em></em>! No te preocupes, no cambia la manera en que se escribe, solo el sonido.
 
 ¡Ahora veamos ejemplos para entender mejor!
 
@@ -92,7 +94,7 @@ Esta regla tiene un componente intrigante. Cuando la vocal "i" aparece antes o d
 
 ### Regla 2:
 
-Igualmente, cuando la vocal "u" se encuentra antes o después de letras como q, qh, q' y x, ocurre un cambio en su sonido, ¡casi como si se convirtiera en la vocal "o"! Es importante señalar que este cambio solo afecta al sonido y no a la forma de escritura.
+Igualmente, cuando la vocal <em>u</em> se encuentra antes o después de letras como <em>q, qh, q' y x</em>, ocurre un cambio en su sonido, ¡casi como si se convirtiera en la vocal <em>o</em>! Es importante señalar que este cambio solo afecta al sonido y no a la forma de escritura.
 
 ¡Ahora, exploremos ejemplos para obtener una mejor comprensión!
 
@@ -142,7 +144,7 @@ Igualmente, cuando la vocal "u" se encuentra antes o después de letras como q, 
 
 ### Regla 3:
 
-¿Notaste algo en la tabla? La palabra “Picante” se pronuncia con la consonante “j” y no con la “x”. Esto es debido a que en el aymara la pronunciación de la “x” se pronuncia como la “j” del castellano.
+<p class="blockquote-purple"><span class="blockquote-purple-title">¿Notaste algo en la tabla?</span> La palabra <span class="blockquote-purple-title">PICANTE</span> se pronuncia con la consonante <span class="blockquote-purple-title">j</span> y no con la <span class="blockquote-purple-title">x</span>. Esto es debido a que en el aymara la pronunciación de la “x” se pronuncia como la “j” del castellano.</p>
 
 Para entenderlo mejor, aquí tienes algunos ejemplos:
 

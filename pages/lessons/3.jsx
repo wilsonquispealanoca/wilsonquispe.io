@@ -12,11 +12,9 @@ const initialState = {
   answerIndex: 2, // Índice de la respuesta correcta en el array options
 };
 
-function QuizGame() {
+export default function Lesson() {
   const [isCorrect, setIsCorrect] = useState(false);
   const [showResult, setShowResult] = useState(false);
-  const [draggingImage, setDraggingImage] = useState(false);
-  const [draggingPosition, setDraggingPosition] = useState({ x: 0, y: 0 });
 
   const handleDragStart = (event) => {
     event.dataTransfer.setData("text/plain", "image");
@@ -93,5 +91,3 @@ function QuizGame() {
     </div>
   );
 }
-
-export default QuizGame;

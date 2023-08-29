@@ -391,6 +391,11 @@ blockquote:before {
   border-radius: 1rem;
 }
 
+.dragStart {
+  border: 2px solid rgb(209 213 219);
+  border-radius: 0.75rem;
+}
+
 @media (min-width: 600px) {
   .example {
     font-size: 8rem;

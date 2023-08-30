@@ -8,8 +8,8 @@ export function Droppable(props) {
     id: id,
   });
   const style = {
-    border: isOver ? "2px dashed #1CB0F6" : "2px dashed #303044",
-    borderRadius: "1rem",
+    border: isOver ? "3px dashed #1CB0F6" : "3px dashed #303044",
+    borderRadius: "2rem",
   };
 
   return (

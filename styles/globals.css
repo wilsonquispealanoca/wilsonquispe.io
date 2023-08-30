@@ -396,6 +396,10 @@ blockquote:before {
   border-radius: 0.75rem;
 }
 
+.transition-progress {
+  transition: width 0.3s ease-in-out;
+}
+
 @media (min-width: 600px) {
   .example {
     font-size: 8rem;

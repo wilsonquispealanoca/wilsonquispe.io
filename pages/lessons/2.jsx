@@ -66,7 +66,7 @@ export default function Lesson() {
         { icon: "/assets/illustrations/achaku1.svg", name: "Achaku" },
         { icon: "/assets/illustrations/potato.png", name: "Ch'uqi" },
       ],
-      correctAnswer: 0,
+      correctAnswer: 2,
     },
     {
       question: '¿Cuál de estos es la "Puerta"?',
@@ -81,7 +81,7 @@ export default function Lesson() {
     {
       question: "Arrastra a el Gato a su nombre en aymara",
       shouldShowDragAndDrop: true,
-      image: "/assets/illustrations/Cat.svg",
+      image: "/assets/illustrations/Phisi.svg",
       options: [
         { id: "1", text: "Anu" },
         { id: "2", text: "Phisi" },
@@ -103,16 +103,16 @@ export default function Lesson() {
       correctAnswerDrag: 3,
     },
     {
-      question: "Arrastra a la raton a su nombre en aymara",
+      question: "Arrastra al raton a su nombre en aymara",
       shouldShowDragAndDrop: true,
       image: "/assets/illustrations/achaku2.svg",
       options: [
-        { id: "4", text: "Achaku" },
         { id: "2", text: "Ach'aku" },
+        { id: "4", text: "Achaku" },
         { id: "1", text: "Achaqu" },
         { id: "3", text: "Achacu" },
       ],
-      correctAnswerDrag: 0,
+      correctAnswerDrag: 1,
     },
     {
       question: '¿Cómo se dice "Éste gato"?',

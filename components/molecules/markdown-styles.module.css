@@ -44,11 +44,11 @@
 }
 
 .markdown table {
-  @apply min-w-full text-left text-sm font-light text-white;
+  @apply min-w-full text-left text-base font-light text-white;
 }
 
 .markdown thead {
-  @apply font-medium bg-[#0f0f17];
+  @apply font-medium bg-[#0f0f17] text-brand-yellow;
 }
 
 .markdown th {

@@ -61,6 +61,13 @@
   font-weight: bold;
 }
 
+.grid-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  place-content: center;
+  gap: 3rem;
+}
+
 /* button */
 .btn-pink {
   @apply px-6 py-4 bg-brand-pink rounded-full uppercase border border-black cursor-pointer font-outfit text-brand-charcoal font-black;
@@ -139,14 +146,6 @@ pre:not(:first-child) {
   color: #f9f4da;
   padding-top: 23px;
 }
-
-/**
- * MIT License
- * Copyright (c) 2018 Sarah Drasner
- * Sarah Drasner's[@sdras] Night Owl
- * Ported by Sara vieria [@SaraVieira]
- * Added by Souvik Mandal [@SimpleIndian]
- */
 
 code[class*="language-"],
 pre[class*="language-"] {
@@ -348,6 +347,7 @@ blockquote:before {
 .example {
   position: relative;
   display: flex;
+  flex-direction: column;
   margin: 45px 0;
   justify-content: center;
   align-items: center;
@@ -371,17 +371,47 @@ blockquote:before {
   opacity: 0.3;
 }
 
+.example__sm {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  margin: 45px 0;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 5px;
+  font-size: 2rem;
+  font-family: "LetterForLearners";
+  font-weight: 600;
+}
+
+.example__sm::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(rgb(124, 124, 124) 1px, transparent 1px),
+    linear-gradient(to right, rgb(124, 124, 124) 1px, white 1px);
+  background-size: 30px 30px;
+  opacity: 0.3;
+}
+
 .letter {
   color: #254343;
-  z-index: 1;
+  z-index: 2;
 }
 
 .dot {
   color: #eace64;
+  z-index: 2;
 }
 
 .parentesis {
   color: #ec7574;
+  z-index: 2;
 }
 
 .overflow-x-auto-table {
@@ -403,5 +433,8 @@ blockquote:before {
 @media (min-width: 600px) {
   .example {
     font-size: 8rem;
+  }
+  .example__sm {
+    font-size: 4rem;
   }
 }

@@ -430,6 +430,144 @@ blockquote:before {
   transition: width 0.3s ease-in-out;
 }
 
+.btn__lines-diagonals {
+  background: repeating-linear-gradient(
+    135deg,
+    #fec801,
+    #fec801 60px,
+    #fed801 60px,
+    #fed801 110px
+  );
+}
+
+.bg__lines-diagonals {
+  background: repeating-linear-gradient(
+    105deg,
+    #fed84b,
+    #fed84b 100px,
+    #fec801 100px,
+    #fec801 160px
+  );
+}
+
+.bg__congratulation-degrade {
+  background: linear-gradient(transparent, #fec801 90%);
+}
+
+.correct {
+  background-color: green;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 2rem 2.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.containerAnswer {
+  display: inline-block;
+  border: 3px solid rgb(5, 203, 253);
+  height: 2.6rem;
+  width: 2.6rem;
+  margin-left: 0.5rem;
+  border-radius: 0.3rem;
+  background-color: rgb(184, 242, 255);
+}
+
+.question__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.question {
+  font-weight: 600;
+  font-size: 3rem;
+}
+
+.question__answer {
+  font-weight: 600;
+  height: 2.6rem;
+  text-align: center;
+  width: 2.6rem;
+  font-size: 3rem;
+  border: 3px solid rgb(5, 203, 253);
+  border-radius: 0.3rem;
+  background-color: rgb(184, 242, 255);
+}
+
+.axis {
+  display: flex;
+  justify-content: space-between;
+  height: 0.2rem;
+  background-color: #303044;
+  margin: 4rem 0;
+}
+
+.tick.active {
+  background-color: #c21aa5;
+  width: 0.5rem;
+}
+
+.tick {
+  position: relative;
+  bottom: 10px;
+  width: 0.4rem;
+  height: 1.5rem;
+  border-radius: 50px;
+  background-color: #303044;
+  transition: background-color 0.3s ease-in-out, width 0.3s ease-in-out;
+}
+
+.tick-label {
+  font-family: "Outfit", sans-serif;
+  font-weight: 600;
+  font-size: 1.6rem;
+  position: absolute;
+  top: -40px;
+  left: -26px;
+}
+
+.tick-label.active {
+  color: #c21aa5;
+}
+
+.arrow {
+  position: absolute;
+  top: 30px;
+  left: -6px;
+  background-color: #c21aa5;
+  height: 20px;
+  width: 20px;
+  border-radius: 20%;
+  transition: background-color 0.3s ease-in-out, width 0.3s ease-in-out;
+}
+
+.btn {
+  border: none;
+  height: 3rem;
+  border-radius: 0.6rem;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.btn__disabled {
+  background-color: rgb(233, 233, 233);
+  color: grey;
+}
+
+.btn__correct {
+  background-color: #123837;
+  border: 2px solid #26bdbd;
+  color: white;
+}
+
+.score {
+  color: gold;
+}
+
 @media (min-width: 600px) {
   .example {
     font-size: 8rem;

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { useDraggable } from "@dnd-kit/core";
 
 export function Draggable(props) {

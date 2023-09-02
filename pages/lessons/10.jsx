@@ -19,122 +19,110 @@ export default function Lesson9() {
 
   const questions = [
     {
-      question: "¿Cuál de estos es la llama?",
-      answers: [
-        { icon: "/assets/illustrations/Phisi.svg", name: "Phisi" },
-        { icon: "/assets/illustrations/tree.png", name: "Quqa" },
-        { icon: "/assets/illustrations/qawra.svg", name: "Qawra" },
-        { icon: "/assets/illustrations/T'ant'a.svg", name: "T'ant'a" },
-      ],
-      correctAnswer: 2,
+      title: "Responde el numero en aymara en la linea",
+      shouldShowNumber: true,
+      question: "6 - 5",
+      answerIndex: 1,
+      answer: "Maya",
+      options: ["paya", "maya", "suxta", "tunka"],
     },
-    {
-      question: "¿Cuál es la piedra?",
-      answers: [
-        { icon: "/assets/illustrations/payaqawra.svg", name: "Qawra" },
-        { icon: "/assets/illustrations/qala.svg", name: "Qala" },
-        { icon: "/assets/illustrations/dog.svg", name: "Anu" },
-        { icon: "/assets/illustrations/achaku2.svg", name: "Achaku" },
-      ],
-      correctAnswer: 1,
-    },
-    {
-      question: "Arrastra a la Piedra a su nombre en aymara",
+    /*  {
+      question: "Arrastra el número a su nombre en aymara",
       shouldShowDragAndDrop: true,
-      image: "/assets/illustrations/qala.svg",
+      number: "2",
       options: [
-        { id: "1", text: "Kala" },
-        { id: "2", text: "Qhala" },
-        { id: "3", text: "Qala" },
-        { id: "4", text: "Qhala" },
-      ],
-      correctAnswerDrag: 2,
-    },
-    {
-      question: "Arrastra a la Llama a su nombre en aymara",
-      shouldShowDragAndDrop: true,
-      image: "/assets/illustrations/qawra.svg",
-      options: [
-        { id: "4", text: "Kawra" },
-        { id: "2", text: "Kaura" },
-        { id: "1", text: "Qawra" },
-        { id: "3", text: "Qaura" },
-      ],
-      correctAnswerDrag: 2,
-    },
-    {
-      question: "Arrasta a la respuesta correcta: Khayax mä qawrati",
-      shouldShowDragAndDrop: true,
-      image: "/assets/illustrations/payaqawra.svg",
-      options: [
-        { id: "4", text: "Jisa khayax mä qawra" },
-        { id: "2", text: "Jisa khayax mä qawrawa" },
-        { id: "1", text: "Jis khayaxa mä kawrawa" },
-        { id: "3", text: "Jis khayaxa mä qhawrawa" },
+        { id: "1", text: "Maya" },
+        { id: "2", text: "Paya" },
+        { id: "3", text: "Kimsa" },
+        { id: "4", text: "Pusi" },
       ],
       correctAnswerDrag: 1,
     },
     {
-      question: "Traduce al aymara la siguiente oración: Ésto no es piedra",
-      answers: [
-        { name: "Akaxa janiw kalakiti" },
-        { name: "Akax janiwa qala" },
-        { name: "Akax janiwa qalakiti" },
-        { name: "Akaxa janiw qalakhiti" },
+      question: "Arrastra el número a su nombre en aymara",
+      shouldShowDragAndDrop: true,
+      number: "10",
+      options: [
+        { id: "4", text: "Kimsa" },
+        { id: "2", text: "Phisqa" },
+        { id: "1", text: "Tunka" },
+        { id: "3", text: "maya" },
       ],
-      correctAnswer: 2,
+      correctAnswerDrag: 2,
     },
     {
-      question:
-        "Traduce al aymara la siguiente oración: Aquéllo no es un ratón",
-      answers: [
-        { name: "Khurix janiwa achakukiti" },
-        { name: "Ukax janiwa achakukiti" },
-        { name: "Akax janiw achakukiti" },
+      question: "Arrasta el nùmero en aymara al número en castellano",
+      shouldShowDragAndDrop: true,
+      number: "8",
+      options: [
+        { id: "4", text: "Kimsapaqalqu" },
+        { id: "2", text: "Kimsapaqalqo" },
+        { id: "1", text: "Kimsapaqallqu" },
+        { id: "3", text: "Kimsapaqallqo" },
       ],
-      correctAnswer: 0,
-    },
+      correctAnswerDrag: 2,
+    }, */
     {
-      question: "Traduce al castellano la siguiente oración: Akax mä qalati",
-      answers: [
-        { name: "¿Éso es una piedra?" },
-        { name: "¿Aquéllo es una piedra?" },
-        { name: "¿Ésto es una piedra?" },
-        { name: "¿Éso es una llama?" },
-      ],
-      correctAnswer: 2,
-    },
-    {
-      question: 'Escribe esto en aymara: "¿Éso es una piedra?"',
+      question: 'Escribe 20 en aymara"',
       shouldShowInput: true,
-      correctAnswerWrite: "Ukax mä qalati",
+      correctAnswerWrite: "Pätunka",
     },
     {
-      question: 'Escribe "Así es" en aymara',
+      question: "Escribe 100 en aymara",
       shouldShowInput: true,
-      correctAnswerWrite: "Ukhamawa",
+      correctAnswerWrite: "Pataka",
     },
     {
-      question: 'Escribe "Sí" en aymara',
+      question: "Escribe 111 en aymara",
       shouldShowInput: true,
-      correctAnswerWrite: "Jisa",
+      correctAnswerWrite: "Pataka tunka mayani",
     },
     {
-      question: 'Escribe "No" en aymara',
+      question: "Escribe 1000 en aymara",
       shouldShowInput: true,
-      correctAnswerWrite: "Jani",
+      correctAnswerWrite: "Waranqa",
     },
     {
-      question: 'Escribe "Piedra" en aymara',
+      question: "Escribe 2023 en aymara",
       shouldShowInput: true,
-      correctAnswerWrite: "Qala",
+      correctAnswerWrite: "Pä waranka pä tunka kimsani",
     },
     {
-      question: 'Escribe "Llama" en aymara',
-      shouldShowInput: true,
-      correctAnswerWrite: "Qawra",
+      title: "Responde esto en la linea",
+      shouldShowNumber: true,
+      question: "5 + 1",
+      answerIndex: 3,
+      answer: "suxta",
+      options: ["kimsa", "maya", "tunka", "suxta"],
+    },
+    {
+      title: "Responde el numero en aymara en la linea",
+      shouldShowNumber: true,
+      question: "1 + 1",
+      answerIndex: 2,
+      answer: "paya",
+      options: ["2", "maya", "paya", "kimsa"],
+    },
+    {
+      title: "Responde el numero en aymara en la linea",
+      shouldShowNumber: true,
+      question: "5 + 5",
+      answerIndex: 3,
+      answer: "Tunka",
+      options: ["kimsa", "suxta", "maya", "tunka"],
+    },
+    {
+      title: "Responde el numero en aymara en la linea",
+      shouldShowNumber: true,
+      question: "6 - 5",
+      answerIndex: 1,
+      answer: "Maya",
+      options: ["paya", "maya", "suxta", "tunka"],
     },
   ];
+
+  const [activeIndex, setActiveIndex] = useState(0);
+  const [clickedIndex, setClickedIndex] = useState(null);
 
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
 
@@ -172,6 +160,12 @@ export default function Lesson9() {
       } else if (isAnswerIncorrect) {
         setScore((prev) => prev - 1);
       }
+    } else if (currentQuestion.shouldShowNumber) {
+      if (currentQuestion.answerIndex) {
+        setIsCorrectAnswer(true);
+      } else {
+        setIsCorrectAnswer(false);
+      }
     }
 
     setShowModal(true);
@@ -192,6 +186,11 @@ export default function Lesson9() {
       // Todas las preguntas han sido respondidas
       setCurrentQuestionIndex(-1); // Reiniciar al primer índice
     }
+  };
+
+  const handleTickClick = (index) => {
+    setActiveIndex(index);
+    setClickedIndex(index);
   };
 
   const currentQuestion = questions[currentQuestionIndex];
@@ -267,47 +266,55 @@ export default function Lesson9() {
             </div>
 
             <div className="flex max-w-2xl grow flex-col gap-5 self-center sm:items-center sm:justify-center w-full">
-              <h1 className="self-start text-xl text-white sm:text-3xl">
-                {currentQuestion.question}
-              </h1>
-              {currentQuestion.answers && (
-                <div
-                  className={`grid ${
-                    currentQuestion.answers.every((answer) => !answer.icon)
-                      ? "grid-cols-1"
-                      : "grid-cols-2"
-                  }  gap-2 lg:gap-3 sm:grid-cols-3 lg:grid-cols-4`}
-                >
-                  {currentQuestion.answers.map((item, index) => (
-                    <button
-                      className={`${
-                        selectedAnswer === index
-                          ? "cursor-pointer rounded-xl bg-gradient-to-br p-border from-[#D8B4FE] to-[#818CF8] bg-blue-100 text-brand-coal font-bold py-3"
-                          : "cursor-pointer rounded-xl border-2 border-b-4 border-[#303044] p-2 lg:p-4 hover:bg-[#0f0f17]"
-                      }`}
-                      key={index}
-                      onClick={() => setSelectedAnswer(index)}
+              {currentQuestion.shouldShowSelection && (
+                <>
+                  <h1 className="self-start text-xl text-white sm:text-3xl">
+                    {currentQuestion.question}
+                  </h1>
+                  {currentQuestion.answers && (
+                    <div
+                      className={`grid ${
+                        currentQuestion.answers.every((answer) => !answer.icon)
+                          ? "grid-cols-1"
+                          : "grid-cols-2"
+                      }  gap-2 lg:gap-3 sm:grid-cols-3 lg:grid-cols-4`}
                     >
-                      {item.icon && (
-                        <Image
-                          src={item.icon}
-                          width={800}
-                          height={800}
-                          alt="Picture of the lesson"
-                          sizes="(max-width: 768px) 50vw, (max-width: 1200px) 100vw, 33vw"
-                          className="mb-2"
-                        />
-                      )}
-                      <div className="text-lg lg:text-lg w-full">
-                        {item.name}
-                      </div>
-                    </button>
-                  ))}
-                  <SendResponse isInput={false} handle={handleAnswerSubmit} />
-                </div>
+                      {currentQuestion.answers.map((item, index) => (
+                        <button
+                          className={`${
+                            selectedAnswer === index
+                              ? "cursor-pointer rounded-xl bg-gradient-to-br p-border from-[#D8B4FE] to-[#818CF8] bg-blue-100 text-brand-coal font-bold py-3"
+                              : "cursor-pointer rounded-xl border-2 border-b-4 border-[#303044] p-2 lg:p-4 hover:bg-[#0f0f17]"
+                          }`}
+                          key={index}
+                          onClick={() => setSelectedAnswer(index)}
+                        >
+                          {item.icon && (
+                            <Image
+                              src={item.icon}
+                              width={800}
+                              height={800}
+                              alt="Picture of the lesson"
+                              sizes="(max-width: 768px) 50vw, (max-width: 1200px) 100vw, 33vw"
+                              className="mb-2"
+                            />
+                          )}
+                          <div className="text-lg lg:text-lg w-full">
+                            {item.name}
+                          </div>
+                        </button>
+                      ))}
+                      <SendResponse
+                        isInput={false}
+                        handle={handleAnswerSubmit}
+                      />
+                    </div>
+                  )}
+                </>
               )}
               {currentQuestion.shouldShowInput && (
-                <div className="w-full">
+                <div className=" w-full">
+                  <h2 className="text-xl pt-8">{currentQuestion.question}</h2>
                   <input
                     type="text"
                     placeholder="Escribe aquí"
@@ -326,7 +333,45 @@ export default function Lesson9() {
                   resetDraggable={resetDraggable}
                   handleAnswerSubmit={handleAnswerSubmit}
                   parent={parent}
+                  isNumber={currentQuestion.shouldShowNumber}
+                  isImage={currentQuestion.shouldShowDragAndDrop}
                 />
+              )}
+              {currentQuestion.shouldShowNumber && (
+                <div className="mx-2 pt-8">
+                  <h1 className="text-xl">{currentQuestion.title}</h1>
+                  <div className="question__container">
+                    <span className="question">
+                      {currentQuestion.question} ={" "}
+                    </span>
+                    <div className="containerAnswer"></div>
+                  </div>
+                  <div
+                    className={`axis px-4 mt-8 ${
+                      isCorrectAnswer ? "correct" : ""
+                    }`}
+                  >
+                    {currentQuestion.options.map((option, index) => (
+                      <div
+                        className={`tick ${
+                          index === activeIndex ? "active" : ""
+                        }`}
+                        key={index}
+                        onClick={() => handleTickClick(index)}
+                      >
+                        <span
+                          className={`tick-label ${
+                            index === activeIndex ? "active" : ""
+                          }`}
+                        >
+                          {option}
+                        </span>
+                        {index === activeIndex && <div className="arrow"></div>}
+                      </div>
+                    ))}
+                  </div>
+                  <SendResponse isInput={false} handle={handleAnswerSubmit} />
+                </div>
               )}
             </div>
           </div>
@@ -372,6 +417,11 @@ export default function Lesson9() {
                                     currentQuestion.correctAnswerDrag
                                   ].text
                                 }
+                              </strong>
+                            )}
+                            {currentQuestion.shouldShowNumber && (
+                              <strong className="ml-1">
+                                {currentQuestion.answer}
                               </strong>
                             )}
                           </div>

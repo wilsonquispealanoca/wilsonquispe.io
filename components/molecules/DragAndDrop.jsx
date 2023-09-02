@@ -16,6 +16,8 @@ export default function DragAndDrop({
   setIsCorrect,
   resetDraggable,
   parent,
+  isNumber,
+  isImage,
 }) {
   const sensors = useSensors(
     useSensor(KeyboardSensor),
@@ -28,7 +30,8 @@ export default function DragAndDrop({
   const draggableMarkup = (
     <Draggable
       id="draggable-image"
-      image={initialState.image}
+      image={isImage}
+      number={isNumber}
       onDragStart={() => setIsDragged(true)}
       onDragEnd={() => setIsDragged(false)}
     ></Draggable>

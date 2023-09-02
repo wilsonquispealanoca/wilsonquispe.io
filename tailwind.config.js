@@ -35,6 +35,8 @@ module.exports = {
         "tertiary-dark": "#6A76A1",
         "secondary-dark": "#a0aec0",
         "primary-dark": "#FFFFFF",
+        "border-golden": "#e7a601",
+        "text-golden": "#ae6903",
       },
       fontFamily: {
         outfit: ["Outfit", "sans-serif"],

@@ -16,12 +16,12 @@ const Story = () => {
         {
           text: "Comenzar con Remi",
           nextPage: 1,
-          image: "/assets/illustrations/Achaku1.svg",
+          image: "/assets/illustrations/achaku1.svg",
         },
         {
           text: "Comenzar con Emil",
           nextPage: 2,
-          image: "/assets/illustrations/Achaku2.svg",
+          image: "/assets/illustrations/achaku2.svg",
         },
       ],
     },
@@ -94,10 +94,10 @@ const Story = () => {
       optionsSelected: true,
       choices: [
         {
-          image: "/assets/illustrations/Achaku2.svg",
+          image: "/assets/illustrations/achaku2.svg",
         },
         {
-          image: "/assets/illustrations/Achaku1.svg",
+          image: "/assets/illustrations/achaku1.svg",
         },
       ],
       nextPage: 11,
@@ -107,10 +107,10 @@ const Story = () => {
       optionsSelected: true,
       choices: [
         {
-          image: "/assets/illustrations/Achaku2.svg",
+          image: "/assets/illustrations/achaku2.svg",
         },
         {
-          image: "/assets/illustrations/Achaku1.svg",
+          image: "/assets/illustrations/achaku1.svg",
         },
       ],
       nextPage: 12,

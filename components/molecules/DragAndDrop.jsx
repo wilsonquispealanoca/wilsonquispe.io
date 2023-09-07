@@ -1,4 +1,5 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
+import { DragOverEvent, DragStartEvent } from "@dnd-kit/core";
 import {
   DndContext,
   KeyboardSensor,
@@ -16,8 +17,6 @@ export default function DragAndDrop({
   setIsCorrect,
   resetDraggable,
   parent,
-  isNumber,
-  isImage,
 }) {
   const sensors = useSensors(
     useSensor(KeyboardSensor),
@@ -28,13 +27,7 @@ export default function DragAndDrop({
   const [isDragged, setIsDragged] = useState(false);
 
   const draggableMarkup = (
-    <Draggable
-      id="draggable-image"
-      image={isImage}
-      number={isNumber}
-      onDragStart={() => setIsDragged(true)}
-      onDragEnd={() => setIsDragged(false)}
-    ></Draggable>
+    <Draggable id="draggable-image" image={initialState.image}></Draggable>
   );
 
   function handleDragEnd(event) {
@@ -76,9 +69,10 @@ export default function DragAndDrop({
   );
 
   function handleDragOver(ev) {
-    const { over } = ev;
+    const { active, over } = ev;
     if (!over) return;
 
+    const activeId = active.id;
     const overId = over.id;
 
     const isCorrectAnswer =

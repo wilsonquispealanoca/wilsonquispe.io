@@ -7,6 +7,7 @@ const Story = () => {
   const [page, setPage] = useState(0);
   const [gameStatus, setGameStatus] = useState("Playing");
   const [correctAnswer, setCorrectAnswer] = useState(false);
+  const [selected, setSelected] = useState(null);
 
   const storyPages = [
     {
@@ -133,6 +134,10 @@ const Story = () => {
     }
   };
 
+  const handleSelected = (index) => {
+    setSelected(index);
+  };
+
   return (
     <>
       {gameStatus === "Finished" && (
@@ -148,13 +153,15 @@ const Story = () => {
           />
           {currentPage.options && (
             <>
-              <p className="text-xl">{currentPage.text}</p>
+              <p className="text-xl font-outfitsemibold text-white text-center">
+                {currentPage.text}
+              </p>
               <div className="grid grid-cols-2 gap-6 mt-12">
                 {currentPage.choices.map((choice, index) => (
                   <div key={index}>
                     <div
-                      className="border-dashed border-2 border-[#1CB0F6] hover:border-none flex flex-col h-full text-center w-full cursor-grab justify-center items-center hover:bg-gradient-to-br hover:from-[#D8B4FE] hover:to-[#818CF8] rounded-xl z-20 py-2 px-4"
-                      onClick={() => handleChoiceClick(choice.nextPage)}
+                      className={`choice ${selected === index && "selected"}`}
+                      onClick={() => handleSelected(index)}
                     >
                       <Image
                         src={choice.image}
@@ -162,9 +169,31 @@ const Story = () => {
                         height={800}
                         alt="Picture of the lesson"
                         sizes="(max-width: 768px) 50vw, (max-width: 1200px) 100vw, 33vw"
-                        className="mb-2"
+                        className="mb-2 relative"
                       />
-                      <p className="text-white">{choice.text}</p>
+                      <p className="text-white relative">{choice.text}</p>
+                    </div>
+                    <div className="fixed bottom-0 left-0 right-0 mx-4 mb-4">
+                      {selected === 0 && (
+                        <button
+                          onClick={() =>
+                            handleChoiceClick(currentPage.choices[0].nextPage)
+                          }
+                          className="w-full rounded-2xl border-accent border-2 bg-[#123837] py-2 text-white text-xl"
+                        >
+                          Seguir
+                        </button>
+                      )}
+                      {selected === 1 && (
+                        <button
+                          onClick={() =>
+                            handleChoiceClick(currentPage.choices[1].nextPage)
+                          }
+                          className="w-full rounded-2xl border-accent border-2 bg-[#123837] py-2 text-white text-xl"
+                        >
+                          Seguir
+                        </button>
+                      )}
                     </div>
                   </div>
                 ))}
@@ -182,9 +211,11 @@ const Story = () => {
                   sizes="(max-width: 768px) 50vw, (max-width: 1200px) 100vw, 33vw"
                 />
               </div>
-              <p className="text-xl">{currentPage.text}</p>
+              <h2 className="text-xl font-outfitsemibold text-white text-center">
+                {currentPage.text}
+              </h2>
               <div className="flex justify-content items-center">
-                <div className="w-24">
+                <div className="w-14">
                   <Image
                     src={currentPage.imageConversation}
                     width={800}
@@ -193,7 +224,7 @@ const Story = () => {
                     sizes="(max-width: 768px) 50vw, (max-width: 1200px) 100vw, 33vw"
                   />
                 </div>
-                <p className="border-2 border-grey-200 w-full text-white rounded-lg py-2 ml-4 text-center">
+                <p className="border-2 border-gray-600 w-full text-white font-outfitsemibold rounded-lg p-2 ml-4 text-center">
                   {currentPage.textAymara}
                 </p>
               </div>
@@ -210,20 +241,42 @@ const Story = () => {
           )}
           {currentPage.optionsSelected && (
             <>
-              <p className="text-xl">{currentPage.text}</p>
+              <p className="text-xl font-outfitsemibold text-white text-center">
+                {currentPage.text}
+              </p>
               <div className="grid grid-cols-2 gap-6 mt-12">
                 {currentPage.choices.map((choice, index) => (
                   <div key={index}>
-                    <div className="border-dashed border-2 border-[#1CB0F6] hover:border-none flex flex-col h-full text-center w-full cursor-grab justify-center items-center hover:bg-gradient-to-br hover:from-[#D8B4FE] hover:to-[#818CF8] rounded-xl z-20 py-2 px-4">
+                    <div
+                      className={`choice ${selected === index && "selected"}`}
+                      onClick={() => handleSelected(index)}
+                    >
                       <Image
                         src={choice.image}
                         width={800}
                         height={800}
                         alt="Picture of the lesson"
                         sizes="(max-width: 768px) 50vw, (max-width: 1200px) 100vw, 33vw"
-                        className="mb-2"
-                        onClick={() => handleCorrectAnswer(choice.image)}
+                        className="mb-2 relative"
                       />
+                      <p className="text-white relative">{choice.text}</p>
+                    </div>
+                    <div className="fixed bottom-0 left-0 right-0 mx-4 mb-4">
+                      {selected ? (
+                        <button
+                          onClick={() => handleCorrectAnswer(choice.image)}
+                          className="w-full rounded-2xl border-accent border-2 bg-[#123837] py-2 text-white text-xl"
+                        >
+                          Seguir
+                        </button>
+                      ) : (
+                        <button
+                          onClick={() => handleCorrectAnswer("")}
+                          className="w-full rounded-2xl border-accent border-2 bg-[#123837] py-2 text-white text-xl"
+                        >
+                          Seguir
+                        </button>
+                      )}
                     </div>
                   </div>
                 ))}

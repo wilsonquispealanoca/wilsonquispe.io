@@ -2,9 +2,9 @@ import React, { useState } from "react";
 import { useDraggable } from "@dnd-kit/core";
 
 export function Draggable(props) {
+  const { id, image } = props;
   const { attributes, listeners, setNodeRef, transform } = useDraggable({
-    id: props.id,
-    image: props.image,
+    id,
   });
   const style = transform
     ? {
@@ -15,14 +15,12 @@ export function Draggable(props) {
   return (
     <img
       className="h-32 w-32 cursor-grab flex justify-center items-center bg-gradient-to-br from-[#D8B4FE] to-[#818CF8] bg-blue-100 text-brand-coal rounded-xl z-20"
-      src={props.image}
+      src={image}
       alt="Animal"
       ref={setNodeRef}
       style={style}
       {...listeners}
       {...attributes}
-    >
-      {props.children}
-    </img>
+    />
   );
 }

@@ -5,6 +5,7 @@ import { SendResponse } from "../../components/molecules/sendResponse";
 import { CorrectAnswer } from "../../components/molecules/correctAnswer";
 import DragAndDrop from "../../components/molecules/DragAndDrop";
 import { ProgressBar } from "../../components/molecules/ProgressBar";
+import DragOrderNumbers from "../../components/molecules/DragOrderNumbers";
 
 export default function Lesson9() {
   const [showModal, setShowModal] = useState(false);
@@ -12,6 +13,16 @@ export default function Lesson9() {
   const [isCorrectAnswer, setIsCorrectAnswer] = useState(false);
   const [userAnswer, setUserAnswer] = useState("");
   const [resetDraggable, setResetDraggable] = useState(false);
+  /* const [items, setItems] = useState([
+    { id: 8, name: "Kimsaqallqu" },
+    { id: 4, name: "Pusi" },
+    { id: 1, name: "Maya" },
+    { id: 7, name: "Paqallqu" },
+    { id: 2, name: "Paya" },
+    { id: 6, name: "Suxta" },
+    { id: 3, name: "Kimsa" },
+    { id: 5, name: "Phisqha" },
+  ]); */
 
   const [score, setScore] = useState(0);
 
@@ -23,8 +34,57 @@ export default function Lesson9() {
       shouldShowNumber: true,
       question: "6 - 5",
       answerIndex: 1,
-      answer: "Maya",
+      answer: "maya",
       options: ["paya", "maya", "suxta", "tunka"],
+    },
+    {
+      title: "Ordena los números de menor a mayor",
+      shouldSortedNumbers: true,
+      numbers: [
+        { id: 4, name: "Pusi" },
+        { id: 1, name: "Maya" },
+        { id: 2, name: "Paya" },
+        { id: 3, name: "Kimsa" },
+        { id: 5, name: "Phisqha" },
+      ],
+      answer: [
+        { id: 1, name: "Maya" },
+        { id: 2, name: "Paya" },
+        { id: 3, name: "Kimsa" },
+        { id: 4, name: "Pusi" },
+        { id: 5, name: "Phisqha" },
+      ],
+      correctAnswerUI: ["Maya", "Paya", "Kimsa", "Pusi", "Phisqha"],
+    },
+    {
+      title: "Ordena los números de menor a mayor",
+      shouldSortedNumbers: true,
+      numbers: [
+        { id: 3, name: "Kimsaqallqu" },
+        { id: 2, name: "Paqallqu" },
+        { id: 1, name: "Suxta" },
+      ],
+      answer: [
+        { id: 1, name: "Suxta" },
+        { id: 2, name: "Paqallqu" },
+        { id: 3, name: "Kimsaqallqu" },
+      ],
+      correctAnswerUI: ["Suxta", "Paqallqu", "Kimsaqallqu"],
+    },
+    {
+      title: "Ordena los números de menor a mayor",
+      shouldSortedNumbers: true,
+      numbers: [
+        { id: 3, name: "Tunka Mayani" },
+        { id: 2, name: "tunka" },
+        { id: 1, name: "Llatunka" },
+      ],
+      answer: [
+        { id: 1, name: "Llatunka" },
+        { id: 2, name: "tunka" },
+        { id: 3, name: "Tunka Mayani" },
+      ],
+      correctAnswerUI: ["Llatunka", "Tunka", "Tunka Mayani"],
     },
     /*  {
       question: "Arrastra el número a su nombre en aymara",
@@ -80,7 +140,7 @@ export default function Lesson9() {
     {
       question: "Escribe 1000 en aymara",
       shouldShowInput: true,
-      correctAnswerWrite: "Waranqa",
+      correctAnswerWrite: "Waranka",
     },
     {
       question: "Escribe 2023 en aymara",
@@ -91,9 +151,9 @@ export default function Lesson9() {
       title: "Responde esto en la linea",
       shouldShowNumber: true,
       question: "5 + 1",
-      answerIndex: 3,
+      answerIndex: 2,
       answer: "suxta",
-      options: ["kimsa", "maya", "tunka", "suxta"],
+      options: ["kimsa", "maya", "suxta", "tunka"],
     },
     {
       title: "Responde el numero en aymara en la linea",
@@ -108,7 +168,7 @@ export default function Lesson9() {
       shouldShowNumber: true,
       question: "5 + 5",
       answerIndex: 3,
-      answer: "Tunka",
+      answer: "tunka",
       options: ["kimsa", "suxta", "maya", "tunka"],
     },
     {
@@ -116,12 +176,13 @@ export default function Lesson9() {
       shouldShowNumber: true,
       question: "6 - 5",
       answerIndex: 1,
-      answer: "Maya",
+      answer: "maya",
       options: ["paya", "maya", "suxta", "tunka"],
     },
   ];
 
   const [activeIndex, setActiveIndex] = useState(0);
+
   const [clickedIndex, setClickedIndex] = useState(null);
 
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
@@ -161,10 +222,42 @@ export default function Lesson9() {
         setScore((prev) => prev - 1);
       }
     } else if (currentQuestion.shouldShowNumber) {
-      if (currentQuestion.answerIndex) {
+      const userAnswer = selectedAnswer;
+      const correctAnswer = currentQuestion.answer.toLowerCase();
+
+      if (userAnswer === correctAnswer) {
         setIsCorrectAnswer(true);
+        setScore((prev) => prev + 1);
       } else {
         setIsCorrectAnswer(false);
+        setScore((prev) => prev - 1);
+      }
+    } else if (currentQuestion.shouldSortedNumbers) {
+      // Extraemos los IDs correctos proporcionados en la pregunta actual
+      const correctOrderIds = currentQuestion.answer.map((item) => item.id);
+
+      // Extraemos los IDs de los elementos arrastrados en el orden actual
+      const currentOrderIds = currentQuestion.numbers.map((item) => item.id);
+
+      // Ordenamos los IDs de menor a mayor
+      const ordenado = currentOrderIds.sort((a, b) => a - b);
+
+      // Actualizamos el estado local de currentQuestion.numbers con el nuevo orden
+      currentQuestion.numbers = currentQuestion.numbers.sort(
+        (a, b) => ordenado.indexOf(a.id) - ordenado.indexOf(b.id)
+      );
+
+      // Comparamos los elementos ordenados con la respuesta correcta
+      const isCorrectOrder =
+        JSON.stringify(currentQuestion.numbers.map((item) => item.id)) ===
+        JSON.stringify(correctOrderIds);
+
+      if (isCorrectOrder) {
+        setIsCorrectAnswer(true);
+        setScore((prev) => prev + 1);
+      } else {
+        setIsCorrectAnswer(false);
+        setScore((prev) => prev - 1);
       }
     }
 
@@ -188,9 +281,12 @@ export default function Lesson9() {
     }
   };
 
-  const handleTickClick = (index) => {
-    setActiveIndex(index);
-    setClickedIndex(index);
+  const handleItemsReordered = (newItems) => {
+    // Actualiza el estado de currentQuestion.numbers con los nuevos elementos ordenados
+    setCurrentQuestion((prevQuestion) => ({
+      ...prevQuestion,
+      numbers: newItems,
+    }));
   };
 
   const currentQuestion = questions[currentQuestionIndex];
@@ -201,7 +297,7 @@ export default function Lesson9() {
         <Congratulations score={score} questions={questions} />
       ) : (
         <div className="bg-[#181824] text-brand-beige py-4 font-outfit tex-lg flex h-screen flex-col gap-5 px-4 sm:px-0 sm:py-0">
-          <div className="w-full relative h-screen flex justify-center items-center flex-col">
+          <div className="w-full relative flex justify-center items-center flex-col">
             <div className="flex max-w-2xl md:pt-14 items-center justify-center w-full">
               <ProgressBar
                 answeredQuestions={answeredQuestions}
@@ -265,10 +361,10 @@ export default function Lesson9() {
               {score < 0 && <span className="ml-1 text-gray-300">{score}</span>}
             </div>
 
-            <div className="flex max-w-2xl grow flex-col gap-5 self-center sm:items-center sm:justify-center w-full">
+            <div className="flex max-w-2xl lg:mt-10 flex-col gap-5 self-center sm:items-center sm:justify-center w-full">
               {currentQuestion.shouldShowSelection && (
                 <>
-                  <h1 className="self-start text-xl text-white sm:text-3xl">
+                  <h1 className="text-xl font-outfitsemibold text-white text-center">
                     {currentQuestion.question}
                   </h1>
                   {currentQuestion.answers && (
@@ -314,7 +410,9 @@ export default function Lesson9() {
               )}
               {currentQuestion.shouldShowInput && (
                 <div className=" w-full">
-                  <h2 className="text-xl pt-8">{currentQuestion.question}</h2>
+                  <h2 className="text-xl font-outfitsemibold text-white text-center mt-4">
+                    {currentQuestion.question}
+                  </h2>
                   <input
                     type="text"
                     placeholder="Escribe aquí"
@@ -333,13 +431,13 @@ export default function Lesson9() {
                   resetDraggable={resetDraggable}
                   handleAnswerSubmit={handleAnswerSubmit}
                   parent={parent}
-                  isNumber={currentQuestion.shouldShowNumber}
-                  isImage={currentQuestion.shouldShowDragAndDrop}
                 />
               )}
               {currentQuestion.shouldShowNumber && (
                 <div className="mx-2 pt-8">
-                  <h1 className="text-xl">{currentQuestion.title}</h1>
+                  <h1 className="text-xl font-outfitsemibold text-white text-center">
+                    {currentQuestion.title}
+                  </h1>
                   <div className="question__container">
                     <span className="question">
                       {currentQuestion.question} ={" "}
@@ -354,24 +452,34 @@ export default function Lesson9() {
                     {currentQuestion.options.map((option, index) => (
                       <div
                         className={`tick ${
-                          index === activeIndex ? "active" : ""
+                          selectedAnswer === option ? "active" : ""
                         }`}
                         key={index}
-                        onClick={() => handleTickClick(index)}
+                        onClick={() => setSelectedAnswer(option)}
                       >
                         <span
                           className={`tick-label ${
-                            index === activeIndex ? "active" : ""
+                            selectedAnswer === option ? "active" : ""
                           }`}
                         >
                           {option}
                         </span>
-                        {index === activeIndex && <div className="arrow"></div>}
                       </div>
                     ))}
+                    <SendResponse isInput={false} handle={handleAnswerSubmit} />
                   </div>
-                  <SendResponse isInput={false} handle={handleAnswerSubmit} />
                 </div>
+              )}
+              {currentQuestion.shouldSortedNumbers && (
+                <>
+                  <DragOrderNumbers
+                    initialState={currentQuestion}
+                    isCorrect={isCorrectAnswer}
+                    setIsCorrect={setIsCorrectAnswer}
+                    onItemsReordered={handleItemsReordered}
+                  />
+                  <SendResponse isInput={false} handle={handleAnswerSubmit} />
+                </>
               )}
             </div>
           </div>
@@ -422,6 +530,11 @@ export default function Lesson9() {
                             {currentQuestion.shouldShowNumber && (
                               <strong className="ml-1">
                                 {currentQuestion.answer}
+                              </strong>
+                            )}
+                            {currentQuestion.shouldSortedNumbers && (
+                              <strong className="ml-1">
+                                {currentQuestion.correctAnswerUI}
                               </strong>
                             )}
                           </div>

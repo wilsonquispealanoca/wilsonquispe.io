@@ -8,11 +8,11 @@ export const OrderNumbers = ({ item }) => {
 
   const style = {
     border: "1px solid #303044",
-    padding: "0.4rem 1rem",
+    padding: "1rem 1rem",
     width: "100%",
     display: "block",
     borderRadius: ".6rem",
-    marginBottom: "0.5rem",
+    marginBottom: "0.8rem",
     backgroundColor: "#0f0f17",
     color: "white",
     cursor: "move",

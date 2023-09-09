@@ -3,8 +3,8 @@ import {
   DndContext,
   closestCenter,
   KeyboardSensor,
-  PointerSensor,
   TouchSensor,
+  MouseSensor,
   useSensor,
   useSensors,
 } from "@dnd-kit/core";
@@ -19,8 +19,8 @@ import { OrderNumbers } from "./orderNumbers";
 
 const DragOrderNumbers = ({ initialState, setIsCorrect }) => {
   const sensors = useSensors(
-    useSensor(PointerSensor),
     useSensor(TouchSensor),
+    useSensor(MouseSensor),
     useSensor(KeyboardSensor, {
       coordinateGetter: sortableKeyboardCoordinates,
     })
@@ -49,9 +49,11 @@ const DragOrderNumbers = ({ initialState, setIsCorrect }) => {
         onDragEnd={handleDragEnd}
       >
         <SortableContext items={items} strategy={verticalListSortingStrategy}>
-          {items.map((item) => (
-            <OrderNumbers key={item.id} id={item} />
-          ))}
+          <div>
+            {items.map((item) => (
+              <OrderNumbers key={item.id} id={item} />
+            ))}
+          </div>
         </SortableContext>
       </DndContext>
     </>

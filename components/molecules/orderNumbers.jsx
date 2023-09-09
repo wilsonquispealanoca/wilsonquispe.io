@@ -21,7 +21,12 @@ export function OrderNumbers({ id }) {
   };
 
   return (
-    <button ref={setNodeRef} style={style} {...attributes} {...listeners}>
+    <button
+      ref={setNodeRef}
+      style={{ ...style }}
+      {...attributes}
+      {...listeners}
+    >
       {id}
     </button>
   );

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import {
   DndContext,
   closestCenter,
@@ -13,15 +13,10 @@ import {
   sortableKeyboardCoordinates,
   verticalListSortingStrategy,
 } from "@dnd-kit/sortable";
+
 import { OrderNumbers } from "./orderNumbers";
-import { useEffect } from "react";
 
-const style = {
-  padding: "1rem",
-  width: "100%",
-};
-
-export default function DragOrderNumbers({ initialState, onItemsReordered }) {
+const DragOrderNumbers = ({ initialState, setIsCorrect }) => {
   const sensors = useSensors(
     useSensor(PointerSensor),
     useSensor(KeyboardSensor, {
@@ -29,38 +24,21 @@ export default function DragOrderNumbers({ initialState, onItemsReordered }) {
     })
   );
 
-  const correctOrderIds = initialState.answer;
+  const correctOrderIds = initialState.correctAnswerUI;
+  const name = initialState.numbers.map((number) => number.name);
 
-  // Estado local para mantener el orden actual
-  const [items, setItems] = useState(initialState.numbers);
+  const [items, setItems] = useState(name);
 
   useEffect(() => {
-    // Esto se ejecutará cada vez que `initialState.numbers` cambie
-    // Actualiza el estado local de `items` para reflejar los cambios
-    setItems(initialState.numbers);
-  }, [initialState.numbers]);
-
-  const handleDragEnd = (event) => {
-    const { active, over } = event;
-
-    if (!over) {
-      return;
+    // Actualizar los elementos solo si el número de elementos cambia
+    if (items.length !== name.length) {
+      setItems(name);
     }
-
-    if (active.id !== over.id) {
-      const oldIndex = items.findIndex((v) => v.id === active.id);
-      const newIndex = items.findIndex((v) => v.id === over.id);
-
-      // Actualizamos el estado local de items al mover los elementos
-      const newItems = arrayMove([...items], oldIndex, newIndex);
-      setItems(newItems);
-      onItemsReordered(newItems);
-    }
-  };
+  }, [name, items]);
 
   return (
     <>
-      <h2 className="text-xl font-outfitsemibold text-white text-center mt-4">
+      <h2 className="text-xl font-outfitsemibold text-white text-center my-4">
         {initialState.title}
       </h2>
       <DndContext
@@ -68,17 +46,34 @@ export default function DragOrderNumbers({ initialState, onItemsReordered }) {
         collisionDetection={closestCenter}
         onDragEnd={handleDragEnd}
       >
-        <SortableContext
-          items={items} // Usamos el estado local items
-          strategy={verticalListSortingStrategy}
-        >
-          <ul style={style}>
-            {items.map((item) => (
-              <OrderNumbers key={item.id} item={item} />
-            ))}
-          </ul>
+        <SortableContext items={items} strategy={verticalListSortingStrategy}>
+          {items.map((item) => (
+            <OrderNumbers key={item.id} id={item} />
+          ))}
         </SortableContext>
       </DndContext>
     </>
   );
-}
+
+  function handleDragEnd(event) {
+    const { active, over } = event;
+
+    if (active.id !== over.id) {
+      setItems((items) => {
+        const oldIndex = items.indexOf(active.id);
+        const newIndex = items.indexOf(over.id);
+
+        const newItems = arrayMove(items, oldIndex, newIndex);
+
+        const isCorrectOrder =
+          JSON.stringify(newItems) === JSON.stringify(correctOrderIds);
+
+        // Llamar a setIsCorrect con el resultado de la verificación
+        setIsCorrect(isCorrectOrder);
+        return newItems;
+      });
+    }
+  }
+};
+
+export default DragOrderNumbers;

@@ -1,4 +1,8 @@
 import Image from "next/image";
+
+//javascript audio library
+import { Howl } from "howler";
+
 import { useState } from "react";
 import { Congratulations } from "../../components/molecules/congratulations";
 import { SendResponse } from "../../components/molecules/sendResponse";
@@ -7,6 +11,13 @@ import DragAndDrop from "../../components/molecules/DragAndDrop";
 import { ProgressBar } from "../../components/molecules/ProgressBar";
 
 export default function Lesson9() {
+  const soundCorrect = new Howl({
+    src: ["/sounds/correct.mp3"], // Ruta de tu archivo de audio
+  });
+  const soundInCorrect = new Howl({
+    src: ["/sounds/incorrect.mp3"], // Ruta de tu archivo de audio
+  });
+
   const [showModal, setShowModal] = useState(false);
   const [selectedAnswer, setSelectedAnswer] = useState(null);
   const [isCorrectAnswer, setIsCorrectAnswer] = useState(false);
@@ -148,8 +159,10 @@ export default function Lesson9() {
       setIsCorrectAnswer(isAnswerCorrect);
       setShowModal(true);
       if (isAnswerCorrect) {
+        soundCorrect.play();
         setScore((prev) => prev + 1);
       } else if (isAnswerIncorrect) {
+        soundInCorrect.play();
         setScore((prev) => prev - 1);
       }
     } else if (currentQuestion.correctAnswerWrite) {
@@ -159,8 +172,10 @@ export default function Lesson9() {
       setIsCorrectAnswer(isAnswerCorrect);
       setShowModal(true);
       if (isAnswerCorrect) {
+        soundCorrect.play();
         setScore((prev) => prev + 1);
       } else if (isAnswerIncorrect) {
+        soundInCorrect.play();
         setScore((prev) => prev - 1);
       }
     } else if (currentQuestion.shouldShowDragAndDrop) {
@@ -168,8 +183,32 @@ export default function Lesson9() {
       setShowModal(true);
       setResetDraggable(false);
       if (isCorrectAnswer) {
+        soundCorrect.play();
         setScore((prev) => prev + 1);
       } else if (isAnswerIncorrect) {
+        soundInCorrect.play();
+        setScore((prev) => prev - 1);
+      }
+    } else if (currentQuestion.shouldShowNumber) {
+      const userAnswer = selectedAnswer;
+      const correctAnswer = currentQuestion.answer.toLowerCase();
+      setShowModal(true);
+
+      if (userAnswer === correctAnswer) {
+        setIsCorrectAnswer(true);
+        soundCorrect.play();
+        setScore((prev) => prev + 1);
+      } else {
+        setIsCorrectAnswer(false);
+        soundInCorrect.play();
+        setScore((prev) => prev - 1);
+      }
+    } else if (currentQuestion.shouldSortedNumbers) {
+      if (isCorrectAnswer) {
+        soundCorrect.play();
+        setScore((prev) => prev + 1);
+      } else {
+        soundInCorrect.play();
         setScore((prev) => prev - 1);
       }
     }

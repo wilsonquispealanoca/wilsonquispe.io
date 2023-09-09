@@ -2,13 +2,12 @@ import React from "react";
 import { useSortable } from "@dnd-kit/sortable";
 import { CSS } from "@dnd-kit/utilities";
 
-export const OrderNumbers = ({ item }) => {
+export function OrderNumbers({ id }) {
   const { attributes, listeners, setNodeRef, transform, transition } =
-    useSortable({ id: item.id });
-
+    useSortable({ id });
   const style = {
     border: "1px solid #303044",
-    padding: "1rem 1rem",
+    padding: ".8rem 1rem",
     width: "100%",
     display: "block",
     borderRadius: ".6rem",
@@ -23,7 +22,7 @@ export const OrderNumbers = ({ item }) => {
 
   return (
     <button ref={setNodeRef} style={style} {...attributes} {...listeners}>
-      {item.name}
+      {id}
     </button>
   );
-};
+}

@@ -1,4 +1,8 @@
 import Image from "next/image";
+
+//javascript audio library
+import { Howl } from "howler";
+
 import { useState } from "react";
 import { Congratulations } from "../../components/molecules/congratulations";
 import { SendResponse } from "../../components/molecules/sendResponse";
@@ -8,27 +12,56 @@ import { ProgressBar } from "../../components/molecules/ProgressBar";
 import DragOrderNumbers from "../../components/molecules/DragOrderNumbers";
 
 export default function Lesson9() {
+  const soundCorrect = new Howl({
+    src: ["/sounds/correct.mp3"], // Ruta de tu archivo de audio
+  });
+  const soundInCorrect = new Howl({
+    src: ["/sounds/incorrect.mp3"], // Ruta de tu archivo de audio
+  });
+
   const [showModal, setShowModal] = useState(false);
   const [selectedAnswer, setSelectedAnswer] = useState(null);
   const [isCorrectAnswer, setIsCorrectAnswer] = useState(false);
   const [userAnswer, setUserAnswer] = useState("");
   const [resetDraggable, setResetDraggable] = useState(false);
-  /* const [items, setItems] = useState([
-    { id: 8, name: "Kimsaqallqu" },
-    { id: 4, name: "Pusi" },
-    { id: 1, name: "Maya" },
-    { id: 7, name: "Paqallqu" },
-    { id: 2, name: "Paya" },
-    { id: 6, name: "Suxta" },
-    { id: 3, name: "Kimsa" },
-    { id: 5, name: "Phisqha" },
-  ]); */
 
   const [score, setScore] = useState(0);
 
   const [parent, setParent] = useState(null);
 
   const questions = [
+    {
+      title: "Ordena los números de menor a mayor",
+      shouldSortedNumbers: true,
+      numbers: [
+        { id: 3, name: "Kimsa" },
+        { id: 2, name: "Paya" },
+        { id: 1, name: "Maya" },
+        { id: 4, name: "Pusi" },
+      ],
+      correctAnswerUI: ["Maya", "Paya", "Kimsa", "Pusi"],
+    },
+    {
+      title: "Ordena los números de menor a mayor",
+      shouldSortedNumbers: true,
+      numbers: [
+        { id: 3, name: "Suxta" },
+        { id: 2, name: "Paqallqu" },
+        { id: 1, name: "Phisqha" },
+      ],
+      correctAnswerUI: ["Phisqha", "Suxta", "Paqallqu"],
+    },
+    {
+      title: "Ordena los números de menor a mayor",
+      shouldSortedNumbers: true,
+      numbers: [
+        { id: 4, name: "Tunka Mayani" },
+        { id: 2, name: "Llatunka" },
+        { id: 3, name: "Tunka" },
+        { id: 1, name: "Kimsaqallqu" },
+      ],
+      correctAnswerUI: ["Kimsaqallqu", "Llatunka", "Tunka", "Tunka Mayani"],
+    },
     {
       title: "Responde el numero en aymara en la linea",
       shouldShowNumber: true,
@@ -37,91 +70,6 @@ export default function Lesson9() {
       answer: "maya",
       options: ["paya", "maya", "suxta", "tunka"],
     },
-    {
-      title: "Ordena los números de menor a mayor",
-      shouldSortedNumbers: true,
-      numbers: [
-        { id: 4, name: "Pusi" },
-        { id: 1, name: "Maya" },
-        { id: 2, name: "Paya" },
-        { id: 3, name: "Kimsa" },
-        { id: 5, name: "Phisqha" },
-      ],
-      answer: [
-        { id: 1, name: "Maya" },
-        { id: 2, name: "Paya" },
-        { id: 3, name: "Kimsa" },
-        { id: 4, name: "Pusi" },
-        { id: 5, name: "Phisqha" },
-      ],
-      correctAnswerUI: ["Maya", "Paya", "Kimsa", "Pusi", "Phisqha"],
-    },
-    {
-      title: "Ordena los números de menor a mayor",
-      shouldSortedNumbers: true,
-      numbers: [
-        { id: 3, name: "Kimsaqallqu" },
-        { id: 2, name: "Paqallqu" },
-        { id: 1, name: "Suxta" },
-      ],
-      answer: [
-        { id: 1, name: "Suxta" },
-        { id: 2, name: "Paqallqu" },
-        { id: 3, name: "Kimsaqallqu" },
-      ],
-      correctAnswerUI: ["Suxta", "Paqallqu", "Kimsaqallqu"],
-    },
-    {
-      title: "Ordena los números de menor a mayor",
-      shouldSortedNumbers: true,
-      numbers: [
-        { id: 3, name: "Tunka Mayani" },
-        { id: 2, name: "tunka" },
-        { id: 1, name: "Llatunka" },
-      ],
-      answer: [
-        { id: 1, name: "Llatunka" },
-        { id: 2, name: "tunka" },
-        { id: 3, name: "Tunka Mayani" },
-      ],
-      correctAnswerUI: ["Llatunka", "Tunka", "Tunka Mayani"],
-    },
-    /*  {
-      question: "Arrastra el número a su nombre en aymara",
-      shouldShowDragAndDrop: true,
-      number: "2",
-      options: [
-        { id: "1", text: "Maya" },
-        { id: "2", text: "Paya" },
-        { id: "3", text: "Kimsa" },
-        { id: "4", text: "Pusi" },
-      ],
-      correctAnswerDrag: 1,
-    },
-    {
-      question: "Arrastra el número a su nombre en aymara",
-      shouldShowDragAndDrop: true,
-      number: "10",
-      options: [
-        { id: "4", text: "Kimsa" },
-        { id: "2", text: "Phisqa" },
-        { id: "1", text: "Tunka" },
-        { id: "3", text: "maya" },
-      ],
-      correctAnswerDrag: 2,
-    },
-    {
-      question: "Arrasta el nùmero en aymara al número en castellano",
-      shouldShowDragAndDrop: true,
-      number: "8",
-      options: [
-        { id: "4", text: "Kimsapaqalqu" },
-        { id: "2", text: "Kimsapaqalqo" },
-        { id: "1", text: "Kimsapaqallqu" },
-        { id: "3", text: "Kimsapaqallqo" },
-      ],
-      correctAnswerDrag: 2,
-    }, */
     {
       question: 'Escribe 20 en aymara"',
       shouldShowInput: true,
@@ -181,10 +129,6 @@ export default function Lesson9() {
     },
   ];
 
-  const [activeIndex, setActiveIndex] = useState(0);
-
-  const [clickedIndex, setClickedIndex] = useState(null);
-
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
 
   const [answeredQuestions, setAnsweredQuestions] = useState(0);
@@ -197,8 +141,10 @@ export default function Lesson9() {
       setIsCorrectAnswer(isAnswerCorrect);
       setShowModal(true);
       if (isAnswerCorrect) {
+        soundCorrect.play();
         setScore((prev) => prev + 1);
       } else if (isAnswerIncorrect) {
+        soundInCorrect.play();
         setScore((prev) => prev - 1);
       }
     } else if (currentQuestion.correctAnswerWrite) {
@@ -208,8 +154,10 @@ export default function Lesson9() {
       setIsCorrectAnswer(isAnswerCorrect);
       setShowModal(true);
       if (isAnswerCorrect) {
+        soundCorrect.play();
         setScore((prev) => prev + 1);
       } else if (isAnswerIncorrect) {
+        soundInCorrect.play();
         setScore((prev) => prev - 1);
       }
     } else if (currentQuestion.shouldShowDragAndDrop) {
@@ -217,46 +165,32 @@ export default function Lesson9() {
       setShowModal(true);
       setResetDraggable(false);
       if (isCorrectAnswer) {
+        soundCorrect.play();
         setScore((prev) => prev + 1);
       } else if (isAnswerIncorrect) {
+        soundInCorrect.play();
         setScore((prev) => prev - 1);
       }
     } else if (currentQuestion.shouldShowNumber) {
       const userAnswer = selectedAnswer;
       const correctAnswer = currentQuestion.answer.toLowerCase();
+      setShowModal(true);
 
       if (userAnswer === correctAnswer) {
         setIsCorrectAnswer(true);
+        soundCorrect.play();
         setScore((prev) => prev + 1);
       } else {
         setIsCorrectAnswer(false);
+        soundInCorrect.play();
         setScore((prev) => prev - 1);
       }
     } else if (currentQuestion.shouldSortedNumbers) {
-      // Extraemos los IDs correctos proporcionados en la pregunta actual
-      const correctOrderIds = currentQuestion.answer.map((item) => item.id);
-
-      // Extraemos los IDs de los elementos arrastrados en el orden actual
-      const currentOrderIds = currentQuestion.numbers.map((item) => item.id);
-
-      // Ordenamos los IDs de menor a mayor
-      const ordenado = currentOrderIds.sort((a, b) => a - b);
-
-      // Actualizamos el estado local de currentQuestion.numbers con el nuevo orden
-      currentQuestion.numbers = currentQuestion.numbers.sort(
-        (a, b) => ordenado.indexOf(a.id) - ordenado.indexOf(b.id)
-      );
-
-      // Comparamos los elementos ordenados con la respuesta correcta
-      const isCorrectOrder =
-        JSON.stringify(currentQuestion.numbers.map((item) => item.id)) ===
-        JSON.stringify(correctOrderIds);
-
-      if (isCorrectOrder) {
-        setIsCorrectAnswer(true);
+      if (isCorrectAnswer) {
+        soundCorrect.play();
         setScore((prev) => prev + 1);
       } else {
-        setIsCorrectAnswer(false);
+        soundInCorrect.play();
         setScore((prev) => prev - 1);
       }
     }
@@ -269,24 +203,24 @@ export default function Lesson9() {
     setSelectedAnswer(null);
     setUserAnswer("");
     setIsCorrectAnswer(false);
-    setParent(null); // Agrega esta línea si también quieres resetear el estado parent
+    setParent(null);
     setResetDraggable(true);
 
-    if (currentQuestionIndex < questions.length - 1) {
-      setCurrentQuestionIndex(currentQuestionIndex + 1);
-      setAnsweredQuestions(answeredQuestions + 1);
+    // Encuentra la próxima pregunta, incluyendo aquellas con shouldSortedNumbers
+    const nextQuestionIndex = questions.findIndex(
+      (question, index) =>
+        index > currentQuestionIndex &&
+        (!question.shouldSortedNumbers || index === currentQuestionIndex + 1)
+    );
+
+    if (nextQuestionIndex !== -1) {
+      setCurrentQuestionIndex(nextQuestionIndex);
     } else {
       // Todas las preguntas han sido respondidas
       setCurrentQuestionIndex(-1); // Reiniciar al primer índice
     }
-  };
 
-  const handleItemsReordered = (newItems) => {
-    // Actualiza el estado de currentQuestion.numbers con los nuevos elementos ordenados
-    setCurrentQuestion((prevQuestion) => ({
-      ...prevQuestion,
-      numbers: newItems,
-    }));
+    setAnsweredQuestions(answeredQuestions + 1);
   };
 
   const currentQuestion = questions[currentQuestionIndex];
@@ -439,20 +373,28 @@ export default function Lesson9() {
                     {currentQuestion.title}
                   </h1>
                   <div className="question__container">
-                    <span className="question">
+                    <span
+                      className={`question ${
+                        isCorrectAnswer && "text-green-400"
+                      }`}
+                    >
                       {currentQuestion.question} ={" "}
                     </span>
                     <div className="containerAnswer"></div>
                   </div>
                   <div
                     className={`axis px-4 mt-8 ${
-                      isCorrectAnswer ? "correct" : ""
+                      isCorrectAnswer ? "text-green-500 !bg-green-400" : ""
                     }`}
                   >
                     {currentQuestion.options.map((option, index) => (
                       <div
                         className={`tick ${
-                          selectedAnswer === option ? "active" : ""
+                          isCorrectAnswer ? "!bg-green-400" : ""
+                        } ${
+                          selectedAnswer === option
+                            ? "active cursor-pointer"
+                            : "cursor-pointer"
                         }`}
                         key={index}
                         onClick={() => setSelectedAnswer(option)}
@@ -471,15 +413,14 @@ export default function Lesson9() {
                 </div>
               )}
               {currentQuestion.shouldSortedNumbers && (
-                <>
+                <div>
                   <DragOrderNumbers
                     initialState={currentQuestion}
                     isCorrect={isCorrectAnswer}
                     setIsCorrect={setIsCorrectAnswer}
-                    onItemsReordered={handleItemsReordered}
                   />
                   <SendResponse isInput={false} handle={handleAnswerSubmit} />
-                </>
+                </div>
               )}
             </div>
           </div>
@@ -534,7 +475,7 @@ export default function Lesson9() {
                             )}
                             {currentQuestion.shouldSortedNumbers && (
                               <strong className="ml-1">
-                                {currentQuestion.correctAnswerUI}
+                                {currentQuestion.correctAnswerUI.join(" - ")}
                               </strong>
                             )}
                           </div>

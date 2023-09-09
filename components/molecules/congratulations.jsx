@@ -1,10 +1,17 @@
 import Link from "next/link";
 import Image from "next/image";
 
-export const Congratulations = ({ score, questions, post }) => {
+//javascript audio library
+import { Howl } from "howler";
+
+export const Congratulations = ({ score, questions }) => {
+  const soundTriumphant = new Howl({
+    src: ["/sounds/triumphant.mp3"], // Ruta de tu archivo de audio
+  });
+  soundTriumphant.play();
   return (
     <div className="bg__lines-diagonals relative z-10 flex items-center justify-center h-screen w-full">
-      <div className="bg__congratulation-degrade z-20 flex items-center justify-center flex-col px-4 h-screen">
+      <div className="bg__congratulation-degrade z-20 flex items-center justify-center flex-col px-4 h-screen w-full">
         {score === questions.length && (
           <span className="text-white font-outfitsemibold text-6xl mb-6">
             100<span className="text-3xl">%</span>

@@ -578,7 +578,7 @@ blockquote:before {
 .tick {
   position: relative;
   bottom: 10px;
-  width: 0.4rem;
+  width: 0.6rem;
   height: 1.5rem;
   border-radius: 50px;
   background-color: #303044;

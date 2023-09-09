@@ -47,7 +47,7 @@ export default function Lesson9() {
       numbers: [
         { id: 3, name: "Suxta" },
         { id: 2, name: "Paqallqu" },
-        { id: 1, name: "Phisqha" },
+        { id: 1, name: "Phisqa" },
       ],
       correctAnswerUI: ["Phisqha", "Suxta", "Paqallqu"],
     },
@@ -56,11 +56,11 @@ export default function Lesson9() {
       shouldSortedNumbers: true,
       numbers: [
         { id: 4, name: "Tunka Mayani" },
-        { id: 2, name: "Llatunka" },
+        { id: 2, name: "Llätunka" },
         { id: 3, name: "Tunka" },
         { id: 1, name: "Kimsaqallqu" },
       ],
-      correctAnswerUI: ["Kimsaqallqu", "Llatunka", "Tunka", "Tunka Mayani"],
+      correctAnswerUI: ["Kimsaqallqu", "Llätunka", "Tunka", "Tunka Mayani"],
     },
     {
       title: "Responde el numero en aymara en la linea",
@@ -73,7 +73,7 @@ export default function Lesson9() {
     {
       question: 'Escribe 20 en aymara"',
       shouldShowInput: true,
-      correctAnswerWrite: "Pätunka",
+      correctAnswerWrite: "Pä tunka",
     },
     {
       question: "Escribe 100 en aymara",
@@ -88,12 +88,12 @@ export default function Lesson9() {
     {
       question: "Escribe 1000 en aymara",
       shouldShowInput: true,
-      correctAnswerWrite: "Waranka",
+      correctAnswerWrite: "Waranqa",
     },
     {
       question: "Escribe 2023 en aymara",
       shouldShowInput: true,
-      correctAnswerWrite: "Pä waranka pä tunka kimsani",
+      correctAnswerWrite: "Pä waranqa pä tunka kimsani",
     },
     {
       title: "Responde esto en la linea",

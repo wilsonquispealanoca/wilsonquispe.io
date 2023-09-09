@@ -21,6 +21,7 @@ Dominar esta base numérica inicial facilita significativamente la exploración 
 ## Nuevas palabras
 
 <div className="example__sm">
+<span className="letter">0<span className="dot"> = </span><span className="letter">Ch'usa</span></span>
 <span className="letter">1<span className="dot"> = </span><span className="letter">Maya</span></span>
 <span className="letter">2<span className="dot"> = </span><span className="letter">Paya</span></span>
 <span className="letter">3<span className="dot"> = </span><span className="letter">Kimsa</span></span>
@@ -28,7 +29,7 @@ Dominar esta base numérica inicial facilita significativamente la exploración 
 <span className="letter">5<span className="dot"> = </span><span className="letter">Phisqa</span></span>
 <span className="letter">6<span className="dot"> = </span><span className="letter">Suxta</span></span>
 <span className="letter">7<span className="dot"> = </span><span className="letter">Paqallqu</span></span>
-<span className="letter">8<span className="dot"> = </span><span className="letter">Kimsapaqalqu</span></span>
+<span className="letter">8<span className="dot"> = </span><span className="letter">Kimsaqallqu</span></span>
 <span className="letter">9<span className="dot"> = </span><span className="letter">Llätunka</span></span>
 <span className="letter">10<span className="dot"> = </span><span className="letter">Tunka</span></span>
 </div>
@@ -106,7 +107,7 @@ La respuesta es simple:
             </tr>
             <tr>
                <td><strong>15</strong></td>
-               <td>Tunka pisqhani</td>
+               <td>Tunka phisqani</td>
             </tr>
             <tr>
                <td><strong>16</strong></td>
@@ -145,31 +146,31 @@ La respuesta es simple:
          <tbody>
             <tr>
                <td><strong>20</strong></td>
-               <td>Pätunka</td>
+               <td>Pä tunka</td>
             </tr>
             <tr>
                <td><strong>21</strong></td>
-               <td>Pätunka mayani</td>
+               <td>Pä tunka mayani</td>
             </tr>
             <tr>
                <td><strong>22</strong></td>
-               <td>Pätunka payani</td>
+               <td>Pä tunka payani</td>
             </tr>
             <tr>
                <td><strong>23</strong></td>
-               <td>Pätunka kimsani</td>
+               <td>Pä tunka kimsani</td>
             </tr>
             <tr>
                <td><strong>24</strong></td>
-               <td>Pätunka pusini</td>
+               <td>Pä tunka pusini</td>
             </tr>
             <tr>
                <td><strong>25</strong></td>
-               <td>Pätunka phisqani</td>
+               <td>Pä tunka phisqani</td>
             </tr>
             <tr>
                <td><strong>26</strong></td>
-               <td>Pätunka suxtani</td>
+               <td>Pä tunka suxtani</td>
             </tr>
             <tr>
                <td><strong>27</strong></td>
@@ -177,11 +178,11 @@ La respuesta es simple:
             </tr>
             <tr>
                <td><strong>28</strong></td>
-               <td>Pätunka kimsaqallquni</td>
+               <td>Pä tunka kimsaqallquni</td>
             </tr>
             <tr>
                <td><strong>29</strong></td>
-               <td>Pätunka llätunkani</td>
+               <td>Pä tunka llätunkani</td>
             </tr>
          </tbody>
          </table>
@@ -216,7 +217,7 @@ Y de esta manera, podemos continuar conjugando los números. A continuación, te
          </tr>
          <tr>
             <td><strong>70</strong></td>
-            <td>Paqallqu tunka o Paqallqu tunka</td>
+            <td>Paqallqu tunka</td>
          </tr>
          <tr>
             <td><strong>80</strong></td>
@@ -280,19 +281,19 @@ Y de esta manera, podemos continuar conjugando los números. A continuación, te
          </tr>
          <tr>
             <td><strong>2000</strong></td>
-            <td>Pä waranka</td>
+            <td>Pä waranqa</td>
          </tr>
          <tr>
             <td><strong>2023</strong></td>
-            <td>Pä waranka pä tunka kimsani</td>
+            <td>Pä waranqa pä tunka kimsani</td>
          </tr>
          <tr>
             <td><strong>2036</strong></td>
-            <td>Pä waranka kimsa tunka suxtani</td>
+            <td>Pä waranqa kimsa tunka suxtani</td>
          </tr>
          <tr>
             <td><strong>10000</strong></td>
-            <td>Tunka waranka</td>
+            <td>Tunka waranqa</td>
          </tr>
       </tbody>
    </table>

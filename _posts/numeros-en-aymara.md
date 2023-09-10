@@ -71,10 +71,6 @@ Dominar esta base numérica inicial facilita significativamente la exploración 
 
 A partir del número 11 en adelante, notarás una interesante particularidad en los números en aymara. Estos números no solo se repiten, sino que además se conjugan de una manera especial. Al llegar al final de cada número, solo tienes que agregar el sufijo <em>"NI"</em> para completar la forma correcta. Esta regla simple facilita la construcción de números más grandes y es una característica única y esencial en la comprensión del sistema numérico aymara.
 
-10 se representa como "Tunka" y 1 como "Maya".
-Entonces, ¿cómo se forma el número 11?
-La respuesta es simple: "Tunka mayani".
-
 <p class="blockquote-purple"><span class="blockquote-purple-title">
 Ejemplo:</span> 10 se representa como "Tunka" y 1 como "Maya". Entonces, ¿cómo se forma el número 11?
 La respuesta es simple:

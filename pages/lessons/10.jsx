@@ -49,7 +49,7 @@ export default function Lesson9() {
         { id: 2, name: "Paqallqu" },
         { id: 1, name: "Phisqa" },
       ],
-      correctAnswerUI: ["Phisqha", "Suxta", "Paqallqu"],
+      correctAnswerUI: ["Phisqa", "Suxta", "Paqallqu"],
     },
     {
       title: "Ordena los números de menor a mayor",
@@ -126,6 +126,16 @@ export default function Lesson9() {
       answerIndex: 1,
       answer: "maya",
       options: ["paya", "maya", "suxta", "tunka"],
+    },
+    {
+      title: "Ordena los números de menor a mayor",
+      shouldSortedNumbers: true,
+      numbers: [
+        { id: 2, name: "Pä waranqa" },
+        { id: 1, name: "Kimsa waranqa" },
+        { id: 3, name: "Waranqa" },
+      ],
+      correctAnswerUI: ["Waranqa", "Pä waranqa", "Kimsa waranqa"],
     },
   ];
 

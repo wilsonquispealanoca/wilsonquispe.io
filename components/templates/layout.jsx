@@ -11,7 +11,7 @@ export default function Layout({ children }) {
         Creado por Wilson Quispe Alanoca con 💙
       </p>
       <p className="bg-[#181824] text-center py-6 font-outfit text-brand-beige/70">
-        © 2023 Todos los derechos reservados. Lo izquierdos también.
+        © 2023 Todos los derechos reservados.
       </p>
     </>
   );

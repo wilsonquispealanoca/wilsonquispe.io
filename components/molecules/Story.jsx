@@ -229,7 +229,7 @@ const Story = () => {
                 </p>
               </div>
 
-              <div className="fixed bottom-0 left-0 right-0 mx-4 mb-4">
+              <div className="fixed bottom-0 left-0 right-0 mx-4 mb-4 lg:mx-56">
                 <button
                   onClick={() => handleChoiceClick(currentPage.nextPage)}
                   className="w-full rounded-2xl border-accent border-2 bg-[#123837] py-2 text-white text-xl"
@@ -261,7 +261,7 @@ const Story = () => {
                       />
                       <p className="text-white relative">{choice.text}</p>
                     </div>
-                    <div className="fixed bottom-0 left-0 right-0 mx-4 mb-4">
+                    <div className="fixed bottom-0 left-0 right-0 mx-4 mb-4 lg:mx-56">
                       {selected ? (
                         <button
                           onClick={() => handleCorrectAnswer(choice.image)}

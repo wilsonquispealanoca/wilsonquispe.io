@@ -152,162 +152,177 @@ const StoryFamily = () => {
         </div>
       )}
       {gameStatus === "Playing" && (
-        <div className="bg-[#181824] text-brand-beige py-4 font-outfit tex-lg flex h-screen flex-col gap-5 px-4 sm:px-0 sm:py-0">
+        <div className="bg-[#181824] py-4 lg:px-24 h-full">
           <ProgressBar
             answeredQuestions={page}
             totalQuestions={storyPages.length}
           />
-          {currentPage.conversationHome && (
-            <>
-              <h2 className="text-3xl font-outfitsemibold text-white text-center">
-                Historia 2
-              </h2>
-              <h2 className="text-xl font-outfitsemibold text-white text-center">
-                {currentPage.text}
-              </h2>
-              <div className="fixed bottom-0 left-0 right-0 mx-4 mb-4">
-                <button
-                  onClick={() => handleChoiceClick(currentPage.nextPage)}
-                  className="w-full rounded-2xl border-accent border-2 bg-[#123837] py-2 text-white text-xl"
-                >
-                  Seguir
-                </button>
-              </div>
-            </>
-          )}
-
-          {currentPage.options && (
-            <>
-              <p className="text-xl font-outfitsemibold text-white text-center">
-                {currentPage.text}
-              </p>
-              <div className="grid grid-cols-2 gap-6 mt-12">
-                {currentPage.choices.map((choice, index) => (
-                  <div key={index}>
-                    <div
-                      className={`choice ${selected === index && "selected"}`}
-                      onClick={() => handleSelected(index)}
-                    >
+          <div className="bg-[#181824] text-brand-beige font-outfit tex-lg flex flex-col gap-5 px-4 sm:px-0 sm:py-0">
+            <div className="w-full relative  flex justify-center items-center flex-col">
+              <div className=" h-screen flex max-w-2xl flex-col gap-5 self-center sm:items-center sm:justify-center sm:gap-24 sm:px-5 w-full">
+                {currentPage.conversationHome && (
+                  <>
+                    <h2 className="text-3xl font-outfitsemibold text-white text-center">
+                      Historia 2
+                    </h2>
+                    <h2 className="text-xl font-outfitsemibold text-white text-center">
+                      {currentPage.text}
+                    </h2>
+                    <div className="fixed bottom-0 left-0 right-0 mx-4 pb-4 lg:mx-56">
+                      <button
+                        onClick={() => handleChoiceClick(currentPage.nextPage)}
+                        className="w-full rounded-2xl border-accent border-2 bg-[#123837] py-2 text-white text-xl"
+                      >
+                        Seguir
+                      </button>
+                    </div>
+                  </>
+                )}
+                {currentPage.options && (
+                  <>
+                    <p className="text-xl font-outfitsemibold text-white text-center">
+                      {currentPage.text}
+                    </p>
+                    <div className="grid grid-cols-2 gap-6 mt-12">
+                      {currentPage.choices.map((choice, index) => (
+                        <div key={index}>
+                          <div
+                            className={`choice ${
+                              selected === index && "selected"
+                            }`}
+                            onClick={() => handleSelected(index)}
+                          >
+                            <Image
+                              src={choice.image}
+                              width={800}
+                              height={800}
+                              alt="Picture of the lesson"
+                              sizes="(max-width: 768px) 50vw, (max-width: 1200px) 100vw, 33vw"
+                              className="mb-2 relative"
+                            />
+                            <p className="text-white relative">{choice.text}</p>
+                          </div>
+                          <div className="fixed bottom-0 left-0 right-0 mx-4 mb-4">
+                            {selected === 0 && (
+                              <button
+                                onClick={() =>
+                                  handleChoiceClick(
+                                    currentPage.choices[0].nextPage
+                                  )
+                                }
+                                className="w-full rounded-2xl border-accent border-2 bg-[#123837] py-2 text-white text-xl"
+                              >
+                                Seguir
+                              </button>
+                            )}
+                            {selected === 1 && (
+                              <button
+                                onClick={() =>
+                                  handleChoiceClick(
+                                    currentPage.choices[1].nextPage
+                                  )
+                                }
+                                className="w-full rounded-2xl border-accent border-2 bg-[#123837] py-2 text-white text-xl"
+                              >
+                                Seguir
+                              </button>
+                            )}
+                          </div>
+                        </div>
+                      ))}
+                    </div>
+                  </>
+                )}
+                {currentPage.conversation && (
+                  <div className="h-screen">
+                    <div className="w-full">
                       <Image
-                        src={choice.image}
+                        src={currentPage.background}
                         width={800}
                         height={800}
                         alt="Picture of the lesson"
                         sizes="(max-width: 768px) 50vw, (max-width: 1200px) 100vw, 33vw"
-                        className="mb-2 relative"
                       />
-                      <p className="text-white relative">{choice.text}</p>
                     </div>
-                    <div className="fixed bottom-0 left-0 right-0 mx-4 mb-4">
-                      {selected === 0 && (
-                        <button
-                          onClick={() =>
-                            handleChoiceClick(currentPage.choices[0].nextPage)
-                          }
-                          className="w-full rounded-2xl border-accent border-2 bg-[#123837] py-2 text-white text-xl"
-                        >
-                          Seguir
-                        </button>
-                      )}
-                      {selected === 1 && (
-                        <button
-                          onClick={() =>
-                            handleChoiceClick(currentPage.choices[1].nextPage)
-                          }
-                          className="w-full rounded-2xl border-accent border-2 bg-[#123837] py-2 text-white text-xl"
-                        >
-                          Seguir
-                        </button>
-                      )}
+                    <h2 className="text-xl font-outfitsemibold text-white text-center py-4">
+                      {currentPage.text}
+                    </h2>
+                    <div className="flex justify-content items-center">
+                      <div className="w-14">
+                        <Image
+                          src={currentPage.imageConversation}
+                          width={800}
+                          height={800}
+                          alt="Picture of the lesson"
+                          sizes="(max-width: 768px) 50vw, (max-width: 1200px) 100vw, 33vw"
+                        />
+                      </div>
+                      <p className="border-2 border-gray-600 w-full text-white font-outfitsemibold rounded-lg p-2 ml-4 text-center">
+                        {currentPage.textAymara}
+                      </p>
                     </div>
-                  </div>
-                ))}
-              </div>
-            </>
-          )}
-          {currentPage.conversation && (
-            <>
-              <div className="w-full">
-                <Image
-                  src={currentPage.background}
-                  width={800}
-                  height={800}
-                  alt="Picture of the lesson"
-                  sizes="(max-width: 768px) 50vw, (max-width: 1200px) 100vw, 33vw"
-                />
-              </div>
-              <h2 className="text-xl font-outfitsemibold text-white text-center">
-                {currentPage.text}
-              </h2>
-              <div className="flex justify-content items-center">
-                <div className="w-14">
-                  <Image
-                    src={currentPage.imageConversation}
-                    width={800}
-                    height={800}
-                    alt="Picture of the lesson"
-                    sizes="(max-width: 768px) 50vw, (max-width: 1200px) 100vw, 33vw"
-                  />
-                </div>
-                <p className="border-2 border-gray-600 w-full text-white font-outfitsemibold rounded-lg p-2 ml-4 text-center">
-                  {currentPage.textAymara}
-                </p>
-              </div>
 
-              <div className="fixed bottom-0 left-0 right-0 mx-4 mb-4">
-                <button
-                  onClick={() => handleChoiceClick(currentPage.nextPage)}
-                  className="w-full rounded-2xl border-accent border-2 bg-[#123837] py-2 text-white text-xl"
-                >
-                  Seguir
-                </button>
-              </div>
-            </>
-          )}
-          {currentPage.optionsSelected && (
-            <>
-              <p className="text-xl font-outfitsemibold text-white text-center">
-                {currentPage.text}
-              </p>
-              <div className="grid grid-cols-2 gap-6 mt-12">
-                {currentPage.choices.map((choice, index) => (
-                  <div key={index}>
-                    <div
-                      className={`choice ${selected === index && "selected"}`}
-                      onClick={() => handleSelected(index)}
-                    >
-                      <Image
-                        src={choice.image}
-                        width={800}
-                        height={800}
-                        alt="Picture of the lesson"
-                        sizes="(max-width: 768px) 50vw, (max-width: 1200px) 100vw, 33vw"
-                        className="mb-2 relative"
-                      />
-                      <p className="text-white relative">{choice.text}</p>
-                    </div>
-                    <div className="fixed bottom-0 left-0 right-0 mx-4 mb-4">
-                      {selected ? (
-                        <button
-                          onClick={() => handleCorrectAnswer(choice.image)}
-                          className="w-full rounded-2xl border-accent border-2 bg-[#123837] py-2 text-white text-xl"
-                        >
-                          Seguir
-                        </button>
-                      ) : (
-                        <button
-                          onClick={() => handleCorrectAnswer("")}
-                          className="w-full rounded-2xl border-accent border-2 bg-[#123837] py-2 text-white text-xl"
-                        >
-                          Seguir
-                        </button>
-                      )}
+                    <div className="fixed bottom-0 left-0 right-0 mx-4 pb-4 lg:mx-56">
+                      <button
+                        onClick={() => handleChoiceClick(currentPage.nextPage)}
+                        className="w-full rounded-2xl border-accent border-2 bg-[#123837] py-2 text-white text-xl"
+                      >
+                        Seguir
+                      </button>
                     </div>
                   </div>
-                ))}
+                )}
+                {currentPage.optionsSelected && (
+                  <>
+                    <p className="text-xl font-outfitsemibold text-white text-center">
+                      {currentPage.text}
+                    </p>
+                    <div className="grid grid-cols-2 gap-6">
+                      {currentPage.choices.map((choice, index) => (
+                        <div key={index}>
+                          <div
+                            className={`choice ${
+                              selected === index && "selected"
+                            }`}
+                            onClick={() => handleSelected(index)}
+                          >
+                            <Image
+                              src={choice.image}
+                              width={800}
+                              height={800}
+                              alt="Picture of the lesson"
+                              sizes="(max-width: 768px) 50vw, (max-width: 1200px) 100vw, 33vw"
+                              className="mb-2 relative"
+                            />
+                            <p className="text-white relative">{choice.text}</p>
+                          </div>
+                          <div className="fixed bottom-0 left-0 right-0 mx-4 mb-4">
+                            {selected ? (
+                              <button
+                                onClick={() =>
+                                  handleCorrectAnswer(choice.image)
+                                }
+                                className="w-full rounded-2xl border-accent border-2 bg-[#123837] py-2 text-white text-xl"
+                              >
+                                Seguir
+                              </button>
+                            ) : (
+                              <button
+                                onClick={() => handleCorrectAnswer("")}
+                                className="w-full rounded-2xl border-accent border-2 bg-[#123837] py-2 text-white text-xl"
+                              >
+                                Seguir
+                              </button>
+                            )}
+                          </div>
+                        </div>
+                      ))}
+                    </div>
+                  </>
+                )}
               </div>
-            </>
-          )}
+            </div>
+          </div>
         </div>
       )}
     </>

@@ -1,14 +1,28 @@
 import Image from "next/image";
+
+//javascript audio library
+import { Howl } from "howler";
+
 import { useState } from "react";
 import { Congratulations } from "../../components/molecules/congratulations";
 import { SendResponse } from "../../components/molecules/sendResponse";
 import { CorrectAnswer } from "../../components/molecules/correctAnswer";
+import { ProgressBar } from "../../components/molecules/ProgressBar";
 
 export default function Lesson() {
+  const soundCorrect = new Howl({
+    src: ["/sounds/correct.mp3"], // Ruta de tu archivo de audio
+  });
+  const soundInCorrect = new Howl({
+    src: ["/sounds/incorrect.mp3"], // Ruta de tu archivo de audio
+  });
+
   const [showModal, setShowModal] = useState(false);
   const [selectedAnswer, setSelectedAnswer] = useState(null);
   const [isCorrectAnswer, setIsCorrectAnswer] = useState(false);
   const [userAnswer, setUserAnswer] = useState("");
+
+  const [score, setScore] = useState(0);
 
   const questions = [
     {
@@ -120,6 +134,7 @@ export default function Lesson() {
   ];
 
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
+  const [answeredQuestions, setAnsweredQuestions] = useState(0);
 
   const handleAnswerSubmit = () => {
     const currentQuestion = questions[currentQuestionIndex];
@@ -129,11 +144,29 @@ export default function Lesson() {
         selectedAnswer === questions[currentQuestionIndex].correctAnswer;
       setIsCorrectAnswer(isAnswerCorrect);
       setShowModal(true);
+      if (isAnswerCorrect) {
+        setIsCorrectAnswer(true);
+        soundCorrect.play();
+        setScore((prev) => prev + 1);
+      } else {
+        setIsCorrectAnswer(false);
+        soundInCorrect.play();
+        setScore((prev) => prev - 1);
+      }
     } else if (currentQuestion.correctAnswerWrite) {
       const isAnswerCorrect =
         userAnswer.trim().toLowerCase() ===
         currentQuestion.correctAnswerWrite.trim().toLowerCase();
       setIsCorrectAnswer(isAnswerCorrect);
+      if (isAnswerCorrect) {
+        setIsCorrectAnswer(true);
+        soundCorrect.play();
+        setScore((prev) => prev + 1);
+      } else {
+        setIsCorrectAnswer(false);
+        soundInCorrect.play();
+        setScore((prev) => prev - 1);
+      }
     }
 
     setShowModal(true);
@@ -147,6 +180,7 @@ export default function Lesson() {
 
     if (currentQuestionIndex < questions.length - 1) {
       setCurrentQuestionIndex(currentQuestionIndex + 1);
+      setAnsweredQuestions(answeredQuestions + 1);
     } else {
       // Todas las preguntas han sido respondidas
       setCurrentQuestionIndex(-1); // Reiniciar al primer índice
@@ -154,16 +188,81 @@ export default function Lesson() {
   };
 
   const currentQuestion = questions[currentQuestionIndex];
+
+  console.log(score);
+  console.log(questions.length);
   return (
     <>
       {currentQuestionIndex === -1 ? (
         // Pantalla de felicitaciones al terminar todas las preguntas
-        <Congratulations />
+        <Congratulations score={score} questions={questions} />
       ) : (
         <div className="bg-[#181824] text-brand-beige py-8 font-outfit tex-lg flex h-screen flex-col gap-5 px-4 sm:px-0 sm:py-0">
-          <div className="w-full relative h-screen flex justify-center items-center flex-col">
-            <div className="flex max-w-2xl grow flex-col gap-5 self-center sm:items-center sm:justify-center sm:gap-24 sm:px-5 w-full">
-              <h1 className="self-start text-xl text-white sm:text-3xl">
+          <div className="w-full relative flex justify-center items-center flex-col">
+            <div className="flex max-w-2xl items-center justify-center w-full lg:pt-14">
+              <ProgressBar
+                answeredQuestions={answeredQuestions}
+                totalQuestions={questions.length}
+              />
+              {score >= 0 && (
+                <span className="w-6 md:w-7 ml-2">
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    stroke="#ff2929"
+                  >
+                    <g id="SVGRepo_bgCarrier" stroke-width="0" />
+
+                    <g
+                      id="SVGRepo_tracerCarrier"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+
+                    <g id="SVGRepo_iconCarrier">
+                      {" "}
+                      <path
+                        d="M8.10627 18.2468C5.29819 16.0833 2 13.5422 2 9.1371C2 4.27416 7.50016 0.825464 12 5.50063L14 7.49928C14.2929 7.79212 14.7678 7.79203 15.0607 7.49908C15.3535 7.20614 15.3534 6.73127 15.0605 6.43843L13.1285 4.50712C17.3685 1.40309 22 4.67465 22 9.1371C22 13.5422 18.7018 16.0833 15.8937 18.2468C15.6019 18.4717 15.3153 18.6925 15.0383 18.9109C14 19.7294 13 20.5 12 20.5C11 20.5 10 19.7294 8.96173 18.9109C8.68471 18.6925 8.39814 18.4717 8.10627 18.2468Z"
+                        fill="#fa0000"
+                      />{" "}
+                    </g>
+                  </svg>
+                </span>
+              )}
+              {score < 0 && (
+                <span className="w-6 md:w-7 ml-2">
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    stroke="#292929"
+                  >
+                    <g id="SVGRepo_bgCarrier" stroke-width="0" />
+
+                    <g
+                      id="SVGRepo_tracerCarrier"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+
+                    <g id="SVGRepo_iconCarrier">
+                      {" "}
+                      <path
+                        d="M8.10627 18.2468C5.29819 16.0833 2 13.5422 2 9.1371C2 4.27416 7.50016 0.825464 12 5.50063L14 7.49928C14.2929 7.79212 14.7678 7.79203 15.0607 7.49908C15.3535 7.20614 15.3534 6.73127 15.0605 6.43843L13.1285 4.50712C17.3685 1.40309 22 4.67465 22 9.1371C22 13.5422 18.7018 16.0833 15.8937 18.2468C15.6019 18.4717 15.3153 18.6925 15.0383 18.9109C14 19.7294 13 20.5 12 20.5C11 20.5 10 19.7294 8.96173 18.9109C8.68471 18.6925 8.39814 18.4717 8.10627 18.2468Z"
+                        fill="rgb(209 213 219)"
+                      />{" "}
+                    </g>
+                  </svg>
+                </span>
+              )}
+              {score >= 0 && (
+                <span className="ml-1 text-[#fa0000]">{score}</span>
+              )}
+              {score < 0 && <span className="ml-1 text-gray-300">{score}</span>}
+            </div>
+            <div className="flex max-w-2xl flex-col gap-5 self-center sm:items-center sm:justify-center sm:gap-24 sm:px-5 w-full">
+              <h1 className="self-start text-xl text-white sm:text-3xl pt-4">
                 {currentQuestion.question}
               </h1>
               {currentQuestion.answers && (

@@ -1,4 +1,6 @@
 import Image from "next/image";
+//javascript audio library
+import { Howl } from "howler";
 import { useState } from "react";
 import { Congratulations } from "../../components/molecules/congratulations";
 import { SendResponse } from "../../components/molecules/sendResponse";
@@ -7,13 +9,19 @@ import DragAndDrop from "../../components/molecules/DragAndDrop";
 import { ProgressBar } from "../../components/molecules/ProgressBar";
 
 export default function Lesson() {
+  const soundCorrect = new Howl({
+    src: ["/sounds/correct.mp3"], // Ruta de tu archivo de audio
+  });
+  const soundInCorrect = new Howl({
+    src: ["/sounds/incorrect.mp3"], // Ruta de tu archivo de audio
+  });
   const [showModal, setShowModal] = useState(false);
   const [selectedAnswer, setSelectedAnswer] = useState(null);
   const [isCorrectAnswer, setIsCorrectAnswer] = useState(false);
   const [userAnswer, setUserAnswer] = useState("");
   const [resetDraggable, setResetDraggable] = useState(false);
 
-  const [score, setScore] = useState(6);
+  const [score, setScore] = useState(0);
 
   const [parent, setParent] = useState(null);
 
@@ -216,8 +224,10 @@ export default function Lesson() {
       setIsCorrectAnswer(isAnswerCorrect);
       setShowModal(true);
       if (isAnswerCorrect) {
+        soundCorrect.play();
         setScore((prev) => prev + 1);
       } else if (isAnswerIncorrect) {
+        soundInCorrect.play();
         setScore((prev) => prev - 1);
       }
     } else if (currentQuestion.correctAnswerWrite) {
@@ -228,7 +238,9 @@ export default function Lesson() {
       setShowModal(true);
       if (isAnswerCorrect) {
         setScore((prev) => prev + 1);
+        soundCorrect.play();
       } else if (isAnswerIncorrect) {
+        soundInCorrect.play();
         setScore((prev) => prev - 1);
       }
     } else if (currentQuestion.shouldShowDragAndDrop) {
@@ -236,8 +248,10 @@ export default function Lesson() {
       setShowModal(true);
       setResetDraggable(false);
       if (isCorrectAnswer) {
+        soundCorrect.play();
         setScore((prev) => prev + 1);
       } else if (isAnswerIncorrect) {
+        soundInCorrect.play();
         setScore((prev) => prev - 1);
       }
     }
@@ -267,10 +281,10 @@ export default function Lesson() {
     <>
       {currentQuestionIndex === -1 ? (
         // Pantalla de felicitaciones al terminar todas las preguntas
-        <Congratulations />
+        <Congratulations score={score} questions={questions} />
       ) : (
         <div className="bg-[#181824] text-brand-beige py-4 font-outfit tex-lg flex h-screen flex-col gap-5 px-4 sm:px-0 sm:py-0">
-          <div className="w-full relative h-screen flex justify-center items-center flex-col">
+          <div className="w-full relative flex justify-center items-center flex-col">
             <div className="flex max-w-2xl md:pt-14 items-center justify-center w-full">
               <ProgressBar
                 answeredQuestions={answeredQuestions}
@@ -335,7 +349,7 @@ export default function Lesson() {
             </div>
 
             <div className="flex max-w-2xl grow flex-col gap-5 self-center sm:items-center sm:justify-center w-full">
-              <h1 className="self-start text-xl text-white sm:text-3xl">
+              <h1 className="self-start text-xl text-white sm:text-3xl p-4 lg:p-8">
                 {currentQuestion.question}
               </h1>
               {currentQuestion.answers && (
@@ -371,7 +385,11 @@ export default function Lesson() {
                       </div>
                     </button>
                   ))}
-                  <SendResponse isInput={false} handle={handleAnswerSubmit} />
+                  <SendResponse
+                    isInput={false}
+                    handle={handleAnswerSubmit}
+                    current={setCurrentQuestionIndex}
+                  />
                 </div>
               )}
               {currentQuestion.shouldShowInput && (

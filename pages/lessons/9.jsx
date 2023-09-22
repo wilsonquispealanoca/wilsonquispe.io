@@ -241,7 +241,7 @@ export default function Lesson9() {
         <Congratulations score={score} questions={questions} />
       ) : (
         <div className="bg-[#181824] text-brand-beige py-4 font-outfit tex-lg flex h-screen flex-col gap-5 px-4 sm:px-0 sm:py-0">
-          <div className="w-full relative h-screen flex justify-center items-center flex-col">
+          <div className="w-full relative flex justify-center items-center flex-col">
             <div className="flex max-w-2xl md:pt-14 items-center justify-center w-full">
               <ProgressBar
                 answeredQuestions={answeredQuestions}
@@ -306,7 +306,7 @@ export default function Lesson9() {
             </div>
 
             <div className="flex max-w-2xl grow flex-col gap-5 self-center sm:items-center sm:justify-center w-full">
-              <h1 className="self-start text-xl text-white sm:text-3xl">
+              <h1 className="self-start text-xl text-white sm:text-3xl p-4 lg:p-8">
                 {currentQuestion.question}
               </h1>
               {currentQuestion.answers && (

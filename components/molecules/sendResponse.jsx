@@ -1,4 +1,4 @@
-export const SendResponse = ({ handle, isInput }) => {
+export const SendResponse = ({ handle, isInput, current }) => {
   return (
     <section
       className={`fixed ${

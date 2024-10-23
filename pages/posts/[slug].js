@@ -64,25 +64,7 @@ export default function Post({ post }) {
                   </button>
                 </Link>
               )}
-              <div className="flex my-16 lg:my-24 md:justify-center md:items-center max-w-2xl mx-8 md:mx-32 lg:mx-56 xl:mx-80">
-                <p className=" text-white">
-                  Darte las gracias si has llegado al final de esta publicación.
-                  Me gustaría desarrollar mucho más cada apartado, pero no puedo
-                  escribir todo lo que tengo que contarte sería mucha
-                  información para ti.
-                </p>
-                <div className="relative">
-                  <Image
-                    src="/assets/illustrations/face3.svg"
-                    width={800}
-                    height={800}
-                    alt="Picture of the lesson"
-                    sizes="(max-width: 768px) 50vw, (max-width: 1200px) 100vw, 33vw"
-                    className="mb-2 lg:w-64"
-                  />
-                </div>
-              </div>
-              <div className="max-w-2xl mx-8 md:mx-32 lg:mx-56 xl:mx-80 flex justify-center">
+              <div className="max-w-2xl mx-8 md:mx-32 lg:mx-56 xl:mx-80 flex justify-center mt-10">
                 <ShareFacebook
                   url={`https://wilsonquispe.vercel.app/posts/${post.slug}/`}
                   title={post.title}

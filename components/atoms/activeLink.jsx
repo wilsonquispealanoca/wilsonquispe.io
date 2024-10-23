@@ -11,13 +11,15 @@ const Activelink = ({ href, children }) => {
     router.push(href);
   };
   return (
-    <a
-      href={href}
-      onClick={handleClick}
-      className="text-white font-outfitsemibold mr-8 hidden lg:block transition-all duration-200 hover:pb-2 hover:border-b-2 hover:border-white"
-    >
-      {children}
-    </a>
+    <>
+      <a
+        href={href}
+        onClick={handleClick}
+        className="text-white font-outfitsemibold mr-8 hidden lg:block transition-all duration-200 hover:pb-2 hover:border-b-2 hover:border-white"
+      >
+        {children}
+      </a>
+    </> 
   );
 };
 

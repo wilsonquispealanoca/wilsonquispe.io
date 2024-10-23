@@ -15,7 +15,7 @@ function Navbar() {
           <Activelink href="/">{t("main")}</Activelink>
           <Activelink href="/blog">Blog</Activelink>
         </div>
-        <div className="overflow-x-auto border-2 border-[#c21aa5] rounded-md">
+        <div className="overflow-x-auto">
           <LanguageSwitcher />
         </div>
       </nav>

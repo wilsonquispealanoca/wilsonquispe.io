@@ -1,6 +1,7 @@
 import Footer from "../molecules/footer";
 
 export default function Layout({ children }) {
+  var date = new Date().getFullYear();
   return (
     <>
       <div className="font-outfit min-h-screen bg-[#181824]">
@@ -11,7 +12,7 @@ export default function Layout({ children }) {
         Creado por Wilson Quispe Alanoca con 💙
       </p>
       <p className="bg-[#181824] text-center py-6 font-outfit text-brand-beige/70">
-        © 2023 Todos los derechos reservados.
+        © {date} Todos los derechos reservados.
       </p>
     </>
   );

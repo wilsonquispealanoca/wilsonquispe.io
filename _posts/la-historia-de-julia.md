@@ -11,49 +11,42 @@ ogImage:
   url: "/assets/blog/historia-julia/regalo-julia.jpg"
 ---
 
-<p class="blockquote-purple">Hace dos años conocí a una chica de Alemania; nos conocimos en una aplicación de cartas. charlábamos mucho, leiamos libros, hablabamos en muchos idiomas y cuando alguno de nosotros quería aprender algo siempre lo discutíamos. era muy inteligente y testaruda y si yo no entendía algo del "aleman" o de otra cosa, me decia: no Wil, no significa eso.
-Siempre preguntaba por Bolivia y por mi familia.
-Una vez ella se perdió, pero volvió y dijó: wil no era mi intención perderme, si vuelvo a hacerlo escríbeme aqui. Y ella me dió su cuenta de twitter. La vi por primera vez. Y me dije a mi mismo; por dios es preciosa, tal vez demasiado para mí. Y después, me despedí...</p>
+<p class="blockquote-purple">Hace dos años conocí a una chica de Alemania. Nos encontramos en una aplicación de cartas. Charlábamos mucho, leíamos libros, y hablábamos en varios idiomas. Cuando uno de nosotros quería aprender algo, siempre lo discutíamos. Julia era muy inteligente; si no entendía algo, especialmente del alemán, me corregía de inmediato: "No, Wil, no significa eso". Siempre preguntaba por Bolivia y por mi familia. Un día, desapareció sin avisar, pero luego volvió, diciendo: "Wil, no era mi intención perderme. Si vuelve a pasar, escríbeme aquí". Y me dio su cuenta de Twitter. La vi por primera vez. Me dije: "Dios, es preciosa. Tal vez demasiado para mí". Después de eso, me despedí.</p>
 
-Esta es una historia que no solo es mía, sino que también se trata de una gran amiga. Esta es la historia de Julia.
+Esta no es solo mi historia, es la historia de Julia.
 
-A finales del año 2019, mientras mejoraba mi inglés y portugués en una aplicación llamada Slowly, me llegó una carta que provenía de Alemania, era de alguien que se hacía llamar: Yuleah.
+A finales de 2019, mientras mejoraba mi inglés y portugués en una aplicación llamada [Slowly](https://slowly.app/es/), recibí una carta desde Alemania. Provenía de alguien que se hacía llamar Yuleah. En su primera carta, me contó que hablaba bien español porque había estado en Bolivia haciendo un voluntariado en 2019 y además de que mi perfil en la app le parecía interesante.
 
-En su primera carta, Yuleah decía que hablaba y entendía muy bien el español porqué había estado en Bolivia haciendo un voluntariado en una organización sin fines lucrativos por el 2019.
+Intercambiamos algunas cartas y la conexión fue instantánea: mismos pasatiempos, pensamientos similares, cumpleaños cercanos (el mío el 29 de Noviembre y de ella el 3 de Diciembre). En poco tiempo, nos volvimos buenos amigos, reiamos mucho, nos contabamos nuestros tristezas y mucho más. Pero de repente, Julia, su verdadero nombre, dejó de responder y desapareció.
 
-Recuerdo que habíamos intercambiado algunas cartas y la conexión que compartimos fue instantánea (pasatiempos iguales, cumpleaños similares, mismos pensamientos y mucho más) Y en poco tiempo, nos volvimos buenos amigos.
-Sin embargo, de repente, Julia (su verdadero nombre) dejó de responder y desapareció.
+Después de meses sin saber de ella, finalmente volvió, solo para desaparecer nuevamente poco después. Aunque me confundía su comportamiento, me alegraba escuchar de ella.
 
-Después de meses sin saber de ella, finalmente volvió, pero solo para desaparecer de nuevo poco después. Aunque estaba confundido y preocupado, estaba feliz de que volviera a hablar conmigo.
+A pesar de sus idas y venidas, su apoyo fue invaluable en un momento difícil de mi vida: la enfermedad de mi madre. Aunque ella no sabía lo que estaba pasando, su compañía virtual me dio consuelo. Mi madre falleció en marzo de 2022, y un mes después, Julia volvió a escribirme, esta vez por Instagram, ya que habíamos intercambiado redes sociales. Me alegró escuchar de ella después de tanto tiempo, y volvimos a hablar durante algunos meses.
 
-Poco después, Julia me reveló que sufría problemas de salud y lidiaba con un tipo de TDAH y ansiedad, lo cual explicaba sus ausencias repentinas.
-Después de decirme ese detalle Julia dejó la aplicación a finales del 2021 y ya no supe de ella...
+Sin embargo, sabía que eventualmente se iría de nuevo, y así fue. Hablamos por un tiempo más y luego volvió a desaparecer.
 
-Volviendo mas atrás, a pesar de las idas y venidas de Julia, su apoyo fue invaluable en un momento particularmente difícil de mi vida: la enfermedad de mi madre. Aunque ella desconocía la situación en ese momento, su presencia virtual me brindó consuelo y compañía durante esos difíciles momentos.
+Intenté entender su situación, investigando y consultando a profesionales. Descubrí que su comportamiento no era intencional; su salud la hacía actuar de esa manera. Tardé en comprender que Julia necesitaba tiempo para sanar.
 
-Mamá se fue en marzo del 2022 y un mes después Julia volvió a escribirme, pero, no fue por la aplicación de cartas donde nos habíamos conocido. Ella esta vez escribió por instagram, ya que habíamos intercambiado nuestras redes sociales en la aplicación donde nos habíamos conocido.
-Me alegro recibir su mensaje después de tanto tiempo, y así volvimos a intercambiar mensajes por unos meses.
-
-Si bien Julia había vuelto, sabía que eventualmente se alejaría nuevamente.
-Y así fue.
-Estuvimos hablando unos meses más. Y volvió a irse otra vez.
-
-Dentro de mí busque alguna respuesta para entender mejor todo lo que me había dicho Julia. Y me puse a investigar y consultar a profesionales sobre todo lo que me dijo.
-Resulta que lo que le pasaba a Julia no era de forma voluntaria, era su salud la que le hacía hacer todas esas acciones.
-Muy tarde entendí que Julia necesitaba tiempo para sanar.
-
-A finales de 2022, tomé la difícil decisión de despedirme de nuestra amistad. Lo hice con el objetivo de preservar el bienestar de Julia, aunque me dolió profundamente. Antes de hacerlo, planifiqué algo especial para su cumpleaños, aprendí lo básico del idioma alemán y creé regalos digitales escritos en alemán, incluyendo una imagen de una planta floreciendo con el nombre de Julia, simbolizando su momento de florecimiento personal.
+A finales de 2022, tomé la difícil decisión de despedirme. Lo hice por su bienestar, aunque me dolió profundamente. Antes de irme, preparé algo especial para su cumpleaños: aprendí lo básico de alemán y creé regalos digitales, incluyendo una imagen de una planta floreciendo con su nombre, simbolizando su crecimiento personal.
 
 ![regalo-julia](/assets/blog/historia-julia/regalo-julia.jpg)
 
-Te preguntaras ¿qué dice lo escrito en la imagen?
+Te preguntaras ¿Qué decía el mensaje en la imagen?
 Dice: _Eres tu propia plantita riegate y hablate bonito._
 
-Entregué los regalos a Julia, y me despedí agradeciéndole por todo lo que compartimos. Decidí no mencionarle que me alejaba de su vida, ya que sabía que eso podría afectar su salud. Simplemente me fui.
-Y ella dejo de responder mis mensajes.
+Le entregué los regalos y me despedí agradeciéndole por todo lo que compartimos, sin decirle que me alejaba para no afectarla. Simplemente me fui, y ella dejó de responder.
 
-_Permíteme presentarte a Julia: nacida en Alemania, llena de inteligencia, dedicación y valentía. Una persona decidida y amable. Ella es Julia..._
+_Permíteme presentarte a Julia, una persona llena de inteligencia, dedicación y valentía. Nacida en Alemania, decidida y amable. Esa es Julia._
 
-![regalo-julia](/assets/blog/historia-julia/julia.jpg)
+<div class="two-images">
+<img
+  class="fit-picture"
+  src="/assets/blog/historia-julia/julia.jpg"
+  alt="Foto 1, Julia" />
+  <img
+  class="fit-picture"
+  src="/assets/blog/historia-julia/julia2.jpg"
+  alt="Foto 2, Julia" />
+</div>
 
-Recuerda que todas tus emociones y sentimientos son válidos...
+

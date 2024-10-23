@@ -14,6 +14,12 @@
 
 /* Your own custom utilities */
 
+.two-images{
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 10px;
+}
+
 .choice {
   position: relative;
   border: 2px dashed #1cb0f6;
@@ -672,5 +678,10 @@ blockquote:before {
   }
   .example__sm {
     font-size: 4rem;
+  }
+  .two-images{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 10px;
   }
 }

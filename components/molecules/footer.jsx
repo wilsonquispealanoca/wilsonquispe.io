@@ -26,7 +26,7 @@ const dataFooter = [
 
 export default function Footer() {
   return (
-    <footer className="font-outfit bg-[#181824] w-full md:pb-0 md:px-32 lg:px-56 xl:px-80">
+    <footer className="font-outfit bg-[#1d0543] w-full md:pb-0 md:px-32 lg:px-56 xl:px-80">
       <ul className="grid grid-cols-2 pb-8 lg:grid-cols-3 mx-4">
         {dataFooter.map(({ id, href, target, rel, text }) => (
           <ItemFooter

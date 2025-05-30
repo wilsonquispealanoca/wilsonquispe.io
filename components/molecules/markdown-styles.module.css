@@ -1,0 +1,64 @@
+.markdown {
+  @apply text-[1.25rem] leading-[1.68];
+}
+
+.markdown em {
+  @apply text-[#14e7ff] text-xl rounded-sm tracking-[-.2px] bg-[#171520] py-[2px] px-[6px] not-italic;
+}
+
+.markdown strong {
+  @apply text-white;
+}
+
+.markdown a {
+  @apply text-brand-yellow font-bold underline;
+}
+
+.markdown p,
+.markdown ol {
+  @apply text-brand-beige mt-7;
+}
+
+.markdown ul {
+  @apply pl-10 my-8 list-disc text-[1.2rem] text-primary-dark;
+}
+
+.markdown h2 {
+  @apply font-outfitsemibold text-3xl mt-12 mb-4 leading-snug text-white break-words;
+}
+
+.markdown h3 {
+  @apply font-outfitsemibold text-2xl mt-8 mb-4 leading-snug text-white break-words;
+}
+
+.markdown li {
+  @apply leading-[1.6] text-brand-beige pl-3;
+}
+
+.markdown li::marker {
+  @apply text-brand-pink;
+}
+
+.markdown blockquote > p {
+  @apply px-6 pt-2 pb-9 rounded-r-xl text-[#e8e6e3b3] z-10;
+}
+
+.markdown table {
+  @apply min-w-full text-left text-base font-light text-white;
+}
+
+.markdown thead {
+  @apply font-medium bg-[#0f0f17] text-brand-yellow;
+}
+
+.markdown th {
+  @apply px-6 py-4;
+}
+
+.markdown tr {
+  @apply border-b border-[#303044];
+}
+
+.markdown td {
+  @apply whitespace-nowrap px-6 py-4 font-medium;
+}

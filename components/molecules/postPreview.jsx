@@ -12,10 +12,10 @@ export default function PostPreview({
   return (
     <>
       <li className="flex flex-col gap-1">
-        <div className="uppercase text-xs text-[#c21aa5]">
+        <div className="uppercase text-xs text-[#7f4cd6]">
           <DateFormatter dateString={date} />
         </div>
-        <h3 className="text-xl font-medium hover:underline text-white">
+        <h3 className="text-xl font-medium hover:underline text-[#fce8f5]">
           <Link as={`/posts/${slug}`} href="/posts/[slug]">
             {title}
           </Link>

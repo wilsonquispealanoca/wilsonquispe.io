@@ -164,8 +164,6 @@ export default function Footer() {
             </svg>
           </li>
         </Link>
-      </ul>
-
       <Link
           href="https://web.slowly.app/profile/62YQNVM"
           target="_blank"

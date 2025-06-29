@@ -1,5 +1,5 @@
 import ItemFooter from "../atoms/itemFooter";
-import BadgeNewFuncionality from "../atoms/BadgeNewFuncionality";
+import BadgeNewFunctionality from "../atoms/BadgeNewFunctionality";
 import Link from "next/link";
 
 const dataFooter = [
@@ -39,7 +39,7 @@ export default function Footer() {
           />
         ))}
       </ul>
-      <ul className="flex justify-center items-center gap-4 pb-4">
+      <ul className="flex justify-center items-center gap-3 md:gap-4 pb-4">
         <Link
           href="https://twitter.com/soywill_quispe"
           target="_blank"
@@ -172,7 +172,7 @@ export default function Footer() {
           text="Slowly"
         >
           <li className="w-8 relative">
-            <BadgeNewFuncionality/>
+            <BadgeNewFunctionality/>
             <img src="https://slowly.app/wp-content/themes/slowly/assets/img/logo.svg" alt="Slowly" style={{
         filter: 'brightness(0) invert(1)',
         WebkitFilter: 'brightness(0) invert(1)'

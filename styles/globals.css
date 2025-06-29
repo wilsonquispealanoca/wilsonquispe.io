@@ -374,11 +374,17 @@ pre[class*="language-"] {
   font-style: italic;
 }
 
+.badgeBlog {
+  background-color: #00CF9F;
+  width: 10px;
+  height: 8px;
+}
+
 .card-detail {
   position: relative;
   display: flex;
   justify-content: space-between;
-  background-color: #181824;
+  background-color: #0f0329;
   border-radius: 5px;
   box-shadow: 1px 1px 1px #0003;
 }

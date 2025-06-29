@@ -18,10 +18,10 @@ function Card() {
               sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
               className="object-cover rounded-lg cursor-pointer"
             />
-          </Link>
           <h3 className="font-outfitsemibold text-2xl my-4 font-averia text-white">
             Duolingo Store
           </h3>
+          </Link>
           <p>
             Aplicación web clonada del sitio oficial de comercio electrónico de
             Duolingo
@@ -66,10 +66,10 @@ function Card() {
               sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
               className="object-cover rounded-lg cursor-pointer"
             />
-          </Link>
           <h3 className="font-outfitsemibold text-2xl my-4 font-averia text-white">
             Ayni Store
           </h3>
+          </Link>
           <p>
             Comercio electrónico de venta de items (monedas, gemas, diamantes y
             otros) de juegos populares.
@@ -123,10 +123,10 @@ function Card() {
               sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
               className="object-cover rounded-lg cursor-pointer"
             />
-          </Link>
           <h3 className="font-outfitsemibold text-2xl my-4 font-averia text-white">
             Titles editor app
           </h3>
+          </Link>
           <p>
             Eleva tus proyectos con una herramienta que te permite expresarte a
             través de los detalles, resaltando tu creatividad en cada título que

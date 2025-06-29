@@ -1,6 +1,6 @@
 ---
 title: 'Rebuilding My Blog with Next.js, TailwindCSS, and MDX'
-date: '2021-03-11'
+date: '2025-06-29'
 tags: ['next.js', 'mdx', 'tailwind']
 excerpt: "Why tinker with your personal blog site when you can build it all over again with Next.js, MDX, and TailwindCSS?"
 coverImage: '/assets/blog/hello-world/helloworld.jpg'
@@ -21,8 +21,7 @@ Now that I have an MVP for my website, I'll be writing content on a regular cade
 
 ### 2. Inspiration
 
-I have been a long-time reader of [Timo Lins blog](https://timo.sh/) and have always been impressed with his content. His [website code and aesthetic](https://github.com/timolins) was a great inspiration to mine as evidenced in my use of his search input on my blog index page 😅.
-Though, I did alter my search filter to also search within the summary my posts instead of just the titles.
+I have been a long-time reader of [Timo Lins blog](https://timo.sh/) and have always been impressed with his content. His website code and aesthetic was a great inspiration.
 
 If you are interested in Next.js development, I highly recommend following him, as he works for Vercel and has been a great resource to me.
 
@@ -34,7 +33,7 @@ For his personal site and [Next.js Tailwind Starter Blog template](https://githu
 
 ### Next.js – The React Production Framework
 
-Since discovering Next.js about a year ago, none of JavaScript's other "shiny new toys" have caught my eye. Coming from a history of developing custom WordPress themes and spinning up local servers or figuring out compiling and bundling, the developer experience of Next.js is so wonderful – even as a beginner to React.
+Since discovering Next.js about two year ago, none of JavaScript's other "shiny new toys" have caught my eye. Coming from a history of developing custom WordPress themes and spinning up local servers or figuring out compiling and bundling, the developer experience of Next.js is so wonderful – even as a beginner to React.
 
 For React developers that have not tried it out, I highly recommend you take a look at the [Next.js documentation](https://nextjs.org/docs) and [repository of Next.js application examples](https://github.com/vercel/next.js/tree/canary/examples). When you get some time, try out your own project.
 
@@ -70,7 +69,7 @@ export default function BlogTitle({ children }) {
 As a professional SEO of nearly a decade, having a website that was SEO friendly was extremely important to me. 
 One of the major reasons I decided to learn Jamstack development, specifically, is because of poor page performance including page load speed with WordPress sites. 
 
-With [Google introducing Core Web Vitals](https://blog.chromium.org/2020/05/introducing-web-vitals-essential-metrics.html) this spring, it looks like I was ahead of the curve in finding a faster, better peformingm, web development solution.
+With [Google introducing Core Web Vitals](https://blog.chromium.org/2020/05/introducing-web-vitals-essential-metrics.html) this spring, it looks like I was ahead of the curve in finding a faster, better peforming, web development solution.
 
 I needed to be able to quickly update Page Titles and Meta Dscriptions on my posts and be able to add Structured Data markup.
 The [`next-seo` plugin](https://github.com/garmeeh/next-seo) made that a much easier process for me, especially with implementing the Structured Data I wanted.

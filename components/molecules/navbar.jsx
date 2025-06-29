@@ -8,9 +8,10 @@ import { useTranslation } from "next-i18next";
 
 function Navbar() {
   const { t } = useTranslation();
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
   return (
     <>
-      <nav className="w-full flex justify-center items-center pt-8 pb-8 lg:pt-16 lg:justify-between text-brand-beige text-xl font-semibold">
+      <nav className="z-[100] w-full flex justify-center items-center pt-8 pb-8 lg:pt-16 lg:justify-between text-brand-beige text-xl font-semibold">
         <div className="flex">
           <Activelink href="/">{t("main")}</Activelink>
           <Activelink href="/blog">Blog</Activelink>
@@ -18,6 +19,19 @@ function Navbar() {
         {/*<div className="overflow-x-auto">
           <LanguageSwitcher />
         </div>*/}
+        <div className="fixed top-0 h-16 w-full bg-[#0f0329]/50 backdrop-blur-md shadow-2xl">
+          <button 
+            className="md:hidden fixed top-3 right-4 text-3xl z-[110]"
+            onClick={() => setIsMenuOpen(!isMenuOpen)}
+          >
+            {isMenuOpen ? '✕' : '☰'}
+          </button>
+          
+          <NavMobile 
+            open={isMenuOpen} 
+            onClose={() => setIsMenuOpen(false)} 
+          />
+        </div>
       </nav>
     </>
   );

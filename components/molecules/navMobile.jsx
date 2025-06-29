@@ -44,7 +44,7 @@ function NavMobile({ open, onClose }) {
           {/* Contenido del navbar */}
           <ul className="space-y-2">
             {dataFooter.map(({ id, href, target, rel, text }) => (
-              <li className="h-12 text-white flex font-medium cursor-pointer pl-4 pt-14">
+              <li key={id} className="h-12 text-white flex font-medium cursor-pointer pl-4 pt-14">
                 <Link href={href} passHref target={target} rel={rel} className="w-full">
                   {text}
                 </Link>

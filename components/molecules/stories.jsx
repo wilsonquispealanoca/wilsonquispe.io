@@ -9,7 +9,7 @@ export default function Stories({ posts }) {
         Mis historias
       </h1>
       <h2 className="text-xl font-light mb-14 text-brand-beige">
-        En cada relato que comparta, irá siempre un pedazo de mi aprendizaje. No son teorías ni consejos de manual, sino lecciones vividas -con tropiezos, dudas y momentos de claridad- que hoy pongo en tus manos con cariño. Mi mayor deseo es que cuando te encuentres en una encrucijada, alguna de estas palabras pueda ser esa vocecita amiga que te susurre: 'Tú puedes, yo también pasé por esto'
+        En cada relato que comparta, irá siempre un pedazo de mi aprendizaje. No son teorías ni consejos de manual, sino lecciones vividas -con tropiezos, dudas y momentos de claridad- que hoy pongo en tus manos con cariño. Mi mayor deseo es que cuando te encuentres en una encrucijada, alguna de estas palabras pueda ser esa vocecita amiga que te susurre: Tú puedes, yo también pasé por esto
       </h2>
       <ul className="grid gap-8">
         {posts.map((post) => (

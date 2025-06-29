@@ -1,4 +1,5 @@
 import ItemFooter from "../atoms/itemFooter";
+import BadgeNewFuncionality from "../atoms/BadgeNewFuncionality";
 import Link from "next/link";
 
 const dataFooter = [
@@ -27,7 +28,7 @@ const dataFooter = [
 export default function Footer() {
   return (
     <footer className="font-outfit bg-[#1d0543] w-full md:pb-0 md:px-32 lg:px-56 xl:px-80">
-      <ul className="grid grid-cols-2 pb-8 lg:grid-cols-3 mx-4">
+      <ul className="grid grid-cols-2 pb-8 lg:grid-cols-3 mx-4 relative">
         {dataFooter.map(({ id, href, target, rel, text }) => (
           <ItemFooter
             key={id}
@@ -170,7 +171,8 @@ export default function Footer() {
           rel="noopener noreferrer"
           text="Slowly"
         >
-          <li className="w-8">
+          <li className="w-8 relative">
+            <BadgeNewFuncionality/>
             <img src="https://slowly.app/wp-content/themes/slowly/assets/img/logo.svg" alt="Slowly" style={{
         filter: 'brightness(0) invert(1)',
         WebkitFilter: 'brightness(0) invert(1)'

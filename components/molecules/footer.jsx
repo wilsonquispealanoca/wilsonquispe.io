@@ -171,8 +171,10 @@ export default function Footer() {
           text="Slowly"
         >
           <li className="w-8">
-            <img src="https://slowly.app/wp-content/themes/slowly/assets/img/logo.svg" alt="Slowly" style={{-webkitFilter: "brightness(0) invert(1)",
-  filter: "brightness(0) invert(1)"}}/>
+            <img src="https://slowly.app/wp-content/themes/slowly/assets/img/logo.svg" alt="Slowly" style={{
+        filter: 'brightness(0) invert(1)',
+        WebkitFilter: 'brightness(0) invert(1)'
+      }}/>
           </li>
         </Link>
       </ul>

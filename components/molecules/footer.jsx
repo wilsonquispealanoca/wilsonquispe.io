@@ -166,7 +166,7 @@ export default function Footer() {
           </li>
         </Link>
       <Link
-          href="https://web.slowly.app/profile/62YQNVM"
+          href="https://app.getslowly.com/p/collection/xnwgR18qnk"
           target="_blank"
           rel="noopener noreferrer"
           text="Slowly"

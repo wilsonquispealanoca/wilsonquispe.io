@@ -99,6 +99,8 @@ _Permíteme mostrarte a Julia, una persona llena de inteligencia, dedicación y 
   alt="Foto 2, Julia" />
 </div>
 
-PD: _Esta historia fue escrita con el permiso de Julia
+PD: Esta historia fue escrita con el permiso de Julia
+
+Mi Slowly ID: _62YQNVM_
 
 

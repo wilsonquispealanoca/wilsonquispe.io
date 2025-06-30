@@ -3,7 +3,7 @@ import Link from "next/link";
 
 function Card() {
   return (
-    <section className=" text-brand-beige mt-4">
+    <section className=" text-brand-beige">
       <h2 className="font-outfitsemibold text-4xl my-12 text-white drop-shadow-[-2px_0_0_#c21aa5]">
         Mis proyectos
       </h2>
@@ -23,8 +23,7 @@ function Card() {
           </h3>
           </Link>
           <p>
-            Aplicación web clonada del sitio oficial de comercio electrónico de
-            Duolingo
+            Comercio electrónico de Duolingo realizado en React JS
           </p>
           <ul className=" flex gap-3 mt-2">
             <li className="w-12 h-auto">
@@ -71,8 +70,8 @@ function Card() {
           </h3>
           </Link>
           <p>
-            Comercio electrónico de venta de items (monedas, gemas, diamantes y
-            otros) de juegos populares.
+            Comercio electrónico de venta de monedas, gemas, diamantes y
+            otros de juegos populares.
           </p>
           <ul className=" flex gap-3 mt-2">
             <li className="w-12 h-auto">
@@ -124,12 +123,11 @@ function Card() {
               className="object-cover rounded-lg cursor-pointer"
             />
           <h3 className="font-outfitsemibold text-2xl my-4 font-averia text-white">
-            Titles editor app
+            Aplicación de diseño gráfico de títulos
           </h3>
           </Link>
           <p>
-            Eleva tus proyectos con una herramienta que te permite expresarte a
-            través de los detalles, resaltando tu creatividad en cada título que
+            Expresate a través de los detalles, resaltando tu creatividad en cada título que
             diseñes. Con la capacidad de subir tus propias fuentes, cambiar
             colores de bordes &quot;hasta 3 veces&quot;.
           </p>

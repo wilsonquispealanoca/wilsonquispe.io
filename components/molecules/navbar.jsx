@@ -19,9 +19,9 @@ function Navbar() {
         {/*<div className="overflow-x-auto">
           <LanguageSwitcher />
         </div>*/}
-        <div className="fixed top-0 h-16 w-full bg-[#0f0329]/50 backdrop-blur-md shadow-2xl">
+        <div className="lg:hidden fixed top-0 h-16 w-full bg-[#0f0329]/50 backdrop-blur-md shadow-2xl">
           <button 
-            className="md:hidden fixed top-3 right-4 text-3xl z-[110]"
+            className="md:hidden fixed top-5 right-9 text-3xl z-[110]"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
           >
             {isMenuOpen ? '✕' : '☰'}

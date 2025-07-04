@@ -51,6 +51,9 @@ module.exports = {
       fontSize: {
         "45xl": "2.5rem",
       },
+      transitionProperty: {
+        'clip-path': 'clip-path'
+      },
     },
   },
 };

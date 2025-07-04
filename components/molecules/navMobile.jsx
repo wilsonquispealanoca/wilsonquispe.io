@@ -27,25 +27,19 @@ function NavMobile({ open, onClose }) {
 ];
 
   return (
-    <>
-      {/* Overlay de fondo */}
-      <div 
-        className={`fixed inset-0 bg-black z-20 transition-opacity duration-300 ${open ? 'opacity-50' : 'opacity-0 pointer-events-none'}`}
-        onClick={onClose}
-      />
-      
+    <>  
       {/* Menú móvil */}
       <nav 
-        className={`fixed top-0 left-0 h-screen w-full bg-[#1d0543] shadow-xl z-30 transform transition-all duration-300 ease-in-out ${
-          open ? 'translate-x-0' : '-translate-x-full'
-        }`}
+        className={`fixed top-0 rigth-0 w-full z-30 bg-[#1d0543] overflow-hidden transition-[clip-path,height] duration-700 ease-in-out
+    ${open ? 'clip-circle-open h-screen' : 'clip-circle-closed h-16'}
+  `}
       >
-        <div className="p-4">
+        <div className="p-4 mt-20">
           {/* Contenido del navbar */}
-          <ul className="space-y-2">
+          <ul className="space-y-8">
             {dataFooter.map(({ id, href, target, rel, text }) => (
-              <li key={id} className="h-12 text-white flex font-medium cursor-pointer pl-4 pt-14">
-                <Link href={href} passHref target={target} rel={rel} className="w-full">
+              <li key={id} className="text-white flex font-medium cursor-pointer ml-4 w-full">
+                <Link href={href} passHref target={target} rel={rel}>
                   {text}
                 </Link>
               </li>

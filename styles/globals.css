@@ -13,6 +13,13 @@
 /* Stop purging. */
 
 /* Your own custom utilities */
+.clip-circle-closed {
+  clip-path: circle(0% at 40px 40px); /* desde el botón de menú */
+}
+
+.clip-circle-open {
+  clip-path: circle(150% at 40px 40px); /* cubre toda la pantalla */
+}
 
 .badgeNew{
     width: 16px;

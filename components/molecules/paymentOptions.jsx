@@ -52,7 +52,7 @@ export default function PaymentOptions({ open, onClose }) {
         <p className="text-sm text-gray-400 mb-4">
           Después de pagar, por favor envíanos tu comprobante vía WhatsApp para confirmar tu compra.
         </p>
-        <button onClick={handleClick} className="flex bg-yellow-400 hover:bg-yellow-500 text-black px-4 py-2 rounded-lg font-bold transition justify-center gap-2 block">
+        <button onClick={handleClick} className="flex bg-yellow-400 hover:bg-yellow-500 text-black px-4 py-2 rounded-lg font-bold transition justify-center gap-2 w-full">
         	<svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none"><g clip-path="url(#clip0_519_3383)"><path d="M17.124 13.92L19.842 16.636L12.489 23.989L5.136 16.637L7.853 13.92L12.489 18.58L17.124 13.92ZM21.761 9.28396L24.5 12L21.785 14.716L19.068 12L21.761 9.28396ZM12.489 9.28396L15.205 11.976L12.488 14.693L9.772 12L12.489 9.28396ZM3.216 9.28396L5.91 12L3.218 14.692L0.5 12L3.216 9.28396ZM12.49 0.0119629L19.84 7.33996L17.123 10.055L12.49 5.41996L7.854 10.08L5.137 7.36396L12.49 0.0119629Z" fill="#0F141A"></path></g><defs><clipPath id="clip0_519_3383"><rect width="24" height="24" fill="white" transform="translate(0.5)"></rect></clipPath></defs></svg>
         	<span>
           		Pagar con Binance

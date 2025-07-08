@@ -11,7 +11,7 @@ export default function PaymentOptions({ open, onClose }) {
 
   const handleClick = () => {
     if (isMobile) {
-      window.location.href = "binance://pay/link?code=1034993751";
+      window.location.href = "https://app.binance.com/qr/dplk9fcb1e66ee56429db73ead9c1f4fa7a8";
     } else {
       alert("Este método solo funciona desde un celular con la app de Binance instalada.");
     }

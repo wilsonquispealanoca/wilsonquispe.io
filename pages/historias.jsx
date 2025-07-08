@@ -22,7 +22,6 @@ export default function Historias({ allPosts }) {
           fbAppID="115713950293427"
           twitter="@soywill_quispe"
         />
-        {/*<StickyBookBanner />*/}
         <Container>
           <Stories posts={filteredPosts} />
         </Container>

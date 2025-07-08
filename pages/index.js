@@ -26,7 +26,6 @@ export default function Home({ allPosts }) {
         fbAppID="115713950293427"
         twitter="@soywill_quispe"
       />
-      // <BookIntroPopup />
       <StickyBookBanner />
       <Container>
         <Navbar />

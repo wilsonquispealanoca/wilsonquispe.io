@@ -11,7 +11,7 @@ export default function Layout({ children }) {
       <p className="bg-[#1d0543] font-outfit text-center text-[1rem] md:text-lg text-brand-beige/70 px-8 md:px-32 lg:px-56 lg:pt-8 xl:px-80">
         Creado por Wilson Quispe Alanoca con 💙
       </p>
-      <p className="bg-[#1d0543] text-center py-6 font-outfit text-brand-beige/70">
+      <p className="bg-[#1d0543] text-center pb-16 font-outfit text-brand-beige/70">
         © {date} Todos los derechos reservados.
       </p>
     </>

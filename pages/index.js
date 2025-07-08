@@ -5,6 +5,8 @@ import Card from "../components/molecules/card";
 import ArticlesHome from "../components/molecules/articlesHome";
 import Navbar from "../components/molecules/navbar";
 import Meta from "../components/molecules/meta";
+import BookIntroPopup from "../components/atoms/bookIntroPopup";
+import StickyBookBanner from "../components/atoms/stickyBookBanner";
 
 import { getAllPosts } from "../lib/api";
 import Link from "next/link";
@@ -24,6 +26,8 @@ export default function Home({ allPosts }) {
         fbAppID="115713950293427"
         twitter="@soywill_quispe"
       />
+      // <BookIntroPopup />
+      <StickyBookBanner />
       <Container>
         <Navbar />
         <Hero />

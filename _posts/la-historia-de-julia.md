@@ -1,5 +1,5 @@
 ---
-title: "La historia de Julia (ACTUALIZACIÓN)"
+title: "La historia de Julia"
 date: "2023-06-11T08:35:07.322Z"
 tags: "historia"
 excerpt: "Esta es una historia que no solo es mía, sino que también se trata de una gran amiga. Esta es la historia de Julia."
@@ -101,6 +101,6 @@ _Permíteme mostrarte a Julia, una persona llena de inteligencia, dedicación y 
 
 PD: Esta historia fue escrita con el permiso de Julia
 
-Mi Slowly ID: _62YQNVM_
+Mi actual Slowly ID: _62YQNVM_
 
 

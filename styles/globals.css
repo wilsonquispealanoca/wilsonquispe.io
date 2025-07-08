@@ -704,3 +704,20 @@ blockquote:before {
     column-gap: 10px;
   }
 }
+
+.price-compare {
+  color: white;
+  text-decoration: none;
+  position: relative;
+}
+
+.price-compare::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  border-bottom: 0.15rem solid #d72c0d;
+  opacity: 0.7;
+  transform: rotate(-15deg);
+}

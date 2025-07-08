@@ -2,6 +2,8 @@ import Container from "../components/templates/container";
 import MoreStories from "../components/molecules/moreStories";
 import Meta from "../components/molecules/meta";
 import Layout from "../components/templates/layout";
+import StickyBookBanner from "../components/atoms/stickyBookBanner";
+
 import { getAllPosts } from "../lib/api";
 
 export default function Blog({ allPosts }) {
@@ -20,6 +22,7 @@ export default function Blog({ allPosts }) {
           fbAppID="115713950293427"
           twitter="@soywill_quispe"
         />
+        <StickyBookBanner />
         <Container>
           <MoreStories posts={filteredPosts} />
         </Container>

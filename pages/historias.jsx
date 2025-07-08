@@ -2,6 +2,8 @@ import Container from "../components/templates/container";
 import Stories from "../components/molecules/stories";
 import Meta from "../components/molecules/meta";
 import Layout from "../components/templates/layout";
+import StickyBookBanner from "../components/atoms/stickyBookBanner";
+
 import { getAllPosts } from "../lib/api";
 
 export default function Historias({ allPosts }) {
@@ -20,6 +22,7 @@ export default function Historias({ allPosts }) {
           fbAppID="115713950293427"
           twitter="@soywill_quispe"
         />
+        {/*<StickyBookBanner />*/}
         <Container>
           <Stories posts={filteredPosts} />
         </Container>

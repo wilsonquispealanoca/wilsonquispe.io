@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useEffect, useState} from "react";
 import WhatsappButton from "./whatsappButton";
 
 export default function PaymentOptions({ open, onClose }) {

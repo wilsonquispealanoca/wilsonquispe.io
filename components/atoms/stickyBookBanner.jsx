@@ -23,10 +23,10 @@ export default function StickyBookBanner() {
 
   return (
   	<>
-	    <div className="fixed bottom-0 bg-[#2c0e6c] py-4 px-2 z-40 flex items-center gap-4 w-full">
+	    <div className="fixed bottom-0 bg-[#2c0e6c] py-4 px-6 z-40 flex items-center gap-4 w-full">
 	      <img src="/landing-1.png" alt="Libro" className="w-16 h-16 object-cover" />
 	      <div className="flex-1">
-	        <p className="text-sm font-bold text-[#05a89d]">Aymara para no lingüistas</p>
+	        <p className="font-bold text-[#05a89d]">Aymara para no lingüistas</p>
 	        <div className="flex text-sm gap-2">
 	        	<s className="price-compare">Bs 90</s>
 	        	<p className="text-sm text-[#fad318]">Bs. 50</p>

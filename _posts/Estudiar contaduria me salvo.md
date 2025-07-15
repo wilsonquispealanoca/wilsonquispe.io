@@ -1,7 +1,7 @@
 ---
 title: "Estudiar contaduria me salvo"
 date: "2025-06-15T10:49:00.322Z"
-tags: ["contaduria", "conocimiento", "polifacetico", "admiración"]
+tags: "historia"
 excerpt: "La matemática puede ser un tema intimidante para muchas personas. Hay tantas operaciones y conceptos que puede ser difícil saber por dónde empezar. Pero si entiendes los fundamentos, todo lo demás se vuelve más fácil. En este artículo, vamos a explorar uno de los conceptos básicos de la matemática: la división.."
 coverImage: "/assets/blog/hello-word/helloword.jpe"
 author:

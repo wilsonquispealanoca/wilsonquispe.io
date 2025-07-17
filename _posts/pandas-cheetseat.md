@@ -183,7 +183,7 @@ df.resample('M').mean()
 
 ¡Asegúrese de que su columna de fecha se establece como el índice primero!
 
-#### 🎯 Pro Tips
+### 🎯 Pro Tips
 
 Use **copy()** cuando rebane si va a editar.
 
@@ -191,6 +191,6 @@ Evita los bucles **for**, usa operaciones vectorizadas en su lugar.
 
 **df.apply()** es genial, pero úsalo con prudencia; puede ser lento.
 
-#### 🏁 Palabras finales
+### 🏁 Palabras finales
 
 No necesitas memorizarlo todo. Guarda esto en tus favoritos. Vuelve cuando estés atascado. Pandas no es difícil, sólo da miedo al principio. Pero una vez que lo domesticas, no hay vuelta atrás.

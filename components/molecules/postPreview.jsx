@@ -16,7 +16,7 @@ export default function PostPreview({
           <DateFormatter dateString={date} />
         </div>
         <h3 className="text-xl font-medium hover:underline text-[#fce8f5] w-full">
-          <Link as={`/posts/${slug}`} href="/posts/[slug]">
+          <Link as={`/posts/${slug}`} href="/posts/[slug]" className="w-full">
             {title}
           </Link>
         </h3>

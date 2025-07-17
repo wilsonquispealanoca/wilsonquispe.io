@@ -1,6 +1,6 @@
 ---
 title: 'Rebuilding My Blog with Next.js, TailwindCSS, and MDX'
-date: '2025-06-29'
+date: '2025-06-01'
 tags: ['next.js', 'mdx', 'tailwind']
 excerpt: "Why tinker with your personal blog site when you can build it all over again with Next.js, MDX, and TailwindCSS?"
 coverImage: '/assets/blog/hello-world/helloworld.jpg'

@@ -31,7 +31,7 @@ Impórtalo en tu código:
 import pandas as pd
 ```
 
-La mayoría de la gente utiliza pd como atajo, y también debería hacerlo.
+La mayoría de la gente utiliza **pd** como atajo, y también debería hacerlo.
 
 ### Dos estructuras de datos principales
 
@@ -51,17 +51,17 @@ data = {
 df = pd.DataFrame(data)
 ```
 
-Ahora df es su tabla de datos.
+Ahora **df** es su tabla de datos.
 
 Lectura y escritura de archivos
 
-Leer CSV:
+**Leer CSV:**
 
 ```python
 df = pd.read_csv('archivo.csv')
 ```
 
-Guardar CSV:
+**Guardar CSV:**
 
 ```python
 df.to_csv('nuevo_archivo.csv', index=False)
@@ -80,13 +80,13 @@ df.describe()  # Resumen estadísticos (promedio, mediana, etc.)
 
 Selecionando datos: 
 
-Columnas:
+**Columnas:**
 
 ```python
 df['nombre-columna']
 ```
 
-Filas:
+**Filas:**
 
 ```python
 df.iloc[0]       # Por posición

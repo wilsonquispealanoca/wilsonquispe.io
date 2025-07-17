@@ -11,4 +11,11 @@ ogImage:
   url: "/assets/blog/hello-word/helloword.jpe"
 ---
 
-Escogí contaduría casi por instinto, buscando algo que silenciara la ansiedad que me perseguía. No fue la carrera en sí lo que me salvó, sino las personas que conocí en el camino: amigos que se convirtieron en familia, una amiga que siempre me decía cuánto me admiraba por mi inteligencia, mi manera de pensar y mi forma de enfrentar las cosas. Esas palabras de apoyo fueron como un salvavidas, recordándome que valía la pena ser yo. Aunque los demás se quejaban de los docentes (Y SÍ, erán muy malos enseñando), yo aprendí a mi manera, buscando respuestas por mi cuenta, y ahí, entre hojas de cálculo y charlas sinceras, empecé a descubrir que mi historia apenas comenzaba...
+Al inicio del 2024 escogí Contaduría casi por instinto, buscando algo que silenciara la ansiedad que me perseguía. Pero al final, no fue la carrera lo que me salvó, sino las personas que conocí en el camino: compañeros que se convirtieron en familia, compañeros que no entendían la carrera y me pedían ayuda. Una amiga que siempre me decía cuánto me admiraba.
+
+Muchos de ellos me dijeron que les salvé la vida. Lo que quizá no saben es que ellos me salvaron a mí. Me dieron un propósito. Por eso trabajé tan duro: para devolverles un poco de lo que me habían dado. Mi vida cambió gracias a ellos. No en lo económico ni solo en la amistad, sino en algo más profundo: yo estaba perdido, y con ellos descubrí que valía la pena ayudar a los demás.
+
+Gracias a esa etapa, hoy tengo una vida placentera, feliz y con sentido. Ellos me salvaron, transformaron mi vida. Para mí fue un orgullo esforzarme cada día, explicarles lo que no entendían en clase, ver cómo poco a poco lo lograban, ver sus regalos hacía mi persona, ver su sonrisa cuando entendían algo me hacía muy feliz...
+
+
+Continuará…

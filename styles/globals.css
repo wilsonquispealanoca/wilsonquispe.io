@@ -15,10 +15,12 @@
 /* Your own custom utilities */
 .clip-circle-closed {
   clip-path: circle(0% at 40px 40px); /* desde el botón de menú */
+  z-index: 100;
 }
 
 .clip-circle-open {
   clip-path: circle(150% at 40px 40px); /* cubre toda la pantalla */
+  z-index: 100;
 }
 
 .badgeNew{

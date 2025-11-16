@@ -1,5 +1,6 @@
 import DateFormatter from "../atoms/dateFormatter";
 import CoverImage from "../atoms/coverImage";
+import BadgeNewFunctionality from "../atoms/BadgeNewFunctionality";
 import Link from "next/link";
 
 export default function PostPreview({
@@ -8,6 +9,7 @@ export default function PostPreview({
   date,
   excerpt,
   slug,
+  newPost
 }) {
   return (
     <>
@@ -17,6 +19,11 @@ export default function PostPreview({
         </div>
           <Link as={`/posts/${slug}`} href="/posts/[slug]" className="text-xl font-medium hover:underline text-[#fce8f5] w-full">
             {title}
+            {newPost && (
+              <div className="relative left-16 text-[#251D16] bottom-2">
+                  <BadgeNewFunctionality />
+                </div>
+            )}
           </Link>
       </li>
     </>

@@ -1,5 +1,5 @@
 ---
-title: "La historia del peor estudiante que terminó siendo docente"
+title: "El peor estudiante que terminó siendo docente"
 date: "2025-05-31T05:35:07.322Z"
 tags: "historia"
 excerpt: ""

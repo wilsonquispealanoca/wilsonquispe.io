@@ -22,6 +22,7 @@ export default function Stories({ posts }) {
             slug={post.slug}
             excerpt={post.excerpt}
             tags={post.tags}
+            newPost={post.newPost}
           />
         ))}
       </ul>

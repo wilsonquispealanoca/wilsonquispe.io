@@ -3,7 +3,7 @@
 }
 
 .markdown em {
-  @apply text-black text-xl rounded-sm tracking-[-.2px] bg-[#00CF9F] py-[2px] px-[6px] not-italic;
+  @apply text-black text-xl rounded-sm tracking-[-.2px] bg-[#fad318] py-[2px] px-[6px] not-italic;
 }
 
 .markdown strong {

@@ -12,14 +12,14 @@ ogImage:
   url: "/assets/blog/preview/preview.jpg"
 ---
 
-A finales del 2023, los doctores me desahuciaron. (Tenia un dolor extremo en ambas manos que no me permitia sostener ningun objeto). Fui por muchos medicos especialistas y parecia que esto no tenía solución. En medio de la incertidumbre, busqué algo en lo que invertir mi tiempo, algo que le diera sentido a mis días. Pensé que tal vez reinventarme era la única salida. Fue entonces cuando, entre todas las decisiones que podía tomar, mi hermana me habló de una carrera técnica cerca de la ciudad donde vivíamos.
+A finales del 2023, los médicos me dieron una sentencia. Un dolor severo en ambas manos me arrebató lo más básico: sostener un objeto. El futuro se volvió incertidumbre.
 
-Con el inicio del 2024, me matriculé en Contaduría General. Quizás, me dije, los números y los libros me darían un refugio, algo en qué concentrarme para no ahogarme en lo que los médicos no podían resolver. Y así fue. El primer día, entre caras desconocidas y expectativas inciertas, conocí a personas que, sin saberlo, se convertirían en parte de un recuerdo imborrable. Es por ellas, también, que hoy decido escribir esta historia.
+Como los médicos no pudieron resolver mi estado de salud, me derivaron a la especialidad de Psiquiatría. Estuve siete meses visitando a mi doctora asignada, donde construimos una amistad. Estando en esos pasillos, comprendí lo que en verdad era una vida. Así que busqué un propósito, un motivo para levantarme. Pensé que tal vez reinventarme era algo necesario.
 
-Pero hay otra razón: escribir para honrar a alguien. Una amiga, quién me salvó sin darse cuenta...
+Fue entonces cuando mi hermana me habló de una carrera técnica cerca de casa. Con el inicio del 2024, me matriculé en Contaduría General. Me aferré a la lógica fría de los números como a un salvavidas, esperando que los libros me dieran un refugio donde mi mente y mi cuerpo pudieran descansar. Escogí contaduría porque, al menos, era la carrera en la que podría sentirme cómodo, ya que se me daban bien los números **(hasta cierto punto).**
 
-**Debo admitir que al principio no me percaté de ella, de su mirada, de su presencia**. Y sin embargo, mientras los días se convertían en semanas, escuchaba entre las paredes del salón de clases una voz, que decía: **"¡Te admiro!"**.
+El primer día, entre caras anónimas, el destino, en su extraña sabiduría, me presentó a las personas que me acompañarían durante meses. Pero hubo alguien en particular que iluminó todo. Esta historia la escribo también por ella, para honrarla. Ella fue una amiga que, sin proponérselo, me salvó.
 
-Esta es la historia de…
+Debo admitir que al principio no me percaté de ella, de su mirada, de su presencia. Yo estaba enfocado en reconstruirme. Y sin embargo, mientras los días se convertían en semanas, escuchaba entre las paredes del salón de clases una voz, que decía: "¡Te admiro!".
 
-(Continuará)
+Esta es la historia de: ............................... (CONTINUARÁ)

@@ -1,7 +1,7 @@
 
 function BadgeNewFunctionality() {
     return (
-        <div className="py-1 px-2 bg-[#fad318] border-2 border-[#1d0543] rounded-md absolute left-4 bottom-5 text-xs animate-bounce">
+        <div className="py-1 px-4 ml-2 bg-[#855bfb29] rounded-xl text-[#7132f5] text-sm inline-block">
             Nuevo
         </div>
     );

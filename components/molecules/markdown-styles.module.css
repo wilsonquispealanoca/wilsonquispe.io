@@ -1,42 +1,42 @@
 .markdown {
-  @apply text-[1.25rem] leading-[1.68];
+  @apply font-outfitlight leading-[1.68] text-secondary-text;
 }
 
 .markdown em {
-  @apply text-black text-xl rounded-sm tracking-[-.2px] bg-[#fad318] py-[2px] px-[6px] not-italic;
+  @apply bg-[#855bfb29] text-[#7132f5] rounded-xl px-3;
 }
 
 .markdown strong {
-  @apply text-white;
+  @apply text-background-dark font-outfitsemibold;
 }
 
 .markdown a {
-  @apply text-brand-yellow font-bold underline;
+  @apply text-primary-text font-outfitsemibold underline;
 }
 
 .markdown p,
 .markdown ol {
-  @apply text-brand-beige mt-7;
+  @apply text-primary-text mt-7;
 }
 
 .markdown ul {
-  @apply pl-10 my-8 list-disc text-[1.2rem] text-primary-dark;
+  @apply pl-10 my-8 list-disc text-[1.2rem] text-primary-text;
 }
 
 .markdown h2 {
-  @apply font-outfitsemibold text-3xl mt-12 mb-4 leading-snug text-white break-words;
+  @apply font-outfitsemibold text-3xl mt-12 mb-4 leading-snug text-primary-text break-words;
 }
 
 .markdown h3 {
-  @apply font-outfitsemibold text-2xl mt-8 mb-4 leading-snug text-white break-words;
+  @apply font-outfitsemibold text-2xl mt-8 mb-4 leading-snug text-secondary-text break-words;
 }
 
 .markdown li {
-  @apply leading-[1.6] text-brand-beige pl-3;
+  @apply leading-[1.6] text-primary-text pl-3;
 }
 
 .markdown li::marker {
-  @apply text-brand-pink;
+  @apply text-primary-text;
 }
 
 .markdown blockquote > p {
@@ -48,7 +48,7 @@
 }
 
 .markdown thead {
-  @apply font-medium bg-[#0f0f17] text-brand-yellow;
+  @apply font-medium bg-[#0f0f17] text-primary-text;
 }
 
 .markdown th {

@@ -2,6 +2,7 @@ import DateFormatter from "../atoms/dateFormatter";
 import CoverImage from "../atoms/coverImage";
 import BadgeNewFunctionality from "../atoms/BadgeNewFunctionality";
 import Link from "next/link";
+import Image from "next/image"
 
 export default function PostPreview({
   title,
@@ -13,18 +14,26 @@ export default function PostPreview({
 }) {
   return (
     <>
-      <li className="flex flex-col gap-1">
-        <div className="uppercase text-xs text-[#7f4cd6]">
-          <DateFormatter dateString={date} />
-        </div>
-          <Link as={`/posts/${slug}`} href="/posts/[slug]" className="text-xl font-medium hover:underline text-[#fce8f5] w-full">
-            {title}
-            {newPost && (
-              <div className="relative left-16 text-[#251D16] bottom-2">
-                  <BadgeNewFunctionality />
-                </div>
-            )}
-          </Link>
+      <li className="flex flex-col border-[1px] rounded-2xl bg-white">
+        <Image
+              src={coverImage}
+              alt={`Cover Image for titles app`}
+              width={1900}
+              height={1200}
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+              className="object-cover rounded-t-2xl cursor-pointer h-[160px]"
+            />
+          <div className="p-6">
+            <Link as={`/posts/${slug}`} href="/posts/[slug]" className="text-xl font-outfitsemibold text-primary-text">
+              {title}
+              {newPost && (
+                      <BadgeNewFunctionality />
+                )}
+            </Link>
+            <div className="uppercase text-xs text-secondary-text mt-6 font-outfitlight">
+              <DateFormatter dateString={date} />
+            </div>
+          </div>
       </li>
     </>
   );

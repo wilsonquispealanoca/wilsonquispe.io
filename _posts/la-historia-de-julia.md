@@ -64,9 +64,21 @@ Pero ya sabía cómo terminaba esta historia.
 Así que decidí que era momento de despedirme (aunque nunca se lo dije).
 Antes de hacerlo, preparé algo especial para su cumpleaños. Aprendí lo básico de alemán y le hice unos regalos digitales. Uno de ellos era una imagen de una planta floreciendo con su nombre.
 
-![regalo-julia](/assets/blog/historia-julia/regalo-julia.jpg)
+<div style="margin: 2rem 0;">
+  <div class="card-picture">
+          <div class="card-picture-topbar">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 31 37" fill="none" class="close-open-icons"><g><path fill-rule="evenodd" clip-rule="evenodd" d="M5.82941 24.8248C8.99389 24.8248 11.5592 22.2595 11.5592 19.095C11.5592 15.9306 8.99389 13.3652 5.82941 13.3652C2.66493 13.3652 0.0996094 15.9306 0.0996094 19.095C0.0996094 22.2595 2.66493 24.8248 5.82941 24.8248ZM8.63764 20.7536C8.9356 21.0558 8.9356 21.5804 8.62505 21.8909C8.3103 22.2057 7.78572 22.2057 7.48356 21.9035L5.82589 20.2458L4.16403 21.9077C3.87866 22.1973 3.33309 22.2099 3.02254 21.8951C2.71199 21.5846 2.72458 21.0432 3.00995 20.7578L4.67182 19.0918L3.00995 17.4341C2.72458 17.1487 2.71199 16.6032 3.02254 16.2926C3.33309 15.9779 3.87866 15.9947 4.16403 16.28L5.82589 17.9377L7.48356 16.2842C7.78572 15.9863 8.3103 15.9821 8.62505 16.2968C8.9356 16.6074 8.9356 17.1361 8.63764 17.4383L6.97997 19.0918L8.63764 20.7536Z" fill="black" fill-opacity="0.5"></path></g><g><path fill-rule="evenodd" clip-rule="evenodd" d="M24.9264 24.8248C21.762 24.8248 19.1966 22.2595 19.1966 19.095C19.1966 15.9306 21.762 13.3652 24.9264 13.3652C28.0909 13.3652 30.6562 15.9306 30.6562 19.095C30.6562 22.2595 28.0909 24.8248 24.9264 24.8248ZM26.9784 18.3873C27.2792 18.0864 27.7936 18.2995 27.7935 18.725L27.7932 20.9968C27.7932 21.5242 27.3656 21.9518 26.8382 21.9518L24.5675 21.9514C24.1422 21.9514 23.9292 21.4372 24.2299 21.1364L26.9784 18.3873ZM22.0674 17.182C22.0674 16.6545 22.495 16.227 23.0224 16.227L25.295 16.2267C25.7205 16.2266 25.9336 16.7411 25.6327 17.0418L22.8828 19.7905C22.582 20.0912 22.0678 19.8782 22.0678 19.4529L22.0674 17.182Z" fill="black" fill-opacity="0.5"></path></g></svg>
+            <span>gift-to-julia.png</span>
+          </div>
+          <img
+              class="fit-picture"
+              src="/assets/blog/historia-julia/regalo-julia.jpg"
+              alt="Foto 3, Julia" />
+        </div>
 
-¿Sabes qué decía?
+</div>
+
+**¿Sabes qué decía?**
 _Eres tu propia plantita riegate y hablate bonito._
 
 Le entregué los regalos… Ella tardó meses en responder. y su último mensaje fue:
@@ -87,14 +99,26 @@ Y asi fue como nuestra amistad terminó.
 _Permíteme mostrarte a Julia, una persona llena de inteligencia, dedicación y valentía. Nacida en Alemania, decidida y amable. Esa es Julia._
 
 <div class="two-images">
-<img
-  class="fit-picture"
-  src="/assets/blog/historia-julia/julia.jpg"
-  alt="Foto 1, Julia" />
-  <img
-  class="fit-picture"
-  src="/assets/blog/historia-julia/julia2.jpg"
-  alt="Foto 2, Julia" />
+  <div class="card-picture rotate-picture-1">
+        <div class="card-picture-topbar">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 31 37" fill="none" class="close-open-icons"><g><path fill-rule="evenodd" clip-rule="evenodd" d="M5.82941 24.8248C8.99389 24.8248 11.5592 22.2595 11.5592 19.095C11.5592 15.9306 8.99389 13.3652 5.82941 13.3652C2.66493 13.3652 0.0996094 15.9306 0.0996094 19.095C0.0996094 22.2595 2.66493 24.8248 5.82941 24.8248ZM8.63764 20.7536C8.9356 21.0558 8.9356 21.5804 8.62505 21.8909C8.3103 22.2057 7.78572 22.2057 7.48356 21.9035L5.82589 20.2458L4.16403 21.9077C3.87866 22.1973 3.33309 22.2099 3.02254 21.8951C2.71199 21.5846 2.72458 21.0432 3.00995 20.7578L4.67182 19.0918L3.00995 17.4341C2.72458 17.1487 2.71199 16.6032 3.02254 16.2926C3.33309 15.9779 3.87866 15.9947 4.16403 16.28L5.82589 17.9377L7.48356 16.2842C7.78572 15.9863 8.3103 15.9821 8.62505 16.2968C8.9356 16.6074 8.9356 17.1361 8.63764 17.4383L6.97997 19.0918L8.63764 20.7536Z" fill="black" fill-opacity="0.5"></path></g><g><path fill-rule="evenodd" clip-rule="evenodd" d="M24.9264 24.8248C21.762 24.8248 19.1966 22.2595 19.1966 19.095C19.1966 15.9306 21.762 13.3652 24.9264 13.3652C28.0909 13.3652 30.6562 15.9306 30.6562 19.095C30.6562 22.2595 28.0909 24.8248 24.9264 24.8248ZM26.9784 18.3873C27.2792 18.0864 27.7936 18.2995 27.7935 18.725L27.7932 20.9968C27.7932 21.5242 27.3656 21.9518 26.8382 21.9518L24.5675 21.9514C24.1422 21.9514 23.9292 21.4372 24.2299 21.1364L26.9784 18.3873ZM22.0674 17.182C22.0674 16.6545 22.495 16.227 23.0224 16.227L25.295 16.2267C25.7205 16.2266 25.9336 16.7411 25.6327 17.0418L22.8828 19.7905C22.582 20.0912 22.0678 19.8782 22.0678 19.4529L22.0674 17.182Z" fill="black" fill-opacity="0.5"></path></g></svg>
+          <span>first-picture-julia.png</span>
+        </div>
+        <img
+            class="fit-picture"
+            src="/assets/blog/historia-julia/julia.jpg"
+            alt="Foto 1, Julia" />
+      </div>
+  <div class="card-picture rotate-picture-2">
+        <div class="card-picture-topbar">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 31 37" fill="none" class="close-open-icons"><g><path fill-rule="evenodd" clip-rule="evenodd" d="M5.82941 24.8248C8.99389 24.8248 11.5592 22.2595 11.5592 19.095C11.5592 15.9306 8.99389 13.3652 5.82941 13.3652C2.66493 13.3652 0.0996094 15.9306 0.0996094 19.095C0.0996094 22.2595 2.66493 24.8248 5.82941 24.8248ZM8.63764 20.7536C8.9356 21.0558 8.9356 21.5804 8.62505 21.8909C8.3103 22.2057 7.78572 22.2057 7.48356 21.9035L5.82589 20.2458L4.16403 21.9077C3.87866 22.1973 3.33309 22.2099 3.02254 21.8951C2.71199 21.5846 2.72458 21.0432 3.00995 20.7578L4.67182 19.0918L3.00995 17.4341C2.72458 17.1487 2.71199 16.6032 3.02254 16.2926C3.33309 15.9779 3.87866 15.9947 4.16403 16.28L5.82589 17.9377L7.48356 16.2842C7.78572 15.9863 8.3103 15.9821 8.62505 16.2968C8.9356 16.6074 8.9356 17.1361 8.63764 17.4383L6.97997 19.0918L8.63764 20.7536Z" fill="black" fill-opacity="0.5"></path></g><g><path fill-rule="evenodd" clip-rule="evenodd" d="M24.9264 24.8248C21.762 24.8248 19.1966 22.2595 19.1966 19.095C19.1966 15.9306 21.762 13.3652 24.9264 13.3652C28.0909 13.3652 30.6562 15.9306 30.6562 19.095C30.6562 22.2595 28.0909 24.8248 24.9264 24.8248ZM26.9784 18.3873C27.2792 18.0864 27.7936 18.2995 27.7935 18.725L27.7932 20.9968C27.7932 21.5242 27.3656 21.9518 26.8382 21.9518L24.5675 21.9514C24.1422 21.9514 23.9292 21.4372 24.2299 21.1364L26.9784 18.3873ZM22.0674 17.182C22.0674 16.6545 22.495 16.227 23.0224 16.227L25.295 16.2267C25.7205 16.2266 25.9336 16.7411 25.6327 17.0418L22.8828 19.7905C22.582 20.0912 22.0678 19.8782 22.0678 19.4529L22.0674 17.182Z" fill="black" fill-opacity="0.5"></path></g></svg>
+          <span>second-picture-julia.png</span>
+        </div>
+        <img
+            class="fit-picture"
+            src="/assets/blog/historia-julia/julia2.jpg"
+            alt="Foto 2, Julia" />
+      </div>
 </div>
 
 PD: Esta historia fue escrita con el permiso de Julia

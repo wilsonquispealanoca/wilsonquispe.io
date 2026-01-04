@@ -27,8 +27,12 @@ const dataFooter = [
 
 export default function Footer() {
   return (
-    <footer className="font-outfit bg-[#1d0543] w-full md:pb-0 md:px-32 lg:px-56 xl:px-80">
-      <ul className="grid grid-cols-2 pb-8 lg:grid-cols-3 mx-4 relative">
+    <footer className="font-outfit bg-[#0a0b10] w-full py-8 md:pb-0 md:px-32 lg:px-56 xl:px-80 text-tertiary-text border-detail-border-dark border-t">
+      <div className="bg-bg-soft-dark mx-4 leading-8 rounded-2xl px-5 py-4 border-detail-border-dark border-[1px] my-16">
+          <h3 className="text-[#C2C2C2]">Contacto</h3>
+          <a href="mailto:holawilsonquispe@gmail.com" className="text-white text-xl">holawilsonquispe@gmail.com</a>
+        </div>
+      <ul className="grid grid-cols-2 pb-8 lg:grid-cols-3 mx-4">
         {dataFooter.map(({ id, href, target, rel, text }) => (
           <ItemFooter
             key={id}
@@ -39,15 +43,14 @@ export default function Footer() {
           />
         ))}
       </ul>
-      <ul className="flex justify-center items-center gap-3 md:gap-4 pb-4">
+      <ul className="flex justify-center items-center gap-3 md:gap-4 py-8">
         <Link
           href="https://www.duolingo.com/profile/wil_wilson"
           target="_blank"
           rel="noopener noreferrer"
           text="Duolingo"
         >
-          <li className="w-8 relative">
-            <BadgeNewFunctionality/>
+          <li className="w-8">
             <img src="/duolingo-LOGO.png" alt="Duolingo-logo"/>
           </li>
         </Link>
@@ -151,7 +154,6 @@ export default function Footer() {
           text="Slowly"
         >
           <li className="w-8 relative">
-            <BadgeNewFunctionality/>
             <img src="https://slowly.app/wp-content/themes/slowly/assets/img/logo.svg" alt="Slowly" style={{
         filter: 'brightness(0) invert(1)',
         WebkitFilter: 'brightness(0) invert(1)'

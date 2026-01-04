@@ -3,7 +3,7 @@ title: "La primera vez en una cita con mi psiquiatra"
 date: "2023-06-20T05:35:07.322Z"
 tags: "historia"
 excerpt: ""
-coverImage: "/assets/blog/variables/variablesSocialNetwork.jpeg"
+coverImage: "/assets/blog/jardin-digital/jardin-digital.webp"
 author:
   name: Wilson Quispe
   picture: "/assets/blog/authors/profileWilson.jpg"

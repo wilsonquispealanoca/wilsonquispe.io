@@ -3,7 +3,7 @@ title: "Pandas Cheatsheet: La guía más sencilla"
 date: "2025-06-17T16:00:07.322Z"
 tags: ["pandas", "python", "data", "machine learning"]
 excerpt: "Una variable podríamos verla como una caja que tiene un nombre y a la cual se le puede introducir (asignar) un valor en un momento dado, y en cualquier otro momento, podemos utilizar (leer) dicho valor y el valor de la variable podrá cambiar."
-coverImage: "/assets/blog/variables/variablesSocialNetwork.jpeg"
+coverImage: "/assets/blog/pandas/pandas-logo.jpg"
 author:
   name: Wilson Quispe
   picture: "/assets/blog/authors/profileWilson.jpg"

@@ -3,7 +3,7 @@ title: "El peor estudiante que terminó siendo docente"
 date: "2025-05-31T05:35:07.322Z"
 tags: "historia"
 excerpt: ""
-coverImage: "/assets/blog/variables/variablesSocialNetwork.jpeg"
+coverImage: "/assets/blog/hello-world/helloworld.jpg"
 author:
   name: Wilson Quispe
   picture: "/assets/blog/authors/profileWilson.jpg"

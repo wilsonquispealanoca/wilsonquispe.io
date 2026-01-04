@@ -30,15 +30,15 @@ function NavMobile({ open, onClose }) {
     <>  
       {/* Menú móvil */}
       <nav 
-        className={`fixed top-0 rigth-0 w-full bg-[#1d0543] overflow-hidden transition-[clip-path,height] duration-700 ease-in-out
-    ${open ? 'clip-circle-open h-screen z-20' : 'clip-circle-closed h-16 z-20'}
+        className={`fixed top-0 rigth-0 w-full bg-white overflow-hidden transition-[clip-path,height] duration-700 ease-in-out
+    ${open ? 'clip-circle-open h-screen z-120' : 'clip-circle-closed h-16 z-120'}
   `}
       >
         <div className="p-4 mt-20">
           {/* Contenido del navbar */}
           <ul className="space-y-8">
             {dataFooter.map(({ id, href, target, rel, text }) => (
-              <li key={id} className="text-white flex font-medium cursor-pointer ml-4 w-full">
+              <li key={id} className="text-primary-text flex font-medium cursor-pointer ml-4 w-full">
                 <Link href={href} passHref target={target} rel={rel}>
                   {text}
                 </Link>

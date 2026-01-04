@@ -4,12 +4,12 @@ title: "La historia de..."
 date: "2025-11-29T08:35:07.322Z"
 tags: "historia"
 excerpt: "Esta es una historia que no solo es mía, sino que también se trata de una gran amiga. Esta es la historia de ."
-coverImage: "/assets/blog/preview/preview.jpg"
+coverImage: "/assets/blog/historia-helen/cover.png"
 author:
   name: Wilson Quispe
   picture: "/assets/blog/authors/profileWilson.jpg"
 ogImage:
-  url: "/assets/blog/preview/preview.jpg"
+  url: "/assets/blog/historia-helen/cover.png"
 ---
 
 A finales del 2023, los médicos me dieron una sentencia. Un dolor severo en ambas manos me arrebató lo más básico: sostener un objeto. El futuro se volvió incertidumbre.
@@ -20,6 +20,7 @@ Fue entonces cuando mi hermana me habló de una carrera técnica cerca de casa. 
 
 El primer día, entre caras anónimas, el destino, en su extraña sabiduría, me presentó a las personas que me acompañarían durante meses. Pero hubo alguien en particular que iluminó todo. Esta historia la escribo también por ella, para honrarla. Ella fue una amiga que, sin proponérselo, me salvó.
 
-Debo admitir que al principio no me percaté de ella, de su mirada, de su presencia. Yo estaba enfocado en reconstruirme. Y sin embargo, mientras los días se convertían en semanas, escuchaba entre las paredes del salón de clases una voz, que decía: "¡Te admiro!".
+Debo admitir que al principio no me percaté de ella, de su mirada, de su presencia. **Yo estaba enfocado en reconstruirme**. Y sin embargo, mientras los días se convertían en semanas, escuchaba entre las paredes del salón de clases una voz, que decía: "¡Te admiro!".
 
-Esta es la historia de: ............................... (CONTINUARÁ)
+Esta es la historia de: ............................... 
+(CONTINUARÁ)

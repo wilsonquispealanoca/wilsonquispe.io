@@ -3,7 +3,7 @@ title: "Wilson"
 date: "1994-11-29T04:20:32.322Z"
 tags: "historia"
 excerpt: "La matemática puede ser un tema intimidante para muchas personas. Hay tantas operaciones y conceptos que puede ser difícil saber por dónde empezar. Pero si entiendes los fundamentos, todo lo demás se vuelve más fácil. En este artículo, vamos a explorar uno de los conceptos básicos de la matemática: la división.."
-coverImage: "/assets/blog/hello-word/helloword.jpe"
+coverImage: "/assets/blog/preview/preview.jpg"
 author:
   name: Wilson Quispe
   picture: "/assets/blog/authors/profileWilson.jpg"

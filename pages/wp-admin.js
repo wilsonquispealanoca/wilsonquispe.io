@@ -11,11 +11,11 @@ export default function Wpadmin() {
       <div className="inset-0 bg-black opacity-25 absolute"></div>
       <div className="container mx-auto px-6 md:px-12 relative z-10 flex items-center xl:py-32">
         <div className="w-full font-mono flex flex-col items-center relative z-10">
-          <h1 className="font-averia text-5xl text-center text-brand-beige lg:leading-tight">
+          <h1 className="font-outfitsemibold text-5xl text-center text-white lg:leading-tight">
             ¿Parece que andabas buscando algo aquí?
           </h1>
-          <div className="bg-black/70 mt-12 lg:mt-32 p-4 lg:p-20 rounded-md">
-            <p className="font-outfit text-xl text-brand-beige text-center mb-4 lg:mb-8">
+          <div className="bg-black/70 mt-12 lg:mt-32 p-4 lg:p-20 rounded-xl">
+            <p className="font-outfit text-xl text-white text-center mb-4 lg:mb-8">
               Te invito a que leas mi publicación donde menciono que tecnologias
               usé en mi blog.
             </p>
@@ -23,7 +23,7 @@ export default function Wpadmin() {
               href="https://wilsonquispe.vercel.app/posts/rebuilding-blog"
               className="flex items-center justify-center"
             >
-              <button className="btn-yellow">Quiero leer la publicación</button>
+              <button className="bg-btn-color text-white px-6 py-4 rounded-3xl">Quiero leer la publicación</button>
             </Link>
           </div>
         </div>

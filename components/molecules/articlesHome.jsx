@@ -6,7 +6,7 @@ function ArticlesHome({ posts }) {
       <h2 className="subtitles">
         Últimos artículos
       </h2>
-      <div className="mt-8 md:grid md:grid-flow-dense md:grid-cols-2 lg:grid-cols-3 md:gap-4 lg:gap-x-6">
+      <div className="mt-8 grid md:grid-flow-dense md:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-x-6">
         <ArticleItemHome
           key={posts[0].slug}
           title={posts[0].title}

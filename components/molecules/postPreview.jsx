@@ -14,14 +14,14 @@ export default function PostPreview({
 }) {
   return (
     <>
-      <li className="flex flex-col rounded-2xl bg-white">
+      <li className="flex flex-col">
         <Image
               src={coverImage}
               alt={`Cover Image for titles app`}
               width={1900}
               height={1200}
               sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-              className="object-cover rounded-xl cursor-pointer h-[160px]"
+              className="object-cover rounded-xl cursor-pointer h-auto"
             />
           <div className="py-4">
             <div className="uppercase text-xs text-secondary-text mb-2 font-outfitlight">

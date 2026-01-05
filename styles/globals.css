@@ -524,7 +524,7 @@ blockquote:before {
 
 .container {
   margin: 0 auto;
-  padding: 2rem 1.4rem;
+  padding: 3.6rem 1.4rem;
   display: flex;
   flex-direction: column;
   max-width: 120rem;

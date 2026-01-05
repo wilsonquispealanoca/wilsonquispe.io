@@ -4,8 +4,8 @@ function ArticleItemHome({ title, gradient, slug }) {
   return (
     <>
       <Link as={`/posts/${slug}`} href="/posts/[slug]">
-          <div className="flex flex-col justify-between p-4 rounded-3xl h-full border-2 mb-6">
-            <h3 className="leading-normal text-xl pb-3 text-primary-text font-outfitlight">
+          <div className="bg-white p-4 rounded-3xl border-2">
+            <h3 className="leading-normal text-xl text-purple-800 font-outfit">
               {title}
             </h3>
             <div className="flex items-center py-3">

@@ -4,11 +4,11 @@ function ContentHero() {
   const { t } = useTranslation();
 
   return (
-    <div className="my-8 lg:mb-14">
+    <div className="my-12 md:mt-24">
       <h1 className="title">
         {t("hello")}
       </h1>
-      <p className="font-outfitlight lg:w-[450px] text-center text-lg leading-snug break-words mt-4 lg:pr-12 text-quaternary-color-text">
+      <p className="font-outfitlight text-center text-lg leading-snug break-words mt-4 lg:pr-12 text-quaternary-color-text">
         {t("description")}
       </p>
     </div>

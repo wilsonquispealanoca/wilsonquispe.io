@@ -29,7 +29,7 @@ export default function Post({ post }) {
           style={{
             transform: `translateX(${completion - 100}%)`,
           }}
-          className={`z-50 fixed top-0 w-full transition-transform duration-150 h-1 bg-accent`}
+          className={`z-[100] fixed top-0 w-full transition-transform duration-150 h-2 bg-btn-color`}
         />
         {router.isFallback ? (
           <PostTitle>Loading…</PostTitle>
@@ -64,7 +64,7 @@ export default function Post({ post }) {
                   </button>
                 </Link>
               )}
-              <div className="max-w-2xl mx-8 md:mx-32 lg:mx-56 xl:mx-80 flex justify-center mt-10">
+              <div className="max-w-2xl mx-8 md:mx-32 lg:mx-56 xl:mx-80 flex justify-center my-10">
                 <ShareFacebook
                   url={`https://wilsonquispe.vercel.app/posts/${post.slug}/`}
                   title={post.title}

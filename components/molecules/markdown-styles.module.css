@@ -1,5 +1,5 @@
 .markdown {
-  @apply font-outfitlight leading-[1.68] text-secondary-text;
+  @apply font-outfitlight leading-[1.68] text-secondary-text text-lg;
 }
 
 .markdown em {

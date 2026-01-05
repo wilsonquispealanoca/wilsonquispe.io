@@ -19,11 +19,11 @@ function Navbar() {
         {/*<div className="overflow-x-auto">
           <LanguageSwitcher />
         </div>*/}
-        <div className="lg:hidden fixed top-0 h-14 w-full bg-white">
-          <div className="flex flex justify-end items-center px-4 py-2 gap-2">
+        <div className="lg:hidden fixed top-0 h-20 w-full bg-white">
+          <div className="flex flex justify-end items-center px-6 gap-4 h-full">
             <a href="#contacto" className="primary-button">Contacto</a>
             <button 
-              className="md:hidden text-2xl z-[110] text-primary-text"
+              className="md:hidden text-3xl z-[110] text-primary-text"
               onClick={() => setIsMenuOpen(!isMenuOpen)}
             >
               {isMenuOpen ? '✕' : '☰'}

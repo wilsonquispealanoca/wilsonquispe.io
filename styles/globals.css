@@ -527,6 +527,7 @@ blockquote:before {
   padding: 2rem 1.4rem;
   display: flex;
   flex-direction: column;
+  max-width: 120rem;
 }
 
 .containerAnswer {
@@ -713,7 +714,7 @@ blockquote:before {
 }
 
 .paragraph {
-  @apply lg:w-[450px] font-outfitlight text-xl leading-snug break-words mt-4 lg:pr-12 text-secondary-text;
+  @apply lg:w-[450px] font-outfitlight text-lg leading-snug break-words mt-4 text-secondary-text lg:w-full;
 }
 
 .two-images {
@@ -771,4 +772,11 @@ blockquote:before {
 
 .fit-picture {
   border-radius: .6rem;
+}
+
+.line-clamp-2 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;  
+  overflow: hidden;
 }

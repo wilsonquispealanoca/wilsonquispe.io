@@ -14,25 +14,26 @@ export default function PostPreview({
 }) {
   return (
     <>
-      <li className="flex flex-col border-[1px] rounded-2xl bg-white">
+      <li className="flex flex-col rounded-2xl bg-white">
         <Image
               src={coverImage}
               alt={`Cover Image for titles app`}
               width={1900}
               height={1200}
               sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-              className="object-cover rounded-t-2xl cursor-pointer h-[160px]"
+              className="object-cover rounded-xl cursor-pointer h-[160px]"
             />
-          <div className="p-6">
-            <Link as={`/posts/${slug}`} href="/posts/[slug]" className="text-xl font-outfitsemibold text-primary-text">
+          <div className="py-4">
+            <div className="uppercase text-xs text-secondary-text mb-2 font-outfitlight">
+              <DateFormatter dateString={date} />
+            </div>
+            <Link as={`/posts/${slug}`} href="/posts/[slug]" className="text-xl font-outfit leading-8 text-purple-800 hover:underline">
               {title}
               {newPost && (
                       <BadgeNewFunctionality />
                 )}
             </Link>
-            <div className="uppercase text-xs text-secondary-text mt-6 font-outfitlight">
-              <DateFormatter dateString={date} />
-            </div>
+            <p className="text-quaternary-color-text line-clamp-2 my-4">{excerpt}</p>
           </div>
       </li>
     </>

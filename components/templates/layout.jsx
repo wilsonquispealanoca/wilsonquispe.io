@@ -16,10 +16,10 @@ export default function Layout({ children }) {
       </div>
       <Footer />
       <div className="py-16 bg-[#0a0b10] text-tertiary-text px-6 font-outfit border-t-[1px] border-[#ffffff29]">
-        <p className="text-[1rem] md:text-lg md:px-32 lg:px-56 lg:pt-8 xl:px-80">
+        <p className="text-[1rem] md:text-lg md:px-32">
           Creado por Wilson Quispe Alanoca con 💙
         </p>
-        <p className="mt-6">
+        <p className="mt-6  md:px-32">
           © {date} Todos los derechos reservados.
         </p>
       </div>

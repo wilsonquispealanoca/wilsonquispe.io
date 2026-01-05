@@ -8,7 +8,7 @@ function ContentHero() {
       <h1 className="title">
         {t("hello")}
       </h1>
-      <p className="font-outfitlight lg:w-[450px] text-center text-base leading-snug break-words mt-4 lg:pr-12 text-secondary-text">
+      <p className="font-outfitlight lg:w-[450px] text-center text-lg leading-snug break-words mt-4 lg:pr-12 text-quaternary-color-text">
         {t("description")}
       </p>
     </div>

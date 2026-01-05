@@ -57,14 +57,14 @@ export default function Post({ post }) {
                 <Link
                   as={`/lessons/${post.unidad}`}
                   href="/lessons/[post.unidad]"
-                  className="max-w-2xl md:mx-32 lg:mx-56 xl:mx-80 pb-8"
+                  className="max-w-2xl md:mx-32 pb-8"
                 >
                   <button className="w-full my-6 rounded-2xl border-accent border-2 bg-[#123837] py-4 text-white text-xl">
                     Practicar y memorizar lección
                   </button>
                 </Link>
               )}
-              <div className="max-w-2xl mx-8 md:mx-32 lg:mx-56 xl:mx-80 flex justify-center my-10">
+              <div className="mx-8 md:mx-32 flex justify-center my-10">
                 <ShareFacebook
                   url={`https://wilsonquispe.vercel.app/posts/${post.slug}/`}
                   title={post.title}

@@ -11,17 +11,19 @@ function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   return (
     <>
-      <nav className="z-[100] w-full flex justify-center items-center pt-8 pb-8 lg:pt-16 lg:justify-between text-brand-beige text-xl font-semibold">
-        <div className="flex">
-          <Activelink href="/">{t("main")}</Activelink>
-          <Activelink href="/blog">Blog</Activelink>
+      <nav className="z-[100] fixed top-0 left-0 lg:px-32 h-14 bg-white w-full">
+        <div className="flex justify-center items-center lg:justify-between h-full">
+          <div className="flex">
+            <Activelink href="/">{t("main")}</Activelink>
+            <Activelink href="/blog">Blog</Activelink>
+          </div>
+          <a href="#contacto" className="primary-button">Contacto</a>
         </div>
         {/*<div className="overflow-x-auto">
           <LanguageSwitcher />
         </div>*/}
         <div className="lg:hidden fixed top-0 h-20 w-full bg-white">
           <div className="flex flex justify-end items-center px-6 gap-4 h-full">
-            <a href="#contacto" className="primary-button">Contacto</a>
             <button 
               className="md:hidden text-3xl z-[110] text-primary-text"
               onClick={() => setIsMenuOpen(!isMenuOpen)}

@@ -713,7 +713,7 @@ blockquote:before {
 }
 
 .paragraph {
-  @apply lg:w-[450px] font-outfitlight text-base leading-snug break-words mt-4 lg:pr-12 text-secondary-text;
+  @apply lg:w-[450px] font-outfitlight text-xl leading-snug break-words mt-4 lg:pr-12 text-secondary-text;
 }
 
 .two-images {

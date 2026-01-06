@@ -20,7 +20,7 @@ Fue entonces cuando mi hermana me habló de una carrera técnica cerca de casa. 
 
 El primer día, entre caras anónimas, el destino, en su extraña sabiduría, me presentó a las personas que me acompañarían durante meses. Pero hubo alguien en particular que iluminó todo. Esta historia la escribo también por ella, para honrarla. Ella fue una amiga que, sin proponérselo, me salvó.
 
-Debo admitir que al principio no me percaté de ella, de su mirada, de su presencia. **Yo estaba enfocado en reconstruirme**. Y sin embargo, mientras los días se convertían en semanas, escuchaba entre las paredes del salón de clases una voz, que decía: "¡Te admiro!".
+Debo admitir que al principio no me percaté de ella, de su mirada, de su presencia. **Yo estaba enfocado en reconstruirme**. Y sin embargo, mientras los días se convertían en semanas, escuchaba entre las paredes del salón de clases una voz, que decía: **"¡Te admiro!"**.
 
 Esta es la historia de: ............................... 
 (CONTINUARÁ)

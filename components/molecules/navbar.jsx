@@ -24,6 +24,7 @@ function Navbar() {
         </div>*/}
         <div className="lg:hidden fixed top-0 h-20 w-full bg-white">
           <div className="flex flex justify-end items-center px-6 gap-4 h-full">
+            <a href="#contacto" className="primary-button">Contacto</a>
             <button 
               className="md:hidden text-3xl z-[110] text-primary-text"
               onClick={() => setIsMenuOpen(!isMenuOpen)}

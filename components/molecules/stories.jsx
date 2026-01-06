@@ -5,7 +5,7 @@ export default function Stories({ posts }) {
   return (
     <section>
       <Navbar />
-      <h1 className="title">
+      <h1 className="title mt-20">
         Mis historias
       </h1>
       <p className="paragraph text-center mb-20">

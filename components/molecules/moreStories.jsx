@@ -5,7 +5,7 @@ export default function MoreStories({ posts }) {
   return (
     <section>
       <Navbar />
-      <h1 className="title">
+      <h1 className="title mt-20">
         Todos los artículos
       </h1>
       <p className="paragraph text-center mb-20">

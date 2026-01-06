@@ -15,8 +15,8 @@ export default function Layout({ children }) {
         </div>
   
         {/* Imágenes de fondo (con z-0 para que no tapen el borde) */}
-        <img src="bottomDetail.svg" className="absolute top-0 left-0 z-0"/>
-        <img src="topDetail.svg" className="absolute bottom-0 left-0 z-0"/>
+        <img src="bottomDetail.png" className="absolute top-0 left-0 z-0"/>
+        <img src="topDetail.png" className="absolute bottom-0 left-0 z-0"/>
         
         {/* El Cuadrado con "Margen" real */}
         <div className="relative w-full h-96 bg-bg-soft-dark z-10 translate-x-1 translate-y-1 rounded-2xl text-white p-6 font-outfitsemibold">

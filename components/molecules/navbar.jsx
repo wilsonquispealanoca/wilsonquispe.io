@@ -34,7 +34,8 @@ function Navbar() {
           </div>
           
           <NavMobile 
-            open={isMenuOpen} 
+            open={isMenuOpen}
+            setopen={setIsMenuOpen} 
             onClose={() => setIsMenuOpen(false)} 
           />
         </div>

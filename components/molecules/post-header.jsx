@@ -13,7 +13,7 @@ export default function PostHeader({ title, date, author, excerpt }) {
               <Avatar name={author.name} picture={author.picture} />
               <span className="ml-3 lg:ml-4 mr-1">
                 Escrito por:
-                <span className="text-brand-beige underline ml-2">
+                <span className="text-brand-beige ml-2">
                   {author.name}
                 </span>
               </span>

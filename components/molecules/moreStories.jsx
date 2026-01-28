@@ -8,9 +8,6 @@ export default function MoreStories({ posts }) {
       <h1 className="title mt-20">
         Todos los artículos
       </h1>
-      <p className="paragraph text-center mb-20">
-        Me gusta escribir sobre cosas que estoy haciendo, aprendiendo o creando. Este <strong>blog</strong> explora mi mente y te muestra mi lado más creativo. Te invito a que me leas...
-      </p>
       <ul className="grid gap-8 md:grid-cols-3">
         {posts.map((post) => (
           <PostPreview

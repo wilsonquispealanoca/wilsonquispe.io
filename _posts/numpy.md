@@ -15,14 +15,14 @@ ogImage:
 
 NumPy es una librería de Python diseñada para trabajar con arreglos numéricos de forma rápida, eficiente y limpia.
 
-💡 Idea visual:
+## Idea visual:
 Piensa en NumPy como una calculadora matricial optimizada, mientras que las listas de Python son solo contenedores de datos.
 
 ## Importar NumPy
 ```python
 import numpy as np
 ```
-📌 Usamos np solo para escribir menos y leer mejor el código.
+Usamos **np** solo para escribir menos y leer mejor el código.
 
 ## Arrays vs Listas en Python
 ### Creación de un array básico de 1 dimensión (vector)

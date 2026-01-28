@@ -2,7 +2,7 @@ import ItemFooter from "../atoms/itemFooter";
 import Link from "next/link";
 
 
-function NavMobile({ open, onClose }) {
+function NavMobile({ open, onClose,setopen }) {
   const dataFooter = [
   {
     id: 0,
@@ -39,7 +39,7 @@ function NavMobile({ open, onClose }) {
           <ul className="space-y-8">
             {dataFooter.map(({ id, href, target, rel, text }) => (
               <li key={id} className="text-primary-text flex font-medium cursor-pointer ml-4 w-full">
-                <Link href={href} passHref target={target} rel={rel}>
+                <Link href={href} passHref target={target} rel={rel} className="w-full" onClick={() => setopen(false)}>
                   {text}
                 </Link>
               </li>

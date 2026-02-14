@@ -30,6 +30,7 @@ module.exports = {
         outfitsemibold: ["OutfitSemiBold", "sans-serif"],
         outfitlight: ["OutfitLight", "sans-serif"],
         letter: ["LetterForLearners"],
+        target2000: ["Target2000"],
       },
       spacing: {
         border: "4px",

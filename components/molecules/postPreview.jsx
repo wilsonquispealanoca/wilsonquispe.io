@@ -23,11 +23,11 @@ export default function PostPreview({
               sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
               className="object-cover rounded-xl cursor-pointer h-auto"
             />
-          <div className="py-4">
-            <div className="uppercase text-xs text-secondary-text mb-2 font-outfitlight">
+          <div className="py-4 text-center">
+            <div className="uppercase text-xs text-[#242424] mb-2 font-outfit">
               <DateFormatter dateString={date} />
             </div>
-            <Link as={`/posts/${slug}`} href="/posts/[slug]" className="text-xl font-outfit leading-8 text-purple-800 hover:underline">
+            <Link as={`/posts/${slug}`} href="/posts/[slug]" className="text-xl font-outfitsemibold leading-8 text-[#242424] hover:underline">
               {title}
               {newPost && (
                       <BadgeNewFunctionality />

@@ -11,7 +11,7 @@ function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   return (
     <>
-      <nav className="z-[100] fixed top-0 left-0 lg:px-32 h-14 bg-white w-full">
+      <nav className="z-[100] fixed top-0 left-0 lg:px-32 h-24 bg-[#242424] uppercase w-full">
         <div className="flex justify-center items-center lg:justify-between h-full">
           <div className="flex">
             <Activelink href="/">{t("main")}</Activelink>
@@ -22,11 +22,11 @@ function Navbar() {
         {/*<div className="overflow-x-auto">
           <LanguageSwitcher />
         </div>*/}
-        <div className="lg:hidden fixed top-0 h-20 w-full bg-white">
+        <div className="lg:hidden fixed top-0 h-24 w-full bg-[#242424]">
           <div className="flex flex justify-end items-center px-6 gap-4 h-full">
             <a href="#contacto" className="primary-button">Contacto</a>
             <button 
-              className="md:hidden text-3xl z-[110] text-primary-text"
+              className="md:hidden text-3xl z-[110] text-white"
               onClick={() => setIsMenuOpen(!isMenuOpen)}
             >
               {isMenuOpen ? '✕' : '☰'}

@@ -15,7 +15,7 @@ const Activelink = ({ href, children }) => {
       <a
         href={href}
         onClick={handleClick}
-        className="text-purple-800 font-outfitsemibold mr-8 hidden lg:block transition-all duration-200 hover:pb-2 hover:border-b-2 hover:border-purple-800"
+        className="text-white font-outfitsemibold mr-8 hidden lg:block transition-all duration-200 hover:pb-2 hover:border-b-2 hover:border-purple-800"
       >
         {children}
       </a>

@@ -4,7 +4,7 @@ export default function Layout({ children }) {
   var date = new Date().getFullYear();
   return (
     <>
-      <div className="font-outfit min-h-screen bg-background overflow-x-hidden">
+      <div className="font-outfit min-h-screen overflow-x-hidden">
         <main>{children}</main>
       </div>
       <div id="contacto" className="relative bg-[#0a0b10] h-full p-6 text-white text-center">

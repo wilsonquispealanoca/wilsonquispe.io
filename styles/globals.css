@@ -13,6 +13,18 @@
 /* Stop purging. */
 
 /* Your own custom utilities */
+
+.nav-custom {
+  background-color: transparent;
+  background-image: linear-gradient(180deg, #161616 40%, #00000000 100%);
+}
+
+.white-texture {
+  background-color: #e1d6c6;
+  background-image: url(/white-texture.jpg);
+  background-size: contain;
+  background-blend-mode: multiply;
+}
 .clip-circle-closed {
   clip-path: circle(0% at 40px 40px); /* desde el botón de menú */
   z-index: 100;
@@ -188,6 +200,12 @@
 @font-face {
   font-family: "LetterForLearners";
   src: url("../public/fonts/Letters-for-Learners.ttf");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Target2000";
+  src: url("../public/fonts/Target2000.ttf");
   font-display: swap;
 }
 
@@ -702,7 +720,7 @@ blockquote:before {
 }
 
 .title {
-  @apply font-outfitsemibold text-center break-words leading-snug text-5xl lg:text-6xl pb-6 text-transparent bg-clip-text bg-gradient-to-t from-[#6D54F4] via-[#30364F] to-[#1E2A63];
+  @apply font-target2000 uppercase tracking-tight text-center text-[#292524] lg:text-8xl text-5xl;
 }
 
 .subtitles {

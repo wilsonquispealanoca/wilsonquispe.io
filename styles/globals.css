@@ -20,10 +20,8 @@
 }
 
 .white-texture {
-  background-color: #e1d6c6;
   background-image: url(/white-texture.jpg);
   background-size: contain;
-  background-blend-mode: multiply;
 }
 .clip-circle-closed {
   clip-path: circle(0% at 40px 40px); /* desde el botón de menú */

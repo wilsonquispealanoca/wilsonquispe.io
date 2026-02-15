@@ -206,6 +206,11 @@
   src: url("../public/fonts/Target2000.ttf");
   font-display: swap;
 }
+@font-face {
+  font-family: "Rivetto";
+  src: url("../public/fonts/Rivetto.ttf");
+  font-display: swap;
+}
 
 pre:not(:first-child) {
   padding: 0.8rem 0 0.8rem 1rem;
@@ -718,7 +723,7 @@ blockquote:before {
 }
 
 .title {
-  @apply font-target2000 uppercase tracking-tight text-center text-[#292524] lg:text-8xl text-5xl;
+  @apply font-rivetto uppercase tracking-tight text-center text-[#292524] lg:text-8xl text-6xl;
 }
 
 .subtitles {

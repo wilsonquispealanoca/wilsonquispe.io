@@ -31,6 +31,7 @@ module.exports = {
         outfitlight: ["OutfitLight", "sans-serif"],
         letter: ["LetterForLearners"],
         target2000: ["Target2000"],
+        rivetto: ["Rivetto"],
       },
       spacing: {
         border: "4px",

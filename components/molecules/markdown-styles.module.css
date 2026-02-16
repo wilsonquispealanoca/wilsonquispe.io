@@ -3,7 +3,7 @@
 }
 
 .markdown em {
-  @apply bg-[#855bfb29] text-[#7132f5] rounded-xl px-3;
+  @apply bg-purple-soft text-white rounded-xl px-3 font-outfitsemibold;
 }
 
 .markdown strong {
@@ -40,7 +40,7 @@
 }
 
 .markdown blockquote > p {
-  @apply px-6 pt-2 pb-9 rounded-r-xl text-[#e8e6e3b3] z-10;
+  @apply px-6 pt-2 pb-9 rounded-r-xl text-grayw z-10;
 }
 
 .markdown table {

@@ -13,11 +13,11 @@ ogImage:
 
 Si los datos son una jungla, pandas es tu machete. Si es un novato o simplemente necesita un repaso, este blog es su mapa de bolsillo para trabajar con pandas en Python. Sin jerga. Sin palabrería. Sólo hablar de verdad.
 
-## 🧠 ¿Qué es pandas?
+## ¿Qué es pandas?
 
 Pandas es una librería de Python que te ayuda a trabajar con tablas de datos - como Excel, pero sobrealimentado. Hace que sea fácil de limpiar, analizar y remodelar los datos, todo en código. 
 
-## ⚙️ Introducción
+## Introducción
 
 Instala pandas:
 
@@ -39,7 +39,7 @@ La mayoría de la gente utiliza **pd** como atajo, y también debería hacerlo.
 
 **DataFrame:** Tabla con filas y columnas (como una hoja de cálculo)
 
-## 🛠️ Creación de un DataFrame
+## Creación de un DataFrame
 
 A partir de un diccionario:
 
@@ -69,7 +69,7 @@ df.to_csv('nuevo_archivo.csv', index=False)
 
 También puede leer Excel, JSON, y más.
 
-## 👀 Cómo ver los datos
+## Cómo ver los datos
 
 ```python
 df.head()      # Primeras 5 filas
@@ -111,7 +111,7 @@ df['EdadMasDiez'] = df['Edad'] + 10
 df = df.assign(Score=lambda x: x['Edad'] * 2)
 ```
 
-### ❌ Datos que faltan
+### Datos que faltan
 
 Eliminar filas con valores perdidos:
 
@@ -125,7 +125,7 @@ Rellenar los valores que faltan:
 df.fillna(0)
 ```
 
-### 🧮 Agrupación y agregación
+### Agrupación y agregación
 
 Agrupar por una columna y ejecutar algunas estadísticas:
 
@@ -139,7 +139,7 @@ También puedes usar:
 .agg(['sum', 'mean', 'count'])
 ```
 
-### 🔗 Fusionar y unir
+### Fusionar y unir
 
 Fusionar dos DataFrames:
 
@@ -153,7 +153,7 @@ Unir por índice:
 df1.join(df2, how='left')
 ```
 
-### 🔄 Dale forma a tus datos
+### Dale forma a tus datos
 
 Pivote:
 
@@ -167,7 +167,7 @@ Fundir (despivotar):
 df.melt(id_vars=['ID'], value_vars=['Literatura', 'Ciencia'])
 ```
 
-### ⏳ Trabajar con fechas
+### Trabajar con fechas
 
 Analizar fechas al leer CSV:
 
@@ -183,7 +183,7 @@ df.resample('M').mean()
 
 ¡Asegúrese de que su columna de fecha se establece como el índice primero!
 
-### 🎯 Pro Tips
+### Pro Tips
 
 Use **copy()** cuando rebane si va a editar.
 
@@ -191,6 +191,6 @@ Evita los bucles **for**, usa operaciones vectorizadas en su lugar.
 
 **df.apply()** es genial, pero úsalo con prudencia; puede ser lento.
 
-### 🏁 Palabras finales
+### Palabras finales
 
 No necesitas memorizarlo todo. Guarda esto en tus favoritos. Vuelve cuando estés atascado. Pandas no es difícil, sólo da miedo al principio. Pero una vez que lo domesticas, no hay vuelta atrás.

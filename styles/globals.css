@@ -137,14 +137,13 @@
 }
 
 .blockquote-purple {
-  background: #1E263E;
-  border-left: 8px solid #6a50f3;
+  background: #484a8c;
+  border-left: 8px solid #7275de;
   color: #ddd !important;
   margin: 0;
   padding: 20px 40px 20px 15px;
   box-shadow: 2px 2px 8px #0003;
-  font-weight: 400;
-  border-radius: 1rem;
+  border-radius: .4rem;
 }
 
 .blockquote-purple > strong {
@@ -409,7 +408,7 @@ blockquote {
   display: flex;
   margin: 45px 0;
   justify-content: space-between;
-  border: 2px solid #c21aa5;
+  border: 2px solid #7275de;
   background-color: #181824;
   border-radius: 5px;
   box-shadow: 1px 1px 1px #0003;
@@ -719,11 +718,11 @@ blockquote:before {
 }
 
 .primary-button {
-  @apply bg-btn-color text-white px-4 py-2 rounded-full text-base font-outfitlight;
+  @apply bg-btn-color text-black px-4 py-2 rounded-full text-base font-outfitsemibold tracking-wider;
 }
 
 .title {
-  @apply font-rivetto uppercase tracking-tight text-center text-[#292524] lg:text-8xl text-6xl;
+  @apply font-rivetto uppercase leading-[2.9rem] text-center text-[#292524] lg:text-8xl text-6xl;
 }
 
 .subtitles {
@@ -749,7 +748,7 @@ blockquote:before {
 .card-picture {
   position: relative;
   background-color: white;
-  width: 80%;
+  width: 100%;
   max-width: 350px;
   padding: .4rem;
   box-shadow: 0 50px 50px #00000021,0 2px 6px #0000001f;

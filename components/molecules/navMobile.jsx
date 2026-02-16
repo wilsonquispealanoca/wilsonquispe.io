@@ -31,7 +31,7 @@ function NavMobile({ open, onClose,setopen }) {
       {/* Menú móvil */}
       <nav 
         className={`fixed top-0 rigth-0 w-full bg-[#242424] overflow-hidden transition-[clip-path,height] duration-700 ease-in-out
-    ${open ? 'clip-circle-open h-screen z-120' : 'clip-circle-closed h-16 z-120'}
+    ${open ? 'clip-circle-open h-screen z-120' : 'clip-circle-closed z-120'}
   `}
       >
         <div className="p-4 mt-20">

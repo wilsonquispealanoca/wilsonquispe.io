@@ -32,7 +32,7 @@ export default function StickyBookBanner() {
 	        	<p className="text-sm text-white">Bs. 50</p>
 	        </div>
 	        <div className="mt-2 flex gap-2 content-center">
-	          <a href="/Aymara -para-no-linguistas-MUESTRA.pdf" download className="text-xs text-center hover:underline rounded-3xl p-2 bg-[#ebe5fe] text-[#7132f5]">Descargar muestra</a>
+	          <a href="/Aymara -para-no-linguistas-MUESTRA.pdf" download className="text-xs text-center hover:underline rounded-3xl p-2 text-purple-hover">Descargar muestra</a>
 	          <button
 	          		onClick={() => setOpenModal(true)} 
 	          		className="text-xs text-white font-semibold bg-btn-color uppercase px-4 py-2 rounded-3xl hover:underline">Comprar</button>

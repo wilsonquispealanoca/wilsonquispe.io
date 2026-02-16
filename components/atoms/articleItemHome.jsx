@@ -4,11 +4,11 @@ function ArticleItemHome({ title, gradient, slug }) {
   return (
     <>
       <Link as={`/posts/${slug}`} href="/posts/[slug]">
-          <div className="bg-white p-4 rounded-3xl border-2">
-            <h3 className="leading-normal text-xl text-purple-800 font-outfit">
+          <div className="bg-white p-4 rounded-xl border-2">
+            <h3 className="leading-[1.1rem] text-xl text-black font-rivetto">
               {title}
             </h3>
-            <div className="flex items-center py-3">
+            <div className="flex items-center pt-3">
               <svg
                 className="fill-secondary-text"
                 width="24"

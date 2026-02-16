@@ -13,6 +13,73 @@
 /* Stop purging. */
 
 /* Your own custom utilities */
+:root {
+    --plant-color: #27ae60;
+  }
+.growth-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Segoe UI', Roboto, sans-serif;
+    text-align: center;
+  }
+
+  .plant-svg {
+    width: 180px;
+    height: 180px;
+    margin-bottom: 20px;
+  }
+
+  .draw-line {
+    fill: none;
+    stroke: var(--plant-color);
+    stroke-width: 3;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-dasharray: 200;
+    stroke-dashoffset: 200;
+    animation: growPath 5s ease-in-out infinite;
+  }
+
+  /* Tiempos de animación para simular crecimiento secuencial */
+  .soil { 
+    animation-delay: 0s; 
+    stroke-dasharray: 60; 
+    stroke-dashoffset: 60; 
+  }
+  
+  .stem { 
+    animation-delay: 0.5s; 
+    stroke-dasharray: 60; 
+    stroke-dashoffset: 60; 
+  }
+
+  .leaf-left { 
+    animation-delay: 1.5s; 
+    stroke-dasharray: 50; 
+    stroke-dashoffset: 50; 
+  }
+
+  .leaf-right { 
+    animation-delay: 2.2s; 
+    stroke-dasharray: 50; 
+    stroke-dashoffset: 50; 
+  }
+
+  .flower { 
+    animation-delay: 3s; 
+    stroke-dasharray: 60; 
+    stroke-dashoffset: 60; 
+  }
+
+  @keyframes growPath {
+    0% { stroke-dashoffset: 200; opacity: 0; }
+    10% { opacity: 1; }
+    40%, 80% { stroke-dashoffset: 0; opacity: 1; }
+    100% { stroke-dashoffset: 0; opacity: 0; }
+  }
+/**/
 
 .nav-custom {
   background-color: transparent;
@@ -726,15 +793,15 @@ blockquote:before {
 }
 
 .subtitles {
-  @apply text-4xl text-center my-12 text-primary-text font-outfitsemibold;
+  @apply font-rivetto text-center text-3xl my-16;
 }
 
 .sub-subtitles {
-  @apply text-3xl my-4 font-outfitlight font-semibold text-primary-text;
+  @apply my-4 font-outfitsemibold text-2xl text-primary-text;
 }
 
 .paragraph {
-  @apply lg:w-[450px] font-outfitlight text-lg leading-snug break-words mt-4 text-secondary-text lg:w-full;
+  @apply lg:w-[450px] font-outfitlight leading-snug break-words mt-4 text-secondary-text lg:w-full;
 }
 
 .two-images {

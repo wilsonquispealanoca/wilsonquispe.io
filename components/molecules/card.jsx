@@ -4,11 +4,11 @@ import Link from "next/link";
 function Card() {
   return (
     <section className="my-12">
-      <h2 className="subtitles">
+      <h2 className="font-rivetto text-center text-3xl mb-20">
         Mis proyectos
       </h2>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        <div className="border-[1px] bg-white p-3 rounded-3xl shadow-lg">
+        <div>
           <Link href="https://testcolor.vercel.app/">
             <Image
               src="/titlesApp.jpg"
@@ -30,7 +30,7 @@ function Card() {
             </div>
             </Link>
         </div>
-        <div className="border-[1px] bg-white p-3 rounded-3xl shadow-lg">
+        <div>
           <Link href="https://duolingo-store.vercel.app/">
             <Image
               src="/mockupDuolingoStore.png"
@@ -50,7 +50,7 @@ function Card() {
           </div>
           </Link>
         </div>
-        <div className="border-[1px] bg-white p-3 rounded-3xl shadow-lg">
+        <div>
           <Link href="https://aynistore.vercel.app/">
             <Image
               src="/mockupAyniStore.png"

@@ -4,7 +4,7 @@ import Link from "next/link";
 function Card() {
   return (
     <section>
-      <h2 className="font-rivetto text-center text-3xl lg:text-5xl mb-20">
+      <h2 className="font-rivetto text-5xl leading-10 lg:text-6xl text-center mb-20">
         Mis proyectos
       </h2>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">

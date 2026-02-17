@@ -27,6 +27,8 @@ module.exports = {
         "purple-soft": "#484a8c",
         "purple-hover": "#7275de",
         "grayw": "#ddd",
+        "orangew": "#ff7655",
+        "blackw": "#242424",
       },
       fontFamily: {
         outfit: ["Outfit", "sans-serif"],

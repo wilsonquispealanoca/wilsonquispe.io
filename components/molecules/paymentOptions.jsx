@@ -32,24 +32,24 @@ export default function PaymentOptions({ open, onClose }) {
   if (!open) return null;
 
   return (
-    <div className="fixed inset-0 bg-black/80 z-50 flex items-center justify-center">
-      <div className="bg-[#2c0e6c] p-6 rounded-xl max-w-sm w-full relative shadow-lg text-center text-white">
+    <div className="fixed inset-0 bg-black/80 z-[110] flex items-center justify-center">
+      <div className="bg-[#242424] px-6 rounded-xl max-w-sm w-full relative shadow-lg text-center text-white">
         {/* Botón cerrar */}
         <button
           onClick={onClose}
-          className="absolute text-lg top-4 right-4 text-gray-200 hover:text-gray-800"
+          className="absolute text-lg top-5 right-8 text-white font-bold"
         >
           ✕
         </button>
 
         {/* Contenido */}
-        <h2 className="text-lg font-bold mb-2">Paga con QR o Binance</h2>
+        <h2 className="font-rivetto text-2xl mb-2 mt-16">Paga con QR o Binance</h2>
         <img
           src="/qr-wilson.jpeg"
           alt="QR de pago"
-          className="w-40 h-40 mx-auto mb-4"
+          className="w-40 h-40 mx-auto mb- rounded-md"
         />
-        <p className="text-sm text-gray-400 mb-4">
+        <p className="text-sm text-grayw my-4">
           Después de pagar, por favor envíanos tu comprobante vía WhatsApp para confirmar tu compra.
         </p>
         <button onClick={handleClick} className="flex bg-yellow-400 hover:bg-yellow-500 text-black px-4 py-2 rounded-lg font-bold transition justify-center gap-2 w-full">

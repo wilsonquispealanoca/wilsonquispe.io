@@ -12,6 +12,10 @@
 @tailwind utilities;
 /* Stop purging. */
 
+.image-drop-shadown{
+  filter: drop-shadow(-1em .3em 20px rgba(0, 0, 0 ,0.5));
+}
+
 /* Your own custom utilities */
 :root {
     --plant-color: #27ae60;

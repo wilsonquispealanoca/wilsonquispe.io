@@ -20,7 +20,7 @@ function ContentHero() {
               width={1080}
               height={1080}
               sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-              className="rounded-2xl w-[16rem] lg:w-[22rem] -rotate-90 drop-shadow-2xl"
+              className="rounded-2xl w-[16rem] lg:w-[22rem] -rotate-90 image-drop-shadown"
             />
     </div>
   );

@@ -3,7 +3,7 @@ import ArticleItemHome from "../atoms/articleItemHome";
 function ArticlesHome({ posts }) {
   return (
     <section>
-      <h2 className="subtitles">
+      <h2 className="font-rivetto text-5xl leading-10 lg:text-6xl text-center my-20">
         Últimos artículos
       </h2>
       <div className="mt-8 grid md:grid-flow-dense md:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-x-6">

@@ -5,7 +5,7 @@ export default function MoreStories({ posts }) {
   return (
     <section>
       <Navbar />
-      <h1 className="title mt-28 mb-24">
+      <h1 className="font-rivetto text-5xl leading-10 lg:text-6xl text-center mt-28 mb-24">
         Todos los artículos
       </h1>
       <ul className="grid gap-8 md:grid-cols-3">

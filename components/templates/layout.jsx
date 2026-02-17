@@ -7,11 +7,11 @@ export default function Layout({ children }) {
       <div className="font-outfit min-h-screen overflow-x-hidden">
         <main>{children}</main>
       </div>
-      <div id="contacto" className="relative bg-[#0a0b10] h-full p-6 text-white text-center">
+      <div id="contacto" className="overflow-hidden relative bg-[#0a0b10] h-full p-6 text-white text-center">
 
         <div className="mt-24 mb-12">
-          <h3 className="font-rivetto text-4xl md:text-7xl mb-4 md:mb-6">Sé el primero en saber cuándo lancemos.</h3>
-          <span className="text-xl md:text-4xl text-graw">No te quedes atrás</span>
+          <h3 className="font-rivetto text-5xl leading-10 lg:text-6xl mb-4 md:mb-6">Sé el primero en saber cuándo lancemos.</h3>
+          <span className="text-xl md:text-2xl text-graw">No te quedes atrás</span>
         </div>
   
         {/* Imágenes de fondo (con z-0 para que no tapen el borde) */}
@@ -34,7 +34,7 @@ export default function Layout({ children }) {
               <circle class="draw-line flower" cx="50" cy="25" r="8" />
             </svg>
 
-            <div class="text-sm">
+            <div class="text-sm lg:text-xl">
               <h2>Sección en Crecimiento</h2>
               <p>Estamos cultivando algo nuevo para ti. El formulario estará listo pronto.</p>
             </div>

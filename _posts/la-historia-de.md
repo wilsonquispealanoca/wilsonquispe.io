@@ -12,20 +12,19 @@ ogImage:
   url: "/assets/blog/historia-helen/cover.png"
 ---
 
-A finales del 2023, los médicos me dieron una sentencia. Un dolor severo en ambas manos me arrebató lo más básico: **sostener un objeto**. El futuro se volvió incertidumbre.
+A finales de 2023, mi cuerpo me puso un límite. Un dolor severo en las manos me quitó lo más simple: la capacidad de sostener un objeto. Con las manos vacías, el futuro se me llenó de incertidumbre.
 
-Los médicos no pudieron resolver mi estado de salud, me derivaron a la especialidad de **Psiquiatría** _(Sí, ese lugar donde “dicen” que están los pacientes “locos”)_. Estuve siete meses visitando a mi doctora asignada, donde construimos una amistad. Y estando en esos pasillos comprendí lo que en verdad era una vida.
-Así que **busqué un propósito**, un motivo para levantarme. Pensé que tal vez reinventarme era algo necesario.
+Cuando la medicina física no halló respuestas, me derivaron a Psiquiatría. Al principio, uno carga con el estigma de ese pasillo, pero allí, entre consultas y esperas, encontré algo distinto: encontré humanidad. Mi doctora se volvió una amiga y yo empecé a entender qué significa realmente estar vivo. Necesitaba un motivo para levantarme, una excusa para no rendirme.
 
-Fue entonces cuando mi hermana me habló de una carrera técnica cerca de casa. Con el inicio del 2024, me matriculé en Contaduría General. Me aferré a la lógica fría de los números como a un salvavidas, esperando que los libros me dieran un refugio donde mi mente y mi cuerpo pudieran descansar. Escogí contaduría porque, al menos, era la carrera en la que podría sentirme cómodo, ya que se me daban bien los números **(hasta cierto punto).**
+Así llegué a la carrera de Contaduría. No fue por una gran vocación, sino por refugio. Me aferré a los números como a un salvavidas, esperando que la lógica fría me diera el descanso que mi mente y mi cuerpo pedían a gritos.
 
-El primer día, entre caras anónimas, el destino, en su extraña sabiduría, me presentó a las personas que me acompañarían durante meses. Pero hubo alguien en particular que iluminó todo. **Esta historia la escribo también por ella, para honrarla.** Ella fue una amiga que, sin proponérselo, **me salvó.**
+El primer día, entre tantos rostros extraños, el destino puso en mi camino a alguien que terminaría iluminándolo todo. Escribo esto por ella, para honrarla. Porque ella, sin saberlo y sin proponérselo, me salvó.
 
-Debo admitir que al principio no me percaté de ella, de su mirada, de su presencia. **Yo estaba enfocado en reconstruirme y mi mente siempre estaba divagando de un lugar a otro**. Sin embargo, mientras los días se convertían en semanas, escuchaba entre las paredes del salón de clases una voz, que decía: **"¡Te admiro!"**.
+Al principio, confieso que apenas la noté. Yo estaba demasiado ocupado tratando de reconstruir mis propios pedazos, siempre divagando, siempre ausente. Pero con el paso de las semanas, una voz empezó a cruzar las paredes del aula: "¡Te admiro!", decía. Era ella.
 
-Hay cuatro recuerdos que guardo, cuatro instantes que explican por qué fue tan importante.
+Guardo cuatro momentos como si fueran tesoros:
 
-**El primero,** fue cuando la vi por primera vez: ella caminando con una alegría que llenaba el espacio desde la distancia. La vi desde lejos. Ella se estaba acercando poco a poco al lugar donde yo estaba. LLegó, la miré de pies a cabeza y una de sus amigas que también era mi amiga me la presento, cuando por fin hablamos, hubo una chispa de complicidad instantánea. Y así fue como nuestra amistad comenzó. Ese día sentí algo genuino; parecía que ella y yo teníamos los mismos pensamientos, el mismo enfoque. Admiraba mucho su forma de pensar, su inteligencia; era una chica competitiva y le gustaba hacer las cosas bien.
+**El primero,** fue nuestro encuentro real. La vi acercarse con una alegría que parecía llenar todo el espacio. Cuando por fin nos presentaron, la conexión fue instantánea. Había una chispa, una forma similar de ver el mundo. Me asombró su inteligencia y esa chispa competitiva de quien quiere hacer las cosas bien.
 
 **El segundo recuerdo,** La carrera de contaduría solía realizar una expo feria a final del semestre para mostrar resultados. Yo había decidido participar junto a unas compañeras. Ese día pasó algo, mis compañeros no llegaban con los materiales y yo, sin celular, estaba incomunicado. Poco a poco llegaban los materiales; sin embargo, faltaba lo más importante: el data show. En la frustración, solo tuve que esperar. Esa noche ella vino. La miré de reojo; estaba muy ocupada, corriendo de aquí para allá. No le dije nada. Esa misma noche, después de exponer, ella se acercó y me dijo que me admiraba. Yo le devolví las palabras y así estuvimos "discutiendo" quién admiraba más a quién.
 
@@ -34,14 +33,12 @@ Cuando vi que se había preocupado, me sentí feliz y la admiré mucho más.
 
 **La tercera memoria.** Yo solía salir a pensar fuera del aula en los descansos que teníamos en algunas asignaturas, buscando alivio y calma para mi ansiedad. **Siempre solía estar solo.** Hasta que un día, la puerta se abrió y apareció ella. "¡Oh, Wilson!", dijo. En ese momento conversamos y me confesó su sueño: estudiar Medicina. Con un gesto, sacó de su mochila, no libros, sino montones de tarjetas hechas a mano. "¿Qué es esto, un mazo de cartas de amor?", **bromeé.** Eran, por supuesto, fichas de estudio. Y entonces, tarjeta por tarjeta, me contó algún dato curioso del cuerpo humano, de alguna fórmula química, de la forma gramatical correcta de escribir algo. **Era muy inteligente…**
 
-**(Recuerdo que una vez ella se sentó a mi lado, me pidió mi cuaderno de apuntes, los admiró y me preguntó: "¿Wilson, puedo corregirte?". Le dije que podría rayar todo lo que gustara, y así fue. Ella estuvo minutos hojeando y escribiendo en mi cuaderno de notas. Terminó el día, llegué a casa y vi las correcciones que ella había hecho.)**
-
-_De alguna forma me sentí feliz, y decidí guardar ese recuerdo con las correcciones que ella realizó._
+_Una vez, incluso, me pidió mi cuaderno y se puso a corregir mis apuntes con una dedicación que me conmovió. Aún guardo esas páginas rayadas por ella; son el rastro de su paso por mi vida._
 
 Continuando el recuerdo, después de que ella me había mostrado sus tarjetas, me habló de la carrera de medicina. Me contó todo lo que estaba pasando entre estudiar contaduría y prepararse para ingresar a medicina. Y por primera vez entendí con claridad que Contaduría era sólo otra forma de ver su mundo, ya que el mundo en donde ella quería estar era en la medicina.
 Terminó el tiempo de descanso, le dije adiós. Sin embargo, yo quería seguir, nuestra conversación fue genuina.
 
-**El cuarto recuerdo.** Ella dejó de venir a clases; seguramente decidió perseguir su sueño, me dije. El lugar donde ella solía sentarse estaba vacío. Ya no la vi más. Quería preguntarle cómo le estaba yendo en su preparación, pero me contuve; no quería ocupar un espacio más en su mente, no era justo. Y seguí adelante.
+**El cuarto recuerdo.** es el del silencio. Ella dejó de venir a clases; seguramente decidió perseguir su sueño, me dije. El lugar donde ella solía sentarse estaba vacío. Ya no la vi más. Quería preguntarle cómo le estaba yendo en su preparación, pero me contuve; no quería ocupar un espacio más en su mente, no era justo. Y seguí adelante.
 
 Soy una persona que escucha la palabra de Dios; NO TENGO UNA RELIGIÓN **(NO ME GUSTAN SUS REGLAS),** Me considero más una persona espiritual. Un 27 de noviembre, en la iglesia donde asisto, juré ver su perfil entre los feligreses. Me sorprendí. Sin embargo, al final, no era ella, pero la coincidencia me estremeció como un presagio. Ese mismo día supe la noticia: **había reprobado el examen.**
 
@@ -55,8 +52,7 @@ Llegó la despedida. Nos detuvimos en una esquina, bajo la luz de un faro. La mi
 
 <p class="blockquote-purple">"Gracias, <strong>Helen</strong>. Gracias por venir, por llegar a tiempo, por venir a mi rescate cuando ni siquiera sabías que lo hacías. Eres muy inteligente y tenaz. Lo vas a lograr.", <strong>Hasta siempre</strong></p>
 
-Di media vuelta y me fui, sin mirar atrás. 
-**Desde ese día, no la he vuelto a ver, ni a escribirle.**
+**Me di la vuelta y me fui. No la he vuelto a ver, ni le he vuelto a escribir.**
 
 Esta es la historia de Helen, la amiga que fue un faro en mi tormenta, y a quien admiro con la convicción quieta y eterna de quien ha sido testigo de una luz demasiado brillante como para olvidarla.
 

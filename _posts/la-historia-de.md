@@ -16,15 +16,15 @@ A finales de 2023, mi cuerpo me puso un límite. Un dolor severo en las manos me
 
 Cuando la medicina física no halló respuestas, me derivaron a Psiquiatría. Al principio, uno carga con el estigma de ese pasillo, pero allí, entre consultas y esperas, encontré algo distinto: encontré humanidad. Mi doctora se volvió una amiga y yo empecé a entender qué significa realmente estar vivo. Necesitaba un motivo para levantarme, una excusa para no rendirme.
 
-Así llegué a la carrera de Contaduría. No fue por una gran vocación, sino por refugio. Me aferré a los números como a un salvavidas, esperando que la lógica fría me diera el descanso que mi mente y mi cuerpo pedían a gritos.
+Fue entonces cuando mi hermana me habló de una carrera técnica cerca de casa. Con el inicio del 2024, me matriculé en Contaduría General. Me aferré a la lógica fría de los números como a un salvavidas, esperando que los libros me dieran un refugio donde mi mente y mi cuerpo pudieran descansar. Escogí contaduría porque, al menos, era la carrera en la que podría sentirme cómodo, ya que se me daban bien los números **(hasta cierto punto).**
 
 El primer día, entre tantos rostros extraños, el destino puso en mi camino a alguien que terminaría iluminándolo todo. Escribo esto por ella, para honrarla. Porque ella, sin saberlo y sin proponérselo, me salvó.
 
-Al principio, confieso que apenas la noté. Yo estaba demasiado ocupado tratando de reconstruir mis propios pedazos, siempre divagando, siempre ausente. Pero con el paso de las semanas, una voz empezó a cruzar las paredes del aula: "¡Te admiro!", decía. Era ella.
+Al principio, confieso que apenas la noté. **Yo estaba demasiado ocupado tratando de reconstruir mis propios pedazos, siempre divagando, siempre ausente.** Pero con el paso de las semanas, una voz empezó a cruzar las paredes del aula: **¡Te admiro!, decía. Era ella.**
 
 Guardo cuatro momentos como si fueran tesoros:
 
-**El primero,** fue nuestro encuentro real. La vi acercarse con una alegría que parecía llenar todo el espacio. Cuando por fin nos presentaron, la conexión fue instantánea. Había una chispa, una forma similar de ver el mundo. Me asombró su inteligencia y esa chispa competitiva de quien quiere hacer las cosas bien.
+**El primero,** fue cuando la vi por primera vez: ella estaba subiendo las gradas de la institución. No solo caminaba; estaba bailando o intentando bailar junto a sus amigas, con una alegría que llenaba el espacio desde la distancia. En unos minutos llegó donde yo estaba, por fin la vi de cerca. La miré de pies a cabeza y, cuando por fin hablamos, hubo una chispa de complicidad instantánea. Y así fue como nuestra amistad comenzó. Ese día sentí algo genuino; parecía que ella y yo teníamos los mismos pensamientos, el mismo enfoque. Admiraba mucho su forma de pensar, su inteligencia; era una chica competitiva y le gustaba hacer las cosas bien.
 
 **El segundo recuerdo,** La carrera de contaduría solía realizar una expo feria a final del semestre para mostrar resultados. Yo había decidido participar junto a unas compañeras. Ese día pasó algo, mis compañeros no llegaban con los materiales y yo, sin celular, estaba incomunicado. Poco a poco llegaban los materiales; sin embargo, faltaba lo más importante: el data show. En la frustración, solo tuve que esperar. Esa noche ella vino. La miré de reojo; estaba muy ocupada, corriendo de aquí para allá. No le dije nada. Esa misma noche, después de exponer, ella se acercó y me dijo que me admiraba. Yo le devolví las palabras y así estuvimos "discutiendo" quién admiraba más a quién.
 

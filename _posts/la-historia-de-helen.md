@@ -1,6 +1,6 @@
 ---
 newPost: true
-title: "La historia de..."
+title: "La historia de Helen"
 date: "2025-11-29T08:35:07.322Z"
 tags: "historia"
 excerpt: "A finales del 2023, los médicos me dieron una sentencia. Un dolor severo en ambas manos me arrebató lo más básico: sostener un objeto. El futuro se volvió incertidumbre."
@@ -26,12 +26,12 @@ Guardo cuatro momentos como si fueran tesoros:
 
 **El primero,** fue cuando la vi por primera vez: ella estaba subiendo las gradas de la institución. No solo caminaba; estaba bailando o intentando bailar junto a sus amigas, con una alegría que llenaba el espacio desde la distancia. En unos minutos llegó donde yo estaba, por fin la vi de cerca. La miré de pies a cabeza y, cuando por fin hablamos, hubo una chispa de complicidad instantánea. Y así fue como nuestra amistad comenzó. Ese día sentí algo genuino; parecía que ella y yo teníamos los mismos pensamientos, el mismo enfoque. Admiraba mucho su forma de pensar, su inteligencia; era una chica competitiva y le gustaba hacer las cosas bien.
 
-**El segundo recuerdo,** La carrera de contaduría solía realizar una expo feria a final del semestre para mostrar resultados. Yo había decidido participar junto a unas compañeras. Ese día pasó algo, mis compañeros no llegaban con los materiales y yo, sin celular, estaba incomunicado. Poco a poco llegaban los materiales; sin embargo, faltaba lo más importante: el data show. En la frustración, solo tuve que esperar. Esa noche ella vino. La miré de reojo; estaba muy ocupada, corriendo de aquí para allá. No le dije nada. Esa misma noche, después de exponer, ella se acercó y me dijo que me admiraba. Yo le devolví las palabras y así estuvimos "discutiendo" quién admiraba más a quién.
+**El segundo recuerdo,** La carrera de contaduría solía realizar una expo feria a final del semestre para mostrar resultados. Yo había decidido participar junto a unas compañeras. Ese día pasó algo, mis compañeros no llegaban con los materiales y yo, sin celular, estaba incomunicado. Poco a poco llegaban los materiales; sin embargo, faltaba lo más importante: el data show. En la frustración, solo tuve que esperar. Esa noche ella vino. La miré de reojo; estaba muy ocupada, corriendo de aquí para allá. No le dije nada. Esa misma noche, después de exponer, ella se acercó y me dijo que me admiraba. Yo le devolví las palabras y así estuvimos **"discutiendo"** quién admiraba más a quién.
 
 Más noche, leyendo los mensajes del grupo de whatsapp que teníamos, me di cuenta que ella había estado preguntando, reclamando por los materiales, por el data show. 
 Cuando vi que se había preocupado, me sentí feliz y la admiré mucho más.
 
-**La tercera memoria.** Yo solía salir a pensar fuera del aula en los descansos que teníamos en algunas asignaturas, buscando alivio y calma para mi ansiedad. **Siempre solía estar solo.** Hasta que un día, la puerta se abrió y apareció ella. "¡Oh, Wilson!", dijo. En ese momento conversamos y me confesó su sueño: estudiar Medicina. Con un gesto, sacó de su mochila, no libros, sino montones de tarjetas hechas a mano. "¿Qué es esto, un mazo de cartas de amor?", **bromeé.** Eran, por supuesto, fichas de estudio. Y entonces, tarjeta por tarjeta, me contó algún dato curioso del cuerpo humano, de alguna fórmula química, de la forma gramatical correcta de escribir algo. **Era muy inteligente…**
+**La tercera memoria.** Yo solía salir a pensar fuera del aula en los descansos que teníamos en algunas asignaturas, buscando alivio, paz y calma. **Siempre solía estar solo.** Hasta que un día, la puerta se abrió y apareció ella. "¡Oh, Wilson!", dijo. En ese momento conversamos y me confesó su sueño: estudiar Medicina. Con un gesto, sacó de su mochila, no libros, sino montones de tarjetas hechas a mano. "¿Qué es esto, un mazo de cartas de amor?", **bromeé.** Eran, por supuesto, fichas de estudio. Y entonces, tarjeta por tarjeta, me contó algún dato curioso del cuerpo humano, de alguna fórmula química, de la forma gramatical correcta de escribir algo. **Era muy inteligente…**
 
 _Una vez, incluso, me pidió mi cuaderno y se puso a corregir mis apuntes con una dedicación que me conmovió. Aún guardo esas páginas rayadas por ella; son el rastro de su paso por mi vida._
 

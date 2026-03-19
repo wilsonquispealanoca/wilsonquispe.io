@@ -34,7 +34,7 @@ De ninguna manera me hubieras molestado, ¡no te preocupes! Aunque como ya escri
 
 Leer su carta me alivió. Le dije que no se preocupará por desaparecer. Que aquí iba a estar.
 En una de nuestras cartas, Julia me dio su perfil de Twitter y me dijo que si se perdía otra vez le escribierá por ahi. Ingrese por curiosidad a ver si ella tenía una foto real ya que en **SLOWLY** no se puede subir fotos reales al perfil, solo permite crear un avatar. **Asi que por fin vi una foto de ella.**
-Y cuando la vi, Pensé: “Dios… es preciosa. Tal vez demasiado para mí.”
+Y cuando la vi, Pensé: **“Dios… es preciosa. Tal vez demasiado para mí.”**
 
 Aun así, nunca le escribí por Twitter.
 Le dije que prefería seguir hablando por cartas, y ella también quería lo mismo.

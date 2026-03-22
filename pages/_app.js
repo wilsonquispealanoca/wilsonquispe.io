@@ -12,7 +12,7 @@ import enTranslation from "../public/locales/en.json";
 import esTranslation from "../public/locales/es.json";
 import ayTranslation from "../public/locales/ay.json";
 
-/*i18n.use(LanguageDetector).init({
+i18n.use(LanguageDetector).init({
   resources: {
     en: {
       translation: enTranslation,
@@ -29,7 +29,7 @@ import ayTranslation from "../public/locales/ay.json";
   interpolation: {
     escapeValue: false, // No es necesario escapar los valores en React
   },
-});*/
+});
 
 function MyApp({ Component, pageProps }) {
   return (

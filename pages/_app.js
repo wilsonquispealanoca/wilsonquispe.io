@@ -35,20 +35,22 @@ function MyApp({ Component, pageProps }) {
   return (
     <>
       {/* Microsoft Clarity */}
-      <Script type="text/javascript">
+      <Script id="clarity-script" strategy="afterInteractive">
+        {`
           (function(c,l,a,r,i,t,y){
               c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
               t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
               y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
           })(window, document, "clarity", "script", "gu3w4acz8x");
+        `}
       </Script>
       {/* Google analitycs */}
       <Script
         id="google"
-        strategy="lazyOnload"
+        strategy="afterInteractive"
         src={`https://www.googletagmanager.com/gtag/js?id=G-2K2TY0B4Y1`}
       />
-      <Script id="google-analitycs" strategy="lazyOnload">
+      <Script id="google-analitycs" strategy="afterInteractive">
         {`
                     window.dataLayer = window.dataLayer || [];
                     function gtag(){dataLayer.push(arguments);}

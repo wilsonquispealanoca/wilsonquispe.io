@@ -49,7 +49,7 @@ Me escribió contándome algo que me marcó mucho:
 
 <p class="blockquote-purple">Wil, perdóname por perderme otra vez y ser una mala amiga. No era mi intención. Quiero contarte algo: he estado visitando al psiquiatra por temas de salud que ultimamente me están pasando. <strong>Me diagnosticaron TDAH y ansiedad</strong>. Por eso estuve tan ausente. A veces el TDAH me hace olvidar cosas, incluso despertarme.</p>
 
-Fue dificil leer eso, no sabía eso que Julia tenía episodios de ansiedad y fue la primera vez que escuche TDAH, pero al mismo tiempo, también me hizo entender muchas cosas.
+Fue dificil leer eso, no sabía que Julia tenía episodios de ansiedad y fue la primera vez que escuche TDAH, pero al mismo tiempo, también me hizo entender muchas cosas.
 Respondi la carta de Julia, le dije que estaba bien, que podía desaparecer cuando quisiera. Que aquí iba a estar.
 
 Seguimos un tiempo más con nuestras cartas. Pero yo sabía que tarde o temprano, volvería a irse.
@@ -61,7 +61,7 @@ Me sentí feliz. Estaba bien. Y eso era suficiente.
 
 Hablamos por ahí unos meses.
 Pero ya sabía cómo terminaba esta historia.
-Así que decidí que era momento de despedirme (aunque nunca se lo dije).
+Así que decidí que era momento de despedirme **(aunque nunca se lo dije).**
 Antes de hacerlo, preparé algo especial para su cumpleaños. Aprendí lo básico de alemán y le hice unos regalos digitales. Uno de ellos era una imagen de una planta floreciendo con su nombre.
 
 <div style="margin: 2rem 0;">
@@ -87,7 +87,7 @@ Le entregué los regalos… Ella tardó meses en responder. y su último mensaje
 
 **Julia hizo INFINITOS detalles por mí (No te los conté, porque la historía se haría muy larga), esos detalles fueron especiales y es la razón por la que decido escribir esta historia, de alguna forma quisiera honrar su memoria, sus mensajes...** 
 
-Algo que también no quisiera guardar en mi corazón es el hecho de que Julia fue alguién muy importante para mí y sin darme cuenta sentí algo más que amistad y para finalizar nuestra historia, antes de que vuelva a irse decidí decirle lo que sentía.
+Algo que también no quisiera guardar en mi corazón es el hecho de que Julia fue alguién muy importante para mí y sin darme cuenta sentí algo más que amistad y antes de que vuelva a irse decidí decirle lo que sentía.
 Le escribí, no quería irme pensando en lo que hubiera pasado si no le decía la verdad. Y aunque **sabía que probablemente me diría que NO**, lo hice.
 
 Le mandé el mensaje… y Julia dejo de responder.

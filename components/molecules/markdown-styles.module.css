@@ -44,21 +44,33 @@
 }
 
 .markdown table {
-  @apply min-w-full text-left text-base font-light text-white;
+  /* min-w-full mantiene la tabla responsiva; cambiamos text-white por un gris casi negro (#1f2937) para fondo claro */
+  @apply min-w-full text-left text-base font-normal text-gray-800;
+  /* Opcional: un fondo blanco translúcido para que la tabla flote sobre la textura de hoja sin taparla por completo */
+  background-color: rgba(255, 255, 255, 0.7);
+  @apply backdrop-blur-sm rounded-lg overflow-hidden;
 }
 
 .markdown thead {
-  @apply font-medium bg-[#0f0f17] text-primary-text;
+  /* Aplicamos el azul oscuro en el fondo del encabezado y texto claro para alto contraste */
+  @apply font-semibold bg-[#0f172a] text-white; 
 }
 
 .markdown th {
-  @apply px-6 py-4;
+  @apply px-6 py-4 tracking-wider;
 }
 
 .markdown tr {
-  @apply border-b border-[#303044];
+  /* Cambiamos el borde oscuro por un borde suave y cálido que delimita las filas sobre fondo claro */
+  @apply border-b border-gray-200 transition-colors duration-200;
+}
+
+/* Opcional: Efecto cebra muy sutil para mejorar la lectura sobre fondos con textura */
+.markdown tr:nth-child(even) {
+  background-color: rgba(0, 0, 0, 0.02);
 }
 
 .markdown td {
-  @apply whitespace-nowrap px-6 py-4 font-medium;
+  /* text-gray-700 mantiene un tono elegante y menos agresivo que el negro puro */
+  @apply whitespace-nowrap px-6 py-4 font-normal text-gray-700;
 }

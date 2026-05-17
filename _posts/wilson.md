@@ -2,7 +2,7 @@
 title: "Wilson"
 date: "1994-11-29T04:20:32.322Z"
 tags: "historia"
-excerpt: "La matemática puede ser un tema intimidante para muchas personas. Hay tantas operaciones y conceptos que puede ser difícil saber por dónde empezar. Pero si entiendes los fundamentos, todo lo demás se vuelve más fácil. En este artículo, vamos a explorar uno de los conceptos básicos de la matemática: la división.."
+excerpt: "¿Por qué Wilson? Quizá porque, al igual que aquella famosa pelota abandonada en la playa de Náufrago, he rodado por mil costas distintas sin terminar de echar raíces en ninguna."
 coverImage: "/assets/blog/preview/preview.jpg"
 author:
   name: Wilson Quispe
@@ -11,32 +11,26 @@ ogImage:
   url: "/assets/blog/hello-word/helloword.jpe"
 ---
 
-¿Por qué "Wilson"?
+## ¿Por qué "Wilson"?
 
-Porque soy como esa pelota abandonada en la playa de Náufrago: he rodado por mil lugares, pero nunca terminé de pertenecer a ninguno.
+Quizá porque, al igual que aquella famosa pelota abandonada en la playa de Náufrago, he rodado por mil costas distintas sin terminar de echar raíces en ninguna.
 
-Mi vida ha sido una búsqueda constante—no de éxito, sino de sentido. Y cuando no lo encontré en un solo sitio, lo busqué en todos, incluso en los que no se ven:
+Mi camino nunca ha sido una línea recta hacia el éxito tradicional, sino una búsqueda constante de sentido. Cuando el mundo pareció quedarse pequeño en un solo lugar, decidí buscar respuestas en todas partes, saltando entre realidades que a simple vista parecen irreconciliables:
 
-- Programación ("Tal vez el sentido esté en el código").
+- **El código:** Refugiándome en la lógica de la programación, intentando estructurar el caos a través de líneas de comandos.
 
-- Idiomas (inglés, alemán, portugués, aymara... como si las palabras pudieran traducir mi confusión).
+- **La palabra:** Estudiando idiomas (inglés, alemán, portugués, aymara...) como si en la fonética de otra cultura estuviera la traducción exacta de lo que siento.
 
-- Arte (2D, 3D, dibujo y escultura—porque a veces el alma se expresa mejor en sombras y líneas).
+- **La materia:** Explorando el arte en 2D, 3D, el dibujo y la escultura, buscando en las sombras y el volumen lo que las palabras no alcanzan a decir.
 
-- Contabilidad ("¿Y si el orden numérico es la clave?").
+- **El orden:** Sumergiéndome en la contabilidad, persiguiendo la promesa de que los números, al menos ellos, siempre tienen que cuadrar.
 
-Pero cuando ni eso funcionó, me refugié en las estrellas, en los tipos de personalidad, en la espiritualidad, en "Dios", en lo que no podía tocar:
+Cuando las respuestas terrenales no fueron suficientes, levanté la mirada hacia lo intangible. Me sumergí en la astrología (descifrando el Medio Cielo y el Ascendente), interrogué al MBTI entre la extroversión y la introversión, y busqué mi propósito en los arcanos de la Matriz del Destino.
 
-- Astrología (mi carta natal, el Medio Cielo, el Ascendente...).
+Mi biblioteca es el reflejo de esta búsqueda: manuales de código sepultados bajo bocetos de arte, conviviendo con balances financieros y diagramas astrológicos. Un aparente desorden donde, sin embargo, habita una misma intención.
 
-- MBTI ("¿Soy INFP o ENFP?").
+No pretendo ser un experto en nada. Soy, simplemente, un coleccionista de perspectivas; alguien que descubrió que cada disciplina, cada idioma y cada habilidad es un salvavidas diferente.
 
-- La Matriz del Destino ("Quizá mi propósito esté cifrado en números y arcanos").
-
-**Mi biblioteca es un testimonio de esa desesperación sagrada:** manuales de programación sepultados bajo libros de arte junto a diagramas de la Matriz del Destino y guías de contabilidad que juré dominar. **Nada está en su lugar. Como yo.**
-
-No soy un experto en nada. Solo soy alguien que aprendió a sobrevivir coleccionando pedazos de sabiduría, como si cada libro, cada habilidad, fuera un salvavidas.
-
-Esta es la historia de cómo casi me ahogo… y de lo que encontré bajo el agua.
+Esta es mi historia...
 
 **(Continuará).**

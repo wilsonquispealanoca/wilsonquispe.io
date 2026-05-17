@@ -20,9 +20,9 @@ Fue entonces cuando mi hermana me habló de una carrera técnica cerca de casa. 
 
 El primer día, entre tantos rostros extraños, el destino puso en mi camino a alguien que terminaría iluminándolo todo. Escribo esto por ella, para honrarla. Porque ella, sin saberlo y sin proponérselo, me salvó.
 
-Al principio, confieso que apenas la noté. **Yo estaba demasiado ocupado tratando de reconstruir mis propios pedazos, siempre divagando, siempre ausente.** Pero con el paso de las semanas, una voz empezó a cruzar las paredes del aula: **¡Te admiro!, decía. Era ella.**
+Al principio, confieso que apenas la noté. **Yo estaba demasiado ocupado tratando de reconstruir mis propios pedazos, siempre divagando, siempre ausente.** Pero con el paso de las semanas, una voz empezó a resonar en mi oidos: **¡Te admiro!, decía. Era ella.**
 
-Guardo cuatro momentos como si fueran tesoros:
+Guardo cuatro momentos:
 
 **El primero,** fue cuando la vi por primera vez: ella estaba subiendo las gradas de la institución. No solo caminaba; estaba bailando o intentando bailar junto a sus amigas, con una alegría que llenaba el espacio desde la distancia. En unos minutos llegó donde yo estaba, por fin la vi de cerca. La miré de pies a cabeza y, cuando por fin hablamos, hubo una chispa de complicidad instantánea. Y así fue como nuestra amistad comenzó. Ese día sentí algo genuino; parecía que ella y yo teníamos los mismos pensamientos, el mismo enfoque. Admiraba mucho su forma de pensar, su inteligencia; era una chica competitiva y le gustaba hacer las cosas bien.
 
@@ -42,7 +42,7 @@ Terminó el tiempo de descanso, le dije adiós. Sin embargo, yo quería seguir, 
 
 Soy una persona que escucha la palabra de Dios; NO TENGO UNA RELIGIÓN **(NO ME GUSTAN SUS REGLAS),** Me considero más una persona espiritual. Un 27 de noviembre, en la iglesia donde asisto, juré ver su perfil entre los feligreses. Me sorprendí. Sin embargo, al final, no era ella, pero la coincidencia me estremeció como un presagio. Ese mismo día supe la noticia: **había reprobado el examen.**
 
-No pude permanecer en silencio. **Rompí mi propia regla y le escribí.** Volvimos a hablar, y sus mensajes, cargados de una tristeza serena, me quebraron. "Déjame ayudarte", le dije. "Déjame darte mi punto de vista". Y dentro de mi, dije: *(como lo hiciste tú conmigo sin saberlo).* Y ella aceptó.
+No pude permanecer en silencio. **Rompí mi propia regla y le escribí.** Volvimos a hablar, y sus mensajes, cargados de una tristeza serena, me quebraron. "Déjame ayudarte", le dije. "Déjame darte mi punto de vista". Y ella aceptó.
 
 Quedamos en encontrarnos una noche en una plaza de la ciudad. Llegó el día; llegué temprano de mi trabajo, falté a mis clases de contaduría, tenía que cumplir mi promesa. Yo estaba con el temor de que ella me dejaría plantado **(como siempre las personas lo habían hecho).** Me dije a mi mismo: Hoy esperaré diez minutos, luego me iré. Sin embargo, en el fondo, solo quería verla una última vez. Salí de mi casa 20 minutos antes; cuando llegué, ella ya estaba allí. **(Había llegado con anticipación).**
 

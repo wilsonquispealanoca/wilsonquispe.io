@@ -571,7 +571,6 @@ blockquote:before {
 .overflow-x-auto-table {
   margin: 2rem 0;
   overflow-x: auto;
-  border: 2px solid #c21aa5;
   border-radius: 1rem;
 }
 
@@ -871,3 +870,4 @@ blockquote:before {
   -webkit-box-orient: vertical;  
   overflow: hidden;
 }
+

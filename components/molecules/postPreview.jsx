@@ -1,8 +1,8 @@
 import DateFormatter from "../atoms/dateFormatter";
-import CoverImage from "../atoms/coverImage";
+import CoverImage from "../atoms/coverImage"; // Nota: Importas esto pero no lo usas, puedes borrar esta línea si no la necesitas
 import BadgeNewFunctionality from "../atoms/BadgeNewFunctionality";
 import Link from "next/link";
-import Image from "next/image"
+import Image from "next/image";
 
 export default function PostPreview({
   title,
@@ -13,29 +13,31 @@ export default function PostPreview({
   newPost
 }) {
   return (
-    <>
-      <li className="flex flex-col">
+    <li className="flex flex-col">
+      <Link as={`/posts/${slug}`} href="/posts/[slug]">
         <Image
-              src={coverImage}
-              alt={`Cover Image for titles app`}
-              width={1900}
-              height={1200}
-              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-              className="object-cover rounded-xl cursor-pointer h-auto"
-            />
-          <div className="py-4 text-center">
-            <div className="uppercase text-xs text-[#242424] mb-2 font-outfit">
-              <DateFormatter dateString={date} />
-            </div>
-            <Link as={`/posts/${slug}`} href="/posts/[slug]" className="text-xl font-outfitsemibold leading-8 text-[#242424] hover:underline">
-              {title}
-              {newPost && (
-                      <BadgeNewFunctionality />
-                )}
-            </Link>
-            <p className="text-quaternary-color-text line-clamp-2 my-4">{excerpt}</p>
-          </div>
-      </li>
-    </>
+          src={coverImage}
+          alt={`Cover Image for ${title}`}
+          width={1900}
+          height={1200}
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+          className="object-cover rounded-xl cursor-pointer h-auto hover:opacity-90 transition-opacity"
+        />
+      </Link>
+
+      <div className="py-4 text-center">
+        <div className="uppercase text-xs text-[#242424] mb-2 font-outfit">
+          <DateFormatter dateString={date} />
+        </div>
+        <Link as={`/posts/${slug}`} href="/posts/[slug]" className="text-xl font-outfitsemibold leading-8 text-[#242424] hover:underline">
+          {title}
+          {newPost && (
+            <BadgeNewFunctionality />
+          )}
+        </Link>
+        
+        <p className="text-quaternary-color-text line-clamp-2 my-4">{excerpt}</p>
+      </div>
+    </li>
   );
 }

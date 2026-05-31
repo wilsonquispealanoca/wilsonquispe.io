@@ -871,3 +871,7 @@ blockquote:before {
   overflow: hidden;
 }
 
+/* Parche para renderizadores de fórmulas (KaTeX / MathJax) */
+.katex, .MathJax {
+    color: #1e293b !important; /* Un gris oscuro casi negro para leer sobre fondo blanco */
+}

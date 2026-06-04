@@ -12,12 +12,9 @@ ogImage:
   url: "/assets/blog/registro-plandepagos/comprobante_pizarra.png"
 ---
 
-# Esta publicación esta en BORRADOR, y será actualizada en los próximos días.
----
+## Cómo dominar el Método de la Esquina Noroeste sin morir en el intento
 
-# Logística para Humanos: Cómo dominar el Método de la Esquina Noroeste sin morir en el intento
-
-Si estás estudiando ingeniería, administración, contabilidad o sistemas, es muy probable que te hayas topado con los famosos **Problemas de Transporte**. La mayoría de los libros y profesores te los explican llenos de símbolos matemáticos raros, letras griegas como la $$\sum$$ y subíndices que parecen diseñados para asustar.
+Si estás estudiando ingeniería, administración, contabilidad o sistemas, es muy probable que te hayas topado con los famosos **Problemas de Transporte**. La mayoría de los libros y profesores te los explican llenos de símbolos matemáticos raros, letras griegas y subíndices que parecen diseñados para asustar.
 
 Hoy vamos a romper esa barrera. Vamos a aprender a resolver estos problemas usando la lógica pura de los negocios, perdiendo el miedo a las ecuaciones y dominando el método más famoso para arrancar en este mundo: **La Esquina Noroeste**.
 
@@ -34,25 +31,57 @@ Tu misión es decidir cuántas unidades enviar desde cada almacén a cada tienda
 
 Este método es el más sencillo de todos porque es mecánico y "ciego". Esto significa que no le importa si una ruta de transporte es cara o barata; su único objetivo es repartir todo el inventario lo más rápido posible siguiendo una regla fija: **empezar siempre arriba y a la izquierda (el Noroeste de la tabla)**.
 
-### La Regla de los Tres Pasos:
-1.  **Posicionamiento:** Ve a la celda que esté más arriba y a la izquierda que todavía no esté tachada o completada.
-2.  **El menor gana (Asignación):** Compara lo que le queda al Almacén (Oferta) con lo que pide la Tienda (Demanda). Toma el número **más pequeño** de los dos y colócalo dentro de esa casilla.
-3.  **Restar y Tachar:** Resta esa cantidad tanto a la oferta como a la demanda. Si la oferta de la fila llegó a 0, tacha toda esa fila. Si la demanda de la columna llegó a 0, tacha toda esa columna. ¡Y vuelve al paso 1 con las celdas que queden libres!
+### La Regla de los cuatro pasos:
 
----
+Para resolver cualquier problema de transporte mediante este método, se debe aplicar de forma secuencial y cíclica la siguiente estructura de cuatro pasos. Cabe destacar que si el tablero de control ya cuenta con los datos de la oferta y la demanda previamente identificados y colocados en sus márgenes, se puede iniciar directamente desde el **Paso 1.**
 
-## El "Paso a Paso" de nuestra distribución
+#### Paso 0: Armar el Tablero de Juego (Oferta y Demanda)
+Antes de aplicar cualquier regla o dar el primer paso, lo primero que se debe hacer es construir el tablero de control. Esto consiste en colocar los datos del problema de manera ordenada en los bordes de la matriz:
 
-Tomemos como ejemplo la red de tu ejercicio, donde tenemos 3 almacenes (filas) y 6 tiendas (columnas). Si seguimos la lógica de ir agotando los recursos como si bajáramos una escalera, el reparto se construye de la siguiente manera:
+1. **En el extremo derecho (Los Márgenes de las Filas):** Se anotan los valores de la **Oferta**. Aquí se registra cuánta mercancía tiene disponible cada almacén o taller en total.
+2. **En el extremo inferior (Los Márgenes de las Columnas):** Se colocamos los valores de la **Demanda**. Aquí se registra cuántas unidades necesita recibir cada tienda o centro de distribución de manera obligatoria.
 
-* **Paso 1: Celda (Fila 1, Columna 1)**
-    * El Almacén 1 tiene `250` unidades disponibles y la Tienda 1 pide `120`. 
-    * ¿Cuál es menor? `120`. Asignamos **120** a esa casilla.
-    * La Tienda 1 queda satisfecha (`0`) y la tachamos. Al Almacén 1 todavía le quedan `130` unidades (`250 - 120`).
+**La Regla de Oro del Balanceo:** Antes de empezar, se debe realizar una pequeña suma rápida de control. La suma de toda la Oferta debe ser exactamente **igual** a la suma de toda la Demanda. Si ambos totales coinciden, la tabla está balanceada y el tablero está listo para iniciar el reparto.
+
+### Paso 1: Posicionamiento
+Se ubica la celda que esté más arriba y a la izquierda (la esquina noroeste) de la matriz que todavía no esté tachada o completada. Esta casilla será el punto de partida para el reparto actual.
+
+### Paso 2: El Menor Gana (Asignación)
+Se miran fijamente los extremos de la fila y de la columna correspondientes a la celda seleccionada para revisar cuánta Oferta queda disponible en el almacén y cuánta Demanda solicita la tienda. Se elige el número más pequeño de los dos y se coloca con firmeza dentro de esa casilla.
+
+### Paso 3: Restar y Tachar
+Se resta la cantidad que se acaba de asignar tanto a la oferta de su fila como a la demanda de su columna.
+
+* Si la oferta de la fila llegó a 0, se tacha toda la fila (esas celdas quedan fuera del juego).
+* Si la demanda de la columna llegó a 0, se tacha toda la columna.
+* (En caso de un empate donde ambas líneas lleguen a cero simultáneamente, se tacha solo la fila y se anota un cero en la demanda restante para mantener la consistencia del algoritmo).
+
+Una vez completadas las restas y los tachados, se regresa inmediatamente al Paso 1 utilizando únicamente las celdas que queden libres, repitiendo el proceso en forma de "escalera" hasta que todo el inventario sea distribuido.
+
+## EJEMPLO PRACTICO 
+
+Una empresa envía lavadoras desde sus tres fábricas (f1, f2, f3) hasta cinco centros de distribución (c1,c2,c3,c4,c5). Semanalmente, la producción de las tres fábricas es 250, 320, y 500 unidades para f1,f2,f3; mientras que la demanda de los centro de distribución es de 120, 108, 195, 270 y 300 unidades para los centros c1,c2,c3,c4,c5 ¿Cuántas unidades se deben enviar desde cada fábrica a cada centro de distribución de tal forma que se minimicen los costos de transporte que se presentan en la siguiente tabla?
+
+![tabla-de-costos](/assets/blog/esquina-noroeste/metodoTransporte1Tabla.png)
+
+### PASO 0
+
+![tabla-de-inicial](/assets/blog/esquina-noroeste/tablaInicialEsquina.png)
+
+* **Paso 1: Posicionamiento - Celda (Fila 1, Columna 1)**
+    * El Fábrica 1 tiene `250` unidades disponibles y la Centro 1 pide `120`. 
+    * **¿Cuál es menor?** `120`. Asignamos **120** a esa casilla.
+    * La centro 1 queda satisfecho (`0`) y la tachamos. A la fábrica 1 todavía le quedan `130` unidades (`250 - 120`).
+
+![tabla-paso2](/assets/blog/esquina-noroeste/tablaEsquina2.png)
+
 * **Paso 2: Celda (Fila 1, Columna 2)**
-    * Nos movemos a la derecha. La Tienda 2 pide `108` unidades.
-    * Como al Almacén 1 le quedaban `130`, le asignamos sus **108**.
-    * La Tienda 2 queda satisfecha (`0`) y la tachamos. Al Almacén 1 ahora le quedan `22` unidades (`130 - 108`).
+    * Nos movemos a la derecha. El centro 2 pide `108` unidades y la fábrica 1 le quedan `130`.
+    * **¿Cuál es menor?** `108`. Asignamos **108** a esa celda.
+    * El centro 2 queda satisfecho (`0`) y la tachamos. A la fábrica 1 ahora le quedan `22` unidades (`130 - 108`).
+
+![tabla-paso3](/assets/blog/esquina-noroeste/tablaEsquina3.png)
+
 * **Paso 3: Celda (Fila 1, Columna 3)**
     * Seguimos a la derecha. La Tienda 3 pide `195`.
     * El Almacén 1 solo tiene `22`, así que se las asignamos por completo (**22**).
@@ -83,7 +112,6 @@ Así es como luce visualmente tu tabla de asignación tras completar la ruta de 
 | **Almacén 3** | 0 | 0 | 0 | **123** | **300** | **77** | **500** |
 | **Demanda Total**| **120** | **108** | **195** | **270** | **300** | **77** | ***1070*** |
 
----
 
 ## Traduciendo el resultado al Modelo de Programación Lineal (Sin símbolos feos)
 

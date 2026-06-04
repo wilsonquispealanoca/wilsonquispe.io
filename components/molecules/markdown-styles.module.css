@@ -14,9 +14,11 @@
   @apply text-primary-text font-outfitsemibold underline;
 }
 
-.markdown p,
+.markdown p {
+  @apply text-primary-text mt-7 
+}
 .markdown ol {
-  @apply text-primary-text mt-7;
+  @apply list-decimal list-inside ml-6;
 }
 
 .markdown ul {
@@ -36,7 +38,7 @@
 }
 
 .markdown li::marker {
-  @apply text-primary-text;
+  @apply text-primary-text font-bold;
 }
 
 .markdown blockquote > p {

@@ -58,7 +58,7 @@ export default function Footer() {
           href="https://facebook.com/wilson.quispe.alanoca/"
           target="_blank"
           rel="noopener noreferrer"
-          text="Twitter"
+          text="facebook"
         >
           <li className="w-8">
             <svg fill="#fff" viewBox="0 0 32 32" id="Camada_1" version="1.1">
@@ -81,7 +81,7 @@ export default function Footer() {
           href="https://linkedin.com/in/wilsonquispealanoca/"
           target="_blank"
           rel="noopener noreferrer"
-          text="Twitter"
+          text="linkedin"
         >
           <li className="w-8">
             <svg
@@ -120,7 +120,7 @@ export default function Footer() {
           href="https://github.com/wilsonquispealanoca"
           target="_blank"
           rel="noopener noreferrer"
-          text="Twitter"
+          text="github"
         >
           <li className="w-8">
             <svg
@@ -161,13 +161,13 @@ export default function Footer() {
           </li>
         </Link>
         <Link
-          href="https://twitter.com/soywill_quispe"
+          href="https://www.instagram.com/wilson.quispe_/"
           target="_blank"
           rel="noopener noreferrer"
-          text="X"
+          text="instagram"
         >
           <li className="w-6 relative">
-            <img src="/logo-x.png" alt="x-logo"/>
+            <img src="https://static.cdninstagram.com/rsrc.php/yw/r/icwX0xAk0pz.webp" alt="instagram-logo"/>
           </li>
         </Link>
       </ul>

@@ -166,7 +166,7 @@ export default function Footer() {
           rel="noopener noreferrer"
           text="instagram"
         >
-          <li className="w-6 relative">
+          <li className="w-8 relative">
             <img src="https://static.cdninstagram.com/rsrc.php/yw/r/icwX0xAk0pz.webp" alt="instagram-logo"/>
           </li>
         </Link>

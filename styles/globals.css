@@ -12,6 +12,15 @@
 @tailwind utilities;
 /* Stop purging. */
 
+/* COLORS */
+.circle {
+  width: .8rem;
+  height: .8rem; 
+  background-color: #8dc255;
+  border-radius: 100%;
+  display: inline-block;
+}
+
 .image-drop-shadown{
   filter: drop-shadow(-1em .3em 20px rgba(0, 0, 0 ,0.5));
 }

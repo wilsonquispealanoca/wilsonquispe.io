@@ -52,7 +52,7 @@ export default function Post({ post }) {
                 author={post.author}
                 excerpt={post.excerpt}
               />
-              <PostBody content={post.content} />
+              <PostBody content={post.content} isDark={false}/>
               {post.tags === "idiomas" && (
                 <Link
                   as={`/lessons/${post.unidad}`}

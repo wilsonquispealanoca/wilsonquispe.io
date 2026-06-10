@@ -7,10 +7,10 @@ export default function Layout({ children }) {
       <div className="font-outfit min-h-screen overflow-x-hidden">
         <main>{children}</main>
       </div>
-      <div id="contacto" className="overflow-hidden relative bg-[#0a0b10] h-full p-6 text-white text-center">
+      <div id="contacto" className="overflow-hidden relative bg-[#0a0b10] h-full p-6 text-white text-center mt-[6.4rem] md:mt-0">
 
         <div className="mt-24 mb-12">
-          <h3 className="font-rivetto text-5xl leading-10 lg:text-6xl mb-4 md:mb-6">Sé el primero en saber cuándo lancemos.</h3>
+          <h3 className="font-rivetto text-5xl leading-10 lg:text-6xl mb-4 md:mb-6 z-10">Sé el primero en saber cuándo lancemos.</h3>
           <span className="text-xl md:text-2xl text-graw">No te quedes atrás</span>
         </div>
   

@@ -13,7 +13,7 @@ import Link from "next/link";
 
 export default function Home({ allPosts }) {
   const filteredPosts = allPosts
-    .filter((post) => post.tags !== "historia")
+    .filter((post) => post.tags !== "historia" && post.tags !== "notas")
     .slice(0, 3);
 
   return (

@@ -23,6 +23,11 @@ const dataFooter = [
     href: "/historias",
     text: "Mis Historias",
   },
+  {
+    id: 3,
+    href: "/notas",
+    text: "Todas las notas"
+  }
 ];
 
 export default function Footer() {

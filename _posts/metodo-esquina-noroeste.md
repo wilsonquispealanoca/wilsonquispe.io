@@ -4,12 +4,12 @@ title: "Método de la Esquina Noroeste"
 date: "2026-05-31T17:14:07.322Z"
 tags: "investigacion-operaciones"
 excerpt: "Si estás estudiando ingeniería, administración, contabilidad o sistemas, es muy probable que te hayas topado con los famosos **Problemas de Transporte**. La mayoría de los libros y profesores te los explican llenos de símbolos matemáticos raros, letras griegas como la SUMA y subíndices que parecen diseñados para asustar."
-coverImage: "/assets/blog/preview/preview.jpg"
+coverImage: "/assets/blog/esquina-noroeste/tablaInicialEsquina.png"
 author:
   name: Wilson Quispe
-  picture: "/assets/blog/authors/profileWilson.jpg"
+  picture: "/assets/blog/esquina-noroeste/tablaInicialEsquina.png"
 ogImage:
-  url: "/assets/blog/registro-plandepagos/comprobante_pizarra.png"
+  url: "/assets/blog/esquina-noroeste/tablaInicialEsquina.png"
 ---
 
 ## Cómo dominar el Método de la Esquina Noroeste sin morir en el intento

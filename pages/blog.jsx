@@ -9,7 +9,7 @@ import { getAllPosts } from "../lib/api";
 export default function Blog({ allPosts }) {
   const morePosts = allPosts.slice(0);
   const filteredPosts = morePosts.filter((post) => {
-    return post.tags !== "historia"; // Filtrar solo los posts con la categoría 'historia'
+    return post.tags !== "historia" && post.tags !== "notas"; // Filtrar solo los posts con la categoría 'historia'
   });
   return (
     <>

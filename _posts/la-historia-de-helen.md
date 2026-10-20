@@ -56,7 +56,7 @@ Llegó la despedida. Nos detuvimos en una esquina, bajo la luz de un faro. La mi
 
 Esta es la historia de Helen, la amiga que fue un faro en mi tormenta, y a quien admiro con la convicción quieta y eterna de quien ha sido testigo de una luz demasiado brillante como para olvidarla.
 
-*No tengo una foto de ella, pero sí guardo un recuerdo: ella en el centro, en la primera fila; para conocerla, cuenta desde la derecha: es la quinta.*
+*No tengo una foto de ella, pero sí guardo un recuerdo: ella en la primera fila (de  las chicas); para conocerla, cuenta desde la derecha: es la quinta.*
 
 
 <div class="card-picture rotate-picture-2" style="margin-top: 4rem; width: 100%;">

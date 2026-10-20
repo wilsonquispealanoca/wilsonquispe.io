@@ -20,9 +20,19 @@ Durante un par de semanas me estuve escribiendo con varias personas, pero una ta
 
 Sin pensarlo mucho, entré. Fui a ver su perfil: era una chica de Alemania que decía haber estado en Bolivia. Me causó muchísima curiosidad, así que esperé su carta. La carta se demoró tres días y medio en llegar y decía:
 
-<p class="blockquote-purple">Hola, Wilson he visto tu perfil, me parece que eres una persona muy interesante, quizas desees saber que he estado un tiempo en Bolivia haciendo un voluntariado en la ciudad de Cochabamba, donde tuve un accidente en mi hombro. Quisiera saber mas de ti, asi que hasta la proxima carta.</p>
+<p class="blockquote-purple">¡Hola Wilson!
 
-La historia de Yuleah parecia muy interesante, le respondí y así empezamos a escribirnos durante muchos meses.
+Espero que esté bien si te escribo en inglés, es mucho mejor que mi español. ^-^" Pero lo entiendo bastante bien, así que si quieres responder en español, siéntete libre (si quieres responder, por supuesto, sin presión :'D).
+
+Entonces... Soy Julia, tengo 20 años y soy de Alemania. Cuando estaba navegando por algunos perfiles, vi que eres de Bolivia, lo que me interesó. Y me quedé para escribirte porque pareces realmente agradable :)
+
+Debería explicar: Estuve en Bolivia durante medio año en 2019/20. Así que por eso. ^-^"
+
+'Una de las ciudades más altas del mundo'... ¿Eres de La Paz entonces? Siempre quise ir cuando vivía en Bolivia, pero nunca tuve tiempo... Viví en un pequeño pueblo 'cerca' de Cochabamba, por cierto.
+
+¡Estaría muy feliz de escuchar de vuelta de ti! Los mejores deseos :)</p>
+
+La primera carta de Yuleah me parecio muy interesante, le respondí y así empezamos a escribirnos durante muchos meses.
 Con el tiempo descubrimos que **teníamos demasiadas cosas en común**: desde nuestras fechas de cumpleaños,  hasta ese amor raro y profundo por aprender de todo. Nos pareciamos tanto... Cada carta era especial.
 
 Pero después de algunos meses compartiendo cartas, **Julia** o Yuleah, como se hacía llamar dejó de escribir.
@@ -32,7 +42,7 @@ Y cuando ya pensaba que no volvería, llegó una nueva carta de ella. que decía
 <p class="blockquote-purple">Hola Wil, no te preocupes por tus cartas y mi partida. Nunca habías hecho nada malo, de verdad. De hecho, quería responderte una y otra vez, pero también me daba un poco de miedo porque había estado fuera tanto tiempo otra vez...
 De ninguna manera me hubieras molestado, ¡no te preocupes! Aunque como ya escribiste: volvemos a ser los mismos. ^^» Antes estaba tan ansiosa por enviarte este texto que lo había preescrito, esperado, vuelto a leer, vuelto a esperar y así hasta que por fin tuve el valor de copiarlo y pulsar 'enviar'. ^^»</p>
 
-Leer su carta me alivió. Le dije que no se preocupará por desaparecer. Que aquí iba a estar.
+Leer su carta me alivió. Le dije que no se preocupara por desaparecer. Que aquí iba a estar.
 En una de nuestras cartas, Julia me dio su perfil de Twitter y me dijo que si se perdía otra vez le escribierá por ahi. Ingrese por curiosidad a ver si ella tenía una foto real ya que en **SLOWLY** no se puede subir fotos reales al perfil, solo permite crear un avatar. **Asi que por fin vi una foto de ella.**
 Y cuando la vi, Pensé: **“Dios… es preciosa. Tal vez demasiado para mí.”**
 

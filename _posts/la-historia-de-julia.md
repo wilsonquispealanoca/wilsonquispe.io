@@ -20,17 +20,7 @@ Durante un par de semanas me estuve escribiendo con varias personas, pero una ta
 
 Sin pensarlo mucho, entré. Fui a ver su perfil: era una chica de Alemania que decía haber estado en Bolivia. Me causó muchísima curiosidad, así que esperé su carta. La carta se demoró tres días y medio en llegar y decía:
 
-<p class="blockquote-purple">¡Hola Wilson!
-
-Espero que esté bien si te escribo en inglés, es mucho mejor que mi español. ^-^" Pero lo entiendo bastante bien, así que si quieres responder en español, siéntete libre (si quieres responder, por supuesto, sin presión :'D).
-
-Entonces... Soy Julia, tengo 20 años y soy de Alemania. Cuando estaba navegando por algunos perfiles, vi que eres de Bolivia, lo que me interesó. Y me quedé para escribirte porque pareces realmente agradable :)
-
-Debería explicar: Estuve en Bolivia durante medio año en 2019/20. Así que por eso. ^-^"
-
-'Una de las ciudades más altas del mundo'... ¿Eres de La Paz entonces? Siempre quise ir cuando vivía en Bolivia, pero nunca tuve tiempo... Viví en un pequeño pueblo 'cerca' de Cochabamba, por cierto.
-
-¡Estaría muy feliz de escuchar de vuelta de ti! Los mejores deseos :)</p>
+<p class="blockquote-purple">¡Hola Wilson! Espero que esté bien si te escribo en inglés, es mucho mejor que mi español. ^-^" Pero lo entiendo bastante bien, así que si quieres responder en español, siéntete libre (si quieres responder, por supuesto, sin presión :'D). Entonces... Soy Julia, tengo 20 años y soy de Alemania. Cuando estaba navegando por algunos perfiles, vi que eres de Bolivia, lo que me interesó. Y me quedé para escribirte porque pareces realmente agradable :) Debería explicar: Estuve en Bolivia durante medio año en 2019/20. Así que por eso. ^-^" 'Una de las ciudades más altas del mundo'... ¿Eres de La Paz entonces? Siempre quise ir cuando vivía en Bolivia, pero nunca tuve tiempo... Viví en un pequeño pueblo 'cerca' de Cochabamba, por cierto. ¡Estaría muy feliz de escuchar de vuelta de ti! Los mejores deseos :)</p>
 
 La primera carta de Yuleah me parecio muy interesante, le respondí y así empezamos a escribirnos durante muchos meses.
 Con el tiempo descubrimos que **teníamos demasiadas cosas en común**: desde nuestras fechas de cumpleaños,  hasta ese amor raro y profundo por aprender de todo. Nos pareciamos tanto... Cada carta era especial.
